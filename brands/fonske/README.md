@@ -36,6 +36,10 @@ Uren: **geen vaste uren**, volg `shared/POSTTIJDEN.md` (venster Fonske; vlak voo
 Stories met linksticker: laat de strook y 1300–1560 vrij.
 
 
+## Leren (verplicht)
+
+Volg `shared/LEREN.md` (SOCIAL-6): elke post krijgt `content_tags` (pijler, format, template, hook, captionlengte, cta, bucket), lees vóór je iets bedenkt `lessen.md` van dit merk en de resultaten in `social_post_performance`, kies volgens 70/20/10, en zet UTM-parameters op elke link.
+
 ## Variatie (verplicht)
 
 Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per week minstens 5 formats, nooit twee dagen na elkaar dezelfde template, minstens één lichte/felle post, één beeld-eerst-post en één typografische post, hooks en captionlengtes wisselen, en per item format/template/hook in `log.md`. Volstaat een template niet, maak een nieuwe variant in de huisstijl.

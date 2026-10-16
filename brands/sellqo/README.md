@@ -56,6 +56,10 @@ Minstens drie verschillende templates per week; licht (crème) en donker (navy) 
 UI-scènes nabouwen met de labels uit `landing.scene` (Atelier Nord, Pizzeria Fiamma, Leuven Pub Crawl) of uit de app;
 nooit klantdata, nooit een echt ordernummer of klantnaam.
 
+## Leren (verplicht)
+
+Volg `shared/LEREN.md` (SOCIAL-6): elke post krijgt `content_tags` (pijler, format, template, hook, captionlengte, cta, bucket), lees vóór je iets bedenkt `lessen.md` van dit merk en de resultaten in `social_post_performance`, kies volgens 70/20/10, en zet UTM-parameters op elke link.
+
 ## Variatie (verplicht)
 
 Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per week minstens 5 formats, nooit twee dagen na elkaar dezelfde template, minstens één lichte/felle post, één beeld-eerst-post en één typografische post, hooks en captionlengtes wisselen, en per item format/template/hook in `log.md`. Volstaat een template niet, maak een nieuwe variant in de huisstijl.
