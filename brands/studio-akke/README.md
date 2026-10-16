@@ -1,6 +1,6 @@
 # Studio Akke Instagram — werkwijze en weekroutine
 
-Instagram (handle nog te bevestigen) · Nederlands · tenant `c96fb1b2-ddac-44d1-a638-72dd54efd31e` · SellQo-project `9932a7fe-43a1-42de-9c64-168968599600`.
+Instagram @studio.akke (gekoppeld in SellQo sinds 16 okt) · Nederlands · tenant `c96fb1b2-ddac-44d1-a638-72dd54efd31e` · SellQo-project `9932a7fe-43a1-42de-9c64-168968599600`.
 Een geplande taak ("Studio Akke IG: weekcontent") voert de **weekroutine** hieronder elke zondag uit.
 De brand bible staat in het claude.ai-project "Nomadix Socials" (`claude/brand-studio-akke.md`); bij verschil over
 de werkwijze is dit bestand leidend, voor feiten over het merk de bible.
