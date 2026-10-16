@@ -10,10 +10,15 @@ Brand bible: claude.ai-project "Nomadix Socials", `claude/brand-fonske.md` (volg
 | --- | --- |
 | `brand.css`, `fonts/` | Huisstijl van de site: warm bijna-zwart `#110C08`, amber `#F4A434`, goudverloop `#F6CB6A → #E58A2A`, crème `#F4F1EC`, rood `#D45A4F` enkel voor deadlines. Bebas Neue + Space Grotesk (OFL). |
 | `logo-mark.png` | De Fonske-figuur (amber lijn, transparant). `logo-lockup.jpg` = volledige lockup (OG-beeld van de site). |
-| `templates/` | `poster` (volgende crawl: datum, uur, plek, prijs), `steps` (zo verloopt de avond), `ticket` (early bird / prijs), `lore-story` (Leuven Lore), `route-story`, `tonight-story` (dag zelf). |
+| `illustrations/` | Getekende scènes in de lijnstijl van het logo: `totem` (kever op de naald + bibliotheek), `fonske` (giet een pint in zijn hoofd), `oude-markt` (trapgevels, terras), `dijle` (Margriet, nacht), `route` (getekende kaart, 4 cafés + ster), `early-bird` (vogel met ticket), `last-call` (klok op 22:00 + shot). Inline in de HTML zetten (dan werken de fonts). |
+| `templates/` | `poster-totem`, `lore-story-night`, `lore-story-amber`, `route-map-cream`, `early-bird-amber`, `oude-markt-story`, `last-call-red`, `tonight-story`. |
 | `weeks/<maandag>/` | HTML + `.recipe.json` van die week. |
 | `published/<maandag>/` | De JPG's die online gaan (SellQo haalt ze via de raw-URL). |
 | `log.md` | Wat al gepost is. |
+
+## Variatie (regel)
+
+Nooit twee keer na elkaar dezelfde achtergrond. Kleurvlakken: nacht `#110C08`, amber `#F4A434` (donkere tekst), crème `#F4F1EC` (donkere tekst), Dijleblauw `#0E1626`, rood `#D45A4F` (enkel deadlines). Elk beeld heeft een tekening of (later) een echte crawlfoto, nooit enkel tekst.
 
 ## Feiten (niets bijverzinnen)
 

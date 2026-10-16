@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+  <!-- Last call: stationsklok op 22:00 en een shotglaasje. Voor rode achtergrond. -->
+  <g fill="none" stroke="#F4F1EC" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M430 90 L430 160 M570 90 L570 160 M400 90 L600 90" stroke-width="10"/>
+    <circle cx="500" cy="440" r="290" stroke-width="12" fill="#B9473E"/>
+    <circle cx="500" cy="440" r="250" stroke-width="4" opacity=".5"/>
+  </g>
+  <!-- uurstreepjes -->
+  <g stroke="#F4F1EC" stroke-width="10" stroke-linecap="round">
+    <path d="M500 210 L500 250"/><path d="M500 630 L500 670"/><path d="M270 440 L310 440"/><path d="M690 440 L730 440"/>
+    <path d="M385 241 L400 267"/><path d="M615 241 L600 267"/><path d="M301 325 L327 340"/><path d="M699 325 L673 340"/>
+    <path d="M301 555 L327 540"/><path d="M699 555 L673 540"/><path d="M385 639 L400 613"/><path d="M615 639 L600 613"/>
+  </g>
+  <!-- wijzers op 22:00 (10 uur) -->
+  <g stroke="#F4F1EC" stroke-linecap="round">
+    <path d="M500 440 L366 363" stroke-width="18"/>
+    <path d="M500 440 L500 230" stroke-width="12"/>
+  </g>
+  <circle cx="500" cy="440" r="20" fill="#F6CB6A" stroke="#F4F1EC" stroke-width="6"/>
+  <!-- shotglaasje -->
+  <g transform="translate(790 720) rotate(12)">
+    <path d="M-70 -110 H70 L52 110 H-52 Z" fill="#F4F1EC" stroke="#110C08" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M-62 -40 H62 L52 110 H-52 Z" fill="#F4A434"/>
+    <path d="M-52 110 H52" stroke="#110C08" stroke-width="8"/>
+  </g>
+  <g fill="#F6CB6A"><circle cx="700" cy="560" r="10"/><circle cx="680" cy="600" r="6"/><circle cx="880" cy="560" r="8"/></g>
+</svg>

@@ -5,17 +5,47 @@
 <meta name="nx-size" content="1080x1920">
 <title>Last call €19</title>
 <link rel="stylesheet" href="../../brand.css">
-<!-- Story met link-sticker. Early bird stopt vr 23-10 om 22:00 (SellQo early_bird_deadline). -->
+<!-- Story met link-sticker. Early bird stopt vr 23-10 om 22:00. Illustratie: last-call.svg -->
+<style>
+body.v-red { background: #D45A4F; }
+.v-red .kicker{color:#F4F1EC}
+</style>
 </head>
-<body>
+<body class="v-red">
   <div class="grain"></div>
   <div class="brandrow" style="top:250px; left:var(--pad)"><img src="../../logo-mark.png" alt=""><span class="wordmark">The Fonske Crawl</span></div>
-
-  <div style="position:absolute; left:var(--pad); right:var(--pad); top:420px">
-    <div class="kicker red" data-slot="kicker" data-label="Kicker" data-max="30">Tonight 22:00</div>
-    <h1 class="display d-xl" style="margin-top:28px" data-slot="titel" data-label="Titel" data-max="30">Last call<br>for <span class="gold">€19.</span></h1>
-    <p class="lead" style="margin-top:50px" data-slot="tekst" data-label="Tekst" data-max="120" data-multiline="true">Early bird ends tonight. Tomorrow it's €25, and tomorrow is the crawl.</p>
-    <p class="body amber" style="font-weight:700; margin-top:30px" data-slot="crawl" data-label="Crawl" data-max="50">Sat 24 Oct · 21:00 · The Totem</p>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:370px">
+    <div class="kicker" data-slot="kicker" data-label="Kicker" data-max="30">Early bird ends tonight</div>
+    <h1 class="display d-xl" style="margin-top:20px" data-slot="titel" data-label="Titel" data-max="30">Last call<br>for €19.</h1>
+    <p class="lead" style="margin-top:28px" data-slot="tekst" data-label="Tekst" data-max="90" data-multiline="true">Until 22:00. Tomorrow it's €25, and tomorrow is the crawl.</p>
   </div>
+  <svg style="position:absolute; left:40px; bottom:40px; width:1000px; height:900px" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+  
+  <g fill="none" stroke="#F4F1EC" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M430 90 L430 160 M570 90 L570 160 M400 90 L600 90" stroke-width="10"/>
+    <circle cx="500" cy="440" r="290" stroke-width="12" fill="#B9473E"/>
+    <circle cx="500" cy="440" r="250" stroke-width="4" opacity=".5"/>
+  </g>
+  
+  <g stroke="#F4F1EC" stroke-width="10" stroke-linecap="round">
+    <path d="M500 210 L500 250"/><path d="M500 630 L500 670"/><path d="M270 440 L310 440"/><path d="M690 440 L730 440"/>
+    <path d="M385 241 L400 267"/><path d="M615 241 L600 267"/><path d="M301 325 L327 340"/><path d="M699 325 L673 340"/>
+    <path d="M301 555 L327 540"/><path d="M699 555 L673 540"/><path d="M385 639 L400 613"/><path d="M615 639 L600 613"/>
+  </g>
+  
+  <g stroke="#F4F1EC" stroke-linecap="round">
+    <path d="M500 440 L366 363" stroke-width="18"/>
+    <path d="M500 440 L500 230" stroke-width="12"/>
+  </g>
+  <circle cx="500" cy="440" r="20" fill="#F6CB6A" stroke="#F4F1EC" stroke-width="6"/>
+  
+  <g transform="translate(790 720) rotate(12)">
+    <path d="M-70 -110 H70 L52 110 H-52 Z" fill="#F4F1EC" stroke="#110C08" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M-62 -40 H62 L52 110 H-52 Z" fill="#F4A434"/>
+    <path d="M-52 110 H52" stroke="#110C08" stroke-width="8"/>
+  </g>
+  <g fill="#F6CB6A"><circle cx="700" cy="560" r="10"/><circle cx="680" cy="600" r="6"/><circle cx="880" cy="560" r="8"/></g>
+</svg>
+
 </body>
 </html>

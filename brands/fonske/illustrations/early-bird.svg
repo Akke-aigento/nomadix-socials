@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- De "early bird": vogeltje in lijnwerk dat een ticket in zijn snavel houdt. Voor amber achtergrond. -->
+  <g fill="none" stroke="#110C08" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tak -->
+    <path d="M40 700 C300 660 600 690 960 640"/>
+    <path d="M700 676 C740 640 780 630 820 640"/><path d="M780 650 q20 -40 60 -50"/>
+    <!-- lijf -->
+    <path d="M300 640 C220 600 210 470 300 420 C360 385 450 400 480 450 C520 520 500 600 430 640 Z" fill="#F4F1EC"/>
+    <!-- vleugel -->
+    <path d="M300 520 C330 480 400 480 420 540 C390 580 330 590 300 520 Z" fill="#F6CB6A"/>
+    <!-- staart -->
+    <path d="M240 600 L150 640 L230 650"/>
+    <!-- poten -->
+    <path d="M360 640 L350 690"/><path d="M410 640 L415 690"/>
+    <!-- snavel -->
+    <path d="M478 440 L540 420 L485 470" fill="#E58A2A"/>
+  </g>
+  <!-- oog -->
+  <circle cx="430" cy="440" r="11" fill="#110C08"/>
+  <!-- ticket in de snavel -->
+  <g transform="translate(560 370) rotate(-14)">
+    <path d="M0 0 H300 V40 a22 22 0 0 0 0 44 V124 H0 V84 a22 22 0 0 0 0 -44 Z" fill="#F4F1EC" stroke="#110C08" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M80 10 V114" stroke="#110C08" stroke-width="4" stroke-dasharray="10 10"/>
+    <text x="190" y="88" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="78" fill="#110C08">€19</text>
+    <text x="40" y="70" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="26" fill="#110C08" transform="rotate(-90 40 62)">ADMIT ONE</text>
+  </g>
+  <!-- bewegingsstreepjes -->
+  <g stroke="#110C08" stroke-width="6" stroke-linecap="round" opacity=".5">
+    <path d="M880 330 L940 310"/><path d="M890 380 L960 380"/><path d="M880 430 L940 450"/>
+  </g>
+</svg>

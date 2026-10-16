@@ -5,16 +5,90 @@
 <meta name="nx-size" content="1080x1920">
 <title>Tonight</title>
 <link rel="stylesheet" href="../../brand.css">
-<!-- Dag van de crawl. Story met link-sticker. Prijs dan €25 (early bird voorbij). -->
-</head>
-<body>
-  <div class="grain"></div>
-  <img class="mark" src="../../logo-mark.png" alt="" style="width:300px; left:50%; transform:translateX(-50%); top:250px">
+<!-- Dag zelf. Story met link-sticker. Illustratie: totem.svg -->
+<style>
+body.v-night3 { background: #110C08; }
 
-  <div style="position:absolute; left:var(--pad); right:var(--pad); top:640px; text-align:center">
+</style>
+</head>
+<body class="v-night3">
+  <svg style="position:absolute; left:-20px; bottom:0; width:1120px; height:1232px" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1100">
+  
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#F4A434" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#F4A434" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7EE0A6"/>
+      <stop offset=".45" stop-color="#1E9E6A"/>
+      <stop offset="1" stop-color="#0B4D38"/>
+    </linearGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6CB6A"/>
+      <stop offset="1" stop-color="#E58A2A"/>
+    </linearGradient>
+  </defs>
+
+  
+  <g fill="#F4F1EC" opacity=".7">
+    <circle cx="90" cy="120" r="3"/><circle cx="210" cy="60" r="2"/><circle cx="330" cy="150" r="2.5"/>
+    <circle cx="840" cy="90" r="2"/><circle cx="930" cy="200" r="3"/><circle cx="160" cy="300" r="2"/>
+    <circle cx="420" cy="80" r="2"/><circle cx="880" cy="330" r="2"/>
+  </g>
+  <path d="M800 130 a55 55 0 1 0 50 75 a44 44 0 1 1 -50 -75z" fill="none" stroke="#F4A434" stroke-width="5" stroke-linejoin="round"/>
+
+  
+  <g fill="none" stroke="#F4A434" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M170 520 L170 360 L200 330 L200 280 L230 230 L260 280 L260 330 L290 360 L290 520"/>
+    <circle cx="230" cy="400" r="26"/>
+    <path d="M230 384 L230 400 L244 408"/>
+    <path d="M50 1000 L50 610 L120 560 L340 560 L410 610 L410 1000"/>
+    <path d="M120 560 L120 520 L340 520 L340 560"/>
+  </g>
+  <g fill="url(#win)" opacity=".9">
+    <path d="M85 700 a22 22 0 0 1 44 0 v70 h-44z"/><path d="M160 700 a22 22 0 0 1 44 0 v70 h-44z"/>
+    <path d="M256 700 a22 22 0 0 1 44 0 v70 h-44z"/><path d="M331 700 a22 22 0 0 1 44 0 v70 h-44z"/>
+    <path d="M85 830 a22 22 0 0 1 44 0 v70 h-44z"/><path d="M331 830 a22 22 0 0 1 44 0 v70 h-44z"/>
+  </g>
+  <path d="M195 1000 L195 860 a35 35 0 0 1 70 0 L265 1000" fill="none" stroke="#F4A434" stroke-width="5"/>
+
+  
+  <circle cx="660" cy="380" r="230" fill="url(#glow)"/>
+
+  
+  <path d="M652 1000 L660 120 L668 1000 Z" fill="#F4F1EC" opacity=".92"/>
+  <ellipse cx="660" cy="150" rx="3.5" ry="14" fill="#110C08"/>
+  <path d="M652 1000 L660 120 L668 1000" fill="none" stroke="#F4A434" stroke-width="3"/>
+
+  
+  <g transform="translate(660 390) rotate(-18)">
+    <g stroke="#F4A434" stroke-width="7" stroke-linecap="round" fill="none">
+      <path d="M-70 -40 L-130 -80 L-150 -60"/><path d="M-80 10 L-150 10 L-170 40"/><path d="M-70 55 L-120 100 L-110 130"/>
+      <path d="M70 -40 L130 -80 L150 -60"/><path d="M80 10 L150 10 L170 40"/><path d="M70 55 L120 100 L110 130"/>
+      <path d="M-20 -150 Q-40 -200 -80 -215"/><path d="M20 -150 Q40 -200 80 -215"/>
+    </g>
+    <ellipse cx="0" cy="-118" rx="40" ry="34" fill="#0B4D38" stroke="#F4A434" stroke-width="6"/>
+    <ellipse cx="0" cy="20" rx="88" ry="125" fill="url(#shell)" stroke="#F4A434" stroke-width="7"/>
+    <path d="M0 -100 L0 140" stroke="#0B4D38" stroke-width="5"/>
+    <ellipse cx="-34" cy="-30" rx="18" ry="46" fill="#F4F1EC" opacity=".35"/>
+  </g>
+  
+  <path d="M660 250 L660 540" stroke="#F4F1EC" stroke-width="7" stroke-linecap="round"/>
+  <path d="M660 250 L660 540" stroke="#110C08" stroke-width="1.5" opacity=".35"/>
+
+  
+  <path d="M0 1000 L1000 1000" stroke="#F4A434" stroke-width="5"/>
+  <g stroke="#F4A434" stroke-width="4" stroke-linecap="round" opacity=".55">
+    <path d="M560 1040 L620 1040"/><path d="M700 1040 L800 1040"/><path d="M460 1075 L520 1075"/><path d="M860 1075 L940 1075"/>
+  </g>
+</svg>
+
+  <div class="grain"></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:250px">
     <h1 class="display d-xxl gold" data-slot="titel" data-label="Titel" data-max="12">Tonight.</h1>
-    <p class="display d-m" style="margin-top:30px" data-slot="uur" data-label="Uur en plek" data-max="30">21:00 · The Totem</p>
-    <p class="lead" style="margin-top:34px" data-slot="tekst" data-label="Tekst" data-max="90" data-multiline="true">Ladeuzeplein, the giant bug on the book. Bring your ID, we bring the rest.</p>
+    <p class="display d-m" style="margin-top:14px" data-slot="uur" data-label="Uur" data-max="30">21:00 · Meet the bug</p>
+    <p class="lead" style="margin-top:20px" data-slot="tekst" data-label="Tekst" data-max="70">Ladeuzeplein. Bring your ID, we bring the rest.</p>
   </div>
 </body>
 </html>

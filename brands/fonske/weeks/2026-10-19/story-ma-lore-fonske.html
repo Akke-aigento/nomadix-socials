@@ -5,17 +5,72 @@
 <meta name="nx-size" content="1080x1920">
 <title>Leuven Lore — Fonske</title>
 <link rel="stylesheet" href="../../brand.css">
-<!-- Story met link-sticker. Feiten: Fons Sapientiae, aan de stad geschonken in 1975 voor 550 jaar KU Leuven; giet water over zijn hoofd. -->
+<!-- Story met link-sticker. Feiten: Fons Sapientiae, 1975, 550 jaar KU Leuven, giet water over zijn hoofd. Illustratie: fonske.svg -->
+<style>
+body.v-x { background: #F4A434; }
+.v-x .display, .v-x .lead, .v-x .body {color:#110C08} .v-x .kicker {color:#110C08; opacity:.7}
+</style>
 </head>
-<body>
+<body class="v-x">
   <div class="grain"></div>
-  <div class="brandrow" style="top:250px; left:var(--pad)"><img src="../../logo-mark.png" alt=""><span class="wordmark">The Fonske Crawl</span></div>
-
-  <div style="position:absolute; left:var(--pad); right:var(--pad); top:430px; display:flex; flex-direction:column; gap:44px">
+  <div class="brandrow" style="top:250px; left:var(--pad)"><span class="wordmark" style="color:#110C08">The Fonske Crawl</span></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:350px; display:flex; flex-direction:column; gap:30px">
     <div class="kicker" data-slot="reeks" data-label="Reeks" data-max="26">Leuven Lore · 02</div>
-    <h1 class="display d-l" data-slot="titel" data-label="Titel" data-max="64">The city says he's pouring <span class="gold">knowledge</span> into his head.</h1>
-    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="190" data-multiline="true">Fons Sapientiae, a gift to Leuven in 1975 for the university's 550th birthday. Students have their own theory about what's in the cup.</p>
-    <p class="body amber" style="font-weight:700" data-slot="crawl" data-label="Crawl" data-max="50">Drink like Fonske · Sat 24 Oct</p>
+    <h1 class="display d-l" data-slot="titel" data-label="Titel" data-max="60">Officially, it's water.</h1>
+    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="170" data-multiline="true">Fonske pours knowledge into his head since 1975, a gift for the university's 550th birthday. Students have their own theory.</p>
   </div>
+  <svg style="position:absolute; left:40px; bottom:0; width:1000px; height:1100px" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1100">
+  
+  <defs>
+    <linearGradient id="beer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A8"/><stop offset="1" stop-color="#C4650F"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#110C08" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M220 1040 L780 1040"/>
+    <path d="M260 1040 L290 900 L710 900 L740 1040"/>
+    <path d="M330 900 L330 850 L670 850 L670 900"/>
+    
+    <path d="M430 850 L450 700"/><path d="M570 850 L545 700"/>
+    <path d="M400 850 L460 850"/><path d="M545 850 L610 850"/>
+    
+    <path d="M440 710 C420 620 430 560 470 520 L540 520 C580 560 585 620 560 710 Z"/>
+    
+    <circle cx="500" cy="440" r="70"/>
+    
+    <path d="M455 560 C400 600 370 620 340 610"/>
+    
+    <path d="M545 550 C610 520 640 420 620 330"/>
+  </g>
+  
+  <g stroke="#110C08" stroke-width="8" stroke-linejoin="round" fill="#F4F1EC">
+    <path d="M250 560 L340 590 L340 660 L250 630 Z"/>
+    <path d="M340 590 L420 560 L420 630 L340 660 Z"/>
+  </g>
+  <g stroke="#110C08" stroke-width="4" stroke-linecap="round" opacity=".6">
+    <path d="M268 590 L322 607"/><path d="M268 610 L322 627"/><path d="M358 607 L404 590"/><path d="M358 627 L404 610"/>
+  </g>
+  
+  <g transform="translate(610 300) rotate(-125)">
+    <path d="M-38 -60 L38 -60 L30 60 L-30 60 Z" fill="#F4F1EC" stroke="#110C08" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M-34 -20 L34 -20 L30 60 L-30 60 Z" fill="url(#beer)"/>
+  </g>
+  <path d="M575 318 C545 330 515 345 500 385" stroke="#110C08" stroke-width="34" stroke-linecap="round" fill="none"/>
+  <path d="M575 318 C545 330 515 345 500 385" stroke="#E8952A" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M570 322 C548 332 528 344 516 362" stroke="#FFE7A8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <g fill="#F4F1EC" stroke="#110C08" stroke-width="4">
+    <circle cx="590" cy="292" r="9"/><circle cx="575" cy="270" r="6"/><circle cx="604" cy="268" r="5"/>
+  </g>
+  
+  <path d="M445 395 C470 370 530 370 555 395 C530 410 470 410 445 395 Z" fill="#FFF6DD" stroke="#110C08" stroke-width="7" stroke-linejoin="round"/>
+  
+  <g fill="#110C08"><circle cx="420" cy="380" r="6"/><circle cx="400" cy="350" r="4"/><circle cx="585" cy="410" r="5"/></g>
+  
+  <g stroke="#110C08" stroke-width="5" stroke-linecap="round" fill="none" opacity=".6">
+    <path d="M330 960 q20 -14 40 0 t40 0"/><path d="M560 990 q20 -14 40 0 t40 0"/><path d="M440 1000 q20 -14 40 0"/>
+  </g>
+</svg>
+
 </body>
 </html>
