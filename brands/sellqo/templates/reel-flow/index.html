@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="14" data-fps="30">
+<title>Reel: één bestelling, alles mee</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- reel "flow" (pijler Feature): geanimeerde UI-flow. Bron: landing.scene.retail + landing.core (MKT-4).
+     Atelier Nord / Mok Fjord = de echte demowinkel op sellqo.app. -->
+<style>
+  .scene { position:absolute; left:var(--pad); right:var(--pad); top:560px; height:900px; }
+  .scene > * { position:absolute; left:0; right:0; opacity:0; }
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); }
+  .cap { position:absolute; top:330px; left:var(--pad); right:var(--pad); height:200px; }
+  .cap h1 { position:absolute; left:0; right:0; opacity:0; }
+  .prod { width:100%; height:420px; border-radius:24px; background:linear-gradient(135deg,#C8D6C2,#9DB39A); display:grid; place-items:center; margin-bottom:26px; }
+  .mug { width:200px; height:220px; background:#EEF2EA; border-radius:18px 18px 40px 40px; position:relative; box-shadow:inset -20px 0 0 rgba(0,0,0,.06); }
+  .mug:after { content:""; position:absolute; right:-70px; top:50px; width:70px; height:100px; border:22px solid #EEF2EA; border-left:0; border-radius:0 50px 50px 0; }
+  .end { position:absolute; inset:0; background:var(--deep); color:#fff; opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .scene .card { padding:44px 48px; }
+  .scene .card .ttl { font-size:34px; margin-bottom:24px; }
+  .scene .card .row { font-size:32px; padding:26px 0; }
+  .scene .card .sub { font-size:24px; }
+  .scene .chip { font-size:24px; padding:10px 20px; }
+  .end .hl { background:none; color:var(--coral); }
+  .bar { position:absolute; left:var(--pad); right:var(--pad); bottom:330px; height:6px; border-radius:3px; background:rgba(0,20,91,.1); }
+  .bar i { display:block; height:100%; border-radius:3px; background:var(--coral); width:0; }
+</style>
+</head>
+<body>
+  <div class="blob soft" style="width:1000px;height:1000px;right:-420px;top:700px"></div>
+  <div class="dots" style="left:0;right:0;top:520px;height:1000px"></div>
+  <div class="top"><img src="../../logo-navy.png" alt="SellQo" style="height:60px"></div>
+  <div class="cap">
+    <h1 class="h h-m" id="c0">Eén bestelling<br>in je webshop.</h1>
+    <h1 class="h h-m" id="c1">Ze staat meteen<br><span class="hl">bij je bestellingen.</span></h1>
+    <h1 class="h h-m" id="c2">De factuur<br><span class="hl">staat klaar.</span></h1>
+    <h1 class="h h-m" id="c3">De voorraad<br><span class="hl">daalt overal mee.</span></h1>
+  </div>
+  <div class="scene">
+    <div id="s0">
+      <div class="card" style="position:relative">
+        <div class="ttl">Atelier Nord <span class="chip blue">Demowinkel</span></div>
+        <div class="prod"><div class="mug"></div></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-end">
+          <div><div class="big" style="font-size:44px">Mok Fjord</div><div class="sub">Kleur salie · handgemaakt</div></div>
+          <div class="big" style="font-size:44px">€ 18,00</div>
+        </div>
+        <div class="btn" id="buy" style="width:100%;margin-top:28px;font-size:28px;padding:24px">In winkelmandje</div>
+      </div>
+      <div class="toast" id="thanks" style="left:60px;right:60px;top:640px;opacity:0"><span class="tick">✓</span><div><b>Bedankt, Lotte!</b><div style="font-size:20px;opacity:.75">Je bestelling is geplaatst.</div></div></div>
+    </div>
+    <div id="s1">
+      <div class="card" style="position:relative">
+        <div class="ttl">Bestellingen</div>
+        <div class="row" id="newrow"><div><b>#1043 · Lotte V.</b><div class="sub">Webshop · Mok Fjord salie · € 18,00</div></div><span class="chip new" id="st1">Nieuw</span></div>
+        <div class="row"><div>#1042 · kassa<div class="sub">betaald</div></div><span class="chip ok">Betaald</span></div>
+        <div class="row"><div>#1041 · bol.com<div class="sub">verzonden</div></div><span class="chip blue">Verzonden</span></div>
+      </div>
+    </div>
+    <div id="s2">
+      <div class="card" style="position:relative;padding:44px">
+        <div class="ttl">Factuur <span class="chip ok" id="inv">Factuur klaar</span></div>
+        <div class="big" style="font-size:110px">#1043</div>
+        <div class="row" style="margin-top:20px"><span>Mok Fjord salie</span><b>€ 18,00</b></div>
+        <div class="row"><span>btw en OSS</span><b>correct berekend</b></div>
+      </div>
+    </div>
+    <div id="s3">
+      <div class="card" style="position:relative;padding:44px">
+        <div class="sub" style="font-size:24px">Voorraad Mok Fjord salie</div>
+        <div style="display:flex;align-items:baseline;gap:30px;margin:14px 0 26px"><span class="big" id="n" style="font-size:160px">12</span></div>
+        <div class="row"><b>Webshop</b><span class="chip ok" id="k1">bijgewerkt</span></div>
+        <div class="row"><b>Kassa</b><span class="chip ok" id="k2">bijgewerkt</span></div>
+        <div class="row"><b>bol.com</b><span class="chip blue" id="k3">binnen het half uur</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="bar"><i id="prog"></i></div>
+  <div class="end" id="end">
+    <img src="../../logo-white.png" alt="SellQo" style="height:90px;align-self:flex-start">
+    <h1 class="h" style="font-size:120px">Eén bestelling.<br><span class="hl">Alles mee.</span></h1>
+    <p class="lead">Webshop, kassa en bol.com op één voorraad.</p>
+    <div style="display:flex;gap:20px;align-items:center"><span class="pill coral" style="font-size:32px">sellqo.app</span><span class="body" style="opacity:.8">14 dagen gratis, zonder kredietkaart</span></div>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  // venster [a,b]: in 0,35 s, uit 0,3 s
+  const win = (t, a, b) => ease((t - a) / 0.35) * clamp((b - t) / 0.3);
+  const SC = [[0, 3.9], [3.9, 6.6], [6.6, 9.1], [9.1, 11.6]];
+  window.setT = (t) => {
+    SC.forEach(([a, b], i) => {
+      const o = win(t, a, b), s = $("s" + i), c = $("c" + i);
+      s.style.opacity = o; s.style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 60}px)`;
+      c.style.opacity = o; c.style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 30}px)`;
+    });
+    // scène 0: knop indrukken, bedankt
+    const press = t > 2.0 && t < 2.3;
+    $("buy").style.transform = press ? "scale(.96)" : "none";
+    $("thanks").style.opacity = ease((t - 2.4) / 0.3);
+    $("thanks").style.transform = `translateY(${(1 - ease((t - 2.4) / 0.4)) * 40}px)`;
+    // scène 1: nieuwe rij, Nieuw -> Betaald
+    $("newrow").style.background = `rgba(253,123,91,${0.12 * (1 - clamp((t - 5.2) / 0.6))})`;
+    const paid = t > 5.2; $("st1").textContent = paid ? "Betaald" : "Nieuw"; $("st1").className = "chip " + (paid ? "ok" : "new");
+    // scène 2: chip springt erin
+    $("inv").style.transform = `scale(${0.6 + 0.4 * ease((t - 7.4) / 0.3)})`; $("inv").style.opacity = ease((t - 7.4) / 0.3);
+    // scène 3: teller 12 -> 11 en kanalen
+    $("n").textContent = t > 9.9 ? "11" : "12";
+    ["k1", "k2", "k3"].forEach((k, i) => { $(k).style.opacity = ease((t - (10.1 + i * 0.35)) / 0.25); });
+    $("end").style.opacity = ease((t - 11.6) / 0.45);
+    $("prog").style.width = Math.min(100, t / 11.6 * 100) + "%";
+  };
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Feature: één bestelling</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- feature: UI-scène + titel (pijler Feature). Bron: landing.scene.retail + landing.core (MKT-4-geaudit).
+     Demowinkel Atelier Nord en Mok Fjord zijn de echte demo op sellqo.app. -->
+</head>
+<body>
+  <div class="blob soft" style="width:900px;height:900px;right:-360px;top:420px"></div>
+  <div class="dots" style="left:0;right:0;top:520px;height:520px;opacity:.7"></div>
+  <img class="logo tl" src="../logo-navy.png" alt="SellQo">
+  <div style="position:absolute;left:var(--pad);right:var(--pad);top:190px">
+    <h1 class="h h-l" data-slot="titel" data-label="Titel" data-max="40">Eén bestelling.<br><span class="hl">Drie dingen geregeld.</span></h1>
+  </div>
+
+  <div class="card tilt-l" style="left:80px;top:520px;width:560px">
+    <div class="ttl">Bestellingen <span class="chip new">Nieuw</span></div>
+    <div class="row"><div><b>#1043 · Lotte V.</b><div class="sub">Webshop · Mok Fjord salie</div></div><b>€ 18,00</b></div>
+    <div class="row"><div>#1042 · kassa<div class="sub">betaald</div></div><span class="chip ok">Betaald</span></div>
+    <div class="row"><div>#1041 · bol.com<div class="sub">verzonden</div></div><span class="chip blue">Verzonden</span></div>
+  </div>
+
+  <div class="card tilt-r" style="right:80px;top:600px;width:390px">
+    <div class="ttl">Factuur</div>
+    <div class="big">#1043</div>
+    <div class="sub" style="margin:10px 0 18px">btw en OSS berekend</div>
+    <span class="chip ok">Factuur klaar</span>
+  </div>
+
+  <div class="card" style="left:200px;top:925px;width:560px">
+    <div class="sub" style="margin:0 0 10px">Voorraad Mok Fjord salie</div>
+    <div style="display:flex;align-items:baseline;gap:22px"><span class="big mute" style="text-decoration:line-through;font-size:44px">12</span><span class="big">11</span><span class="body">ook in de kassa</span></div>
+  </div>
+
+  <div class="toast" style="right:80px;top:1090px"><span class="tick">✓</span>Factuur gemaakt en voorraad bijgewerkt</div>
+
+  <div style="position:absolute;left:var(--pad);right:var(--pad);bottom:70px;display:flex;align-items:center;justify-content:space-between">
+    <span class="body" style="font-weight:500" data-slot="tekst" data-label="Tekst onder" data-max="46">Webshop, kassa en bol.com op één voorraad.</span>
+    <span class="pill coral" data-slot="cta" data-label="Knop" data-max="16">sellqo.app</span>
+  </div>
+</body>
+</html>

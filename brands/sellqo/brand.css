@@ -1,0 +1,102 @@
+/* SellQo — huisstijl voor Instagram (posts/carrousels 1080x1350, stories/reels 1080x1920, LinkedIn 1200x1200).
+   Kleuren uit het logo: navy #00145B (primair) en koraal #FD7B5B (accent). Vriendelijk en rond, zoals het tasje.
+   Fonts: Poppins (titels) en Inter (tekst), beide OFL, lokaal in ./fonts.
+   Hoofdmotief: getrouwe UI-scènes (bestelling, factuur, kassa, keuken, ticket) met copy uit de echte app. */
+
+@font-face { font-family: "Poppins"; src: url("fonts/poppins-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "Poppins"; src: url("fonts/poppins-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "Poppins"; src: url("fonts/poppins-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "Poppins"; src: url("fonts/poppins-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+
+:root {
+  --navy: #00145B;       /* primair */
+  --deep: #0A1033;       /* donkere achtergrond */
+  --deep-2: #141B47;     /* vlak op donker */
+  --coral: #FD7B5B;      /* accent */
+  --coral-soft: #FFE3DA;
+  --orange: #FF6933;     /* site-knop, spaarzaam */
+  --cream: #FFF7F2;      /* lichte achtergrond */
+  --white: #FFFFFF;
+  --mute: #8A93B8;       /* grijsblauw */
+  --line: rgba(0,20,91,.10);
+  --line-d: rgba(255,255,255,.12);
+  --green: #1FA971;      /* status "klaar/betaald" in UI-scènes */
+  --pad: 80px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; }
+body { background: var(--cream); color: var(--navy); font-family: "Inter", sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden; position: relative; }
+body.dark { background: var(--deep); color: var(--white); }
+
+/* Typografie */
+.h { font-family: "Poppins", sans-serif; font-weight: 700; line-height: 1.04; letter-spacing: -.02em; }
+.h-xl { font-size: 112px; }
+.h-l { font-size: 88px; }
+.h-m { font-size: 64px; }
+.h-s { font-size: 44px; }
+.lead { font-size: 34px; line-height: 1.4; font-weight: 500; }
+.body { font-size: 28px; line-height: 1.45; }
+.mute { color: var(--mute); }
+.coral { color: var(--coral); }
+.kicker { font-family: "Poppins", sans-serif; font-size: 24px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--coral); }
+.hl { background: linear-gradient(transparent 62%, var(--coral-soft) 62%); padding: 0 6px; margin: 0 -6px; }
+body.dark .hl { background: none; color: var(--coral); }
+
+/* Logo */
+.logo { position: absolute; height: 64px; width: auto; }
+.logo.tl { top: 72px; left: var(--pad); }
+.logo.tr { top: 72px; right: var(--pad); }
+.logo.bl { bottom: 72px; left: var(--pad); }
+.logo.br { bottom: 72px; right: var(--pad); }
+
+/* Zachte vormen op de achtergrond (rond, zoals het tasje) */
+.blob { position: absolute; border-radius: 50%; }
+.blob.coral { background: var(--coral); }
+.blob.soft { background: var(--coral-soft); }
+.blob.navy { background: var(--navy); }
+.dots { position: absolute; background-image: radial-gradient(var(--line) 3px, transparent 3px); background-size: 34px 34px; }
+body.dark .dots { background-image: radial-gradient(rgba(255,255,255,.09) 3px, transparent 3px); }
+
+/* UI-scène: kaartjes zoals in de app */
+.card { position: absolute; background: var(--white); border-radius: 28px; box-shadow: 0 30px 60px -20px rgba(0,20,91,.28), 0 0 0 1px var(--line); padding: 32px 36px; color: var(--navy); }
+.card.tilt-l { transform: rotate(-2.5deg); }
+.card.tilt-r { transform: rotate(2deg); }
+.card .ttl { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 26px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.card .row { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 0; border-top: 1px solid var(--line); font-size: 24px; }
+.card .row:first-of-type { border-top: 0; }
+.card .row b { font-weight: 600; }
+.card .sub { font-size: 20px; color: var(--mute); margin-top: 4px; }
+.card .big { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 56px; line-height: 1; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px; font-size: 19px; font-weight: 600; white-space: nowrap; }
+.chip.new { background: var(--coral-soft); color: #C9452A; }
+.chip.ok { background: #DDF5EA; color: #13804F; }
+.chip.blue { background: #E4E8F7; color: var(--navy); }
+.chip.dark { background: var(--navy); color: var(--white); }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 30px; border-radius: 16px; background: var(--orange); color: var(--white); font-weight: 600; font-size: 24px; }
+.toast { position: absolute; display: flex; align-items: center; gap: 16px; padding: 22px 30px; border-radius: 20px; background: var(--navy); color: var(--white); font-size: 24px; font-weight: 500; box-shadow: 0 24px 48px -16px rgba(0,20,91,.5); }
+.toast .tick { width: 36px; height: 36px; border-radius: 50%; background: var(--green); display: grid; place-items: center; font-weight: 700; font-size: 20px; }
+
+/* Pillen / CTA onderaan */
+.pill { display: inline-flex; align-items: center; gap: 14px; padding: 20px 32px; border-radius: 999px; font-size: 26px; font-weight: 600; font-family: "Poppins", sans-serif; }
+.pill.coral { background: var(--coral); color: var(--white); }
+.pill.navy { background: var(--navy); color: var(--white); }
+.pill.ghost { border: 2px solid var(--line); }
+body.dark .pill.ghost { border-color: var(--line-d); }
+
+/* Genummerde stap (carrousels) */
+.step { width: 96px; height: 96px; border-radius: 50%; background: var(--coral); color: var(--white); display: grid; place-items: center; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 44px; }
+.swipe { position: absolute; right: var(--pad); bottom: 80px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 24px; display: flex; align-items: center; gap: 12px; }
+.counter { position: absolute; right: var(--pad); top: 84px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 24px; color: var(--mute); }
+
+/* Mythe / feit */
+.myth { padding: 34px 40px; border-radius: 28px; background: var(--white); box-shadow: 0 0 0 1px var(--line); }
+.fact { padding: 34px 40px; border-radius: 28px; background: var(--navy); color: var(--white); }
+.tag { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 22px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
+
+/* Veilige zones voor stories/reels: boven 250 px en onder 340 px vrij van tekst */
+.story-safe { position: absolute; top: 250px; bottom: 340px; left: var(--pad); right: var(--pad); }
