@@ -4,23 +4,25 @@
 <meta charset="utf-8">
 <meta name="nx-size" content="1080x1350">
 <link rel="stylesheet" href="../../brand.css">
+<style>
+  .paper .checks li { color: var(--navy); font-size:36px; font-weight:600; padding:22px 0; border-bottom:2px dashed #CBD5E1; }
+  .stamp { position:absolute; right:70px; top:330px; transform:rotate(8deg); border:5px solid var(--coral); color:var(--coral); border-radius:18px; padding:16px 26px; font-family:"JetBrains Mono",monospace; font-weight:700; font-size:28px; text-align:center; line-height:1.25; background:rgba(255,255,255,.6) }
+</style>
 </head>
-<body>
-  <div class="glow teal" style="width:560px; height:560px; right:-220px; top:-160px"></div>
-  <div class="glow violet" style="width:760px; height:760px; left:-320px; bottom:-260px"></div>
+<body class="paper">
   <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
-  <div class="num" style="position:absolute; right:56px; top:60px">02</div>
-  <div style="position:absolute; left:var(--pad); right:var(--pad); top:360px; display:flex; flex-direction:column; gap:38px">
-    <div class="code" data-slot="reeks" data-label="Reeks" data-max="30"><span class="c">//</span> voor je start</div>
-    <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="44">Wat heb ik<br><span class="grad">van je nodig?</span></h1>
-    <ul class="checks">
+  <div class="code" style="position:absolute; top:84px; right:var(--pad); color:#0D9488"><span style="color:#94A3B8">//</span> checklist</div>
+  <div class="stamp">DAN START<br>DE KLOK</div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:240px; display:flex; flex-direction:column; gap:30px">
+    <h1 class="h h-m" style="color:var(--navy)" data-slot="titel" data-label="Titel" data-max="44">Wat heb ik<br><span style="color:#0D9488">van je nodig?</span></h1>
+    <ul class="checks" style="gap:0; margin-top:10px">
       <li>Je logo</li><li>Je teksten</li><li>Je foto's</li><li>Een duidelijk beeld van wat je wil</li>
     </ul>
-    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="120">Heb je dat (nog) niet? Geen probleem. Ik help met logo design, copywriting en fotografie.</p>
+    <p class="lead" style="margin-top:14px" data-slot="tekst" data-label="Tekst" data-max="120">Nog niet alles? Ik help met logo design, copywriting en fotografie.</p>
   </div>
   <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
-    <span class="pill teal" data-slot="cta" data-label="Knop" data-max="30">Start je project</span>
-    <span class="code" style="color:var(--mute)">studioakke.com/contact</span>
+    <span class="pill" style="background:var(--navy); color:#fff" data-slot="cta" data-label="Knop" data-max="30">Start je project</span>
+    <span class="code" style="color:#64748B">studioakke.com/contact</span>
   </div>
 </body>
 </html>

@@ -3,21 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="nx-size" content="1080x1920">
-<title>Story</title>
 <link rel="stylesheet" href="../../brand.css">
-<!-- story: vraag of poll (pijler Ondernemers) of link-story. Tekst binnen .story-safe (boven 250 px, onder 340 px vrij).
-     Met sticker (poll, vraag, link): laat het vak .sticker-slot leeg; in SellQo manual + sticker. Zonder sticker: haal het vak weg. -->
 </head>
-<body>
-  <div class="grid"></div>
-  <div class="glow teal" style="width:820px; height:820px; right:-320px; top:200px"></div>
-  <div class="glow violet" style="width:820px; height:820px; left:-320px; bottom:120px"></div>
+<body class="paper">
   <div class="story-safe" style="display:flex; flex-direction:column; gap:40px">
     <div class="brand" style="position:relative"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
-    <div class="code" data-slot="reeks" data-label="Reeks" data-max="28"><span class="c">//</span> vraag van de week</div>
-    <h1 class="h h-l" data-slot="titel" data-label="Vraag" data-max="60">Heeft jouw zaak<br><span class="grad">een website?</span></h1>
-    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="90">Eerlijk antwoorden mag. Ik ben benieuwd.</p>
-    <div class="sticker-slot" style="height:330px; margin-top:auto">poll-sticker hier</div>
+    <div class="code" style="color:#0D9488"><span style="color:#94A3B8">//</span> eerlijke vraag</div>
+    <h1 class="h" style="font-size:120px; color:var(--navy)" data-slot="titel" data-label="Vraag" data-max="60">Heeft jouw<br>zaak een<br><span style="color:#0D9488">website?</span></h1>
+    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="90">Stem hieronder. Ik ben echt benieuwd.</p>
+    <div class="sticker-slot" style="height:330px; margin-top:auto"></div>
   </div>
+  <div style="position:absolute; left:0; right:0; bottom:0; height:16px; background:linear-gradient(90deg,#5EEAD4,#22D3EE,#38BDF8)"></div>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="15" data-fps="30">
+<title>Reel: van leeg scherm tot live</title>
+<link rel="stylesheet" href="../../../brand.css">
+<style>
+  body { background:#F4F7FB; color:var(--navy); }
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .head { position:absolute; left:var(--pad); right:var(--pad); top:380px; }
+  .head h1 { font-size:96px; font-weight:900; letter-spacing:-.04em; line-height:1; }
+  .win { position:absolute; left:72px; right:72px; top:640px; height:640px; border-radius:24px; background:#fff; border:1px solid #E2E8F0; box-shadow:0 40px 80px -40px rgba(15,23,41,.45); overflow:hidden; }
+  .win .bar { height:54px; display:flex; align-items:center; gap:10px; padding:0 22px; background:#F1F5F9; border-bottom:1px solid #E2E8F0; }
+  .win .bar i { width:13px; height:13px; border-radius:50%; display:block; }
+  .win .bar span { margin-left:18px; flex:1; height:32px; border-radius:9px; background:#fff; border:1px solid #E2E8F0; font-family:"JetBrains Mono",monospace; font-size:18px; color:#64748B; display:flex; align-items:center; padding:0 16px; }
+  .wf { position:absolute; background:#E2E8F0; border-radius:10px; transform-origin:left center; }
+  .shot { position:absolute; left:0; right:0; top:54px; bottom:0; width:100%; height:calc(100% - 54px); object-fit:cover; object-position:top; opacity:0; }
+  .step { position:absolute; left:var(--pad); right:var(--pad); top:1330px; display:flex; align-items:center; gap:28px; }
+  .step .n { font-family:"JetBrains Mono",monospace; font-size:64px; font-weight:700; color:#0D9488; }
+  .step .t { font-size:52px; font-weight:900; letter-spacing:-.03em; }
+  .step .d { font-family:"JetBrains Mono",monospace; font-size:26px; color:#64748B; margin-top:4px; }
+  .dots { position:absolute; left:var(--pad); top:1500px; display:flex; gap:12px; }
+  .dots i { width:60px; height:8px; border-radius:8px; background:#CBD5E1; display:block; }
+  .dots i.on { background:linear-gradient(90deg,#5EEAD4,#22D3EE); }
+  .end { position:absolute; inset:0; background:linear-gradient(150deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+</style>
+</head>
+<body>
+  <div class="top"><div class="brand" style="position:static; color:var(--navy)"><img src="../../../mark.svg" alt="">Studio <b style="color:#0D9488">Akke</b></div><span class="code" style="color:#0D9488"><span style="color:#94A3B8">//</span> zo bouw ik</span></div>
+  <div class="head"><h1 id="head">Van leeg scherm<br><span style="color:#0D9488">tot live.</span></h1></div>
+  <div class="win">
+    <div class="bar"><i style="background:#F2456D"></i><i style="background:#F5B83D"></i><i style="background:#2BD4BD"></i><span id="url">jouwzaak.be</span></div>
+    <div class="wf" id="w-nav" style="left:30px; right:30px; top:80px; height:34px"></div>
+    <div class="wf" id="w-hero" style="left:30px; width:520px; top:150px; height:70px"></div>
+    <div class="wf" id="w-l1" style="left:30px; width:440px; top:240px; height:22px"></div>
+    <div class="wf" id="w-l2" style="left:30px; width:380px; top:276px; height:22px"></div>
+    <div class="wf" id="w-btn" style="left:30px; width:200px; top:330px; height:56px; border-radius:999px"></div>
+    <div class="wf" id="w-img" style="left:600px; right:30px; top:150px; height:236px"></div>
+    <div class="wf" id="w-c1" style="left:30px; width:280px; top:420px; height:160px"></div>
+    <div class="wf" id="w-c2" style="left:330px; width:280px; top:420px; height:160px"></div>
+    <div class="wf" id="w-c3" style="left:630px; right:30px; top:420px; height:160px"></div>
+    <img class="shot" id="shot" src="../../../media/site-yeketi.jpg" alt="">
+  </div>
+  <div class="step"><div class="n" id="n">01</div><div><div class="t" id="t">Onboarding</div><div class="d" id="d">formulier + gesprek · ~30 min</div></div></div>
+  <div class="dots"><i id="d1"></i><i id="d2"></i><i id="d3"></i><i id="d4"></i></div>
+  <div class="end" id="end">
+    <img src="../../../mark.svg" alt="" style="width:150px; height:auto; filter:brightness(0) opacity(.85)">
+    <h1 class="h" style="font-size:136px; line-height:.95">Jouw site.<br><span style="color:#fff">5 tot 14<br>werkdagen.</span></h1>
+    <p class="lead" style="color:rgba(15,23,41,.82)">De klok start zodra ik je logo, teksten en foto's heb. Vaste prijzen, excl. btw.</p>
+    <span class="pill" style="background:var(--navy); color:#fff; align-self:flex-start">studioakke.com/contact</span>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const c = (x) => Math.min(Math.max(x, 0), 1);
+  const ease = (x) => 1 - Math.pow(1 - c(x), 3);
+  const STEPS = [
+    [1.0, "01", "Onboarding", "formulier + gesprek · ~30 min"],
+    [3.6, "02", "Aan de slag", "eerste preview in 3–5 dagen"],
+    [6.4, "03", "Revisies", "1 tot 3 rondes, volgens je pakket"],
+    [9.0, "04", "Lancering", "live, met uitleg en al je toegangen"],
+  ];
+  // wanneer elk blok verschijnt
+  const W = [["w-nav",1.4],["w-hero",3.8],["w-l1",4.2],["w-l2",4.5],["w-btn",4.9],["w-img",5.3],["w-c1",5.7],["w-c2",5.9],["w-c3",6.1]];
+  const END = 12.0;
+  window.setT = (t) => {
+    const h = ease(t / 0.6); $("head").style.opacity = h; $("head").style.transform = `translateY(${(1-h)*40}px)`;
+    let k = 0; STEPS.forEach((s, i) => { if (t >= s[0]) k = i; });
+    const s = STEPS[k]; $("n").textContent = s[1]; $("t").textContent = s[2]; $("d").textContent = s[3];
+    const si = ease((t - s[0]) / 0.35); document.querySelector(".step").style.opacity = t < 1.0 ? 0 : si;
+    document.querySelector(".step").style.transform = `translateX(${(1-si)*-40}px)`;
+    ["d1","d2","d3","d4"].forEach((d, i) => $(d).className = (t >= STEPS[i][0]) ? "on" : "");
+    W.forEach(([id, at]) => { const e = ease((t - at) / 0.35); $(id).style.transform = `scaleX(${e})`; $(id).style.opacity = e; });
+    // revisies: blokken kleuren in
+    const r = ease((t - 6.6) / 1.2);
+    ["w-hero","w-btn","w-img"].forEach((id, i) => $(id).style.background = i === 1 ? `rgba(43,212,189,${0.15 + r*0.85})` : `rgb(${226 - r*30},${232 - r*10},${240 - r*0})`);
+    // lancering: echte site komt erin
+    const l = ease((t - 9.3) / 0.6); $("shot").style.opacity = l;
+    $("url").textContent = t < 9.3 ? "jouwzaak.be" : "yeketimotorworks.com";
+    const e = ease((t - END) / 0.45); $("end").style.opacity = t < END ? 0 : e; $("end").style.transform = `translateY(${(1-e)*40}px)`;
+  };
+  window.setT(0);
+</script>
+</body>
+</html>
