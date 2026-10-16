@@ -53,15 +53,17 @@ Raw-URL: `https://raw.githubusercontent.com/Akke-aigento/nomadix-socials/main/br
 
 Om de twee dagen een post of reel, stories op de tussendagen (Brusselse tijd):
 
-| Dag | Wat | Uur |
-| --- | --- | --- |
-| ma | post | 18:00 |
-| di | story | 18:05 |
-| wo | reel | 19:00 |
-| do | story | 18:05 |
-| vr | post | 18:00 |
-| za | story | 18:05 |
-| zo | post (of reel, afwisselen per week) | 18:00 |
+Uren: **geen vaste uren**. Volg `shared/POSTTIJDEN.md` (venster van dit merk, uur en reden in `log.md`, één testslot per week). Dit is het ritme van de dagen:
+
+| Dag | Wat |
+| --- | --- |
+| ma | post |
+| di | story |
+| wo | reel |
+| do | story |
+| vr | post |
+| za | story |
+| zo | post (of reel, afwisselen per week) |
 
 ## Variatie (verplicht)
 
@@ -84,7 +86,7 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
    ```sql
    insert into social_posts (tenant_id, platform, media_type, status, source, manual_reason, language, post_text, image_urls, image_recipes, scheduled_for) values
    ('54f6b480-280b-42e1-b843-d5beb2831acd','instagram','image','manual','content_task','other','en','<caption>',
-    array['<raw-url>'], jsonb_build_array($r$<recipe>$r$::jsonb), '<JJJJ-MM-DD> 18:00 Europe/Brussels');
+    array['<raw-url>'], jsonb_build_array($r$<recipe>$r$::jsonb), '<JJJJ-MM-DD> <uur volgens shared/POSTTIJDEN.md> Europe/Brussels');
    ```
    Caption: Engels, max 2200 tekens, 3–5 hashtags uit de bible, CTA met link in bio. Controleer met een `select`.
 7. **Herinneringen** doet SellQo zelf (±1 u vooraf, push). Geen losse herinneringstaken.
@@ -93,7 +95,7 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
 
 ## Reels
 
-Eén per week (woensdag 19:00). Formats afwisselen: rijbeelden-montage op de beat (clips), "day X in <land>"-slideshow,
+Eén per week (woensdag, op het sterkste slot uit `shared/POSTTIJDEN.md`). Formats afwisselen: rijbeelden-montage op de beat (clips), "day X in <land>"-slideshow,
 know-how in 3 stappen, product in actie, de kat. `weeks/<maandag>/reel-<onderwerp>/index.html` met
 `<meta name="nx-reel" content="1080x1920" data-duration="<s>" data-fps="30">` en `window.setT(t)`; clips via
 `<video src="../../../clips/<id>.mp4" muted>` en in `setT` `video.currentTime = …` (wacht op `seeked`).

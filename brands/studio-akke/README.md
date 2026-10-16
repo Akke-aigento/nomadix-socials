@@ -50,17 +50,19 @@ Stand 16 okt 2026 (excl. btw): Landing Page €895 (1 pagina, 5–7 werkdagen), 
 | Aanbod (pakketten, onderhoud, Mail, Insights, gratis scan, logo/copy/foto) | 20% | `offer`, `cover` |
 | Ondernemers (vragen, polls, "wat houdt je tegen?") | 20% | `story` met sticker (handwerk) |
 
-## Ritme (zelfde als de andere merken, Brusselse tijd)
+## Ritme (Brusselse tijd)
 
-| Dag | Wat | Uur |
-| --- | --- | --- |
-| ma | post (meestal carrousel) | 18:00 |
-| di | story | 18:05 |
-| wo | reel | 19:00 |
-| do | story | 18:05 |
-| vr | post | 18:00 |
-| za | story | 18:05 |
-| zo | post | 18:00 |
+Uren: **geen vaste uren**. Volg `shared/POSTTIJDEN.md` (venster van dit merk, uur en reden in `log.md`, één testslot per week). Dit is het ritme van de dagen:
+
+| Dag | Wat |
+| --- | --- |
+| ma | post (meestal carrousel) |
+| di | story |
+| wo | reel |
+| do | story |
+| vr | post |
+| za | story |
+| zo | post |
 
 ## Variatie (verplicht)
 
@@ -87,7 +89,7 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
 
 ## Reels
 
-Eén per week (woensdag 19:00). Formats afwisselen: sites in een browservenster (portfolio), "pakket in 15 seconden",
+Eén per week (woensdag, op het sterkste slot uit `shared/POSTTIJDEN.md`). Formats afwisselen: sites in een browservenster (portfolio), "pakket in 15 seconden",
 tip in 3 stappen, het proces in 4 stappen, schermopname die Akke aanlevert. `weeks/<maandag>/reel-<onderwerp>/index.html` met
 `<meta name="nx-reel" content="1080x1920" data-duration="<s>" data-fps="30">` en `window.setT(t)`.
 Wissel beelden door ze allemaal vooraf te laden en `display` te schakelen (nooit `src` veranderen in `setT`).

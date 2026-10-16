@@ -41,14 +41,16 @@ build in public ("zo maken wij onze posts"). Fiscale tips: feitelijk, met "vraag
 | Build in public (changelog van die maand, hoe we bouwen) | 20% | `buildlog`, `story-dark` |
 | Bewijs (eigen merken, demowinkels) en Samen (polls) | 15% | `story-dark`, `poll-story` |
 
-| Dag | Wat | Uur |
-| --- | --- | --- |
-| ma | post | 18:00 |
-| di | story | 18:05 |
-| wo | carrousel | 12:00 |
-| do | reel | 19:00 |
-| vr | post | 12:00 |
-| za | story (wisselen: poll-sticker of info) | 18:05 |
+Uren: **geen vaste uren**. Volg `shared/POSTTIJDEN.md` (venster van dit merk, uur en reden in `log.md`, één testslot per week). Dit is het ritme van de dagen:
+
+| Dag | Wat |
+| --- | --- |
+| ma | post |
+| di | story |
+| wo | carrousel |
+| do | reel |
+| vr | post |
+| za | story (wisselen: poll-sticker of info) |
 
 Minstens drie verschillende templates per week; licht (crème) en donker (navy) afwisselen.
 UI-scènes nabouwen met de labels uit `landing.scene` (Atelier Nord, Pizzeria Fiamma, Leuven Pub Crawl) of uit de app;
