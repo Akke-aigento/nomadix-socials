@@ -26,7 +26,7 @@ Raw-URL: `https://raw.githubusercontent.com/Akke-aigento/nomadix-socials/main/br
 - 1984 Toyota Land Cruiser **"Sandy"** (geen bus, geen van). Elektrische installatie in België gebouwd vóór vertrek: LiFePO4 120Ah, omvormer 2500W, zonnepaneel.
 - Vertrek 2 april 2022 (dag 1, België), terug 5 augustus 2022. 17 landen in de foto's: BE, DE, AT, SI, HR, BA, ME, AL, GR, TR, GE, AZ, KZ, KG, TJ, UZ, BG.
 - Verste punt: Kirgizië (Naryn/Osh), aan de Chinese grens. **Mongolië is niet bereikt**: de enige weg liep door een strook Rusland van ±70 km, onbegaanbaar door de oorlog.
-- Duur in posts: "4 months" (tenzij Akke anders beslist). Nooit "6 months in a van".
+- Duur in posts: **"6 months"** (beslissing Akke, 16 okt 2026). Nooit "in a van" of "in a bus": het is een Land Cruiser. De dagteller op beelden (`day` uit media.json) blijft de echte dag van de foto.
 - Een kitten stapte in Kirgizië in en reed mee tot thuis (foto's met tag `cat`, juni–augustus).
 - Plaats, land en dag van een foto komen uit `media.json`. Geen kilometers, temperaturen of anekdotes verzinnen die nergens staan.
 
