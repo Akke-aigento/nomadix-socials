@@ -1,0 +1,119 @@
+/* Studio Akke — huisstijl voor Instagram (posts 1080x1350, stories/reels 1080x1920).
+   Afgeleid van studioakke.com: donker navy → violet verloop, teal → cyaan als accent, koraal max. één element per beeld.
+   Fonts: Inter (titels 800/900, tekst 400–600) en JetBrains Mono (kleine "code"-labels). Beide OFL, lokaal in ./fonts. */
+
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-900-normal.woff2") format("woff2"); font-weight: 900; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+
+:root {
+  --navy: #0F1729;        /* achtergrond */
+  --violet: #211438;      /* tweede kleur van het verloop */
+  --card: #1D283A;        /* vlakken */
+  --line: rgba(255,255,255,.12);
+  --teal: #2BD4BD;        /* primair */
+  --teal-light: #5EEAD4;
+  --cyan: #22D3EE;
+  --sky: #38BDF8;
+  --coral: #F2456D;       /* accent, max. één element per beeld */
+  --white: #FFFFFF;
+  --mute: #94A3B8;
+  --paper: #F4F7FB;       /* lichte variant */
+  --pad: 72px;
+  --grad: linear-gradient(135deg, var(--teal-light) 0%, var(--cyan) 50%, var(--sky) 100%);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; }
+body {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--violet) 100%);
+  color: var(--white); font-family: "Inter", sans-serif; -webkit-font-smoothing: antialiased;
+  overflow: hidden; position: relative;
+}
+body.paper { background: var(--paper); color: var(--navy); }
+
+/* Typografie */
+.h { font-weight: 900; letter-spacing: -.035em; line-height: .98; }
+.h-xl { font-size: 132px; }
+.h-l  { font-size: 104px; }
+.h-m  { font-size: 76px; }
+.h-s  { font-size: 54px; letter-spacing: -.025em; }
+.grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { font-size: 36px; line-height: 1.38; font-weight: 500; color: rgba(255,255,255,.88); }
+.body { font-size: 29px; line-height: 1.45; color: rgba(255,255,255,.8); }
+.paper .lead, .paper .body { color: #334155; }
+.code { font-family: "JetBrains Mono", monospace; font-size: 24px; font-weight: 500; letter-spacing: .02em; color: var(--teal); }
+.code .c { color: var(--mute); }
+.coral { color: var(--coral); }
+.teal { color: var(--teal); }
+.mute { color: var(--mute); }
+
+/* Gloed en raster (sfeer, zoals de hero van de site) */
+.glow { position: absolute; border-radius: 50%; filter: blur(110px); }
+.glow.teal { background: rgba(43,212,189,.28); }
+.glow.violet { background: rgba(124,58,237,.30); }
+.grid { position: absolute; inset: 0; opacity: .5;
+  background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 54px 54px; -webkit-mask-image: radial-gradient(ellipse at 70% 30%, #000 10%, transparent 70%); mask-image: radial-gradient(ellipse at 70% 30%, #000 10%, transparent 70%); }
+
+/* Logo: merkteken (svg) + woordmerk in HTML-tekst */
+.brand { position: absolute; display: flex; align-items: center; gap: 14px; font-size: 34px; font-weight: 800; letter-spacing: -.02em; }
+.brand img { width: 62px; height: 62px; }
+.brand b { font-weight: 900; color: var(--teal-light); }
+.brand.tl { top: 64px; left: var(--pad); }
+.brand.bl { bottom: 64px; left: var(--pad); }
+.paper .brand { color: var(--navy); }
+.paper .brand b { color: #0D9488; }
+
+/* Browservenster rond een schermafbeelding van een site */
+.browser { position: absolute; border-radius: 22px; overflow: hidden; background: #0B1222; border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 50px 90px -30px rgba(0,0,0,.75), 0 0 0 1px rgba(0,0,0,.2); }
+.browser .bar { height: 54px; display: flex; align-items: center; gap: 10px; padding: 0 22px; background: #111A2E; border-bottom: 1px solid rgba(255,255,255,.08); }
+.browser .bar i { width: 13px; height: 13px; border-radius: 50%; background: #334155; display: block; }
+.browser .bar i:nth-child(1) { background: #F2456D; } .browser .bar i:nth-child(2) { background: #F5B83D; } .browser .bar i:nth-child(3) { background: #2BD4BD; }
+.browser .bar span { margin-left: 18px; flex: 1; height: 32px; border-radius: 9px; background: rgba(255,255,255,.06); font-family: "JetBrains Mono", monospace; font-size: 18px; color: var(--mute); display: flex; align-items: center; padding: 0 16px; }
+.browser img.shot { display: block; width: 100%; height: calc(100% - 54px); object-fit: cover; object-position: top center; }
+
+/* Labels, pillen, prijs */
+.tag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.05); font-size: 22px; font-weight: 600; color: rgba(255,255,255,.85); }
+.tag .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--teal); }
+.pill { display: inline-flex; align-items: center; gap: 14px; padding: 20px 32px; border-radius: 999px; font-size: 28px; font-weight: 700; }
+.pill.teal { background: var(--teal); color: var(--navy); }
+.pill.ghost { border: 2px solid rgba(255,255,255,.3); color: var(--white); }
+.price { font-size: 92px; font-weight: 900; letter-spacing: -.04em; line-height: 1; }
+.vat { font-size: 22px; color: var(--mute); font-weight: 500; }
+
+/* Kaarten en lijsten */
+.card { background: rgba(29,40,58,.72); border: 1px solid var(--line); border-radius: 28px; padding: 40px 44px; }
+.card.hot { border: 2px solid var(--teal); box-shadow: 0 0 0 8px rgba(43,212,189,.08); }
+.checks { display: grid; gap: 18px; list-style: none; }
+.checks li { display: flex; gap: 18px; align-items: flex-start; font-size: 29px; line-height: 1.35; color: rgba(255,255,255,.88); }
+.checks li::before { content: ""; flex: 0 0 34px; height: 34px; border-radius: 50%; margin-top: 1px;
+  background: rgba(43,212,189,.18) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232BD4BD' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M6 12.5l4 4 8-9'/></svg>") center/20px no-repeat; }
+.steps { display: grid; gap: 22px; }
+.step { display: grid; grid-template-columns: 88px 1fr auto; gap: 26px; align-items: center; padding: 26px 0; border-top: 1px solid var(--line); }
+.step .n { font-family: "JetBrains Mono", monospace; font-size: 40px; font-weight: 700; color: var(--teal); }
+.step .t { font-size: 36px; font-weight: 800; letter-spacing: -.02em; }
+.step .d { font-size: 25px; color: var(--mute); margin-top: 6px; line-height: 1.35; }
+.step .time { font-family: "JetBrains Mono", monospace; font-size: 22px; color: var(--mute); white-space: nowrap; }
+
+/* Groot genummerd cijfer (tips) */
+.num { font-size: 320px; font-weight: 900; line-height: .8; letter-spacing: -.06em; color: transparent; -webkit-text-stroke: 2px rgba(43,212,189,.55); }
+
+/* Leeg vak voor een sticker (poll, vraag, link) in stories */
+.sticker-slot { border-radius: 30px; font-size: 0; color: transparent; } /* leeg vak: hier plakt Akke de sticker */
+
+/* Carrousel-paginering */
+.dots { position: absolute; bottom: 70px; right: var(--pad); display: flex; gap: 10px; }
+.dots i { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.22); display: block; }
+.dots i.on { background: var(--teal); width: 34px; border-radius: 99px; }
+.swipe { position: absolute; bottom: 64px; right: var(--pad); font-family: "JetBrains Mono", monospace; font-size: 22px; color: var(--mute); }
+
+/* Veilige zones voor stories/reels: boven 250 px en onder 340 px vrij van tekst */
+.story-safe { position: absolute; top: 250px; bottom: 340px; left: var(--pad); right: var(--pad); }

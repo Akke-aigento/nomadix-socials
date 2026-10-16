@@ -1,0 +1,101 @@
+{
+  "note": "Portfolio-schermen van studioakke.com. Omschrijving en categorie letterlijk van de site. 'used' = maandag van de week waarin het beeld opvalt (reel 2026-10-19 toonde alle 8).",
+  "items": [
+    {
+      "id": "site-borletti",
+      "file": "media/site-borletti.jpg",
+      "kind": "site",
+      "name": "Borletti",
+      "url": "https://borletti.nl",
+      "category": "Import & Logistiek",
+      "description": "Import & transport voor heel Europa",
+      "source": "studioakke repo src/assets/portfolio",
+      "used": [
+        "2026-10-19"
+      ]
+    },
+    {
+      "id": "site-margriet",
+      "file": "media/site-margriet.jpg",
+      "kind": "site",
+      "name": "De Fiere Margriet",
+      "url": "https://de-fiere-margriet.lovable.app",
+      "category": "Horeca & Hospitality",
+      "description": "Gezellig café met 200+ Belgische bieren",
+      "source": "studioakke repo src/assets/portfolio",
+      "used": [
+        "2026-10-19"
+      ]
+    },
+    {
+      "id": "site-vanxcel",
+      "file": "media/site-vanxcel.jpg",
+      "kind": "site",
+      "name": "VanXcel",
+      "url": "https://www.vanxcel.be",
+      "category": "E-commerce & Retail",
+      "description": "LiFePO4 batterijen & off-grid systemen",
+      "source": "studioakke repo src/assets/portfolio",
+      "used": []
+    },
+    {
+      "id": "site-sellqo",
+      "file": "media/site-sellqo.jpg",
+      "kind": "site",
+      "name": "SellQo",
+      "url": "https://sellqo.app",
+      "category": "SaaS & E-commerce",
+      "description": "Het complete e-commerce platform voor ondernemers",
+      "source": "studioakke repo src/assets/portfolio",
+      "used": []
+    },
+    {
+      "id": "site-mancini",
+      "file": "media/site-mancini.jpg",
+      "kind": "site",
+      "name": "Mancini Milano",
+      "url": "https://mancini-milano.lovable.app",
+      "category": "Fashion & E-commerce",
+      "description": "Italiaanse luxury streetwear met webshop",
+      "source": "studioakke repo src/assets/portfolio",
+      "used": []
+    },
+    {
+      "id": "site-yeketi",
+      "file": "media/site-yeketi.jpg",
+      "kind": "site",
+      "name": "Yeketi Motorworks",
+      "url": "https://yeketimotorworks.com",
+      "category": "Automotive & Restauratie",
+      "description": "Restauratie van klassiekers door meester-ambachtslieden",
+      "source": "studioakke repo src/assets/portfolio",
+      "used": [
+        "2026-10-19"
+      ]
+    },
+    {
+      "id": "site-astrasleep",
+      "file": "media/site-astrasleep.jpg",
+      "kind": "site",
+      "name": "Astra Sleep",
+      "url": "https://astrasleep.shop",
+      "category": "E-commerce & Lifestyle",
+      "description": "Premium slaapproducten met een luxueuze uitstraling",
+      "source": "studioakke repo src/assets/portfolio",
+      "used": [
+        "2026-10-19"
+      ]
+    },
+    {
+      "id": "site-loveke",
+      "file": "media/site-loveke.jpg",
+      "kind": "site",
+      "name": "Loveke",
+      "url": "https://loveke.be",
+      "category": "Fashion & E-commerce",
+      "description": "Belgische streetwear met een verhaal",
+      "source": "studioakke repo src/assets/portfolio",
+      "used": []
+    }
+  ]
+}

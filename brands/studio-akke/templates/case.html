@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Case</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- case: één site uit het portfolio in een browservenster (pijler Werk).
+     Beeld = media/site-<slug>.jpg. Feiten ENKEL uit de portfolio-teksten van studioakke.com
+     (categorie, omschrijving, kenmerken) of de bible. Geen resultaten, cijfers of quotes van klanten verzinnen. -->
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:760px; height:760px; right:-300px; top:120px"></div>
+  <div class="brand tl"><img src="../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad)" data-slot="reeks" data-label="Reeks" data-max="26"><span class="c">//</span> case 01</div>
+
+  <div class="browser" style="left:var(--pad); right:var(--pad); top:190px; height:560px">
+    <div class="bar"><i></i><i></i><i></i><span data-slot="url" data-label="Webadres" data-max="34">de-fiere-margriet.lovable.app</span></div>
+    <img class="shot" src="../media/site-margriet.jpg" alt="Website van De Fiere Margriet">
+  </div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:806px; display:flex; flex-direction:column; gap:26px">
+    <div style="display:flex; gap:14px; flex-wrap:wrap">
+      <span class="tag"><span class="dot"></span><span data-slot="categorie" data-label="Categorie" data-max="26">Horeca &amp; Hospitality</span></span>
+      <span class="tag" data-slot="kenmerk" data-label="Kenmerk" data-max="20">Website + kassa</span>
+    </div>
+    <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="46">Een café in Leuven,<br><span class="grad">online en aan de toog.</span></h1>
+    <p class="lead" style="max-width:900px" data-slot="tekst" data-label="Tekst" data-max="110">Gezellig café met 200+ Belgische bieren. De site, de menukaart en het kassasysteem: allemaal gebouwd door Studio Akke.</p>
+  </div>
+  <div class="swipe" data-slot="link" data-label="Link" data-max="26">studioakke.com</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<svg width="280" height="60" viewBox="0 0 280 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagon/Diamond Pattern Icon -->
+  <g id="icon">
+    <!-- Outer hexagon -->
+    <path d="M30 12 L 42 18 L 42 30 L 30 36 L 18 30 L 18 18 Z" 
+          fill="none" 
+          stroke="url(#hexGrad)" 
+          stroke-width="2.5"
+          opacity="0.6"/>
+    
+    <!-- Middle hexagon -->
+    <path d="M30 16 L 38 20 L 38 28 L 30 32 L 22 28 L 22 20 Z" 
+          fill="none" 
+          stroke="url(#hexGrad)" 
+          stroke-width="2"
+          opacity="0.8"/>
+    
+    <!-- Inner diamond - solid -->
+    <path d="M30 20 L 36 24 L 30 28 L 24 24 Z" 
+          fill="url(#hexGrad)"/>
+    
+    <!-- Corner accents - larger -->
+    <circle cx="30" cy="12" r="2.5" fill="#14b8a6"/>
+    <circle cx="42" cy="18" r="2.5" fill="#06b6d4"/>
+    <circle cx="42" cy="30" r="2.5" fill="#0ea5e9"/>
+    <circle cx="30" cy="36" r="2.5" fill="#14b8a6"/>
+    
+    <!-- Small A integrated bottom -->
+    <path d="M28 42 L 30 36 L 32 42" 
+          stroke="#14b8a6" 
+          stroke-width="2.5" 
+          stroke-linecap="round" 
+          fill="none"/>
+    <line x1="28.5" y1="40" x2="31.5" y2="40" 
+          stroke="#14b8a6" 
+          stroke-width="2.5" 
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Text -->
+  <g id="text">
+    <!-- Studio Akke in single modern line -->
+    <text x="60" y="38" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="30" 
+          font-weight="700" 
+          letter-spacing="-0.5"
+          fill="#1e3a5f">
+      Studio <tspan font-weight="800" fill="#14b8a6">Akke</tspan>
+    </text>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="hexGrad" x1="18" y1="12" x2="42" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+</svg>

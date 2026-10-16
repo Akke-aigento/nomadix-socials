@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Aanbod</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- offer: één pakket of dienst met prijs (pijler Aanbod). Prijs en inhoud ALTIJD nakijken in de repo studioakke
+     (src/components/home/Pricing.tsx, src/pages/Prijzen.tsx, LanguageContext.tsx). Altijd "excl. btw" in beeld.
+     Geen doorstreepte prijzen, geen "korting" tenzij het op de site staat. -->
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:700px; height:700px; right:-260px; top:-200px"></div>
+  <div class="brand tl"><img src="../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad)" data-slot="reeks" data-label="Reeks" data-max="22"><span class="c">//</span> pakket</div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:250px; display:flex; flex-direction:column; gap:48px">
+    <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="40">Je eerste website,<br><span class="grad">live in 5–7 werkdagen.</span></h1>
+    <div class="card hot" style="display:flex; flex-direction:column; gap:32px; padding:48px 52px">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end">
+        <div style="font-size:42px; font-weight:800; letter-spacing:-.02em; padding-bottom:8px" data-slot="pakket" data-label="Pakket" data-max="24">Landing Page</div>
+        <div style="text-align:right"><div class="price" data-slot="prijs" data-label="Prijs" data-max="9">€895</div><div class="vat" style="margin-top:8px">excl. btw</div></div>
+      </div>
+      <div style="height:1px; background:var(--line)"></div>
+      <ul class="checks">
+        <li data-slot="p1" data-label="Punt 1" data-max="40">1 pagina, responsive design</li>
+        <li data-slot="p2" data-label="Punt 2" data-max="40">Contactformulier</li>
+        <li data-slot="p3" data-label="Punt 3" data-max="40">Google Analytics</li>
+        <li data-slot="p4" data-label="Punt 4" data-max="40">1 revisieronde</li>
+      </ul>
+    </div>
+    <p class="body" data-slot="noot" data-label="Voetnoot" data-max="110">De termijn start zodra ik je logo, teksten en foto's heb.</p>
+  </div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill teal" data-slot="cta" data-label="Knop" data-max="30">Start je project</span>
+    <span class="code" style="color:var(--mute)" data-slot="link" data-label="Link" data-max="28">studioakke.com/prijzen</span>
+  </div>
+</body>
+</html>

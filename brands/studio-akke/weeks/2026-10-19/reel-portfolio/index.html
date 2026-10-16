@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="17.4" data-fps="30">
+<title>Reel: acht sites live</title>
+<link rel="stylesheet" href="../../../brand.css">
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .intro { position:absolute; left:var(--pad); right:var(--pad); top:430px; }
+  .stage { position:absolute; left:72px; right:72px; top:760px; height:560px; overflow:visible; }
+  .browser { left:0; right:0; top:0; height:560px; will-change:transform; }
+  .browser img.shot { object-position: 50% 0%; }
+  .meta { position:absolute; left:var(--pad); right:var(--pad); top:1360px; display:flex; flex-direction:column; gap:16px; }
+  .count { font-family:"JetBrains Mono",monospace; font-size:30px; color:var(--teal); }
+  .name { font-size:68px; font-weight:900; letter-spacing:-.035em; }
+  .end { position:absolute; inset:0; background:linear-gradient(135deg,var(--navy),var(--violet)); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .prog { position:absolute; left:var(--pad); right:var(--pad); bottom:330px; height:4px; background:rgba(255,255,255,.15); border-radius:4px; overflow:hidden; }
+  .prog i { display:block; height:100%; background:var(--grad); width:0; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:900px; height:900px; right:-360px; top:520px"></div>
+  <div class="glow violet" style="width:800px; height:800px; left:-320px; bottom:60px"></div>
+  <div class="top"><div class="brand" style="position:static"><img src="../../../mark.svg" alt="">Studio <b>Akke</b></div><span class="code"><span class="c">//</span> recent werk</span></div>
+  <div class="intro"><h1 class="h" style="font-size:118px" id="head">Acht sites<br><span class="grad">live.</span></h1></div>
+  <div class="stage">
+    <div class="browser" id="win"><div class="bar"><i></i><i></i><i></i><span id="url">borletti.nl</span></div><img class="shot" id="s-borletti" src="../../../media/site-borletti.jpg" alt="" style="display:none"><img class="shot" id="s-margriet" src="../../../media/site-margriet.jpg" alt="" style="display:none"><img class="shot" id="s-vanxcel" src="../../../media/site-vanxcel.jpg" alt="" style="display:none"><img class="shot" id="s-sellqo" src="../../../media/site-sellqo.jpg" alt="" style="display:none"><img class="shot" id="s-mancini" src="../../../media/site-mancini.jpg" alt="" style="display:none"><img class="shot" id="s-yeketi" src="../../../media/site-yeketi.jpg" alt="" style="display:none"><img class="shot" id="s-astrasleep" src="../../../media/site-astrasleep.jpg" alt="" style="display:none"><img class="shot" id="s-loveke" src="../../../media/site-loveke.jpg" alt="" style="display:none"></div>
+  </div>
+  <div class="meta"><div class="count" id="count">01 / 08</div><div class="name" id="name">Borletti</div><span class="tag" style="align-self:flex-start"><span class="dot"></span><span id="cat">Import &amp; Logistiek</span></span></div>
+  <div class="prog"><i id="prog"></i></div>
+  <div class="end" id="end">
+    <img src="../../../mark.svg" alt="" style="width:150px; height:auto">
+    <h1 class="h" style="font-size:150px">De negende<br><span class="grad">is de jouwe.</span></h1>
+    <p class="lead">Websites in 5 tot 14 werkdagen. Vaste prijzen, één aanspreekpunt.</p>
+    <span class="pill teal" style="align-self:flex-start">studioakke.com/contact</span>
+  </div>
+<script>
+  // Namen en categorieën zoals in het portfolio op studioakke.com
+  const S = [
+    ["borletti","borletti.nl","Borletti","Import & Logistiek"],
+    ["margriet","de-fiere-margriet.lovable.app","De Fiere Margriet","Horeca & Hospitality"],
+    ["vanxcel","vanxcel.be","VanXcel","E-commerce & Retail"],
+    ["sellqo","sellqo.app","SellQo","SaaS & E-commerce"],
+    ["mancini","mancini-milano.lovable.app","Mancini Milano","Fashion & E-commerce"],
+    ["yeketi","yeketimotorworks.com","Yeketi Motorworks","Automotive & Restauratie"],
+    ["astrasleep","astrasleep.shop","Astra Sleep","E-commerce & Lifestyle"],
+    ["loveke","loveke.be","Loveke","Fashion & E-commerce"],
+  ];
+  const T0 = 1.4, SEG = 1.65, END = T0 + S.length * SEG, DUR = 17.4;
+  const $ = (id) => document.getElementById(id);
+  const ease = (x) => 1 - Math.pow(1 - Math.min(Math.max(x,0),1), 3);
+  let cur = -1;
+  window.setT = (t) => {
+    $("prog").style.width = (Math.min(t / DUR, 1) * 100) + "%";
+    // intro: kop schuift omhoog
+    const hi = ease(t / 0.6);
+    $("head").style.transform = `translateY(${(1 - hi) * 60}px)`; $("head").style.opacity = hi;
+    let i = Math.min(Math.max(Math.floor((t - T0) / SEG), 0), S.length - 1);
+    if (i !== cur) { cur = i; const s = S[i];
+      S.forEach(x => $("s-" + x[0]).style.display = x === s ? "block" : "none"); $("url").textContent = s[1];
+      $("name").textContent = s[2]; $("cat").textContent = s[3];
+      $("count").textContent = String(i + 1).padStart(2, "0") + " / 08"; }
+    const local = t < T0 ? (t / T0) : (t - T0 - i * SEG);
+    const inn = t < T0 ? ease(t / 0.9) : ease(local / 0.35);
+    $("win").style.transform = `translateX(${(1 - inn) * 120}px) scale(${0.94 + inn * 0.06})`;
+    $("win").style.opacity = String(0.2 + inn * 0.8);
+    $("s-" + S[i][0]).style.objectPosition = `50% ${t < T0 ? 0 : Math.min(local / SEG, 1) * 100}%`;
+    const e = ease((t - END) / 0.45);
+    $("end").style.opacity = t < END ? 0 : e;
+    $("end").style.transform = `translateY(${(1 - e) * 40}px)`;
+  };
+  window.setT(0);
+</script>
+</body>
+</html>
