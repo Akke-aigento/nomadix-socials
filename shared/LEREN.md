@@ -86,10 +86,56 @@ De maandagtaak werkt het bij. Elke weektaak leest het vóór ze iets bedenkt.
 - **Akke heeft het laatste woord.** Een regel die hij doorstreept (`~~…~~`) of die eindigt op `(Akke: nee)` wordt nooit meer gebruikt of opnieuw voorgesteld.
 - Houd het bestand kort: maximaal 15 actieve lessen. Oude of tegengesproken lessen gaan naar een sectie "Vervallen".
 
-## 5. Links meten (voorbereiding verkoop)
+## 5. Links meten
 
 Elke link die we zelf maken (linksticker, link in bio-update, URL in een caption) krijgt UTM-parameters:
 
 `?utm_source=instagram&utm_medium=social&utm_campaign=<merk>-<JJJJMMDD>&utm_content=<format>`
 
-SellQo koppelt bestellingen nog niet aan UTM's. Dat komt later als SOCIAL-6b: het raakt de storefronts en vraagt een eigen recon. Met de links nu al correct, staat de data klaar zodra het meten er is.
+`<JJJJMMDD>` is de postdag, zodat een bezoek bij één post hoort. Een link in bio zonder eigen UTM krijgt van Instagram zelf `utm_source=ig`. Akke Insights telt `ig`, `instagram` en doorklikken vanaf instagram.com sinds 16-10 als één kanaal "Instagram" (INSIGHTS-IG-1). Insights bewaart `utm_content` niet; dat is geen probleem, want de campagnenaam volstaat.
+
+## 6. Wat Instagram oplevert op de site (Akke Insights)
+
+Besloten 16-10 (Akke: "die cijfers doorgeven is zeker nuttig"). De maandagtaak leest Insights **alleen-lezen** via de Lovable-connector, `query_database` op project `f639dfa8-ad8f-4c7f-9b35-9672dd0fefbc`. Er is geen API, en schrijven doen we daar nooit.
+
+| Merk | Insights-site (`sites.name`) |
+| --- | --- |
+| Loveke | `Loveke` |
+| VanXcel | `VanXcel` |
+| Studio Akke | `Studio Akke` |
+| SellQo | `SellQo` |
+| The Fonske Crawl | `The Fonske Crawl` |
+
+```sql
+-- Bezoekers, aanvragen en bestellingen via Instagram per dag en campagne, laatste 7 dagen (zonder bots)
+with site as (select id, coalesce(lead_events,'{}') le from sites where name = '<Insights-site>'),
+e as (select h.* from site, public._human_events(site.id, now() - interval '7 days', now()) h),
+ig as (
+  select distinct on (visitor_id, (ts at time zone 'Europe/Brussels')::date)
+         visitor_id, (ts at time zone 'Europe/Brussels')::date dag, coalesce(utm_campaign,'') campagne
+    from e
+   where kind = 'pageview'
+     and (lower(coalesce(utm_source,'')) in ('ig','instagram','instagram.com','insta')
+          or lower(coalesce(referrer_host,'')) ~ '(^|\.)instagram\.com$')
+   order by visitor_id, (ts at time zone 'Europe/Brussels')::date, ts
+),
+conv as (
+  select e.visitor_id, (e.ts at time zone 'Europe/Brussels')::date dag,
+         count(*) filter (where e.name = any(site.le)) aanvragen,
+         count(*) filter (where e.name = 'Bestelling') bestellingen,
+         coalesce(sum(public._order_value(e.props)) filter (where e.name = 'Bestelling'),0) omzet
+    from e, site where e.kind = 'event' group by 1,2
+)
+select ig.dag, ig.campagne, count(*) bezoekers, coalesce(sum(c.aanvragen),0) aanvragen,
+       coalesce(sum(c.bestellingen),0) bestellingen, coalesce(sum(c.omzet),0) omzet
+  from ig left join conv c using (visitor_id, dag)
+ group by 1,2 order by 1;
+```
+
+Hoe je dit gebruikt:
+
+- **Koppelen aan een post.** Heeft een rij `campagne = <merk>-<JJJJMMDD>`, dan hoort ze bij de post van die dag. Zonder campagne (bio-link, `ig`) tel je ze bij de post(s) van die dag en de dag ervoor, als "waarschijnlijk".
+- **Les trekken.** Een bezoek, aanvraag of bestelling weegt zwaarder dan likes. Een format dat bezoekers of aanvragen brengt, mag in `lessen.md`, ook met een lagere score. Ook hier geldt: pas een uitspraak vanaf **3 posts**, en noem het bewijs, bv. `5 bezoekers, 1 aanvraag over 4 posts`.
+- **Melding en samenvatting.** Eén regel per merk met de weektotalen: "Instagram bracht deze week X bezoekers, Y aanvragen, Z bestellingen". Zijn alle drie 0, zeg dat dan gewoon; nooit afronden naar boven of iets suggereren.
+- **Bestellingen.** De bedankpagina's van Loveke (`Bedankt.tsx`) en VanXcel (`ThankYou.tsx`) sturen `akke('Bestelling', {waarde})`, één keer per bestelling. Bestellingen via bol.com lopen niet via de site en tellen dus nooit mee. Op 16-10 stond het op 0, omdat er sinds de start van Insights (11-10) geen webshopbestelling was.
+- **Te weinig data** (minder dan 10 Instagram-bezoekers in de week): noem de cijfers, trek geen les.
