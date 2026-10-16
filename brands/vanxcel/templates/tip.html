@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Know-how tip</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- tip: genummerde know-how-kaart (pijler Know-how). Bron van elke regel: de teksten op vanxcel.com
+     (installatiegids, calculators, FAQ). Nooit eigen getallen verzinnen. Onderaan altijd de tool-link. -->
+</head>
+<body>
+  <div class="glow" style="width:720px; height:720px; right:-260px; top:-200px"></div>
+  <img class="logo tl" src="../logo-white.svg" alt="VanXcel">
+  <div class="num" style="position:absolute; right:56px; top:40px" data-slot="nummer" data-label="Nummer" data-max="2">01</div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:360px; display:flex; flex-direction:column; gap:40px">
+    <div class="kicker" data-slot="reeks" data-label="Reeks" data-max="28">Van electrics 101</div>
+    <h1 class="display d-l" data-slot="titel" data-label="Titel" data-max="44">Fuse within<br><span class="petrol">18 cm</span> of the battery.</h1>
+    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="170" data-multiline="true">Every positive cable that leaves your battery needs a fuse, as close to the terminal as you can get it. The fuse protects the cable, not the device.</p>
+    <div class="warn"><span class="amber" style="font-weight:700">Why</span><span data-slot="waarom" data-label="Waarom" data-max="120">A short on an unfused cable can melt the insulation before anything else trips.</span></div>
+  </div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill petrol" data-slot="cta" data-label="Knop" data-max="34">Calculate your cables</span>
+    <span class="body" style="color:var(--mute)" data-slot="link" data-label="Link" data-max="30">vanxcel.com/calculator</span>
+  </div>
+</body>
+</html>

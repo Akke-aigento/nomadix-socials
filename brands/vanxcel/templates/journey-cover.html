@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Journey cover</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- journey-cover: één echte reisfoto full-bleed + plaats/datum-stempel + kop.
+     Gebruik voor de pijler Journey. Beeld = brands/vanxcel/media/<id>.jpg (kies via media.json op tags/land).
+     Dag-teller: dag 1 = 2022-04-02 (vertrek in België). -->
+</head>
+<body>
+  <img class="photo" src="../media/vx-2022-04-20-turkey-0178.jpg" alt="Sandy, the Land Cruiser, on a high plain near Kayseri, Turkey" style="object-position: 50% 40%">
+  <div class="shade-top"></div>
+  <div class="shade-bottom"></div>
+  <div class="grain"></div>
+  <img class="logo tl" src="../logo-white.svg" alt="VanXcel">
+  <div style="position:absolute; top:76px; right:var(--pad); text-align:right" class="kicker" data-slot="reeks" data-label="Reeks" data-max="22">The road east · 07</div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:96px; display:flex; flex-direction:column; gap:26px">
+    <div class="stamp"><span class="dot"></span><span data-slot="plaats" data-label="Plaats" data-max="26">Kayseri, Turkey</span><span class="sep"></span><span data-slot="dag" data-label="Dag" data-max="12">Day 19</span></div>
+    <h1 class="display d-l" data-slot="titel" data-label="Titel" data-max="40">No campsite.<br>No shore power.</h1>
+    <p class="lead" style="max-width:860px" data-slot="tekst" data-label="Tekst" data-max="120">Everything ran on the 120Ah LiFePO4 bank we built into Sandy back home in Belgium.</p>
+    <div class="jline" style="position:relative; left:0; right:0; margin-top:6px"></div>
+  </div>
+</body>
+</html>

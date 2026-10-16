@@ -1,0 +1,6031 @@
+{
+ "brand": "vanxcel",
+ "trip": {
+  "start": "2022-04-02",
+  "end": "2022-08-05",
+  "vehicle": "1984 Toyota Land Cruiser \"Sandy\"",
+  "note": "day 1 = 2022-04-02 (Belgium)"
+ },
+ "items": [
+  {
+   "id": "vx-2022-04-02-belgium-0003",
+   "file": "media/vx-2022-04-02-belgium-0003.jpg",
+   "kind": "photo",
+   "date": "2022-04-02",
+   "day": 1,
+   "country": "Belgium",
+   "place": "Soumagne",
+   "region": "Wallonia",
+   "lat": 50.64,
+   "lon": 5.73,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-03-austria-0012",
+   "file": "media/vx-2022-04-03-austria-0012.jpg",
+   "kind": "photo",
+   "date": "2022-04-03",
+   "day": 2,
+   "country": "Austria",
+   "place": "Flachau",
+   "region": "Salzburg",
+   "lat": 47.25,
+   "lon": 13.42,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-03-austria-0013",
+   "file": "media/vx-2022-04-03-austria-0013.jpg",
+   "kind": "photo",
+   "date": "2022-04-03",
+   "day": 2,
+   "country": "Austria",
+   "place": "Flachau",
+   "region": "Salzburg",
+   "lat": 47.25,
+   "lon": 13.42,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-04-slovenia-0017",
+   "file": "media/vx-2022-04-04-slovenia-0017.jpg",
+   "kind": "photo",
+   "date": "2022-04-04",
+   "day": 3,
+   "country": "Slovenia",
+   "place": "Sentvid pri Sticni",
+   "region": "Ivancna Gorica",
+   "lat": 45.93,
+   "lon": 14.85,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-04-slovenia-0021",
+   "file": "media/vx-2022-04-04-slovenia-0021.jpg",
+   "kind": "photo",
+   "date": "2022-04-04",
+   "day": 3,
+   "country": "Slovenia",
+   "place": "Šentvid pri Stični & Novo Mesto",
+   "region": "Ivancna Gorica",
+   "lat": 45.92,
+   "lon": 14.88,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-04-croatia-0027",
+   "file": "media/vx-2022-04-04-croatia-0027.jpg",
+   "kind": "photo",
+   "date": "2022-04-04",
+   "day": 3,
+   "country": "Croatia",
+   "place": "Ražanac",
+   "region": "Zadarska",
+   "lat": 44.28,
+   "lon": 15.35,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-04-croatia-0028",
+   "file": "media/vx-2022-04-04-croatia-0028.jpg",
+   "kind": "photo",
+   "date": "2022-04-04",
+   "day": 3,
+   "country": "Croatia",
+   "place": "Razanac",
+   "region": "Zadarska",
+   "lat": 44.28,
+   "lon": 15.35,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-05-croatia-0033",
+   "file": "media/vx-2022-04-05-croatia-0033.jpg",
+   "kind": "photo",
+   "date": "2022-04-05",
+   "day": 4,
+   "country": "Croatia",
+   "place": "Gracac",
+   "region": "Zadarska",
+   "lat": 44.27,
+   "lon": 15.99,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-05-xx-0039",
+   "file": "media/vx-2022-04-05-xx-0039.jpg",
+   "kind": "photo",
+   "date": "2022-04-05",
+   "day": 4,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-05-bosnia-0042",
+   "file": "media/vx-2022-04-05-bosnia-0042.jpg",
+   "kind": "photo",
+   "date": "2022-04-05",
+   "day": 4,
+   "country": "Bosnia",
+   "place": "Bosansko Grahovo",
+   "region": "Federation of Bosnia and Herzegovina",
+   "lat": 44.19,
+   "lon": 16.26,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-05-bosnia-0043",
+   "file": "media/vx-2022-04-05-bosnia-0043.jpg",
+   "kind": "photo",
+   "date": "2022-04-05",
+   "day": 4,
+   "country": "Bosnia",
+   "place": "Bosansko Grahovo",
+   "region": "Federation of Bosnia and Herzegovina",
+   "lat": 44.19,
+   "lon": 16.26,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-05-bosnia-0044",
+   "file": "media/vx-2022-04-05-bosnia-0044.jpg",
+   "kind": "photo",
+   "date": "2022-04-05",
+   "day": 4,
+   "country": "Bosnia",
+   "place": "Bosansko Grahovo",
+   "region": "Federation of Bosnia and Herzegovina",
+   "lat": 44.19,
+   "lon": 16.26,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-05-bosnia-0045",
+   "file": "media/vx-2022-04-05-bosnia-0045.jpg",
+   "kind": "photo",
+   "date": "2022-04-05",
+   "day": 4,
+   "country": "Bosnia",
+   "place": "Ribnik",
+   "region": "Federation of Bosnia and Herzegovina",
+   "lat": 44.49,
+   "lon": 16.89,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-05-bosnia-0050",
+   "file": "media/vx-2022-04-05-bosnia-0050.jpg",
+   "kind": "photo",
+   "date": "2022-04-05",
+   "day": 4,
+   "country": "Bosnia",
+   "place": "Jajce",
+   "region": "Federation of Bosnia and Herzegovina",
+   "lat": 44.28,
+   "lon": 17.36,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-07-albania-0063",
+   "file": "media/vx-2022-04-07-albania-0063.jpg",
+   "kind": "photo",
+   "date": "2022-04-07",
+   "day": 6,
+   "country": "Albania",
+   "place": "Vukatane",
+   "region": "Shkoder",
+   "lat": 41.96,
+   "lon": 19.55,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-07-albania-0065",
+   "file": "media/vx-2022-04-07-albania-0065.jpg",
+   "kind": "photo",
+   "date": "2022-04-07",
+   "day": 6,
+   "country": "Albania",
+   "place": "Vau i Dejës",
+   "region": "Shkoder",
+   "lat": 42.08,
+   "lon": 19.5,
+   "tags": [
+    "tech"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-09-greece-0078",
+   "file": "media/vx-2022-04-09-greece-0078.jpg",
+   "kind": "photo",
+   "date": "2022-04-09",
+   "day": 8,
+   "country": "Greece",
+   "place": "Agios Panteleimonas",
+   "region": "West Macedonia",
+   "lat": 40.73,
+   "lon": 21.73,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-09-greece-0079",
+   "file": "media/vx-2022-04-09-greece-0079.jpg",
+   "kind": "photo",
+   "date": "2022-04-09",
+   "day": 8,
+   "country": "Greece",
+   "place": "Agios Panteleimonas",
+   "region": "West Macedonia",
+   "lat": 40.73,
+   "lon": 21.73,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-09-greece-0080",
+   "file": "clips/vx-2022-04-09-greece-0080.mp4",
+   "kind": "clip",
+   "date": "2022-04-09",
+   "day": 8,
+   "country": "Greece",
+   "place": "Agios Panteleimonas",
+   "region": "West Macedonia",
+   "lat": 40.74,
+   "lon": 21.71,
+   "tags": [
+    "clip"
+   ],
+   "dur": 16.4,
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-09-greece-0081",
+   "file": "media/vx-2022-04-09-greece-0081.jpg",
+   "kind": "photo",
+   "date": "2022-04-09",
+   "day": 8,
+   "country": "Greece",
+   "place": "Agios Panteleimonas",
+   "region": "West Macedonia",
+   "lat": 40.74,
+   "lon": 21.71,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-09-greece-0082",
+   "file": "media/vx-2022-04-09-greece-0082.jpg",
+   "kind": "photo",
+   "date": "2022-04-09",
+   "day": 8,
+   "country": "Greece",
+   "place": "Agios Panteleimonas",
+   "region": "West Macedonia",
+   "lat": 40.74,
+   "lon": 21.71,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-10-greece-0085",
+   "file": "media/vx-2022-04-10-greece-0085.jpg",
+   "kind": "photo",
+   "date": "2022-04-10",
+   "day": 9,
+   "country": "Greece",
+   "place": "Pydna",
+   "region": "West Macedonia",
+   "lat": 40.74,
+   "lon": 21.71,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-10-greece-0090",
+   "file": "media/vx-2022-04-10-greece-0090.jpg",
+   "kind": "photo",
+   "date": "2022-04-10",
+   "day": 9,
+   "country": "Greece",
+   "place": "Pydna",
+   "region": "Central Macedonia",
+   "lat": 40.35,
+   "lon": 22.59,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-10-greece-0092",
+   "file": "media/vx-2022-04-10-greece-0092.jpg",
+   "kind": "photo",
+   "date": "2022-04-10",
+   "day": 9,
+   "country": "Greece",
+   "place": "Pydna",
+   "region": "Central Macedonia",
+   "lat": 40.35,
+   "lon": 22.59,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-10-greece-0093",
+   "file": "media/vx-2022-04-10-greece-0093.jpg",
+   "kind": "photo",
+   "date": "2022-04-10",
+   "day": 9,
+   "country": "Greece",
+   "place": "Skotina",
+   "region": "Central Macedonia",
+   "lat": 39.99,
+   "lon": 22.54,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-10-xx-0098",
+   "file": "media/vx-2022-04-10-xx-0098.jpg",
+   "kind": "photo",
+   "date": "2022-04-10",
+   "day": 9,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-10-xx-0102",
+   "file": "media/vx-2022-04-10-xx-0102.jpg",
+   "kind": "photo",
+   "date": "2022-04-10",
+   "day": 9,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-10-xx-0103",
+   "file": "media/vx-2022-04-10-xx-0103.jpg",
+   "kind": "photo",
+   "date": "2022-04-10",
+   "day": 9,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-10-xx-0104",
+   "file": "media/vx-2022-04-10-xx-0104.jpg",
+   "kind": "photo",
+   "date": "2022-04-10",
+   "day": 9,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-11-greece-0107",
+   "file": "media/vx-2022-04-11-greece-0107.jpg",
+   "kind": "photo",
+   "date": "2022-04-11",
+   "day": 10,
+   "country": "Greece",
+   "place": "Skotina",
+   "region": "Central Macedonia",
+   "lat": 40.0,
+   "lon": 22.55,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-11-greece-0112",
+   "file": "media/vx-2022-04-11-greece-0112.jpg",
+   "kind": "photo",
+   "date": "2022-04-11",
+   "day": 10,
+   "country": "Greece",
+   "place": "Peristerona",
+   "region": "Central Macedonia",
+   "lat": 40.67,
+   "lon": 23.36,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-11-greece-0113",
+   "file": "media/vx-2022-04-11-greece-0113.jpg",
+   "kind": "photo",
+   "date": "2022-04-11",
+   "day": 10,
+   "country": "Greece",
+   "place": "Peristerona",
+   "region": "Central Macedonia",
+   "lat": 40.67,
+   "lon": 23.36,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-11-greece-0114",
+   "file": "media/vx-2022-04-11-greece-0114.jpg",
+   "kind": "photo",
+   "date": "2022-04-11",
+   "day": 10,
+   "country": "Greece",
+   "place": "Peristerona",
+   "region": "Central Macedonia",
+   "lat": 40.67,
+   "lon": 23.36,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-11-greece-0117",
+   "file": "media/vx-2022-04-11-greece-0117.jpg",
+   "kind": "photo",
+   "date": "2022-04-11",
+   "day": 10,
+   "country": "Greece",
+   "place": "Nea Apollonia",
+   "region": "Central Macedonia",
+   "lat": 40.67,
+   "lon": 23.36,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-11-greece-0118",
+   "file": "media/vx-2022-04-11-greece-0118.jpg",
+   "kind": "photo",
+   "date": "2022-04-11",
+   "day": 10,
+   "country": "Greece",
+   "place": "Nea Apollonia",
+   "region": "Central Macedonia",
+   "lat": 40.67,
+   "lon": 23.36,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-11-greece-0119",
+   "file": "media/vx-2022-04-11-greece-0119.jpg",
+   "kind": "photo",
+   "date": "2022-04-11",
+   "day": 10,
+   "country": "Greece",
+   "place": "Peristerona",
+   "region": "Central Macedonia",
+   "lat": 40.67,
+   "lon": 23.36,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-12-greece-0120",
+   "file": "media/vx-2022-04-12-greece-0120.jpg",
+   "kind": "photo",
+   "date": "2022-04-12",
+   "day": 11,
+   "country": "Greece",
+   "place": "Peristerona",
+   "region": "Central Macedonia",
+   "lat": 40.67,
+   "lon": 23.36,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-12-greece-0121",
+   "file": "media/vx-2022-04-12-greece-0121.jpg",
+   "kind": "photo",
+   "date": "2022-04-12",
+   "day": 11,
+   "country": "Greece",
+   "place": "Peristerona",
+   "region": "Central Macedonia",
+   "lat": 40.67,
+   "lon": 23.36,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-12-greece-0123",
+   "file": "clips/vx-2022-04-12-greece-0123.mp4",
+   "kind": "clip",
+   "date": "2022-04-12",
+   "day": 11,
+   "country": "Greece",
+   "place": "Elaiochori",
+   "region": "East Macedonia and Thrace",
+   "lat": 40.8,
+   "lon": 24.27,
+   "tags": [
+    "clip"
+   ],
+   "dur": 26.3,
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-14-turkey-0129",
+   "file": "media/vx-2022-04-14-turkey-0129.jpg",
+   "kind": "photo",
+   "date": "2022-04-14",
+   "day": 13,
+   "country": "Turkey",
+   "place": "Çanakkale",
+   "region": "Canakkale",
+   "lat": 40.7,
+   "lon": 26.78,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-14-turkey-0138",
+   "file": "media/vx-2022-04-14-turkey-0138.jpg",
+   "kind": "photo",
+   "date": "2022-04-14",
+   "day": 13,
+   "country": "Turkey",
+   "place": "Çanakkale",
+   "region": "Canakkale",
+   "lat": 39.53,
+   "lon": 26.44,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-16-turkey-0142",
+   "file": "media/vx-2022-04-16-turkey-0142.jpg",
+   "kind": "photo",
+   "date": "2022-04-16",
+   "day": 15,
+   "country": "Turkey",
+   "place": "Manisa",
+   "region": "Manisa",
+   "lat": 38.64,
+   "lon": 28.34,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-16-turkey-0143",
+   "file": "media/vx-2022-04-16-turkey-0143.jpg",
+   "kind": "photo",
+   "date": "2022-04-16",
+   "day": 15,
+   "country": "Turkey",
+   "place": "Manisa",
+   "region": "Manisa",
+   "lat": 38.64,
+   "lon": 28.34,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-16-turkey-0145",
+   "file": "media/vx-2022-04-16-turkey-0145.jpg",
+   "kind": "photo",
+   "date": "2022-04-16",
+   "day": 15,
+   "country": "Turkey",
+   "place": "Adala",
+   "region": "Manisa",
+   "lat": 38.64,
+   "lon": 28.34,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-16-turkey-0146",
+   "file": "media/vx-2022-04-16-turkey-0146.jpg",
+   "kind": "photo",
+   "date": "2022-04-16",
+   "day": 15,
+   "country": "Turkey",
+   "place": "Manisa",
+   "region": "Manisa",
+   "lat": 38.64,
+   "lon": 28.34,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-16-turkey-0152",
+   "file": "media/vx-2022-04-16-turkey-0152.jpg",
+   "kind": "photo",
+   "date": "2022-04-16",
+   "day": 15,
+   "country": "Turkey",
+   "place": "Manisa",
+   "region": "Manisa",
+   "lat": 38.64,
+   "lon": 28.34,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-16-turkey-0153",
+   "file": "media/vx-2022-04-16-turkey-0153.jpg",
+   "kind": "photo",
+   "date": "2022-04-16",
+   "day": 15,
+   "country": "Turkey",
+   "place": "Manisa",
+   "region": "Manisa",
+   "lat": 38.64,
+   "lon": 28.34,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-19-turkey-0163",
+   "file": "media/vx-2022-04-19-turkey-0163.jpg",
+   "kind": "photo",
+   "date": "2022-04-19",
+   "day": 18,
+   "country": "Turkey",
+   "place": "Nevşehir",
+   "region": "Nevsehir",
+   "lat": 38.69,
+   "lon": 34.82,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-19-turkey-0165",
+   "file": "clips/vx-2022-04-19-turkey-0165.mp4",
+   "kind": "clip",
+   "date": "2022-04-19",
+   "day": 18,
+   "country": "Turkey",
+   "place": "Nevşehir",
+   "region": "Nevsehir",
+   "lat": 38.7,
+   "lon": 34.83,
+   "tags": [
+    "clip"
+   ],
+   "dur": 12.8,
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-19-turkey-0167",
+   "file": "media/vx-2022-04-19-turkey-0167.jpg",
+   "kind": "photo",
+   "date": "2022-04-19",
+   "day": 18,
+   "country": "Turkey",
+   "place": "Nevşehir",
+   "region": "Nevsehir",
+   "lat": 38.7,
+   "lon": 34.83,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0174",
+   "file": "media/vx-2022-04-20-turkey-0174.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Kayseri",
+   "lat": 38.79,
+   "lon": 36.5,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0176",
+   "file": "media/vx-2022-04-20-turkey-0176.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Kayseri",
+   "lat": 38.8,
+   "lon": 36.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0178",
+   "file": "media/vx-2022-04-20-turkey-0178.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Kayseri",
+   "lat": 38.8,
+   "lon": 36.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0180",
+   "file": "media/vx-2022-04-20-turkey-0180.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Kayseri",
+   "lat": 38.8,
+   "lon": 36.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0181",
+   "file": "media/vx-2022-04-20-turkey-0181.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Kayseri",
+   "lat": 38.8,
+   "lon": 36.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0185",
+   "file": "media/vx-2022-04-20-turkey-0185.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Kayseri",
+   "lat": 38.8,
+   "lon": 36.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0186",
+   "file": "media/vx-2022-04-20-turkey-0186.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Sivas",
+   "lat": 38.81,
+   "lon": 36.9,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0187",
+   "file": "media/vx-2022-04-20-turkey-0187.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Malatya",
+   "lat": 38.58,
+   "lon": 37.46,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0188",
+   "file": "media/vx-2022-04-20-turkey-0188.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Malatya",
+   "lat": 38.58,
+   "lon": 37.46,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0189",
+   "file": "media/vx-2022-04-20-turkey-0189.jpg",
+   "kind": "photo",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Malatya",
+   "lat": 38.58,
+   "lon": 37.46,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-20-turkey-0193",
+   "file": "clips/vx-2022-04-20-turkey-0193.mp4",
+   "kind": "clip",
+   "date": "2022-04-20",
+   "day": 19,
+   "country": "Turkey",
+   "place": "Kayseri & Malatya",
+   "region": "Malatya",
+   "lat": 38.44,
+   "lon": 38.81,
+   "tags": [
+    "clip"
+   ],
+   "dur": 47.4,
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-21-turkey-0196",
+   "file": "clips/vx-2022-04-21-turkey-0196.mp4",
+   "kind": "clip",
+   "date": "2022-04-21",
+   "day": 20,
+   "country": "Turkey",
+   "place": "Bingöl",
+   "region": "Elazig",
+   "lat": 38.94,
+   "lon": 40.1,
+   "tags": [
+    "clip"
+   ],
+   "dur": 16.6,
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-21-turkey-0201",
+   "file": "media/vx-2022-04-21-turkey-0201.jpg",
+   "kind": "photo",
+   "date": "2022-04-21",
+   "day": 20,
+   "country": "Turkey",
+   "place": "Bingöl",
+   "region": "Bingoel",
+   "lat": 39.29,
+   "lon": 41.01,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-21-turkey-0204",
+   "file": "media/vx-2022-04-21-turkey-0204.jpg",
+   "kind": "photo",
+   "date": "2022-04-21",
+   "day": 20,
+   "country": "Turkey",
+   "place": "Kars",
+   "region": "Kars",
+   "lat": 40.72,
+   "lon": 43.17,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-21-turkey-0205",
+   "file": "media/vx-2022-04-21-turkey-0205.jpg",
+   "kind": "photo",
+   "date": "2022-04-21",
+   "day": 20,
+   "country": "Turkey",
+   "place": "Kars",
+   "region": "Kars",
+   "lat": 40.72,
+   "lon": 43.17,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-21-turkey-0206",
+   "file": "media/vx-2022-04-21-turkey-0206.jpg",
+   "kind": "photo",
+   "date": "2022-04-21",
+   "day": 20,
+   "country": "Turkey",
+   "place": "Kars",
+   "region": "Kars",
+   "lat": 40.72,
+   "lon": 43.17,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-22-turkey-0210",
+   "file": "media/vx-2022-04-22-turkey-0210.jpg",
+   "kind": "photo",
+   "date": "2022-04-22",
+   "day": 21,
+   "country": "Turkey",
+   "place": "Ardahan",
+   "region": "Ardahan",
+   "lat": 41.41,
+   "lon": 42.74,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-22-turkey-0212",
+   "file": "media/vx-2022-04-22-turkey-0212.jpg",
+   "kind": "photo",
+   "date": "2022-04-22",
+   "day": 21,
+   "country": "Turkey",
+   "place": "Ardahan",
+   "region": "Ardahan",
+   "lat": 41.43,
+   "lon": 42.73,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-23-georgia-0214",
+   "file": "media/vx-2022-04-23-georgia-0214.jpg",
+   "kind": "photo",
+   "date": "2022-04-23",
+   "day": 22,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Samegrelo and Zemo Svaneti",
+   "lat": 42.39,
+   "lon": 42.4,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-23-georgia-0216",
+   "file": "media/vx-2022-04-23-georgia-0216.jpg",
+   "kind": "photo",
+   "date": "2022-04-23",
+   "day": 22,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Samegrelo and Zemo Svaneti",
+   "lat": 42.41,
+   "lon": 42.38,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-26-georgia-0224",
+   "file": "clips/vx-2022-04-26-georgia-0224.mp4",
+   "kind": "clip",
+   "date": "2022-04-26",
+   "day": 25,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Imereti",
+   "lat": 42.49,
+   "lon": 42.62,
+   "tags": [
+    "clip"
+   ],
+   "dur": 7.3,
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-27-georgia-0226",
+   "file": "media/vx-2022-04-27-georgia-0226.jpg",
+   "kind": "photo",
+   "date": "2022-04-27",
+   "day": 26,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Racha-Lechkhumi and Kvemo Svaneti",
+   "lat": 42.65,
+   "lon": 42.77,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-27-georgia-0227",
+   "file": "media/vx-2022-04-27-georgia-0227.jpg",
+   "kind": "photo",
+   "date": "2022-04-27",
+   "day": 26,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Racha-Lechkhumi and Kvemo Svaneti",
+   "lat": 42.64,
+   "lon": 42.76,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-28-georgia-0242",
+   "file": "media/vx-2022-04-28-georgia-0242.jpg",
+   "kind": "photo",
+   "date": "2022-04-28",
+   "day": 27,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 42.39,
+   "lon": 42.98,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-28-georgia-0243",
+   "file": "media/vx-2022-04-28-georgia-0243.jpg",
+   "kind": "photo",
+   "date": "2022-04-28",
+   "day": 27,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 42.39,
+   "lon": 42.98,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-04-28-georgia-0247",
+   "file": "media/vx-2022-04-28-georgia-0247.jpg",
+   "kind": "photo",
+   "date": "2022-04-28",
+   "day": 27,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.99,
+   "lon": 43.86,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-03-georgia-0277",
+   "file": "media/vx-2022-05-03-georgia-0277.jpg",
+   "kind": "photo",
+   "date": "2022-05-03",
+   "day": 32,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.7,
+   "lon": 44.75,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-03-georgia-0278",
+   "file": "media/vx-2022-05-03-georgia-0278.jpg",
+   "kind": "photo",
+   "date": "2022-05-03",
+   "day": 32,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.7,
+   "lon": 44.75,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-03-georgia-0280",
+   "file": "media/vx-2022-05-03-georgia-0280.jpg",
+   "kind": "photo",
+   "date": "2022-05-03",
+   "day": 32,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.7,
+   "lon": 44.76,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-05-georgia-0291",
+   "file": "media/vx-2022-05-05-georgia-0291.jpg",
+   "kind": "photo",
+   "date": "2022-05-05",
+   "day": 34,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 42.58,
+   "lon": 44.48,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-05-georgia-0292",
+   "file": "media/vx-2022-05-05-georgia-0292.jpg",
+   "kind": "photo",
+   "date": "2022-05-05",
+   "day": 34,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 42.58,
+   "lon": 44.48,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0309",
+   "file": "media/vx-2022-05-11-georgia-0309.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.22,
+   "lon": 45.31,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0310",
+   "file": "media/vx-2022-05-11-georgia-0310.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.22,
+   "lon": 45.31,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0322",
+   "file": "media/vx-2022-05-11-georgia-0322.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Akhmet'a",
+   "region": "Kakheti",
+   "lat": 42.24,
+   "lon": 45.33,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0323",
+   "file": "media/vx-2022-05-11-georgia-0323.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.24,
+   "lon": 45.33,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0324",
+   "file": "media/vx-2022-05-11-georgia-0324.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.28,
+   "lon": 45.31,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0325",
+   "file": "media/vx-2022-05-11-georgia-0325.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.28,
+   "lon": 45.31,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0326",
+   "file": "media/vx-2022-05-11-georgia-0326.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.28,
+   "lon": 45.31,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0327",
+   "file": "media/vx-2022-05-11-georgia-0327.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.29,
+   "lon": 45.31,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0328",
+   "file": "media/vx-2022-05-11-georgia-0328.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.27,
+   "lon": 45.31,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-11-georgia-0329",
+   "file": "media/vx-2022-05-11-georgia-0329.jpg",
+   "kind": "photo",
+   "date": "2022-05-11",
+   "day": 40,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.27,
+   "lon": 45.31,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0334",
+   "file": "media/vx-2022-05-12-georgia-0334.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.16,
+   "lon": 45.42,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0335",
+   "file": "media/vx-2022-05-12-georgia-0335.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.16,
+   "lon": 45.42,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0336",
+   "file": "clips/vx-2022-05-12-georgia-0336.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.18,
+   "lon": 45.44,
+   "tags": [
+    "clip"
+   ],
+   "dur": 4.2,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0338",
+   "file": "media/vx-2022-05-12-georgia-0338.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.2,
+   "lon": 45.46,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0339",
+   "file": "clips/vx-2022-05-12-georgia-0339.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.2,
+   "lon": 45.46,
+   "tags": [
+    "clip"
+   ],
+   "dur": 14.5,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0340",
+   "file": "media/vx-2022-05-12-georgia-0340.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.2,
+   "lon": 45.46,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0343",
+   "file": "clips/vx-2022-05-12-georgia-0343.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.2,
+   "lon": 45.46,
+   "tags": [
+    "clip"
+   ],
+   "dur": 20.2,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0344",
+   "file": "clips/vx-2022-05-12-georgia-0344.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.21,
+   "lon": 45.46,
+   "tags": [
+    "clip"
+   ],
+   "dur": 21.6,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0349",
+   "file": "clips/vx-2022-05-12-georgia-0349.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "tags": [
+    "clip"
+   ],
+   "dur": 21.6,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0350",
+   "file": "media/vx-2022-05-12-georgia-0350.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.23,
+   "lon": 45.48,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0355",
+   "file": "media/vx-2022-05-12-georgia-0355.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0356",
+   "file": "media/vx-2022-05-12-georgia-0356.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.24,
+   "lon": 45.5,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0357",
+   "file": "media/vx-2022-05-12-georgia-0357.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.24,
+   "lon": 45.5,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0358",
+   "file": "clips/vx-2022-05-12-georgia-0358.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "tags": [
+    "clip"
+   ],
+   "dur": 22.8,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0359",
+   "file": "media/vx-2022-05-12-georgia-0359.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.18,
+   "lon": 45.44,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0362",
+   "file": "media/vx-2022-05-12-georgia-0362.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.0,
+   "lon": 45.36,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0364",
+   "file": "media/vx-2022-05-12-georgia-0364.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.25,
+   "lon": 45.5,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0365",
+   "file": "media/vx-2022-05-12-georgia-0365.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.25,
+   "lon": 45.5,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0366",
+   "file": "clips/vx-2022-05-12-georgia-0366.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.26,
+   "lon": 45.5,
+   "tags": [
+    "clip"
+   ],
+   "dur": 10.0,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0368",
+   "file": "clips/vx-2022-05-12-georgia-0368.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "tags": [
+    "clip"
+   ],
+   "dur": 60.9,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0371",
+   "file": "media/vx-2022-05-12-georgia-0371.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.03,
+   "lon": 45.36,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0373",
+   "file": "clips/vx-2022-05-12-georgia-0373.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "tags": [
+    "clip"
+   ],
+   "dur": 21.0,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0375",
+   "file": "clips/vx-2022-05-12-georgia-0375.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "tags": [
+    "clip"
+   ],
+   "dur": 13.7,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0376",
+   "file": "media/vx-2022-05-12-georgia-0376.jpg",
+   "kind": "photo",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "tags": [
+    "tech"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-12-georgia-0378",
+   "file": "clips/vx-2022-05-12-georgia-0378.mp4",
+   "kind": "clip",
+   "date": "2022-05-12",
+   "day": 41,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.21,
+   "lon": 45.47,
+   "tags": [
+    "clip"
+   ],
+   "dur": 503.2,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-13-georgia-0380",
+   "file": "media/vx-2022-05-13-georgia-0380.jpg",
+   "kind": "photo",
+   "date": "2022-05-13",
+   "day": 42,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 42.21,
+   "lon": 45.47,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-13-georgia-0383",
+   "file": "media/vx-2022-05-13-georgia-0383.jpg",
+   "kind": "photo",
+   "date": "2022-05-13",
+   "day": 42,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 41.92,
+   "lon": 45.53,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-13-georgia-0386",
+   "file": "media/vx-2022-05-13-georgia-0386.jpg",
+   "kind": "photo",
+   "date": "2022-05-13",
+   "day": 42,
+   "country": "Georgia",
+   "place": "Sighnaghi",
+   "region": "Kakheti",
+   "lat": 41.53,
+   "lon": 45.9,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-13-georgia-0387",
+   "file": "media/vx-2022-05-13-georgia-0387.jpg",
+   "kind": "photo",
+   "date": "2022-05-13",
+   "day": 42,
+   "country": "Georgia",
+   "place": "Sighnaghi",
+   "region": "Kakheti",
+   "lat": 41.53,
+   "lon": 45.9,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0388",
+   "file": "media/vx-2022-05-14-georgia-0388.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.44,
+   "lon": 46.11,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0390",
+   "file": "media/vx-2022-05-14-georgia-0390.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.44,
+   "lon": 46.11,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0392",
+   "file": "media/vx-2022-05-14-georgia-0392.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.44,
+   "lon": 46.11,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0395",
+   "file": "media/vx-2022-05-14-georgia-0395.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.45,
+   "lon": 46.12,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0396",
+   "file": "media/vx-2022-05-14-georgia-0396.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.44,
+   "lon": 46.12,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0399",
+   "file": "media/vx-2022-05-14-georgia-0399.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.3,
+   "lon": 45.99,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0401",
+   "file": "clips/vx-2022-05-14-georgia-0401.mp4",
+   "kind": "clip",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "",
+   "lat": 41.29,
+   "lon": 45.99,
+   "tags": [
+    "clip"
+   ],
+   "dur": 16.8,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0403",
+   "file": "media/vx-2022-05-14-georgia-0403.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 41.28,
+   "lon": 45.9,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-georgia-0404",
+   "file": "media/vx-2022-05-14-georgia-0404.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 41.28,
+   "lon": 45.9,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-azerbaijan-0406",
+   "file": "media/vx-2022-05-14-azerbaijan-0406.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Azerbaijan",
+   "place": "Tbilisi",
+   "region": "Tovuz",
+   "lat": 41.28,
+   "lon": 45.88,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-azerbaijan-0407",
+   "file": "media/vx-2022-05-14-azerbaijan-0407.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Azerbaijan",
+   "place": "Tbilisi",
+   "region": "Tovuz",
+   "lat": 41.28,
+   "lon": 45.87,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-azerbaijan-0408",
+   "file": "media/vx-2022-05-14-azerbaijan-0408.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Azerbaijan",
+   "place": "Tbilisi",
+   "region": "Tovuz",
+   "lat": 41.28,
+   "lon": 45.87,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-azerbaijan-0413",
+   "file": "media/vx-2022-05-14-azerbaijan-0413.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Azerbaijan",
+   "place": "Qaraxanli",
+   "region": "Tovuz",
+   "lat": 41.28,
+   "lon": 45.87,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-azerbaijan-0418",
+   "file": "media/vx-2022-05-14-azerbaijan-0418.jpg",
+   "kind": "photo",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Azerbaijan",
+   "place": "Tbilisi",
+   "region": "Tovuz",
+   "lat": 41.28,
+   "lon": 45.87,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-14-azerbaijan-0419",
+   "file": "clips/vx-2022-05-14-azerbaijan-0419.mp4",
+   "kind": "clip",
+   "date": "2022-05-14",
+   "day": 43,
+   "country": "Azerbaijan",
+   "place": "Tbilisi",
+   "region": "Tovuz",
+   "lat": 41.28,
+   "lon": 45.87,
+   "tags": [
+    "clip"
+   ],
+   "dur": 16.8,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-17-georgia-0436",
+   "file": "media/vx-2022-05-17-georgia-0436.jpg",
+   "kind": "photo",
+   "date": "2022-05-17",
+   "day": 46,
+   "country": "Georgia",
+   "place": "Lagodekhi",
+   "region": "Kakheti",
+   "lat": 41.85,
+   "lon": 46.29,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-17-georgia-0438",
+   "file": "media/vx-2022-05-17-georgia-0438.jpg",
+   "kind": "photo",
+   "date": "2022-05-17",
+   "day": 46,
+   "country": "Georgia",
+   "place": "Lagodekhi",
+   "region": "Kakheti",
+   "lat": 41.86,
+   "lon": 46.29,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-17-georgia-0439",
+   "file": "media/vx-2022-05-17-georgia-0439.jpg",
+   "kind": "photo",
+   "date": "2022-05-17",
+   "day": 46,
+   "country": "Georgia",
+   "place": "Lagodekhi",
+   "region": "Kakheti",
+   "lat": 41.84,
+   "lon": 46.28,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-17-georgia-0441",
+   "file": "media/vx-2022-05-17-georgia-0441.jpg",
+   "kind": "photo",
+   "date": "2022-05-17",
+   "day": 46,
+   "country": "Georgia",
+   "place": "Lagodekhi",
+   "region": "Kakheti",
+   "lat": 41.87,
+   "lon": 46.3,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-17-georgia-0445",
+   "file": "media/vx-2022-05-17-georgia-0445.jpg",
+   "kind": "photo",
+   "date": "2022-05-17",
+   "day": 46,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 41.8,
+   "lon": 46.29,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-17-georgia-0446",
+   "file": "media/vx-2022-05-17-georgia-0446.jpg",
+   "kind": "photo",
+   "date": "2022-05-17",
+   "day": 46,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 41.8,
+   "lon": 46.29,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-18-georgia-0450",
+   "file": "media/vx-2022-05-18-georgia-0450.jpg",
+   "kind": "photo",
+   "date": "2022-05-18",
+   "day": 47,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Kakheti",
+   "lat": 41.82,
+   "lon": 46.28,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-19-azerbaijan-0453",
+   "file": "media/vx-2022-05-19-azerbaijan-0453.jpg",
+   "kind": "photo",
+   "date": "2022-05-19",
+   "day": 48,
+   "country": "Azerbaijan",
+   "place": "Qabaqcol",
+   "region": "Balakan Rayon",
+   "lat": 41.77,
+   "lon": 46.34,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-19-azerbaijan-0454",
+   "file": "media/vx-2022-05-19-azerbaijan-0454.jpg",
+   "kind": "photo",
+   "date": "2022-05-19",
+   "day": 48,
+   "country": "Azerbaijan",
+   "place": "Qabaqcol",
+   "region": "Balakan Rayon",
+   "lat": 41.77,
+   "lon": 46.34,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0466",
+   "file": "media/vx-2022-05-21-azerbaijan-0466.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 39.99,
+   "lon": 49.39,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0468",
+   "file": "media/vx-2022-05-21-azerbaijan-0468.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.05,
+   "lon": 49.41,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0470",
+   "file": "clips/vx-2022-05-21-azerbaijan-0470.mp4",
+   "kind": "clip",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.0,
+   "lon": 49.4,
+   "tags": [
+    "clip"
+   ],
+   "dur": 7.6,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0473",
+   "file": "media/vx-2022-05-21-azerbaijan-0473.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.0,
+   "lon": 49.41,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0474",
+   "file": "media/vx-2022-05-21-azerbaijan-0474.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.0,
+   "lon": 49.41,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0475",
+   "file": "media/vx-2022-05-21-azerbaijan-0475.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.0,
+   "lon": 49.4,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0477",
+   "file": "media/vx-2022-05-21-azerbaijan-0477.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.02,
+   "lon": 49.37,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0478",
+   "file": "media/vx-2022-05-21-azerbaijan-0478.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.02,
+   "lon": 49.37,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0482",
+   "file": "media/vx-2022-05-21-azerbaijan-0482.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.02,
+   "lon": 49.37,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0483",
+   "file": "clips/vx-2022-05-21-azerbaijan-0483.mp4",
+   "kind": "clip",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.11,
+   "lon": 49.35,
+   "tags": [
+    "clip"
+   ],
+   "dur": 6.4,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0485",
+   "file": "media/vx-2022-05-21-azerbaijan-0485.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.11,
+   "lon": 49.35,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-azerbaijan-0486",
+   "file": "media/vx-2022-05-21-azerbaijan-0486.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "country": "Azerbaijan",
+   "region": "Baki",
+   "lat": 40.11,
+   "lon": 49.35,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-21-xx-0488",
+   "file": "media/vx-2022-05-21-xx-0488.jpg",
+   "kind": "photo",
+   "date": "2022-05-21",
+   "day": 50,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-22-xx-0490",
+   "file": "media/vx-2022-05-22-xx-0490.jpg",
+   "kind": "photo",
+   "date": "2022-05-22",
+   "day": 51,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-22-xx-0491",
+   "file": "media/vx-2022-05-22-xx-0491.jpg",
+   "kind": "photo",
+   "date": "2022-05-22",
+   "day": 51,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-25-azerbaijan-0502",
+   "file": "media/vx-2022-05-25-azerbaijan-0502.jpg",
+   "kind": "photo",
+   "date": "2022-05-25",
+   "day": 54,
+   "country": "Azerbaijan",
+   "place": "Bilgǝh",
+   "region": "Baki",
+   "lat": 40.54,
+   "lon": 50.03,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-25-azerbaijan-0503",
+   "file": "media/vx-2022-05-25-azerbaijan-0503.jpg",
+   "kind": "photo",
+   "date": "2022-05-25",
+   "day": 54,
+   "country": "Azerbaijan",
+   "place": "Bilgǝh",
+   "region": "Baki",
+   "lat": 40.54,
+   "lon": 50.03,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-26-kazakhstan-0509",
+   "file": "media/vx-2022-05-26-kazakhstan-0509.jpg",
+   "kind": "photo",
+   "date": "2022-05-26",
+   "day": 55,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.64,
+   "lon": 51.23,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-26-kazakhstan-0510",
+   "file": "media/vx-2022-05-26-kazakhstan-0510.jpg",
+   "kind": "photo",
+   "date": "2022-05-26",
+   "day": 55,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.64,
+   "lon": 51.23,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-26-kazakhstan-0511",
+   "file": "media/vx-2022-05-26-kazakhstan-0511.jpg",
+   "kind": "photo",
+   "date": "2022-05-26",
+   "day": 55,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.64,
+   "lon": 51.23,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-26-kazakhstan-0512",
+   "file": "media/vx-2022-05-26-kazakhstan-0512.jpg",
+   "kind": "photo",
+   "date": "2022-05-26",
+   "day": 55,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.78,
+   "lon": 51.16,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-26-kazakhstan-0513",
+   "file": "media/vx-2022-05-26-kazakhstan-0513.jpg",
+   "kind": "photo",
+   "date": "2022-05-26",
+   "day": 55,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.78,
+   "lon": 51.16,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0520",
+   "file": "media/vx-2022-05-27-kazakhstan-0520.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.78,
+   "lon": 51.16,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0521",
+   "file": "clips/vx-2022-05-27-kazakhstan-0521.mp4",
+   "kind": "clip",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.8,
+   "lon": 51.14,
+   "tags": [
+    "clip"
+   ],
+   "dur": 7.2,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0522",
+   "file": "media/vx-2022-05-27-kazakhstan-0522.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.8,
+   "lon": 51.14,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0523",
+   "file": "media/vx-2022-05-27-kazakhstan-0523.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.81,
+   "lon": 51.14,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0527",
+   "file": "clips/vx-2022-05-27-kazakhstan-0527.mp4",
+   "kind": "clip",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.88,
+   "lon": 51.21,
+   "tags": [
+    "clip"
+   ],
+   "dur": 23.1,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0531",
+   "file": "media/vx-2022-05-27-kazakhstan-0531.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.86,
+   "lon": 51.35,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0532",
+   "file": "media/vx-2022-05-27-kazakhstan-0532.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.85,
+   "lon": 51.35,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0534",
+   "file": "media/vx-2022-05-27-kazakhstan-0534.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.86,
+   "lon": 51.35,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0541",
+   "file": "clips/vx-2022-05-27-kazakhstan-0541.mp4",
+   "kind": "clip",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.82,
+   "lon": 51.46,
+   "tags": [
+    "clip"
+   ],
+   "dur": 8.2,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0542",
+   "file": "media/vx-2022-05-27-kazakhstan-0542.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.6,
+   "lon": 51.47,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0543",
+   "file": "media/vx-2022-05-27-kazakhstan-0543.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.6,
+   "lon": 51.47,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0549",
+   "file": "media/vx-2022-05-27-kazakhstan-0549.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 44.04,
+   "lon": 53.16,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0552",
+   "file": "media/vx-2022-05-27-kazakhstan-0552.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Sayotesh",
+   "region": "Mangghystau",
+   "lat": 44.04,
+   "lon": 53.16,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-27-kazakhstan-0553",
+   "file": "media/vx-2022-05-27-kazakhstan-0553.jpg",
+   "kind": "photo",
+   "date": "2022-05-27",
+   "day": 56,
+   "country": "Kazakhstan",
+   "place": "Sayotesh",
+   "region": "Mangghystau",
+   "lat": 44.04,
+   "lon": 53.16,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-28-kazakhstan-0555",
+   "file": "clips/vx-2022-05-28-kazakhstan-0555.mp4",
+   "kind": "clip",
+   "date": "2022-05-28",
+   "day": 57,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 44.04,
+   "lon": 53.16,
+   "tags": [
+    "clip"
+   ],
+   "dur": 16.7,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-28-kazakhstan-0556",
+   "file": "media/vx-2022-05-28-kazakhstan-0556.jpg",
+   "kind": "photo",
+   "date": "2022-05-28",
+   "day": 57,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 44.04,
+   "lon": 53.16,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-28-kazakhstan-0561",
+   "file": "media/vx-2022-05-28-kazakhstan-0561.jpg",
+   "kind": "photo",
+   "date": "2022-05-28",
+   "day": 57,
+   "country": "Kazakhstan",
+   "place": "Atyrau",
+   "region": "Atyrau",
+   "lat": 46.54,
+   "lon": 54.21,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-28-kazakhstan-0564",
+   "file": "media/vx-2022-05-28-kazakhstan-0564.jpg",
+   "kind": "photo",
+   "date": "2022-05-28",
+   "day": 57,
+   "country": "Kazakhstan",
+   "place": "Qulsary",
+   "region": "Atyrau",
+   "lat": 46.54,
+   "lon": 54.21,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-31-kazakhstan-0586",
+   "file": "media/vx-2022-05-31-kazakhstan-0586.jpg",
+   "kind": "photo",
+   "date": "2022-05-31",
+   "day": 60,
+   "country": "Kazakhstan",
+   "place": "Aktobe",
+   "region": "Aqtoebe",
+   "lat": 48.73,
+   "lon": 58.23,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-31-kazakhstan-0587",
+   "file": "media/vx-2022-05-31-kazakhstan-0587.jpg",
+   "kind": "photo",
+   "date": "2022-05-31",
+   "day": 60,
+   "country": "Kazakhstan",
+   "place": "Aktobe",
+   "region": "Aqtoebe",
+   "lat": 48.73,
+   "lon": 58.23,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-31-kazakhstan-0588",
+   "file": "clips/vx-2022-05-31-kazakhstan-0588.mp4",
+   "kind": "clip",
+   "date": "2022-05-31",
+   "day": 60,
+   "country": "Kazakhstan",
+   "place": "Aktobe",
+   "region": "Aqtoebe",
+   "lat": 48.73,
+   "lon": 58.23,
+   "tags": [
+    "clip"
+   ],
+   "dur": 5.0,
+   "used": []
+  },
+  {
+   "id": "vx-2022-05-31-kazakhstan-0592",
+   "file": "media/vx-2022-05-31-kazakhstan-0592.jpg",
+   "kind": "photo",
+   "date": "2022-05-31",
+   "day": 60,
+   "country": "Kazakhstan",
+   "place": "Aktobe",
+   "region": "Aqtoebe",
+   "lat": 47.82,
+   "lon": 59.66,
+   "tags": [
+    "tech"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-01-kazakhstan-0594",
+   "file": "media/vx-2022-06-01-kazakhstan-0594.jpg",
+   "kind": "photo",
+   "date": "2022-06-01",
+   "day": 61,
+   "country": "Kazakhstan",
+   "place": "Kyzylorda",
+   "region": "Qyzylorda",
+   "lat": 46.21,
+   "lon": 62.02,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-01-kazakhstan-0595",
+   "file": "media/vx-2022-06-01-kazakhstan-0595.jpg",
+   "kind": "photo",
+   "date": "2022-06-01",
+   "day": 61,
+   "country": "Kazakhstan",
+   "place": "Kyzylorda",
+   "region": "Qyzylorda",
+   "lat": 46.18,
+   "lon": 61.91,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-02-kazakhstan-0603",
+   "file": "media/vx-2022-06-02-kazakhstan-0603.jpg",
+   "kind": "photo",
+   "date": "2022-06-02",
+   "day": 62,
+   "country": "Kazakhstan",
+   "place": "Kyzylorda",
+   "region": "Bayqongyr Qalasy",
+   "lat": 45.68,
+   "lon": 63.21,
+   "tags": [
+    "tech"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-02-kazakhstan-0605",
+   "file": "media/vx-2022-06-02-kazakhstan-0605.jpg",
+   "kind": "photo",
+   "date": "2022-06-02",
+   "day": 62,
+   "country": "Kazakhstan",
+   "place": "Kyzylorda",
+   "region": "Qyzylorda",
+   "lat": 44.88,
+   "lon": 65.26,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-02-kazakhstan-0606",
+   "file": "media/vx-2022-06-02-kazakhstan-0606.jpg",
+   "kind": "photo",
+   "date": "2022-06-02",
+   "day": 62,
+   "country": "Kazakhstan",
+   "place": "Kyzylorda",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-02-kazakhstan-0607",
+   "file": "media/vx-2022-06-02-kazakhstan-0607.jpg",
+   "kind": "photo",
+   "date": "2022-06-02",
+   "day": 62,
+   "country": "Kazakhstan",
+   "place": "Kyzylorda",
+   "region": "Qyzylorda",
+   "lat": 44.88,
+   "lon": 65.26,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-04-kazakhstan-0635",
+   "file": "media/vx-2022-06-04-kazakhstan-0635.jpg",
+   "kind": "photo",
+   "date": "2022-06-04",
+   "day": 64,
+   "country": "Kazakhstan",
+   "place": "Kyzylorda",
+   "region": "Qyzylorda",
+   "lat": 44.82,
+   "lon": 65.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-04-kazakhstan-0636",
+   "file": "media/vx-2022-06-04-kazakhstan-0636.jpg",
+   "kind": "photo",
+   "date": "2022-06-04",
+   "day": 64,
+   "country": "Kazakhstan",
+   "place": "Kyzylorda",
+   "region": "Qyzylorda",
+   "lat": 44.82,
+   "lon": 65.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-05-kazakhstan-0646",
+   "file": "media/vx-2022-06-05-kazakhstan-0646.jpg",
+   "kind": "photo",
+   "date": "2022-06-05",
+   "day": 65,
+   "country": "Kazakhstan",
+   "place": "Shymkent Qalasy",
+   "region": "Ongtustik Qazaqstan",
+   "lat": 42.75,
+   "lon": 69.03,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-05-kazakhstan-0647",
+   "file": "media/vx-2022-06-05-kazakhstan-0647.jpg",
+   "kind": "photo",
+   "date": "2022-06-05",
+   "day": 65,
+   "country": "Kazakhstan",
+   "place": "Shymkent Qalasy",
+   "region": "Ongtustik Qazaqstan",
+   "lat": 42.75,
+   "lon": 69.03,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-06-kazakhstan-0656",
+   "file": "media/vx-2022-06-06-kazakhstan-0656.jpg",
+   "kind": "photo",
+   "date": "2022-06-06",
+   "day": 66,
+   "country": "Kazakhstan",
+   "place": "Shymkent Qalasy",
+   "region": "Ongtustik Qazaqstan",
+   "lat": 42.68,
+   "lon": 68.99,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-06-kazakhstan-0657",
+   "file": "media/vx-2022-06-06-kazakhstan-0657.jpg",
+   "kind": "photo",
+   "date": "2022-06-06",
+   "day": 66,
+   "country": "Kazakhstan",
+   "place": "Shymkent Qalasy",
+   "region": "Ongtustik Qazaqstan",
+   "lat": 42.68,
+   "lon": 68.99,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-08-kazakhstan-0668",
+   "file": "media/vx-2022-06-08-kazakhstan-0668.jpg",
+   "kind": "photo",
+   "date": "2022-06-08",
+   "day": 68,
+   "country": "Kazakhstan",
+   "place": "Jambyl",
+   "region": "Zhambyl",
+   "lat": 42.99,
+   "lon": 72.35,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-08-kazakhstan-0669",
+   "file": "media/vx-2022-06-08-kazakhstan-0669.jpg",
+   "kind": "photo",
+   "date": "2022-06-08",
+   "day": 68,
+   "country": "Kazakhstan",
+   "place": "Jambyl",
+   "region": "Zhambyl",
+   "lat": 42.98,
+   "lon": 72.35,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-08-xx-0676",
+   "file": "media/vx-2022-06-08-xx-0676.jpg",
+   "kind": "photo",
+   "date": "2022-06-08",
+   "day": 68,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-10-kazakhstan-0684",
+   "file": "media/vx-2022-06-10-kazakhstan-0684.jpg",
+   "kind": "photo",
+   "date": "2022-06-10",
+   "day": 70,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.79,
+   "lon": 77.13,
+   "tags": [
+    "tech"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-11-kazakhstan-0697",
+   "file": "media/vx-2022-06-11-kazakhstan-0697.jpg",
+   "kind": "photo",
+   "date": "2022-06-11",
+   "day": 71,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.88,
+   "lon": 78.56,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-11-kazakhstan-0699",
+   "file": "clips/vx-2022-06-11-kazakhstan-0699.mp4",
+   "kind": "clip",
+   "date": "2022-06-11",
+   "day": 71,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.88,
+   "lon": 78.56,
+   "tags": [
+    "clip"
+   ],
+   "dur": 6.9,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-11-kazakhstan-0700",
+   "file": "media/vx-2022-06-11-kazakhstan-0700.jpg",
+   "kind": "photo",
+   "date": "2022-06-11",
+   "day": 71,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.88,
+   "lon": 78.56,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-11-kazakhstan-0703",
+   "file": "media/vx-2022-06-11-kazakhstan-0703.jpg",
+   "kind": "photo",
+   "date": "2022-06-11",
+   "day": 71,
+   "country": "Kazakhstan",
+   "place": "Saryozek",
+   "region": "Almaty Oblysy",
+   "lat": 43.87,
+   "lon": 78.56,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-11-kazakhstan-0705",
+   "file": "clips/vx-2022-06-11-kazakhstan-0705.mp4",
+   "kind": "clip",
+   "date": "2022-06-11",
+   "day": 71,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.88,
+   "lon": 78.56,
+   "tags": [
+    "clip"
+   ],
+   "dur": 5.6,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-11-kazakhstan-0707",
+   "file": "media/vx-2022-06-11-kazakhstan-0707.jpg",
+   "kind": "photo",
+   "date": "2022-06-11",
+   "day": 71,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.94,
+   "lon": 78.48,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0708",
+   "file": "clips/vx-2022-06-12-kazakhstan-0708.mp4",
+   "kind": "clip",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.95,
+   "lon": 78.77,
+   "tags": [
+    "clip"
+   ],
+   "dur": 4.3,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0713",
+   "file": "media/vx-2022-06-12-kazakhstan-0713.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 44.0,
+   "lon": 79.05,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0715",
+   "file": "media/vx-2022-06-12-kazakhstan-0715.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 44.0,
+   "lon": 79.05,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0716",
+   "file": "clips/vx-2022-06-12-kazakhstan-0716.mp4",
+   "kind": "clip",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 44.0,
+   "lon": 79.05,
+   "tags": [
+    "clip"
+   ],
+   "dur": 8.1,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0719",
+   "file": "media/vx-2022-06-12-kazakhstan-0719.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.93,
+   "lon": 79.11,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0720",
+   "file": "media/vx-2022-06-12-kazakhstan-0720.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.94,
+   "lon": 79.13,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0724",
+   "file": "media/vx-2022-06-12-kazakhstan-0724.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.99,
+   "lon": 79.24,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0729",
+   "file": "media/vx-2022-06-12-kazakhstan-0729.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.99,
+   "lon": 79.24,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0730",
+   "file": "media/vx-2022-06-12-kazakhstan-0730.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 43.99,
+   "lon": 79.24,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0740",
+   "file": "media/vx-2022-06-12-kazakhstan-0740.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 44.05,
+   "lon": 78.75,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0743",
+   "file": "media/vx-2022-06-12-kazakhstan-0743.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 44.05,
+   "lon": 78.75,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-12-kazakhstan-0744",
+   "file": "media/vx-2022-06-12-kazakhstan-0744.jpg",
+   "kind": "photo",
+   "date": "2022-06-12",
+   "day": 72,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 44.05,
+   "lon": 78.75,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-13-kazakhstan-0746",
+   "file": "media/vx-2022-06-13-kazakhstan-0746.jpg",
+   "kind": "photo",
+   "date": "2022-06-13",
+   "day": 73,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 44.05,
+   "lon": 78.75,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-13-kazakhstan-0748",
+   "file": "media/vx-2022-06-13-kazakhstan-0748.jpg",
+   "kind": "photo",
+   "date": "2022-06-13",
+   "day": 73,
+   "country": "Kazakhstan",
+   "place": "Taldy Kurgan",
+   "region": "Almaty Oblysy",
+   "lat": 44.24,
+   "lon": 79.47,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-13-kazakhstan-0752",
+   "file": "clips/vx-2022-06-13-kazakhstan-0752.mp4",
+   "kind": "clip",
+   "date": "2022-06-13",
+   "day": 73,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.21,
+   "lon": 79.21,
+   "tags": [
+    "clip"
+   ],
+   "dur": 10.5,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-13-kazakhstan-0753",
+   "file": "media/vx-2022-06-13-kazakhstan-0753.jpg",
+   "kind": "photo",
+   "date": "2022-06-13",
+   "day": 73,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.17,
+   "lon": 79.2,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-13-kazakhstan-0754",
+   "file": "media/vx-2022-06-13-kazakhstan-0754.jpg",
+   "kind": "photo",
+   "date": "2022-06-13",
+   "day": 73,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.05,
+   "lon": 79.23,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-13-xx-0755",
+   "file": "media/vx-2022-06-13-xx-0755.jpg",
+   "kind": "photo",
+   "date": "2022-06-13",
+   "day": 73,
+   "place": "Almaty",
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-13-kazakhstan-0762",
+   "file": "media/vx-2022-06-13-kazakhstan-0762.jpg",
+   "kind": "photo",
+   "date": "2022-06-13",
+   "day": 73,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 42.83,
+   "lon": 80.12,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-xx-0775",
+   "file": "media/vx-2022-06-14-xx-0775.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-xx-0776",
+   "file": "media/vx-2022-06-14-xx-0776.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "place": "Almaty",
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0782",
+   "file": "media/vx-2022-06-14-kazakhstan-0782.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.14,
+   "lon": 79.2,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0785",
+   "file": "media/vx-2022-06-14-kazakhstan-0785.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.27,
+   "lon": 78.97,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0787",
+   "file": "media/vx-2022-06-14-kazakhstan-0787.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.27,
+   "lon": 78.97,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0789",
+   "file": "media/vx-2022-06-14-kazakhstan-0789.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.36,
+   "lon": 79.06,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0790",
+   "file": "media/vx-2022-06-14-kazakhstan-0790.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.35,
+   "lon": 79.06,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0792",
+   "file": "media/vx-2022-06-14-kazakhstan-0792.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.35,
+   "lon": 79.06,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0793",
+   "file": "media/vx-2022-06-14-kazakhstan-0793.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.36,
+   "lon": 79.06,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-xx-0794",
+   "file": "media/vx-2022-06-14-xx-0794.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "place": "Almaty",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-xx-0796",
+   "file": "media/vx-2022-06-14-xx-0796.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0797",
+   "file": "clips/vx-2022-06-14-kazakhstan-0797.mp4",
+   "kind": "clip",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.35,
+   "lon": 79.07,
+   "tags": [
+    "clip"
+   ],
+   "dur": 11.6,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kazakhstan-0799",
+   "file": "media/vx-2022-06-14-kazakhstan-0799.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.29,
+   "lon": 78.93,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kyrgyzstan-0800",
+   "file": "media/vx-2022-06-14-kyrgyzstan-0800.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 43.05,
+   "lon": 78.56,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kyrgyzstan-0801",
+   "file": "media/vx-2022-06-14-kyrgyzstan-0801.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 43.05,
+   "lon": 78.56,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kyrgyzstan-0802",
+   "file": "media/vx-2022-06-14-kyrgyzstan-0802.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 43.07,
+   "lon": 78.43,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kyrgyzstan-0803",
+   "file": "media/vx-2022-06-14-kyrgyzstan-0803.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 43.03,
+   "lon": 78.44,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-14-kyrgyzstan-0804",
+   "file": "media/vx-2022-06-14-kyrgyzstan-0804.jpg",
+   "kind": "photo",
+   "date": "2022-06-14",
+   "day": 74,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 43.03,
+   "lon": 78.44,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-xx-0806",
+   "file": "media/vx-2022-06-15-xx-0806.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "place": "Almaty",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-xx-0807",
+   "file": "media/vx-2022-06-15-xx-0807.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "place": "Almaty",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kyrgyzstan-0808",
+   "file": "clips/vx-2022-06-15-kyrgyzstan-0808.mp4",
+   "kind": "clip",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 42.99,
+   "lon": 78.46,
+   "tags": [
+    "clip"
+   ],
+   "dur": 6.2,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-xx-0809",
+   "file": "media/vx-2022-06-15-xx-0809.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "place": "Almaty",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kyrgyzstan-0810",
+   "file": "clips/vx-2022-06-15-kyrgyzstan-0810.mp4",
+   "kind": "clip",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 42.98,
+   "lon": 78.46,
+   "tags": [
+    "clip"
+   ],
+   "dur": 4.2,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kyrgyzstan-0811",
+   "file": "media/vx-2022-06-15-kyrgyzstan-0811.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 42.98,
+   "lon": 78.46,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kyrgyzstan-0812",
+   "file": "media/vx-2022-06-15-kyrgyzstan-0812.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 42.99,
+   "lon": 78.47,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kyrgyzstan-0813",
+   "file": "media/vx-2022-06-15-kyrgyzstan-0813.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 42.99,
+   "lon": 78.47,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kyrgyzstan-0815",
+   "file": "media/vx-2022-06-15-kyrgyzstan-0815.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kyrgyzstan",
+   "place": "Almaty",
+   "region": "Ysyk-Koel",
+   "lat": 42.99,
+   "lon": 78.46,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-xx-0818",
+   "file": "media/vx-2022-06-15-xx-0818.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "place": "Almaty",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-xx-0819",
+   "file": "media/vx-2022-06-15-xx-0819.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-xx-0821",
+   "file": "media/vx-2022-06-15-xx-0821.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-xx-0822",
+   "file": "media/vx-2022-06-15-xx-0822.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "place": "Almaty",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kazakhstan-0825",
+   "file": "media/vx-2022-06-15-kazakhstan-0825.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.25,
+   "lon": 78.9,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kazakhstan-0826",
+   "file": "media/vx-2022-06-15-kazakhstan-0826.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.25,
+   "lon": 78.9,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kazakhstan-0827",
+   "file": "media/vx-2022-06-15-kazakhstan-0827.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.55,
+   "lon": 78.13,
+   "tags": [
+    "tech"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-15-kazakhstan-0828",
+   "file": "media/vx-2022-06-15-kazakhstan-0828.jpg",
+   "kind": "photo",
+   "date": "2022-06-15",
+   "day": 75,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Oblysy",
+   "lat": 43.55,
+   "lon": 78.13,
+   "tags": [
+    "tech"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-17-kazakhstan-0835",
+   "file": "media/vx-2022-06-17-kazakhstan-0835.jpg",
+   "kind": "photo",
+   "date": "2022-06-17",
+   "day": 77,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Qalasy",
+   "lat": 43.26,
+   "lon": 76.95,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-17-kazakhstan-0836",
+   "file": "media/vx-2022-06-17-kazakhstan-0836.jpg",
+   "kind": "photo",
+   "date": "2022-06-17",
+   "day": 77,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Qalasy",
+   "lat": 43.26,
+   "lon": 76.95,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-18-kazakhstan-0845",
+   "file": "media/vx-2022-06-18-kazakhstan-0845.jpg",
+   "kind": "photo",
+   "date": "2022-06-18",
+   "day": 78,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Qalasy",
+   "lat": 43.27,
+   "lon": 76.95,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-18-kazakhstan-0846",
+   "file": "media/vx-2022-06-18-kazakhstan-0846.jpg",
+   "kind": "photo",
+   "date": "2022-06-18",
+   "day": 78,
+   "country": "Kazakhstan",
+   "place": "Almaty",
+   "region": "Almaty Qalasy",
+   "lat": 43.27,
+   "lon": 76.95,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0858",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0858.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.6,
+   "lon": 78.37,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0859",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0859.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.6,
+   "lon": 78.37,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0864",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0864.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.45,
+   "lon": 78.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0865",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0865.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.45,
+   "lon": 78.54,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0866",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0866.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.45,
+   "lon": 78.54,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0868",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0868.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.45,
+   "lon": 78.54,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0869",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0869.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.45,
+   "lon": 78.54,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0871",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0871.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.45,
+   "lon": 78.54,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-20-kyrgyzstan-0872",
+   "file": "media/vx-2022-06-20-kyrgyzstan-0872.jpg",
+   "kind": "photo",
+   "date": "2022-06-20",
+   "day": 80,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.45,
+   "lon": 78.54,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-21-kyrgyzstan-0882",
+   "file": "media/vx-2022-06-21-kyrgyzstan-0882.jpg",
+   "kind": "photo",
+   "date": "2022-06-21",
+   "day": 81,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.49,
+   "lon": 78.24,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-21-kyrgyzstan-0883",
+   "file": "media/vx-2022-06-21-kyrgyzstan-0883.jpg",
+   "kind": "photo",
+   "date": "2022-06-21",
+   "day": 81,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.49,
+   "lon": 78.24,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-21-kyrgyzstan-0884",
+   "file": "clips/vx-2022-06-21-kyrgyzstan-0884.mp4",
+   "kind": "clip",
+   "date": "2022-06-21",
+   "day": 81,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.49,
+   "lon": 78.24,
+   "tags": [
+    "clip"
+   ],
+   "dur": 9.4,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-21-xx-0897",
+   "file": "media/vx-2022-06-21-xx-0897.jpg",
+   "kind": "photo",
+   "date": "2022-06-21",
+   "day": 81,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0905",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0905.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Karakol",
+   "region": "Ysyk-Koel",
+   "lat": 42.58,
+   "lon": 78.15,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0906",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0906.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Karakol",
+   "region": "Ysyk-Koel",
+   "lat": 42.58,
+   "lon": 78.15,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0909",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0909.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.51,
+   "lon": 78.2,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0911",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0911.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.39,
+   "lon": 78.22,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0914",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0914.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.36,
+   "lon": 78.22,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0923",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0923.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.33,
+   "lon": 78.24,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0926",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0926.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.34,
+   "lon": 78.24,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0931",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0931.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.33,
+   "lon": 78.25,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0932",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0932.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.33,
+   "lon": 78.25,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0934",
+   "file": "clips/vx-2022-06-23-kyrgyzstan-0934.mp4",
+   "kind": "clip",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.32,
+   "lon": 78.26,
+   "tags": [
+    "clip"
+   ],
+   "dur": 6.8,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0936",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0936.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.3,
+   "lon": 78.27,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-kyrgyzstan-0937",
+   "file": "media/vx-2022-06-23-kyrgyzstan-0937.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.3,
+   "lon": 78.25,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-xx-0938",
+   "file": "media/vx-2022-06-23-xx-0938.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "place": "Issyk Kul",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-23-xx-0939",
+   "file": "media/vx-2022-06-23-xx-0939.jpg",
+   "kind": "photo",
+   "date": "2022-06-23",
+   "day": 83,
+   "place": "Issyk Kul",
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-24-kyrgyzstan-0951",
+   "file": "media/vx-2022-06-24-kyrgyzstan-0951.jpg",
+   "kind": "photo",
+   "date": "2022-06-24",
+   "day": 84,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.08,
+   "lon": 76.98,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-24-kyrgyzstan-0952",
+   "file": "media/vx-2022-06-24-kyrgyzstan-0952.jpg",
+   "kind": "photo",
+   "date": "2022-06-24",
+   "day": 84,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.06,
+   "lon": 77.0,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-24-kyrgyzstan-0958",
+   "file": "media/vx-2022-06-24-kyrgyzstan-0958.jpg",
+   "kind": "photo",
+   "date": "2022-06-24",
+   "day": 84,
+   "country": "Kyrgyzstan",
+   "place": "Bokombayevskoye",
+   "region": "Ysyk-Koel",
+   "lat": 41.98,
+   "lon": 77.08,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-24-kyrgyzstan-0960",
+   "file": "media/vx-2022-06-24-kyrgyzstan-0960.jpg",
+   "kind": "photo",
+   "date": "2022-06-24",
+   "day": 84,
+   "country": "Kyrgyzstan",
+   "place": "Bokombayevskoye",
+   "region": "Ysyk-Koel",
+   "lat": 41.98,
+   "lon": 77.08,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0963",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0963.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.95,
+   "lon": 77.08,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0965",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0965.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.94,
+   "lon": 77.08,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0966",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0966.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.93,
+   "lon": 77.08,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0968",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0968.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.93,
+   "lon": 77.07,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0969",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0969.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.93,
+   "lon": 77.07,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0972",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0972.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.93,
+   "lon": 77.07,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0973",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0973.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.93,
+   "lon": 77.07,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0974",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0974.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Bokombayevskoye",
+   "region": "Ysyk-Koel",
+   "lat": 41.93,
+   "lon": 77.07,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0975",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0975.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Bokombayevskoye",
+   "region": "Ysyk-Koel",
+   "lat": 41.93,
+   "lon": 77.07,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0976",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0976.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.93,
+   "lon": 77.07,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0979",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0979.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.98,
+   "lon": 77.08,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0980",
+   "file": "clips/vx-2022-06-25-kyrgyzstan-0980.mp4",
+   "kind": "clip",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.98,
+   "lon": 77.08,
+   "tags": [
+    "clip"
+   ],
+   "dur": 9.7,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0982",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0982.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 41.99,
+   "lon": 77.09,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0984",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0984.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Issyk Kul",
+   "region": "Ysyk-Koel",
+   "lat": 42.03,
+   "lon": 77.03,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-25-kyrgyzstan-0985",
+   "file": "media/vx-2022-06-25-kyrgyzstan-0985.jpg",
+   "kind": "photo",
+   "date": "2022-06-25",
+   "day": 85,
+   "country": "Kyrgyzstan",
+   "place": "Bokombayevskoye",
+   "region": "Ysyk-Koel",
+   "lat": 42.03,
+   "lon": 77.03,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-0988",
+   "file": "media/vx-2022-06-26-kyrgyzstan-0988.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 42.41,
+   "lon": 75.85,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-0989",
+   "file": "media/vx-2022-06-26-kyrgyzstan-0989.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 42.34,
+   "lon": 75.87,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-0990",
+   "file": "media/vx-2022-06-26-kyrgyzstan-0990.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 42.34,
+   "lon": 75.87,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-0993",
+   "file": "clips/vx-2022-06-26-kyrgyzstan-0993.mp4",
+   "kind": "clip",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.94,
+   "lon": 75.42,
+   "tags": [
+    "clip"
+   ],
+   "dur": 5.8,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-0994",
+   "file": "media/vx-2022-06-26-kyrgyzstan-0994.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.92,
+   "lon": 75.42,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-0995",
+   "file": "media/vx-2022-06-26-kyrgyzstan-0995.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.92,
+   "lon": 75.42,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-0996",
+   "file": "clips/vx-2022-06-26-kyrgyzstan-0996.mp4",
+   "kind": "clip",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.89,
+   "lon": 75.35,
+   "tags": [
+    "clip"
+   ],
+   "dur": 14.4,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1000",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1000.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.76,
+   "lon": 75.17,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1002",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1002.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.67,
+   "lon": 75.04,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1004",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1004.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.67,
+   "lon": 75.04,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1006",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1006.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.66,
+   "lon": 75.02,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1008",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1008.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.66,
+   "lon": 75.03,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1010",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1010.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.66,
+   "lon": 75.03,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1011",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1011.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.65,
+   "lon": 75.03,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1015",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1015.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Baetov",
+   "region": "Naryn",
+   "lat": 41.56,
+   "lon": 75.02,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1016",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1016.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Baetov",
+   "region": "Naryn",
+   "lat": 41.56,
+   "lon": 75.02,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-26-kyrgyzstan-1022",
+   "file": "media/vx-2022-06-26-kyrgyzstan-1022.jpg",
+   "kind": "photo",
+   "date": "2022-06-26",
+   "day": 86,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-27-kyrgyzstan-1028",
+   "file": "media/vx-2022-06-27-kyrgyzstan-1028.jpg",
+   "kind": "photo",
+   "date": "2022-06-27",
+   "day": 87,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Naryn",
+   "lat": 41.31,
+   "lon": 74.7,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-27-kyrgyzstan-1034",
+   "file": "media/vx-2022-06-27-kyrgyzstan-1034.jpg",
+   "kind": "photo",
+   "date": "2022-06-27",
+   "day": 87,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Jalal-Abad",
+   "lat": 41.19,
+   "lon": 73.93,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-27-kyrgyzstan-1035",
+   "file": "media/vx-2022-06-27-kyrgyzstan-1035.jpg",
+   "kind": "photo",
+   "date": "2022-06-27",
+   "day": 87,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Jalal-Abad",
+   "lat": 41.19,
+   "lon": 73.93,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-27-kyrgyzstan-1036",
+   "file": "clips/vx-2022-06-27-kyrgyzstan-1036.mp4",
+   "kind": "clip",
+   "date": "2022-06-27",
+   "day": 87,
+   "country": "Kyrgyzstan",
+   "place": "Naryn",
+   "region": "Jalal-Abad",
+   "lat": 41.19,
+   "lon": 73.93,
+   "tags": [
+    "clip"
+   ],
+   "dur": 11.3,
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-28-kyrgyzstan-1039",
+   "file": "media/vx-2022-06-28-kyrgyzstan-1039.jpg",
+   "kind": "photo",
+   "date": "2022-06-28",
+   "day": 88,
+   "country": "Kyrgyzstan",
+   "place": "Osh",
+   "region": "Jalal-Abad",
+   "lat": 41.29,
+   "lon": 73.63,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-28-kyrgyzstan-1040",
+   "file": "media/vx-2022-06-28-kyrgyzstan-1040.jpg",
+   "kind": "photo",
+   "date": "2022-06-28",
+   "day": 88,
+   "country": "Kyrgyzstan",
+   "place": "Osh",
+   "region": "Jalal-Abad",
+   "lat": 41.29,
+   "lon": 73.63,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-28-kyrgyzstan-1041",
+   "file": "media/vx-2022-06-28-kyrgyzstan-1041.jpg",
+   "kind": "photo",
+   "date": "2022-06-28",
+   "day": 88,
+   "country": "Kyrgyzstan",
+   "place": "Osh",
+   "region": "Jalal-Abad",
+   "lat": 41.29,
+   "lon": 73.63,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-28-kyrgyzstan-1042",
+   "file": "media/vx-2022-06-28-kyrgyzstan-1042.jpg",
+   "kind": "photo",
+   "date": "2022-06-28",
+   "day": 88,
+   "country": "Kyrgyzstan",
+   "place": "Osh",
+   "region": "Jalal-Abad",
+   "lat": 41.29,
+   "lon": 73.63,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-30-tajikistan-1050",
+   "file": "media/vx-2022-06-30-tajikistan-1050.jpg",
+   "kind": "photo",
+   "date": "2022-06-30",
+   "day": 90,
+   "country": "Tajikistan",
+   "place": "Palos",
+   "region": "Viloyati Sughd",
+   "lat": 40.31,
+   "lon": 69.93,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-06-30-tajikistan-1051",
+   "file": "media/vx-2022-06-30-tajikistan-1051.jpg",
+   "kind": "photo",
+   "date": "2022-06-30",
+   "day": 90,
+   "country": "Tajikistan",
+   "place": "Palos",
+   "region": "Viloyati Sughd",
+   "lat": 40.31,
+   "lon": 69.93,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-02-tajikistan-1058",
+   "file": "media/vx-2022-07-02-tajikistan-1058.jpg",
+   "kind": "photo",
+   "date": "2022-07-02",
+   "day": 92,
+   "country": "Tajikistan",
+   "place": "Khudzhand",
+   "region": "Viloyati Sughd",
+   "lat": 39.5,
+   "lon": 68.55,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-02-tajikistan-1059",
+   "file": "media/vx-2022-07-02-tajikistan-1059.jpg",
+   "kind": "photo",
+   "date": "2022-07-02",
+   "day": 92,
+   "country": "Tajikistan",
+   "place": "Khudzhand",
+   "region": "Viloyati Sughd",
+   "lat": 39.5,
+   "lon": 68.55,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-02-tajikistan-1060",
+   "file": "media/vx-2022-07-02-tajikistan-1060.jpg",
+   "kind": "photo",
+   "date": "2022-07-02",
+   "day": 92,
+   "country": "Tajikistan",
+   "place": "Khudzhand",
+   "region": "Viloyati Sughd",
+   "lat": 39.5,
+   "lon": 68.55,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-02-tajikistan-1061",
+   "file": "clips/vx-2022-07-02-tajikistan-1061.mp4",
+   "kind": "clip",
+   "date": "2022-07-02",
+   "day": 92,
+   "country": "Tajikistan",
+   "place": "Khudzhand",
+   "region": "Viloyati Sughd",
+   "lat": 39.49,
+   "lon": 68.55,
+   "tags": [
+    "clip"
+   ],
+   "dur": 7.6,
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-02-tajikistan-1064",
+   "file": "media/vx-2022-07-02-tajikistan-1064.jpg",
+   "kind": "photo",
+   "date": "2022-07-02",
+   "day": 92,
+   "country": "Tajikistan",
+   "place": "Khudzhand",
+   "region": "Viloyati Sughd",
+   "lat": 39.39,
+   "lon": 68.67,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-05-uzbekistan-1069",
+   "file": "media/vx-2022-07-05-uzbekistan-1069.jpg",
+   "kind": "photo",
+   "date": "2022-07-05",
+   "day": 95,
+   "country": "Uzbekistan",
+   "place": "Jizzakh",
+   "region": "Samarqand",
+   "lat": 39.85,
+   "lon": 67.51,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-11-kazakhstan-1105",
+   "file": "media/vx-2022-07-11-kazakhstan-1105.jpg",
+   "kind": "photo",
+   "date": "2022-07-11",
+   "day": 101,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.36,
+   "lon": 51.32,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-11-kazakhstan-1106",
+   "file": "media/vx-2022-07-11-kazakhstan-1106.jpg",
+   "kind": "photo",
+   "date": "2022-07-11",
+   "day": 101,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.36,
+   "lon": 51.32,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-11-kazakhstan-1107",
+   "file": "media/vx-2022-07-11-kazakhstan-1107.jpg",
+   "kind": "photo",
+   "date": "2022-07-11",
+   "day": 101,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.36,
+   "lon": 51.32,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-11-kazakhstan-1108",
+   "file": "media/vx-2022-07-11-kazakhstan-1108.jpg",
+   "kind": "photo",
+   "date": "2022-07-11",
+   "day": 101,
+   "country": "Kazakhstan",
+   "place": "Mangystau",
+   "region": "Mangghystau",
+   "lat": 43.36,
+   "lon": 51.32,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1127",
+   "file": "media/vx-2022-07-12-kazakhstan-1127.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.71,
+   "lon": 51.11,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1128",
+   "file": "media/vx-2022-07-12-kazakhstan-1128.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.71,
+   "lon": 51.11,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1129",
+   "file": "media/vx-2022-07-12-kazakhstan-1129.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.71,
+   "lon": 51.11,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1130",
+   "file": "media/vx-2022-07-12-kazakhstan-1130.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.71,
+   "lon": 51.1,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1131",
+   "file": "media/vx-2022-07-12-kazakhstan-1131.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.72,
+   "lon": 51.1,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1132",
+   "file": "media/vx-2022-07-12-kazakhstan-1132.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.72,
+   "lon": 51.1,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1133",
+   "file": "media/vx-2022-07-12-kazakhstan-1133.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.72,
+   "lon": 51.1,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1135",
+   "file": "media/vx-2022-07-12-kazakhstan-1135.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.71,
+   "lon": 51.1,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-12-kazakhstan-1136",
+   "file": "media/vx-2022-07-12-kazakhstan-1136.jpg",
+   "kind": "photo",
+   "date": "2022-07-12",
+   "day": 102,
+   "country": "Kazakhstan",
+   "place": "Aktau",
+   "region": "Mangghystau",
+   "lat": 43.71,
+   "lon": 51.1,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-20-azerbaijan-1162",
+   "file": "media/vx-2022-07-20-azerbaijan-1162.jpg",
+   "kind": "photo",
+   "date": "2022-07-20",
+   "day": 110,
+   "country": "Azerbaijan",
+   "place": "Qobustan",
+   "region": "Baki",
+   "lat": 40.15,
+   "lon": 49.47,
+   "tags": [
+    "tech"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-27-georgia-1188",
+   "file": "media/vx-2022-07-27-georgia-1188.jpg",
+   "kind": "photo",
+   "date": "2022-07-27",
+   "day": 117,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Samtskhe-Javakheti",
+   "lat": 41.61,
+   "lon": 43.07,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-27-georgia-1189",
+   "file": "media/vx-2022-07-27-georgia-1189.jpg",
+   "kind": "photo",
+   "date": "2022-07-27",
+   "day": 117,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Samtskhe-Javakheti",
+   "lat": 41.61,
+   "lon": 43.07,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-27-georgia-1190",
+   "file": "media/vx-2022-07-27-georgia-1190.jpg",
+   "kind": "photo",
+   "date": "2022-07-27",
+   "day": 117,
+   "country": "Georgia",
+   "place": "Tbilisi",
+   "region": "Samtskhe-Javakheti",
+   "lat": 41.61,
+   "lon": 43.07,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-28-turkey-1194",
+   "file": "media/vx-2022-07-28-turkey-1194.jpg",
+   "kind": "photo",
+   "date": "2022-07-28",
+   "day": 118,
+   "country": "Turkey",
+   "place": "Tbilisi",
+   "region": "Ardahan",
+   "lat": 41.37,
+   "lon": 43.27,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-28-georgia-1196",
+   "file": "media/vx-2022-07-28-georgia-1196.jpg",
+   "kind": "photo",
+   "date": "2022-07-28",
+   "day": 118,
+   "country": "Georgia",
+   "place": "Adjara",
+   "region": "Ajaria",
+   "lat": 41.67,
+   "lon": 42.5,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-29-georgia-1200",
+   "file": "media/vx-2022-07-29-georgia-1200.jpg",
+   "kind": "photo",
+   "date": "2022-07-29",
+   "day": 119,
+   "country": "Georgia",
+   "place": "Khulo",
+   "region": "Ajaria",
+   "lat": 41.6,
+   "lon": 42.3,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-29-georgia-1203",
+   "file": "media/vx-2022-07-29-georgia-1203.jpg",
+   "kind": "photo",
+   "date": "2022-07-29",
+   "day": 119,
+   "country": "Georgia",
+   "place": "Khulo",
+   "region": "Ajaria",
+   "lat": 41.6,
+   "lon": 42.3,
+   "tags": [
+    "camp"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-30-georgia-1205",
+   "file": "media/vx-2022-07-30-georgia-1205.jpg",
+   "kind": "photo",
+   "date": "2022-07-30",
+   "day": 120,
+   "country": "Georgia",
+   "place": "Adjara",
+   "region": "Ajaria",
+   "lat": 41.57,
+   "lon": 41.87,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-30-georgia-1207",
+   "file": "media/vx-2022-07-30-georgia-1207.jpg",
+   "kind": "photo",
+   "date": "2022-07-30",
+   "day": 120,
+   "country": "Georgia",
+   "place": "Adjara",
+   "region": "Ajaria",
+   "lat": 41.77,
+   "lon": 41.75,
+   "tags": [
+    "people"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-30-georgia-1209",
+   "file": "media/vx-2022-07-30-georgia-1209.jpg",
+   "kind": "photo",
+   "date": "2022-07-30",
+   "day": 120,
+   "country": "Georgia",
+   "place": "Adjara",
+   "region": "Ajaria",
+   "lat": 41.77,
+   "lon": 41.75,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-30-georgia-1210",
+   "file": "media/vx-2022-07-30-georgia-1210.jpg",
+   "kind": "photo",
+   "date": "2022-07-30",
+   "day": 120,
+   "country": "Georgia",
+   "place": "Adjara",
+   "region": "Ajaria",
+   "lat": 41.77,
+   "lon": 41.75,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-30-georgia-1211",
+   "file": "media/vx-2022-07-30-georgia-1211.jpg",
+   "kind": "photo",
+   "date": "2022-07-30",
+   "day": 120,
+   "country": "Georgia",
+   "place": "Adjara",
+   "region": "Ajaria",
+   "lat": 41.76,
+   "lon": 41.75,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-07-31-turkey-1216",
+   "file": "media/vx-2022-07-31-turkey-1216.jpg",
+   "kind": "photo",
+   "date": "2022-07-31",
+   "day": 121,
+   "country": "Turkey",
+   "place": "Giresun",
+   "region": "Giresun",
+   "lat": 40.92,
+   "lon": 38.46,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-01-turkey-1217",
+   "file": "media/vx-2022-08-01-turkey-1217.jpg",
+   "kind": "photo",
+   "date": "2022-08-01",
+   "day": 122,
+   "country": "Turkey",
+   "place": "Sariyer",
+   "region": "Istanbul",
+   "lat": 41.23,
+   "lon": 29.05,
+   "tags": [
+    "landscape"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-02-bulgaria-1219",
+   "file": "media/vx-2022-08-02-bulgaria-1219.jpg",
+   "kind": "photo",
+   "date": "2022-08-02",
+   "day": 123,
+   "country": "Bulgaria",
+   "place": "Dolno Vyrshilo",
+   "region": "Pazardzhik",
+   "lat": 42.34,
+   "lon": 23.99,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-02-bulgaria-1220",
+   "file": "media/vx-2022-08-02-bulgaria-1220.jpg",
+   "kind": "photo",
+   "date": "2022-08-02",
+   "day": 123,
+   "country": "Bulgaria",
+   "place": "Dolno Vyrshilo",
+   "region": "Pazardzhik",
+   "lat": 42.34,
+   "lon": 23.99,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-02-bulgaria-1221",
+   "file": "media/vx-2022-08-02-bulgaria-1221.jpg",
+   "kind": "photo",
+   "date": "2022-08-02",
+   "day": 123,
+   "country": "Bulgaria",
+   "place": "Mina Bolshevik",
+   "region": "Sofiya",
+   "lat": 42.86,
+   "lon": 22.87,
+   "tags": [
+    "sandy"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-03-bulgaria-1224",
+   "file": "media/vx-2022-08-03-bulgaria-1224.jpg",
+   "kind": "photo",
+   "date": "2022-08-03",
+   "day": 124,
+   "country": "Bulgaria",
+   "place": "Dragoman",
+   "region": "Sofiya",
+   "lat": 42.86,
+   "lon": 22.87,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-04-croatia-1229",
+   "file": "media/vx-2022-08-04-croatia-1229.jpg",
+   "kind": "photo",
+   "date": "2022-08-04",
+   "day": 125,
+   "country": "Croatia",
+   "place": "Karlovac",
+   "region": "Karlovacka",
+   "lat": 45.42,
+   "lon": 15.48,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-04-croatia-1232",
+   "file": "media/vx-2022-08-04-croatia-1232.jpg",
+   "kind": "photo",
+   "date": "2022-08-04",
+   "day": 125,
+   "country": "Croatia",
+   "place": "Karlovac",
+   "region": "Karlovacka",
+   "lat": 45.42,
+   "lon": 15.48,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-04-croatia-1233",
+   "file": "media/vx-2022-08-04-croatia-1233.jpg",
+   "kind": "photo",
+   "date": "2022-08-04",
+   "day": 125,
+   "country": "Croatia",
+   "place": "Karlovac",
+   "region": "Karlovacka",
+   "lat": 45.42,
+   "lon": 15.48,
+   "tags": [
+    "cat"
+   ],
+   "used": []
+  },
+  {
+   "id": "vx-2022-08-05-slovenia-1236",
+   "file": "media/vx-2022-08-05-slovenia-1236.jpg",
+   "kind": "photo",
+   "date": "2022-08-05",
+   "day": 126,
+   "country": "Slovenia",
+   "place": "Donji Macelj",
+   "region": "Zetale",
+   "lat": 46.25,
+   "lon": 15.85,
+   "tags": [
+    "road"
+   ],
+   "used": []
+  }
+ ]
+}
