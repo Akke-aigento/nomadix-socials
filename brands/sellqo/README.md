@@ -54,6 +54,10 @@ Minstens drie verschillende templates per week; licht (crème) en donker (navy) 
 UI-scènes nabouwen met de labels uit `landing.scene` (Atelier Nord, Pizzeria Fiamma, Leuven Pub Crawl) of uit de app;
 nooit klantdata, nooit een echt ordernummer of klantnaam.
 
+## Variatie (verplicht)
+
+Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per week minstens 5 formats, nooit twee dagen na elkaar dezelfde template, minstens één lichte/felle post, één beeld-eerst-post en één typografische post, hooks en captionlengtes wisselen, en per item format/template/hook in `log.md`. Volstaat een template niet, maak een nieuwe variant in de huisstijl.
+
 ## Weekroutine (elke zondag, voor de week vanaf maandag)
 
 1. **Lees** `log.md`, de laatste week in `weeks/`, de bible en de sellqo-repo (claims hierboven). Kies per dag een onderwerp
