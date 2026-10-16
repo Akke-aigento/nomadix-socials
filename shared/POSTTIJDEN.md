@@ -80,6 +80,19 @@ Het publiek zit ook in het VK (−1 u) en in Duitsland en Nederland (zelfde uur)
 
 Vlak vóór een crawl telt het event meer dan het venster: tel af naar de crawl.
 
+## De eigen data lezen (SOCIAL-5)
+
+SellQo meet elke 3 uur de cijfers van elke geposte post. Lees ze vóór je uren kiest:
+
+```sql
+select weekday, hour, media_type, count(*) posts, round(avg(engagement_rate),2) gem_interactie, round(avg(reach)) gem_bereik
+from social_post_performance
+where tenant_id = '<tenant>' and posted_at > now() - interval '90 days'
+group by 1,2,3 order by gem_interactie desc nulls last;
+```
+
+`weekday` gaat van 1 (ma) tot 7 (zo); `hour` is het Brusselse uur. Een uur of dagdeel met minstens 3 posts en een duidelijk hogere interactiegraad wordt het nieuwe vaste slot binnen het venster. Een testslot dat na 3 posts onder het gemiddelde zit, valt weg. Zolang `engagement_rate` leeg is (account nog niet opnieuw gekoppeld met statistieken), vergelijk je op `likes + comments`. Volgers per dag: `social_account_stats`.
+
 ## Controle vóór de insert
 
 Draai deze query voor de week van het merk. Komt een uur meer dan één keer voor, of zitten alle items in hetzelfde dagdeel, dan pas je dat eerst aan:
