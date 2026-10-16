@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Mythe vs feit</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- myth: LICHTE variant (paper). Eén misverstand rechtgezet. Feit enkel uit de site of controleerbare webkennis. -->
+<style>
+  .myth { font-size:72px; font-weight:800; letter-spacing:-.02em; line-height:1.15; color:#94A3B8; text-decoration: line-through; text-decoration-color: var(--coral); text-decoration-thickness: 6px; }
+  .label { font-family:"JetBrains Mono",monospace; font-size:24px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+  .fact { background:#fff; border-radius:28px; padding:52px 54px; box-shadow:0 30px 60px -30px rgba(15,23,41,.35); border:1px solid #E2E8F0; }
+</style>
+</head>
+<body class="paper">
+  <div class="brand tl"><img src="../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad); color:#0D9488"><span class="c">//</span> mythe vs. feit</div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:50%; transform:translateY(-50%); display:flex; flex-direction:column; gap:40px">
+    <div class="label coral">Mythe</div>
+    <div class="myth" data-slot="mythe" data-label="Mythe" data-max="70">"Een goede website duurt maanden."</div>
+    <div class="fact" style="display:flex; flex-direction:column; gap:22px; margin-top:20px">
+      <div class="label" style="color:#0D9488">Feit</div>
+      <div class="h" style="color:var(--navy); font-size:66px" data-slot="feit" data-label="Feit" data-max="60">Met vaste pakketten ben je live in 5 tot 14 werkdagen.</div>
+      <p class="lead" data-slot="tekst" data-label="Uitleg" data-max="140">De klok start zodra je logo, teksten en foto's binnen zijn. Daarna: preview binnen 3 tot 5 dagen.</p>
+    </div>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill" style="background:var(--navy); color:#fff" data-slot="cta" data-label="Knop" data-max="30">Bekijk de werkwijze</span>
+    <span class="code" style="color:#64748B" data-slot="link" data-label="Link" data-max="28">studioakke.com</span>
+  </div>
+</body>
+</html>

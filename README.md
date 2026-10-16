@@ -3,6 +3,7 @@
 De contentmachine voor de Instagram (en later andere kanalen) van de Nomadix-merken.
 
 - `shared/` — scripts voor alle merken: `render.mjs` (HTML → JPG), `reel.mjs` (HTML-animatie → MP4), `recipe.mjs` (recept voor "Tekst in beeld aanpassen" in SellQo).
+- `shared/VARIATIE.md` — verplichte variatieregels voor alle merken: elke post uniek, wisselende formats, layouts en hooks.
 - `brands/<slug>/` — per merk: huisstijl, templates, media, weken, gepubliceerde beelden, log en een README met de weekroutine.
 
 Goedkeuren en publiceren gebeurt in **SellQo → Marketing → Social planning**. Deze repo is enkel bron en transport:

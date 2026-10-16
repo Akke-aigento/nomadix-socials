@@ -35,3 +35,7 @@ Instagram is nog niet gekoppeld in SellQo: alles staat op `manual` (`manual_reas
 Stories met linksticker: laat de strook y 1300–1560 vrij.
 
 Een weektaak volgt na de crawl van 24 okt, samen met de brand bible.
+
+## Variatie (verplicht)
+
+Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per week minstens 5 formats, nooit twee dagen na elkaar dezelfde template, minstens één lichte/felle post, één beeld-eerst-post en één typografische post, hooks en captionlengtes wisselen, en per item format/template/hook in `log.md`. Volstaat een template niet, maak een nieuwe variant in de huisstijl.

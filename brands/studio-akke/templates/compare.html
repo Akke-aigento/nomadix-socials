@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Vergelijking</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- compare: twee kolommen (zonder vs. met, oud vs. nieuw, A vs. B). Enkel controleerbare punten. -->
+<style>
+  .col { border-radius:28px; padding:40px 36px; display:flex; flex-direction:column; gap:22px; }
+  .col h3 { font-size:36px; font-weight:900; letter-spacing:-.02em; }
+  .col li { list-style:none; font-size:28px; line-height:1.35; padding:16px 0; border-top:1px solid rgba(255,255,255,.1); }
+  .bad { background:rgba(242,69,109,.08); border:1px solid rgba(242,69,109,.35); }
+  .bad li { color:rgba(255,255,255,.62); }
+  .good { background:rgba(43,212,189,.1); border:2px solid var(--teal); }
+</style>
+</head>
+<body>
+  <div class="glow violet" style="width:760px; height:760px; left:-300px; top:-200px"></div>
+  <div class="brand tl"><img src="../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:220px; display:flex; flex-direction:column; gap:44px">
+    <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="44">Hotmail of<br><span class="grad">je eigen domein?</span></h1>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px">
+      <div class="col bad"><h3 class="coral" data-slot="links" data-label="Kop links" data-max="20">jouwzaak@hotmail.com</h3><ul>
+        <li data-slot="l1" data-label="Links 1" data-max="40">Past niet bij je zaak</li><li data-slot="l2" data-label="Links 2" data-max="40">Eén adres voor alles</li><li data-slot="l3" data-label="Links 3" data-max="40">Je zaak staat niet in je adres</li></ul></div>
+      <div class="col good"><h3 class="teal" data-slot="rechts" data-label="Kop rechts" data-max="20">info@jouwzaak.be</h3><ul>
+        <li data-slot="r1" data-label="Rechts 1" data-max="40">Herkenbaar en professioneel</li><li data-slot="r2" data-label="Rechts 2" data-max="40">info@, facturatie@, naam@</li><li data-slot="r3" data-label="Rechts 3" data-max="40">Goed ingesteld, dus als echt herkend</li></ul></div>
+    </div>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill teal" data-slot="cta" data-label="Knop" data-max="30">Vanaf €10/maand excl. btw</span>
+    <span class="code" style="color:var(--mute)" data-slot="link" data-label="Link" data-max="28">studioakke.com/mail</span>
+  </div>
+</body>
+</html>

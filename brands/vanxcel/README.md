@@ -63,6 +63,10 @@ Om de twee dagen een post of reel, stories op de tussendagen (Brusselse tijd):
 | za | story | 18:05 |
 | zo | post (of reel, afwisselen per week) | 18:00 |
 
+## Variatie (verplicht)
+
+Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per week minstens 5 formats, nooit twee dagen na elkaar dezelfde template, minstens één lichte/felle post, één beeld-eerst-post en één typografische post, hooks en captionlengtes wisselen, en per item format/template/hook in `log.md`. Volstaat een template niet, maak een nieuwe variant in de huisstijl.
+
 ## Weekroutine (elke zondag, voor de week vanaf maandag)
 
 1. **Lees** `log.md`, de laatste week in `weeks/`, en de bible. Kies de items volgens het ritme, uit verschillende pijlers. Kies foto's uit `media.json` met de minste `used`, en voorkeur voor beelden die Akke in SellQo een hartje gaf (`media_assets.is_favorite`, map `brand`, zodra die rijen bestaan).
