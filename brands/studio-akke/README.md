@@ -37,7 +37,7 @@ Stand 16 okt 2026 (excl. btw): Landing Page €895 (1 pagina, 5–7 werkdagen), 
 - "Acht sites live" mag (staat op de site). Nooit klantaantallen, "tevreden klanten", reviews, sterren, quotes of resultaten (bezoekers, omzet, "+40% leads") die niet aantoonbaar zijn.
 - Cases: enkel wat de site zelf zegt (categorie, omschrijving, kenmerken). Wat een klant van de site vindt, is niet gekend: niet invullen. Yeketi-klant heet altijd "Baram Maro" (nooit een familienaam).
 - AI en tools mogen genoemd worden zoals op de site ("moderne tools zoals Lovable"), zonder te overdrijven.
-- **Geen foto's van Akke** tot hij een echte foto aanlevert of bevestigt. De oude `akke-photo.jpg` op de site lijkt een stockfoto: nooit gebruiken.
+- **Geen foto van Akke** tot hij bevestigt welke foto mag (de bureaufoto op "Over Akke" of een nieuwe). De ongebruikte `akke-photo.jpg` in de site-repo (man in pak) nooit gebruiken.
 - Geen "duurzaam/eco/groen". Geen emoji in beelden, wel in captions. Insights: "cookieloos" mag (staat op de site), geen juridische garanties.
 - Studio Akke is los van Akke's werkgever: daar nooit naar verwijzen.
 
