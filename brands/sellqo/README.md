@@ -74,6 +74,10 @@ nooit klantdata, nooit een echt ordernummer of klantnaam.
    - Instagram **gekoppeld**: posts en carrousels `pending_approval`; stories zonder sticker `story` + `pending_approval`; sticker-stories `manual` + `sticker`.
    - `source` `content_task`, `language` `nl`, `scheduled_for` in `Europe/Brussels`. Carrousel: `media_type` `carousel`, alle URL's in volgorde.
    Caption: Nederlands, kort, 3–5 hashtags uit de bible, CTA met "link in bio". Controleer met een `select`.
+   **Recepten niet inline plakken** (±10 kB per beeld, een week is >100 kB SQL). Na de push haalt de database ze zelf op:
+   `select n, net.http_get('https://raw.githubusercontent.com/Akke-aigento/nomadix-socials/main/brands/sellqo/weeks/<maandag>/'||n||'.recipe.json') from unnest(array['post-ma',…]) n;`
+   → noteer de request-id's, controleer `select id, status_code, md5(content) from net._http_response where id in (…)` tegen `md5sum` lokaal,
+   en gebruik in de insert `(select jsonb_build_array(content::jsonb) from net._http_response where id=…)` (carrousel: `jsonb_agg(content::jsonb order by id)`).
 7. **Herinneringen** doet SellQo zelf (±1 u vooraf). Geen losse herinneringstaken.
 8. **Log en git**: week in `log.md` (onderwerp, template, bron, gebruikte scènes/changelog-items), commit naar `main`.
 9. **Meld**: `insert into notifications (tenant_id, category, type, priority, title, message, action_url, data) values ('d03c63fe-48c6-4ff7-a30b-7506ea3e71ab','marketing','social_posts_ready','medium','Week van <d mmm> klaar: <n> items','<onderwerpen>. LinkedIn-versies: <raw-url map>. Bekijk ze in de Social planning.','/admin/marketing/social','{}'::jsonb);`
