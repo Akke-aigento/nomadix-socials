@@ -1,6 +1,6 @@
 # The Fonske Crawl Instagram — werkwijze
 
-@fonskecrawl · Engels · tenant `95f6685b-3474-42fe-81ad-a5e6ca3d6806` · SellQo-project `9932a7fe-43a1-42de-9c64-168968599600`.
+@the.fonske.crawl · Engels · tenant `95f6685b-3474-42fe-81ad-a5e6ca3d6806` · SellQo-project `9932a7fe-43a1-42de-9c64-168968599600`.
 Site: fonskecrawl.com (repo `Akke-aigento/fonske-crawl-hq`, Lovable-project `377b3ca5-a57f-413e-a53a-dc1889be4b40`).
 Brand bible: claude.ai-project "Nomadix Socials", `claude/brand-fonske.md` (volgt na de crawl van 24 okt).
 
