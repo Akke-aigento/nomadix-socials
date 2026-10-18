@@ -21,7 +21,7 @@ Bewust **geen prijzen**: pakketten en limieten wijzigden deze week (changelog 20
 
 Labels (`content_tags`), allemaal `bucket: explore` behalve vr (`test`, `experiment: tijd`):
 ma `feature/ui-scene/feature-split/belofte/kort/link` · di `bewijs/screenshot/story-screenshot/statement/kort/profiel` · wo `tips/mythe-feit/myth-fact/contrast/lang/opslaan` ·
-do `feature/reel-tekst/reel-steps/cijfer/middel/link` · vr `build/achter-de-schermen/buildlog-ui/verhaal/middel/link` · za `samen/poll/poll-fel/vraag/kort/reageren`.
+do `feature/reel-tekst/reel-steps/cijfer/middel/link` · vr `build/achter-de-schermen/buildlog-ui/verhaal/lang/link` · za `samen/poll/poll-fel/vraag/kort/reageren`.
 
 Gebruikte changelog-items: `horeca_channels`. Gebruikte scènes: retail-kassa (Atelier Nord), events (Leuven Pub Crawl), horeca-gerecht (Pizzeria Fiamma, Diavola). Gebruikt beeld: `studio-akke/media/site-vanxcel.jpg`.
 Muziek reel (SocialPilot, 12–25 okt 2026, niet herhalen): Rikas – Last Train to London, Andrea Vanzo – Autumn Journey, Adrián Berenguer – October.
