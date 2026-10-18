@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Buildlog: per gerecht waar te bestellen</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- buildlog-ui (Build in public, variant van buildlog met één UI-kaart). Bron: publieke changelog 2026.12r horeca_channels;
+     labels letterlijk uit nl.json admin.storefront.food (channels_*, sold_out_*); gerecht uit landing.scene.horeca (Pizzeria Fiamma, Diavola). -->
+<style>
+  .sw { width:64px; height:36px; border-radius:18px; background:var(--green); position:relative; flex:none; }
+  .sw:after { content:""; position:absolute; right:4px; top:4px; width:28px; height:28px; border-radius:50%; background:#fff; }
+  .sw.off { background:#D5D9E6; } .sw.off:after { right:auto; left:4px; }
+  .opv { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-top:22px; padding:22px 26px; border-radius:20px; background:var(--coral-soft); }
+</style>
+</head>
+<body class="dark">
+  <div class="blob coral" style="width:520px;height:520px;right:-280px;top:-300px"></div>
+  <div class="dots" style="left:0;right:0;top:0;height:520px"></div>
+  <img class="logo tl" src="../../logo-white.png" alt="SellQo">
+  <div style="position:absolute;left:var(--pad);right:var(--pad);top:180px;display:flex;flex-direction:column;gap:22px">
+    <div class="kicker" data-slot="kicker" data-label="Bovenregel" data-max="30">Nieuw voor horeca</div>
+    <h1 class="h h-l" data-slot="titel" data-label="Titel" data-max="44">Diavola op?<br><span class="hl">Eén tik. Overal.</span></h1>
+  </div>
+
+  <div class="card" style="left:var(--pad);right:var(--pad);top:500px;padding:36px 40px">
+    <div class="ttl" style="font-size:30px">Diavola <span class="sub" style="margin:0;font-size:22px">Pizzeria Fiamma</span></div>
+    <div class="sub" style="margin:-6px 0 8px;font-size:22px;color:var(--navy);font-weight:600">Waar te bestellen</div>
+    <div class="row"><div><b>Online bestellen</b><div class="sub">Afhalen en leveren via je webshop.</div></div><span class="sw"></span></div>
+    <div class="row"><div><b>Aan tafel bestellen</b><div class="sub">Via de QR-code op tafel.</div></div><span class="sw"></span></div>
+    <div class="row"><div><b>Tonen op de QR-kaart</b><div class="sub">Zichtbaar op de kaart.</div></div><span class="sw"></span></div>
+    <div class="row"><div><b>Kassa</b><div class="sub">Te verkopen aan de kassa.</div></div><span class="sw"></span></div>
+    <div class="opv"><div><b style="font-size:26px;color:#C9452A">Op voor vandaag</b><div class="sub" style="color:var(--navy)">Overal uitverkocht tot morgenochtend 05:00.</div></div><span class="chip dark" style="font-size:22px;padding:12px 20px">Aan</span></div>
+  </div>
+
+  <div style="position:absolute;left:var(--pad);right:var(--pad);bottom:70px;display:flex;align-items:center;justify-content:space-between">
+    <span class="body" style="color:#C9CEE6" data-slot="tekst" data-label="Tekst onder" data-max="40">Eén kaart, één voorraad.</span>
+    <span class="pill coral" data-slot="cta" data-label="Knop" data-max="24">sellqo.app/changelog</span>
+  </div>
+</body>
+</html>

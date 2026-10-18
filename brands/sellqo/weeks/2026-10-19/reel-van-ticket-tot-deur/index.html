@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="15" data-fps="30">
+<title>Reel: van ticket tot deur in 3 stappen</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- reel "steps" (pijler Feature, nieuw format: tekst-op-beeld in 3 genummerde stappen; vorige reel was een flow).
+     Bron: landing.sectors.events (tickets onder je eigen naam, QR-ticket per mail, inchecken met je gsm, ook voor crew),
+     labels uit landing.scene.events (Leuven Pub Crawl). Geen prijzen per ticket (pakketten wijzigden deze week). -->
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .intro { position:absolute; left:var(--pad); right:var(--pad); top:560px; opacity:0; }
+  .num { position:absolute; left:var(--pad); top:400px; font-family:Poppins; font-weight:800; font-size:300px; line-height:.8; color:var(--coral); opacity:0; }
+  .lbl { position:absolute; left:330px; right:var(--pad); top:430px; opacity:0; }
+  .scene { position:absolute; left:var(--pad); right:var(--pad); top:760px; height:820px; }
+  .scene > div { position:absolute; left:0; right:0; opacity:0; }
+  .scene .card { padding:44px 48px; }
+  .scene .card .ttl { font-size:34px; margin-bottom:24px; }
+  .scene .card .row { font-size:32px; padding:24px 0; }
+  .scene .card .sub { font-size:24px; }
+  .scene .chip { font-size:24px; padding:10px 20px; }
+  .qr { width:300px; height:300px; display:grid; grid-template-columns:repeat(21,1fr); gap:0; margin:26px auto 10px; padding:14px; background:#fff; border-radius:18px; box-shadow:0 0 0 2px var(--line); }
+  .qr i { display:block; }
+  .end { position:absolute; inset:0; background:var(--deep); color:#fff; opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .end .hl { background:none; color:var(--coral); }
+  .dots3 { position:absolute; left:var(--pad); bottom:330px; display:flex; gap:16px; }
+  .dots3 i { width:64px; height:10px; border-radius:5px; background:rgba(0,20,91,.12); display:block; }
+</style>
+</head>
+<body>
+  <div class="blob soft" style="width:1000px;height:1000px;left:-460px;top:900px"></div>
+  <div class="top"><img src="../../../logo-navy.png" alt="SellQo" style="height:60px"><span class="chip blue" style="font-size:24px;padding:12px 22px">Events</span></div>
+
+  <div class="intro" id="intro">
+    <div class="kicker" style="margin-bottom:30px">Voor wie events organiseert</div>
+    <h1 class="h" style="font-size:150px;line-height:.98">Van ticket<br>tot deur.<br><span class="hl">3 stappen.</span></h1>
+  </div>
+
+  <div class="num" id="n1">1</div><div class="lbl" id="l1"><h2 class="h h-m">Je bezoeker<br><span class="hl">koopt tickets.</span></h2></div>
+  <div class="num" id="n2">2</div><div class="lbl" id="l2"><h2 class="h h-m">De QR-code<br><span class="hl">komt per mail.</span></h2></div>
+  <div class="num" id="n3">3</div><div class="lbl" id="l3"><h2 class="h h-m">Je scant<br><span class="hl">met je gsm.</span></h2></div>
+
+  <div class="scene">
+    <div id="s1">
+      <div class="card" style="position:relative">
+        <div class="ttl">Leuven Pub Crawl <span class="chip blue">Demo</span></div>
+        <div class="row"><div><b>Za 24 okt · 20:00</b><div class="sub">2× Early bird · nog 6 plaatsen</div></div><b>€ 40,00</b></div>
+        <div class="btn" id="buy" style="width:100%;margin-top:26px;font-size:30px;padding:26px">Tickets kopen</div>
+      </div>
+      <div class="toast" id="sold" style="left:40px;right:40px;top:470px;opacity:0"><span class="tick">✓</span><div><b>Verkocht</b><div style="font-size:20px;opacity:.75">Jan P. · 2 tickets · Early bird</div></div></div>
+    </div>
+    <div id="s2">
+      <div class="card" style="position:relative;text-align:center">
+        <div class="ttl" style="justify-content:center">Je tickets staan in je mail</div>
+        <div class="qr" id="qr"></div>
+        <div class="sub" style="font-size:26px">Toon deze QR-code aan de deur.</div>
+      </div>
+    </div>
+    <div id="s3">
+      <div class="card" style="position:relative">
+        <div class="ttl">Inchecken <span class="chip ok" id="cnt">Binnen 32 / 40</span></div>
+        <div class="row"><div>Lien D.<div class="sub">binnen</div></div><span class="chip ok">Gescand</span></div>
+        <div class="row"><div>Tom V.<div class="sub">binnen</div></div><span class="chip ok">Gescand</span></div>
+        <div class="row" id="jan"><div><b>Jan P. · 2 tickets</b><div class="sub">Early bird · za 24 okt</div></div><span class="chip new" id="st">Verkocht</span></div>
+      </div>
+      <div class="toast" id="welkom" style="left:40px;right:40px;top:640px;opacity:0;font-size:34px;justify-content:center"><span class="tick">✓</span>Welkom!</div>
+    </div>
+  </div>
+  <div class="dots3"><i id="d1"></i><i id="d2"></i><i id="d3"></i></div>
+
+  <div class="end" id="end">
+    <img src="../../../logo-white.png" alt="SellQo" style="height:90px;align-self:flex-start">
+    <h1 class="h" style="font-size:112px">Tickets onder<br><span class="hl">je eigen naam.</span></h1>
+    <p class="lead">Inchecken met je gsm, ook voor je crew.</p>
+    <div style="display:flex;gap:20px;align-items:center"><span class="pill coral" style="font-size:32px">sellqo.app</span><span class="body" style="opacity:.8">link in bio</span></div>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  const win = (t, a, b) => ease((t - a) / 0.35) * clamp((b - t) / 0.3);
+  // vaste, verzonnen QR-tegel (geen echte code): drie hoekmarkeringen + vast patroon
+  (() => {
+    const q = $("qr"); let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+    const finder = (x, y) => [[0,0],[14,0],[0,14]].some(([a,b]) => x>=a && x<a+7 && y>=b && y<b+7);
+    const fcell = (x, y) => { const [a,b] = x<7&&y<7?[0,0]:x>=14&&y<7?[14,0]:[0,14]; const dx=x-a, dy=y-b; return dx===0||dy===0||dx===6||dy===6||(dx>=2&&dx<=4&&dy>=2&&dy<=4); };
+    for (let y = 0; y < 21; y++) for (let x = 0; x < 21; x++) {
+      const i = document.createElement("i");
+      const on = finder(x, y) ? fcell(x, y) : rnd() > 0.52;
+      i.style.background = on ? "#00145B" : "transparent"; q.appendChild(i);
+    }
+  })();
+  const ST = [[2.4, 5.9], [5.9, 9.3], [9.3, 12.8]];
+  window.setT = (t) => {
+    $("intro").style.opacity = win(t, 0, 2.4); $("intro").style.transform = `translateY(${(1 - ease(t / 0.5)) * 40}px)`;
+    ST.forEach(([a, b], i) => {
+      const o = win(t, a, b), k = i + 1, up = (1 - ease((t - a) / 0.45));
+      $("n" + k).style.opacity = o; $("n" + k).style.transform = `translateY(${up * 50}px)`;
+      $("l" + k).style.opacity = o; $("l" + k).style.transform = `translateY(${up * 30}px)`;
+      $("s" + k).style.opacity = o; $("s" + k).style.transform = `translateY(${up * 60}px)`;
+      $("d" + k).style.background = t >= a ? "#FD7B5B" : "rgba(0,20,91,.12)";
+    });
+    // stap 1: knop indrukken, verkocht
+    $("buy").style.transform = (t > 3.9 && t < 4.2) ? "scale(.96)" : "none";
+    $("sold").style.opacity = ease((t - 4.3) / 0.3); $("sold").style.transform = `translateY(${(1 - ease((t - 4.3) / 0.4)) * 40}px)`;
+    // stap 2: QR verschijnt
+    $("qr").style.transform = `scale(${0.7 + 0.3 * ease((t - 6.4) / 0.4)})`; $("qr").style.opacity = ease((t - 6.4) / 0.4);
+    // stap 3: Jan wordt gescand, teller 32 -> 34, Welkom!
+    const scanned = t > 10.6;
+    $("st").textContent = scanned ? "Gescand" : "Verkocht"; $("st").className = "chip " + (scanned ? "ok" : "new");
+    $("jan").style.background = `rgba(31,169,113,${scanned ? 0.10 * (1 - clamp((t - 11.6) / 0.8)) : 0})`;
+    $("cnt").textContent = scanned ? "Binnen 34 / 40" : "Binnen 32 / 40";
+    $("welkom").style.opacity = ease((t - 10.8) / 0.3); $("welkom").style.transform = `scale(${0.85 + 0.15 * ease((t - 10.8) / 0.35)})`;
+    $("end").style.opacity = ease((t - 12.8) / 0.45);
+  };
+</script>
+</body>
+</html>

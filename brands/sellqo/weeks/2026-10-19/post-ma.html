@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Feature: kassa en webshop, één voorraad</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- feature-split (pijler Feature, nieuwe variant van feature): kassabon links, webshop rechts.
+     Bron: landing.core.pos_text + landing.faq "Kan ik ook in de winkel verkopen?"; labels Kassabon/Dagafsluiting uit nl.json;
+     demowinkel Atelier Nord / Mok Fjord uit landing.scene.retail. -->
+<style>
+  .receipt { position:absolute; left:80px; top:520px; width:470px; background:#fff; border-radius:22px 22px 0 0; padding:40px 40px 54px; color:var(--navy);
+    box-shadow:0 30px 60px -20px rgba(0,20,91,.28), 0 0 0 1px var(--line); transform:rotate(-2deg); font-size:24px; }
+  .receipt:after { content:""; position:absolute; left:0; right:0; bottom:-22px; height:22px;
+    background:radial-gradient(circle at 11px 0, #fff 11px, transparent 12px) repeat-x; background-size:22px 22px; }
+  .receipt .ln { display:flex; justify-content:space-between; padding:12px 0; }
+  .receipt .dash { border-top:2px dashed var(--line); margin:14px 0; }
+  .shop { position:absolute; right:80px; top:610px; width:400px; padding:28px; }
+  .shop .ph { height:250px; border-radius:18px; background:linear-gradient(135deg,#C8D6C2,#9DB39A); display:grid; place-items:center; margin-bottom:22px; }
+  .mug { width:120px; height:132px; background:#EEF2EA; border-radius:12px 12px 26px 26px; position:relative; box-shadow:inset -12px 0 0 rgba(0,0,0,.06); }
+  .mug:after { content:""; position:absolute; right:-44px; top:30px; width:44px; height:62px; border:14px solid #EEF2EA; border-left:0; border-radius:0 32px 32px 0; }
+  .link { position:absolute; left:548px; top:760px; width:90px; height:4px; background:var(--coral); border-radius:2px; }
+  .link:before, .link:after { content:""; position:absolute; top:-8px; width:20px; height:20px; border-radius:50%; background:var(--coral); }
+  .link:before { left:-10px; } .link:after { right:-10px; }
+</style>
+</head>
+<body>
+  <div class="blob soft" style="width:820px;height:820px;left:-300px;top:560px"></div>
+  <img class="logo tl" src="../../logo-navy.png" alt="SellQo">
+  <div style="position:absolute;left:var(--pad);right:var(--pad);top:190px">
+    <h1 class="h" style="font-size:74px" data-slot="titel" data-label="Titel" data-max="44">Verkocht aan de kassa.<br><span class="hl">Ook weg uit je webshop.</span></h1>
+  </div>
+
+  <div class="receipt">
+    <div class="ttl" style="font-family:Poppins;font-weight:600;font-size:28px;display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">Kassabon <span class="chip ok">Betaald</span></div>
+    <div class="sub" style="font-size:20px;color:var(--mute)">Atelier Nord · kassa</div>
+    <div class="dash"></div>
+    <div class="ln"><span>1× Mok Fjord salie</span><b>€ 18,00</b></div>
+    <div class="dash"></div>
+    <div class="ln" style="font-family:Poppins;font-weight:700;font-size:30px"><span>Totaal</span><span>€ 18,00</span></div>
+    <div class="ln" style="color:var(--mute);font-size:20px"><span>Dagafsluiting</span><span>vanavond</span></div>
+  </div>
+
+  <div class="link"></div>
+
+  <div class="card shop tilt-r">
+    <div class="ph"><div class="mug"></div></div>
+    <div style="font-family:Poppins;font-weight:700;font-size:32px">Mok Fjord</div>
+    <div class="sub">Kleur salie · webshop</div>
+    <div style="display:flex;align-items:baseline;gap:16px;margin-top:18px"><span class="big mute" style="font-size:36px">11 →</span><span class="big" style="font-size:52px">10</span><span style="font-size:22px">op voorraad</span></div>
+  </div>
+
+  <div class="toast" style="left:180px;top:1085px"><span class="tick">✓</span>Zelfde producten, zelfde voorraad</div>
+
+  <div style="position:absolute;left:var(--pad);right:var(--pad);bottom:70px;display:flex;align-items:center;justify-content:space-between">
+    <span class="body" style="font-weight:500" data-slot="tekst" data-label="Tekst onder" data-max="46">Kassa vanaf Pro en in het Horeca-plan.</span>
+    <span class="pill coral" data-slot="cta" data-label="Knop" data-max="16">sellqo.app</span>
+  </div>
+</body>
+</html>
