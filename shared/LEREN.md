@@ -31,7 +31,7 @@ Zet dezelfde labels per item ook in `log.md`. "Opnieuw maken" past de labels aan
 - **Score** = (likes + 2·reacties + 2·story-antwoorden + 3·bewaard + 3·gedeeld + 5·nieuwe volgers) per 100 bereikte accounts. Bewaren, delen en volgen zeggen meer dan een like.
 - Is er geen bereik (account nog niet opnieuw gekoppeld met statistieken), vergelijk dan op likes + reacties en zeg dat erbij.
 - Een uitspraak ("X werkt beter") mag pas vanaf **3 posts** per waarde.
-- **Signalen van Akke** staan in `social_post_events`:
+- **Signalen van Akke** staan in `social_post_events` (enkel rijen met `actor is not null`; zonder actor is het een taak of script):
 
   | Signaal | Betekenis |
   | --- | --- |
@@ -54,7 +54,9 @@ group by 1 order by score desc nulls last;
 -- signalen van Akke, laatste 30 dagen
 select event, content_tags->>'format' format, content_tags->>'hook' hook, note, created_at
 from social_post_events where tenant_id = '<tenant>' and created_at > now() - interval '30 days'
-  and event in ('removed','edited','regenerate_requested','image_changed') order by created_at desc;
+  and event in ('removed','edited','regenerate_requested','image_changed')
+  and actor is not null  -- enkel Akke; actor null = systeem (taken, scripts, prijscheck)
+  order by created_at desc;
 ```
 
 ## 3. Kiezen: 70 / 20 / 10
