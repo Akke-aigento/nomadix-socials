@@ -1,6 +1,6 @@
 # SellQo Instagram — werkwijze en weekroutine
 
-@sellqo.app (handle te bevestigen) · Nederlands · tenant `d03c63fe-48c6-4ff7-a30b-7506ea3e71ab` · SellQo-project `9932a7fe-43a1-42de-9c64-168968599600`.
+@sellqo.app (gekoppeld sinds 17 okt; naam, bio en links: bible §1b) · Nederlands · tenant `d03c63fe-48c6-4ff7-a30b-7506ea3e71ab` · SellQo-project `9932a7fe-43a1-42de-9c64-168968599600`.
 Een geplande taak ("SellQo IG: weekcontent") voert de **weekroutine** hieronder elke zondag uit.
 De brand bible staat in het claude.ai-project "Nomadix Socials" (`claude/brand-sellqo.md`); bij verschil over
 de werkwijze is dit bestand leidend, voor feiten en claims de bible (§8 "Bewezen claims").
