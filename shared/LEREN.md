@@ -92,7 +92,13 @@ Elke link die we zelf maken (linksticker, link in bio-update, URL in een caption
 
 `?utm_source=instagram&utm_medium=social&utm_campaign=<merk>-<JJJJMMDD>&utm_content=<format>`
 
-`<JJJJMMDD>` is de postdag, zodat een bezoek bij één post hoort. Een link in bio zonder eigen UTM krijgt van Instagram zelf `utm_source=ig`. Akke Insights telt `ig`, `instagram` en doorklikken vanaf instagram.com sinds 16-10 als één kanaal "Instagram" (INSIGHTS-IG-1). Insights bewaart `utm_content` niet; dat is geen probleem, want de campagnenaam volstaat.
+`<JJJJMMDD>` is de postdag, zodat een bezoek bij één post hoort.
+
+**Link-sticker (verplicht formaat, Akke 19-10).** Instagram laat geen link in een caption toe, dus de link van een story gaat via een sticker die Akke zelf plakt. Zet in `post_text` van elke story met een link-sticker, op een eigen regel en als laatste regel:
+
+`Link-sticker: https://<domein>/<pad>?utm_source=instagram&utm_medium=social&utm_campaign=<merk>-<JJJJMMDD>&utm_content=story`
+
+Altijd de volledige URL met `https://`, klaar om te kopiëren, en nooit "link naar loveke.be/shop" zonder URL. `<merk>` is `loveke`, `vanxcel`, `sellqo`, `studioakke` of `fonske`. Controleer vóór de insert dat de pagina bestaat (curl -sI geeft 200 of een redirect naar 200). Hetzelfde formaat geldt voor een nieuwe link in bio (`Link in bio: …`). Een link in bio zonder eigen UTM krijgt van Instagram zelf `utm_source=ig`. Akke Insights telt `ig`, `instagram` en doorklikken vanaf instagram.com sinds 16-10 als één kanaal "Instagram" (INSIGHTS-IG-1). Insights bewaart `utm_content` niet; dat is geen probleem, want de campagnenaam volstaat.
 
 ## 6. Wat Instagram oplevert op de site (Akke Insights)
 

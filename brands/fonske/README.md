@@ -33,7 +33,7 @@ Nooit twee keer na elkaar dezelfde achtergrond. Kleurvlakken: nacht `#110C08`, a
 
 Instagram is nog niet gekoppeld in SellQo: alles staat op `manual` (`manual_reason` `sticker` voor stories met linksticker, anders `other`), `source` `content_task`, `language` `en`. SellQo stuurt ±1 u vooraf een push; Akke post zelf via "Beeld openen" en klikt "Gepost". Na het koppelen: posts op `pending_approval`.
 Uren: **geen vaste uren**, volg `shared/POSTTIJDEN.md` (venster Fonske; vlak voor een crawl aftellen naar het event).
-Stories met linksticker: laat de strook y 1300–1560 vrij.
+Stories met linksticker: laat de strook y 1300–1560 vrij. De link staat als laatste regel in de tekst: `Link-sticker: https://…` met UTM (shared/LEREN.md §5).
 
 
 ## Leren (verplicht)
