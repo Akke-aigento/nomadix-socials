@@ -23,7 +23,8 @@ Nooit twee keer na elkaar dezelfde achtergrond. Kleurvlakken: nacht `#110C08`, a
 ## Feiten (niets bijverzinnen)
 
 - Live uit SellQo, per crawl: `select e.event_date, e.start_time, e.location_name, e.meeting_point, e.capacity, e.min_attendees, e.early_bird_price, e.early_bird_deadline, p.price from event_details e join products p on p.id=e.product_id where e.tenant_id='95f6685b-3474-42fe-81ad-a5e6ca3d6806' and e.status='scheduled' and e.event_date >= current_date;`
-- Van de site: verzamelen aan The Totem (de grote kever op het boek) op het Ladeuzeplein, 21:00; 4 cafés van ±45 minuten; een shot per stop, alcoholvrij op aanvraag; finale op de Oude Markt ("the longest bar in Europe"); lokale gids; 18+ met ID; standaard Engels; privécrawls vanaf €35 p.p., min. 12 personen.
+- Van de site: verzamelen aan The Totem (de reuzennaald met de kever erop; NIET "bug on the book") op het Ladeuzeplein, 21:00; 4 cafés van ±45 minuten; een shot per stop, alcoholvrij op aanvraag; finale op de Oude Markt ("the longest bar in Europe"); lokale gids; 18+ met ID; standaard Engels; privécrawls €19.99 p.p. met een minimum van €239.88 (= 12 personen; kleinere groepen betalen het minimum, er is geen minimumaantal).
+- Prijzen (Akke, 25 okt 2026): gewoon ticket €17.99, early bird €12.99 per crawl. De ticketprijs per crawl komt altijd uit SellQo (query hierboven), nooit uit deze README.
 - Cafénamen en de volgorde staan nergens publiek: niet noemen, behalve "Our first bar is named after a murder victim" (Fiere Margriet, tekst van Akke).
 - Leuven Lore: Fiere Margriet (vermoord in 1225 aan de Dijle); Fonske/Fons Sapientiae (geschonken in 1975 voor 550 jaar KU Leuven, giet water over zijn hoofd).
 - Geen verzonnen reviews, deelnemersaantallen of "sold out". Geen doorstreepte prijzen. Geen emoji in beelden, wel in captions.
@@ -82,7 +83,7 @@ De sandbox moet `mrwiqgrxsyphbxiahule.supabase.co` mogen bereiken (claude.ai →
 
 - Crawlweek: aftellen naar het event (POSTTIJDEN: op de dag zelf ±15:00 "tonight" en ±19:30 "2 hours to go"); early bird: dag ervoor een post, laatste dag een story.
 - Na een crawl met gepubliceerde foto's: recap-carrousel binnen 2 dagen (vervangt de eerstvolgende post).
-- Geen crawl gepland: lore, stad, foto's van vorige avonden, en het aanbod van de site (privécrawls vanaf €35 p.p., min. 12: vrijgezellen, teambuilding). Nooit een datum aankondigen die niet als `scheduled` in SellQo staat.
+- Geen crawl gepland: lore, stad, foto's van vorige avonden, en het aanbod van de site (privécrawls €19.99 p.p., minimum €239.88: vrijgezellen, teambuilding). Nooit een datum aankondigen die niet als `scheduled` in SellQo staat.
 
 ## Weektaak (elke zondag, voor de week vanaf maandag)
 
