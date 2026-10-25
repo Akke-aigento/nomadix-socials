@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Quiz: where does the main fuse go</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Builders: quiz-sticker plakken in het lege vak (y ≈ 1080–1520). Bron: vanxcel.com configurator, phase1Step5 en safetyFuseDesc
+     ("Battery + → ANL fuse (within 18cm!) → Disconnect switch → rest of system"). Felle variant: petrol vlak. -->
+<style>
+  body { background: var(--petrol); }
+  .q { font-family:"Bebas Neue",sans-serif; font-size:150px; line-height:.9; text-transform:uppercase; }
+  .box { position:absolute; left:var(--pad); right:var(--pad); top:1080px; height:440px; border:3px dashed rgba(255,255,255,.55); border-radius:32px; }
+</style>
+</head>
+<body>
+  <img class="logo" style="top:260px; left:var(--pad)" src="../../logo-white.svg" alt="VanXcel">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:430px; display:flex; flex-direction:column; gap:34px">
+    <div class="kicker" style="color:var(--ink)" data-slot="reeks" data-label="Reeks" data-max="28">Builders quiz</div>
+    <h1 class="q" data-slot="titel" data-label="Vraag" data-max="44">Where does<br>your main<br>fuse go?</h1>
+    <p class="lead" style="color:#fff" data-slot="tekst" data-label="Tekst" data-max="90">Tap your answer below. The sticker tells you if you got it right.</p>
+  </div>
+  <div class="box"></div>
+</body>
+</html>

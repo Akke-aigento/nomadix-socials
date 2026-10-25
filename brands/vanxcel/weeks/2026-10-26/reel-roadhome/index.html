@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="16.6" data-fps="30">
+<title>Reel: the road home, Kyrgyzstan to Bulgaria</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- reel-slideshow (nieuw format, vorige week reel-montage met clips). 10 foto's van de terugweg in volgorde,
+     plaats/land/dag uit media.json. Geen merknamen van derden in beeld (1162 Varta en 1236 Strabag bewust weggelaten). -->
+<style>
+  .f { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; will-change:transform; }
+  .shade-top { background: linear-gradient(0deg, rgba(10,10,10,0) 70%, rgba(10,10,10,.75) 100%); }
+  .shade-bottom { background: linear-gradient(180deg, rgba(10,10,10,0) 50%, rgba(10,10,10,.85) 100%); }
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .low { position:absolute; left:var(--pad); right:var(--pad); bottom:380px; display:flex; flex-direction:column; gap:22px; }
+  .stamp { font-size:30px; }
+  .count { font-family:"Bebas Neue",sans-serif; font-size:220px; line-height:.85; }
+  .route { position:absolute; left:var(--pad); right:var(--pad); bottom:340px; height:4px; background:rgba(255,255,255,.18); }
+  .route i { position:absolute; right:0; top:0; height:100%; background:var(--petrol); width:0; }
+  .route b { position:absolute; top:-8px; width:20px; height:20px; border-radius:50%; background:var(--amber); margin-left:-10px; }
+  .end { position:absolute; inset:0; background:var(--ink); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; }
+</style>
+</head>
+<body>
+  <img class="f" id="f0" src="../../../media/vx-2022-06-26-kyrgyzstan-0990.jpg" alt="">
+  <img class="f" id="f1" src="../../../media/vx-2022-07-02-tajikistan-1058.jpg" alt="">
+  <img class="f" id="f2" src="../../../media/vx-2022-07-05-uzbekistan-1069.jpg" alt="">
+  <img class="f" id="f3" src="../../../media/vx-2022-07-11-kazakhstan-1107.jpg" alt="">
+  <img class="f" id="f4" src="../../../media/vx-2022-07-12-kazakhstan-1133.jpg" alt="">
+  <img class="f" id="f5" src="../../../media/vx-2022-07-28-georgia-1196.jpg" alt="">
+  <img class="f" id="f6" src="../../../media/vx-2022-07-30-georgia-1205.jpg" alt="">
+  <img class="f" id="f7" src="../../../media/vx-2022-08-01-turkey-1217.jpg" alt="">
+  <img class="f" id="f8" src="../../../media/vx-2022-08-02-bulgaria-1220.jpg" alt="">
+  <img class="f" id="f9" src="sandy-bulgaria-plate-blurred.jpg" alt="">
+  <div class="shade-top"></div>
+  <div class="shade-bottom"></div>
+  <div class="top"><img class="logo" style="position:static" src="../../../logo-white.svg" alt="VanXcel"><span class="kicker" style="color:#fff">The road home</span></div>
+  <div class="low">
+    <h1 class="display" style="font-size:118px" id="head">Day 86.<br>Time to turn west.</h1>
+    <div class="stamp"><span class="dot"></span><span id="place">Naryn, Kyrgyzstan</span><span class="sep"></span><span id="day">Day 86</span></div>
+  </div>
+  <div class="route"><i id="prog"></i><b id="pin"></b></div>
+  <div class="end" id="end">
+    <img src="../../../logo-white.svg" alt="VanXcel" style="width:300px">
+    <h1 class="display" style="font-size:150px">Kyrgyzstan<br><span class="petrol">to Belgium.</span></h1>
+    <p class="lead">Ten frames from the way back, in the order we drove it.</p>
+    <span class="kicker" style="color:#fff">Power for your own road · link in bio</span>
+  </div>
+<script>
+  // [id, plaats, dag]  (media.json)
+  const S = [
+    ["f0", "Naryn, Kyrgyzstan", 86],
+    ["f1", "Khudzhand, Tajikistan", 92],
+    ["f2", "Jizzakh, Uzbekistan", 95],
+    ["f3", "Mangystau, Kazakhstan", 101],
+    ["f4", "Aktau, Kazakhstan", 102],
+    ["f5", "Adjara, Georgia", 118],
+    ["f6", "Adjara, Georgia", 120],
+    ["f7", "Sariyer, Turkey", 122],
+    ["f8", "Dolno Vyrshilo, Bulgaria", 123],
+    ["f9", "Mina Bolshevik, Bulgaria", 123],
+  ];
+  // eerste beeld 2,4 s (hook), daarna 1,3 s per beeld; samen 14,1 s, daarna eindkaart tot 16,6 s
+  const FIRST = 2.4, SEG = 1.3, CLIPS = FIRST + (S.length - 1) * SEG;
+  const imgs = S.map(s => document.getElementById(s[0]));
+  const ready = Promise.all(imgs.map(im => im.complete ? 1 : new Promise(r => im.addEventListener("load", r, { once: true }))));
+  window.setT = async (t) => {
+    await ready;
+    const end = document.getElementById("end");
+    const head = document.getElementById("head");
+    head.style.opacity = t < FIRST - 0.1 ? Math.min(1, t / 0.3) * Math.min(1, (FIRST - 0.1 - t) / 0.25) : 0;
+    if (t >= CLIPS) { end.style.opacity = Math.min(1, (t - CLIPS) / 0.4); return; }
+    end.style.opacity = 0;
+    const i = t < FIRST ? 0 : Math.min(S.length - 1, 1 + Math.floor((t - FIRST) / SEG));
+    const local = i === 0 ? t / FIRST : (t - FIRST - (i - 1) * SEG) / SEG;
+    imgs.forEach((im, k) => {
+      im.style.opacity = k === i ? 1 : 0;
+      if (k === i) im.style.transform = `scale(${1.04 + 0.08 * local}) translateY(${(k % 2 ? -1 : 1) * 14 * local}px)`;
+    });
+    document.getElementById("place").textContent = S[i][1];
+    document.getElementById("day").textContent = "Day " + S[i][2];
+    // de route loopt van rechts (oost) naar links (west)
+    const p = Math.min(1, t / CLIPS);
+    document.getElementById("prog").style.width = (p * 100) + "%";
+    document.getElementById("pin").style.left = ((1 - p) * 100) + "%";
+  };
+</script>
+</body>
+</html>

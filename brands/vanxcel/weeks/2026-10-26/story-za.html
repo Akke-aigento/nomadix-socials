@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Checklist: future you</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- checklist-story (pijler Know-how). Bron: vanxcel.com configurator (en.json): cableTip1, cableTip3, cableTip4, cableTip5, tipLabel
+     ("your future self will thank you"). Geen link. -->
+<style>
+  .item { display:flex; gap:28px; align-items:flex-start; padding:30px 0; border-top:1px solid var(--line); }
+  .box { width:52px; height:52px; border:3px solid var(--petrol); border-radius:10px; flex:none; margin-top:4px; position:relative; }
+  .box::after { content:""; position:absolute; left:14px; top:4px; width:14px; height:28px; border:solid var(--petrol); border-width:0 5px 5px 0; transform:rotate(45deg); }
+</style>
+</head>
+<body>
+  <img class="logo" style="top:260px; right:var(--pad)" src="../../logo-white.svg" alt="VanXcel">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:400px; display:flex; flex-direction:column; gap:40px">
+    <div class="kicker" data-slot="reeks" data-label="Reeks" data-max="28">Build day checklist</div>
+    <h1 class="display" style="font-size:118px" data-slot="titel" data-label="Titel" data-max="48">POV: future you,<br>opening a<br>trim panel.</h1>
+    <div>
+      <div class="item"><span class="box"></span><p class="lead" data-slot="c1" data-label="Punt 1" data-max="60">Every cable labelled, on both ends.</p></div>
+      <div class="item"><span class="box"></span><p class="lead" data-slot="c2" data-label="Punt 2" data-max="60">A photo of every route before the panels go back.</p></div>
+      <div class="item"><span class="box"></span><p class="lead" data-slot="c3" data-label="Punt 3" data-max="60">Cable ties every 30 to 50 cm. No loose cables.</p></div>
+      <div class="item"><span class="box"></span><p class="lead" data-slot="c4" data-label="Punt 4" data-max="60">12V and 230V at least 5 cm apart.</p></div>
+    </div>
+  </div>
+  <p class="display amber" style="position:absolute; left:var(--pad); right:var(--pad); bottom:380px; font-size:64px" data-slot="slot" data-label="Slotzin" data-max="36">Future you says thanks.</p>
+</body>
+</html>

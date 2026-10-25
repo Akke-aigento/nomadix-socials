@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Smart alternator</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- Know-how, story zonder sticker. Bron: vanxcel.com configurator (en.json): smartAlternatorDesc
+     ("A DC-DC charger (B2B) is required ... A split-charge relay will NOT work here.") en altChargeDesc
+     ("The 25A DC-DC charger is built into the VanXcel 5-in-1 Converter"). -->
+<style>
+  .row { display:flex; gap:26px; align-items:flex-start; padding:30px 0; border-top:1px solid var(--line); }
+  .mark { font-family:"Bebas Neue",sans-serif; font-size:72px; line-height:.9; min-width:70px; }
+</style>
+</head>
+<body>
+  <div class="glow" style="width:900px; height:900px; right:-300px; top:300px"></div>
+  <img class="logo" style="top:260px; left:var(--pad)" src="../logo-white.svg" alt="VanXcel">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:410px; display:flex; flex-direction:column; gap:34px">
+    <div class="kicker" data-slot="reeks" data-label="Reeks" data-max="28">Van electrics 101</div>
+    <h1 class="display" style="font-size:132px" data-slot="titel" data-label="Titel" data-max="48">Charge while<br>you drive.<br><span class="petrol">Smart alternator<br>too.</span></h1>
+    <div>
+      <div class="row"><span class="mark" style="color:var(--mute)">×</span><p class="lead" data-slot="nee" data-label="Werkt niet" data-max="90">A split-charge relay will not charge your leisure battery on a smart alternator.</p></div>
+      <div class="row"><span class="mark petrol">✓</span><p class="lead" data-slot="ja" data-label="Werkt wel" data-max="90">You need a DC-DC (B2B) charger. Our 5-in-1 Converter has a 25A one built in.</p></div>
+    </div>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:380px; display:flex; flex-direction:column; gap:18px">
+    <p class="body" data-slot="vraag" data-label="Vraag" data-max="60">Not sure what your vehicle has?</p>
+    <span class="pill petrol" style="align-self:flex-start" data-slot="link" data-label="Link" data-max="34">vanxcel.com/configurator</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>1000W or 1500W</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- compare-light: lichte vergelijking van twee producten (pijler Product). Prijzen en voorraad live uit SellQo (25-10-2026:
+     5-in-1 1000W €375 voorraad 20, 1500W €475 voorraad 20). Specs: productomschrijvingen + vanxcel.com configurator
+     (pu_VX1000CV/pu_VX1500CV "up to …W continuous", pr_converter, pu_VXANL200/250). -->
+<style>
+  body { background:#F4F3EF; color:var(--ink); }
+  .kicker { color:var(--petrol); }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .col { background:#fff; border-radius:28px; padding:48px 44px 44px; display:flex; flex-direction:column; gap:26px; box-shadow:0 10px 30px rgba(10,10,10,.06); }
+  .col .w { font-family:"Bebas Neue",sans-serif; font-size:150px; line-height:.85; }
+  .col .p { font-family:"Bebas Neue",sans-serif; font-size:80px; line-height:1; }
+  .col .l { font-size:30px; line-height:1.35; color:#444; border-top:1px solid rgba(10,10,10,.1); padding-top:16px; }
+  .both { font-size:30px; line-height:1.5; color:#333; }
+  .both b { color:var(--ink); }
+</style>
+</head>
+<body>
+  <img class="logo tl" src="../logo-black.svg" alt="VanXcel">
+  <div class="kicker" style="position:absolute; top:78px; right:var(--pad)" data-slot="kicker" data-label="Bovenregel" data-max="24">5-in-1 Converter</div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:210px; display:flex; flex-direction:column; gap:48px">
+    <h1 class="display d-l" data-slot="titel" data-label="Titel" data-max="34">Same five jobs.<br><span class="petrol">Two sizes.</span></h1>
+    <div class="cols">
+      <div class="col">
+        <span class="w" data-slot="a" data-label="Model 1" data-max="6">1000W</span>
+        <span class="p" data-slot="ap" data-label="Prijs 1" data-max="8">€375</span>
+        <span class="l" data-slot="al" data-label="Tekst 1" data-max="60">Up to 1000W continuous. For weekend campers and lighter setups.</span>
+      </div>
+      <div class="col">
+        <span class="w" data-slot="b" data-label="Model 2" data-max="6">1500W</span>
+        <span class="p" data-slot="bp" data-label="Prijs 2" data-max="8">€475</span>
+        <span class="l" data-slot="bl" data-label="Tekst 2" data-max="60">Up to 1500W continuous. For active campers and full-timers.</span>
+      </div>
+    </div>
+    <p class="both" data-slot="beide" data-label="Beide" data-max="160"><b>Both:</b> pure sine inverter · 25A DC-DC charger · MPPT solar up to 500Wp · shore power charger · UPS · wired remote.</p>
+  </div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill" style="background:var(--amber); color:var(--ink)" data-slot="cta" data-label="Knop" data-max="34">Not sure? Configurator</span>
+    <span class="body" style="color:#666" data-slot="link" data-label="Link" data-max="30">vanxcel.com/configurator</span>
+  </div>
+</body>
+</html>

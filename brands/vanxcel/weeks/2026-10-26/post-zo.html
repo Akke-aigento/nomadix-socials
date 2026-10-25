@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Too thick, too thin</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- quote-fel: typografisch, felle petrol variant. Bron: vanxcel.com configurator (en.json) cableSafetyNote:
+     "A cable that's too thick is never a problem — a cable that's too thin is a fire hazard." en calculator tip1. -->
+<style>
+  body { background:var(--petrol); }
+  .quote { font-family:"Bebas Neue",sans-serif; text-transform:uppercase; line-height:.92; font-size:132px; }
+  .quote .ink { color:var(--ink); }
+  .u { box-shadow: inset 0 -16px 0 var(--amber); }
+</style>
+</head>
+<body>
+  <img class="logo tl" src="../../logo-white.svg" alt="VanXcel">
+  <div class="kicker" style="position:absolute; top:78px; right:var(--pad); color:var(--ink)" data-slot="kicker" data-label="Bovenregel" data-max="24">Cable rule</div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:270px; display:flex; flex-direction:column; gap:48px">
+    <p class="quote" data-slot="titel" data-label="Citaat" data-max="90">A cable that's too thick is never a problem.<br><span class="ink">Too thin is a <span class="u" style="white-space:nowrap">fire hazard</span>.</span></p>
+    <p class="lead" style="color:#fff; max-width:880px" data-slot="tekst" data-label="Tekst" data-max="110">When in doubt, go one size up.</p>
+  </div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill" style="background:var(--ink); color:#fff" data-slot="cta" data-label="Knop" data-max="34">Cable size calculator</span>
+    <span class="body" style="color:#fff" data-slot="link" data-label="Link" data-max="30">vanxcel.com/calculator</span>
+  </div>
+</body>
+</html>
