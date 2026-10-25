@@ -54,6 +54,16 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
 - Catalogus `photos.json` (zoals `media.json` bij VanXcel): per foto `id` (= crawl_photos.id), `night`, `path`, `type`, `faces` (ja/nee), `note`, `used`. Types: `group` (groep aan de Totem), `shot` (shotmoment), `street` (onderweg, Leuven bij nacht), `bar` (sfeer binnen), `finale` (Oude Markt), `host` (de gids), `detail` (glazen, polsbandjes, handen, tickets). Claude kijkt elke nieuwe foto zelf na en vult de catalogus aan; twijfel = niet opnemen.
 - Gebruikte foto's worden een JPG in `published/<maandag>/` (Instagram wil JPEG, de bucket heeft vaak webp).
 
+### Content-uploads (video's en extra foto's, privé)
+
+Sinds 25 okt 2026 (FONSKE-MEDIA-1) uploaden Akke en Nastya in /beheer → tab "Content · private" video's en extra foto's die **nooit op de site komen**, enkel om posts en reels mee te maken. Dit is de bron voor reels met echte beelden.
+
+- Query (Lovable-project `377b3ca5-a57f-413e-a53a-dc1889be4b40`): `select id, night_date, kind, path, mime, size_bytes, note, used_at, created_at from crawl_media order by created_at desc;`
+- URL: `https://mrwiqgrxsyphbxiahule.supabase.co/storage/v1/object/public/crawl-media/<path>` (exacte URL, niet linken of publiek tonen).
+- `note` = wat Akke erbij zette (bv. "shots aan bar 2"); `night_date` = welke crawl. Bekijk elk bestand zelf (video: een paar frames met ffmpeg) en pas dezelfde regels toe als bij de foto's (geen dronken close-ups, niemand op de grond, niemand buiten de groep in close-up). Twijfel = niet gebruiken.
+- Reels uit video: knippen tot 7–15 s op de beat, 1080x1920, H.264, max 9,5 MB (ffmpeg `-preset veryfast`), stille versie voor eigen muziek; tekst in beeld enkel in de huisstijl. Per week max 1 reel.
+- Gebruikt: zet `used_at = now()` op die rij in `crawl_media` (enige toegelaten wijziging daar) en noteer het id in log.md. Nooit iets verwijderen.
+
 ### Variatie met foto's (nooit enkel feestfoto's)
 
 | Formaat | Wat |
@@ -63,7 +73,7 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
 | Foto + tekening | foto in een kader met de lijntekeningen (Fonske, Totem) eroverheen; zo blijft het merk herkenbaar. |
 | Straat en stad | `street`-foto's voor Leuven Lore en "Leuven by night", zonder partyfocus. |
 | Aankondiging | foto van de vorige avond als achtergrond met de nieuwe datum. |
-| Reel | 8–12 foto's op de beat (shared/reel.mjs), max 1 per week. |
+| Reel | Bij voorkeur echte video uit `crawl_media` (zie Content-uploads); anders 8–12 foto's op de beat (shared/reel.mjs). Max 1 per week. |
 | Lore en deadlines | blijven getekend (`illustrations/`). |
 
 Regel: per week hoogstens de helft van de beelden met mensen in close-up; afwisselen met detail, straat en tekening.
