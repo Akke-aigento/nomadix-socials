@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Story fel: groot cijfer</title>
+<!-- story-fel: felle story (teal-cyaan) met één groot cijfer of prijs (altijd excl. btw) en een korte lijst. Zonder sticker. -->
+<link rel="stylesheet" href="../brand.css">
+<style>
+  .fig { font-size:280px; font-weight:900; letter-spacing:-.06em; line-height:.85; }
+  .li { display:flex; gap:22px; align-items:baseline; padding:22px 0; border-top:2px solid rgba(15,23,41,.18); font-size:36px; font-weight:700; }
+  .li b { font-family:"JetBrains Mono",monospace; font-size:26px; font-weight:700; opacity:.6; min-width:56px; }
+</style>
+</head>
+<body style="background:linear-gradient(160deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); color:var(--navy)">
+  <img src="../mark.svg" alt="" style="position:absolute; right:-220px; top:1180px; width:720px; height:auto; opacity:.13; filter:brightness(0)">
+  <div class="story-safe" style="display:flex; flex-direction:column; gap:30px">
+    <div class="brand" style="position:relative; color:var(--navy)"><img src="../mark.svg" alt="" style="filter:brightness(0) opacity(.85)">Studio <b style="color:var(--navy)">Akke</b></div>
+    <h1 class="h" style="font-size:96px; margin-top:20px" data-slot="titel" data-label="Titel" data-max="30">Nog geen logo?</h1>
+    <div style="display:flex; align-items:flex-end; gap:24px">
+      <div class="fig" data-slot="prijs" data-label="Prijs" data-max="8">€395</div>
+      <div style="font-size:30px; font-weight:700; padding-bottom:20px; line-height:1.25">eenmalig,<br>excl. btw</div>
+    </div>
+    <div style="margin-top:20px">
+      <div class="li"><b>01</b>3 unieke logoconcepten</div>
+      <div class="li"><b>02</b>2 revisierondes</div>
+      <div class="li"><b>03</b>Alle formaten: PNG, SVG, PDF</div>
+      <div class="li" style="border-bottom:2px solid rgba(15,23,41,.18)"><b>04</b>Kleurenpalet en typografiegids</div>
+    </div>
+    <div class="code" style="margin-top:auto; color:var(--navy); font-size:30px; font-weight:700" data-slot="link" data-label="Link" data-max="40">studioakke.com/diensten/logo-design</div>
+  </div>
+</body>
+</html>

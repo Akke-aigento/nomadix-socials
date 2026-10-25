@@ -36,7 +36,9 @@
       "category": "E-commerce & Retail",
       "description": "LiFePO4 batterijen & off-grid systemen",
       "source": "studioakke repo src/assets/portfolio",
-      "used": []
+      "used": [
+        "2026-10-26"
+      ]
     },
     {
       "id": "site-sellqo",
@@ -47,7 +49,9 @@
       "category": "SaaS & E-commerce",
       "description": "Het complete e-commerce platform voor ondernemers",
       "source": "studioakke repo src/assets/portfolio",
-      "used": []
+      "used": [
+        "2026-10-26"
+      ]
     },
     {
       "id": "site-mancini",
@@ -58,7 +62,9 @@
       "category": "Fashion & E-commerce",
       "description": "Italiaanse luxury streetwear met webshop",
       "source": "studioakke repo src/assets/portfolio",
-      "used": []
+      "used": [
+        "2026-10-26"
+      ]
     },
     {
       "id": "site-yeketi",
@@ -95,7 +101,9 @@
       "category": "Fashion & E-commerce",
       "description": "Belgische streetwear met een verhaal",
       "source": "studioakke repo src/assets/portfolio",
-      "used": []
+      "used": [
+        "2026-10-26"
+      ]
     }
   ]
 }

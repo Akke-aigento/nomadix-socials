@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Mythe vs feit: zelf aanpassen</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .myth { font-size:66px; font-weight:800; letter-spacing:-.02em; line-height:1.15; color:#94A3B8; text-decoration: line-through; text-decoration-color: var(--coral); text-decoration-thickness: 6px; }
+  .label { font-family:"JetBrains Mono",monospace; font-size:24px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+  .fact { background:#fff; border-radius:28px; padding:48px 52px; box-shadow:0 30px 60px -30px rgba(15,23,41,.35); border:1px solid #E2E8F0; }
+  .opt { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:8px; }
+  .opt div { border-radius:20px; padding:26px 28px; background:#F1F5F9; }
+  .opt .k { font-family:"JetBrains Mono",monospace; font-size:21px; font-weight:700; color:#0D9488; }
+  .opt .v { font-size:28px; font-weight:700; color:var(--navy); margin-top:8px; line-height:1.25; }
+</style>
+</head>
+<body class="paper">
+  <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad); color:#0D9488"><span style="color:#94A3B8">//</span> mythe vs. feit</div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:210px; display:flex; flex-direction:column; gap:30px">
+    <div class="label coral">Mythe</div>
+    <div class="myth" data-slot="mythe" data-label="Mythe" data-max="70">"Na de oplevering kan ik zelf niets meer aanpassen."</div>
+    <div class="fact" style="display:flex; flex-direction:column; gap:22px; margin-top:14px">
+      <div class="label" style="color:#0D9488">Feit</div>
+      <div class="h" style="color:var(--navy); font-size:60px" data-slot="feit" data-label="Feit" data-max="60">Jij kiest: zelf doen of laten doen.</div>
+      <div class="opt">
+        <div><div class="k">// zelf</div><div class="v">Pas zelf aan, als je dat wil.</div></div>
+        <div><div class="k">// laten doen</div><div class="v">Onderhoud: ik doe de updates.</div></div>
+      </div>
+      <p class="lead" style="font-size:30px" data-slot="tekst" data-label="Uitleg" data-max="140">Basis Onderhoud: €69/maand excl. btw, 1 uur wijzigingen per maand, maandelijks opzegbaar.</p>
+    </div>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill" style="background:var(--navy); color:#fff" data-slot="cta" data-label="Knop" data-max="30">Bekijk onderhoud</span>
+    <span class="code" style="color:#64748B" data-slot="link" data-label="Link" data-max="28">studioakke.com/prijzen</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 6: slot</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .q { font-size:84px; font-weight:900; letter-spacing:-.035em; line-height:1.0; }
+  .big { position:absolute; right:40px; top:120px; font-size:420px; font-weight:900; line-height:.8; letter-spacing:-.06em; color:transparent; -webkit-text-stroke:2px rgba(43,212,189,.35); }
+  .ans { background:rgba(29,40,58,.78); border:1px solid var(--line); border-left:6px solid var(--teal); border-radius:24px; padding:42px 46px; display:flex; flex-direction:column; gap:18px; }
+  .ans .who { font-family:"JetBrains Mono",monospace; font-size:24px; font-weight:700; color:var(--teal); letter-spacing:.04em; }
+  .ans .a { font-size:44px; font-weight:800; letter-spacing:-.02em; line-height:1.15; }
+  .ans .x { font-size:30px; line-height:1.42; color:rgba(255,255,255,.8); }
+</style>
+</head>
+<body style="background:linear-gradient(150deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); color:var(--navy)">
+  <img src="../../mark.svg" alt="" style="position:absolute; right:-160px; bottom:-140px; width:760px; height:auto; opacity:.14; filter:brightness(0)">
+  <div class="brand tl" style="color:var(--navy)"><img src="../../mark.svg" alt="" style="filter:brightness(0) opacity(.85)">Studio <b style="color:var(--navy)">Akke</b></div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad); color:var(--navy); opacity:.7">// 6/6</div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:330px; display:flex; flex-direction:column; gap:44px">
+    <h1 class="h" style="font-size:112px; line-height:.96" data-slot="titel" data-label="Titel" data-max="50">Nog een vraag<br>die hier<br>niet bij staat?</h1>
+    <p class="lead" style="color:rgba(15,23,41,.85); max-width:860px" data-slot="tekst" data-label="Tekst" data-max="90">Stel ze me rechtstreeks. Alle pakketten en prijzen staan op de site.</p>
+    <div style="display:flex; gap:18px; flex-wrap:wrap">
+      <span class="pill" style="background:var(--navy); color:#fff" data-slot="cta" data-label="Knop" data-max="30">studioakke.com/contact</span>
+      <span class="pill" style="border:2px solid rgba(15,23,41,.5); color:var(--navy)">studioakke.com/prijzen</span>
+    </div>
+  </div>
+</body>
+</html>

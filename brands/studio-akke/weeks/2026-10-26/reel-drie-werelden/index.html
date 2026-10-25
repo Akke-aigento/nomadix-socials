@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="15" data-fps="30">
+<title>Reel: drie sites, drie werelden</title>
+<link rel="stylesheet" href="../../../brand.css">
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .hook { position:absolute; left:var(--pad); right:var(--pad); top:560px; }
+  .hook h1 { font-size:150px; font-weight:900; letter-spacing:-.045em; line-height:.95; }
+  .scene { position:absolute; inset:0; opacity:0; }
+  .scene .browser { left:60px; right:60px; top:420px; height:600px; }
+  .scene .idx { position:absolute; left:var(--pad); top:1080px; font-family:"JetBrains Mono",monospace; font-size:30px; color:var(--teal); font-weight:700; }
+  .scene .what { position:absolute; left:var(--pad); right:var(--pad); top:1140px; font-size:78px; font-weight:900; letter-spacing:-.035em; line-height:1.0; }
+  .scene .tags { position:absolute; left:var(--pad); right:var(--pad); top:1420px; display:flex; gap:14px; flex-wrap:wrap; }
+  .scene .tag { font-size:26px; padding:12px 24px; }
+  .prog { position:absolute; left:var(--pad); right:var(--pad); top:1530px; display:flex; gap:12px; }
+  .prog i { flex:1; height:8px; border-radius:8px; background:rgba(255,255,255,.18); display:block; overflow:hidden; position:relative; }
+  .prog i b { position:absolute; left:0; top:0; bottom:0; width:0; background:linear-gradient(90deg,#5EEAD4,#22D3EE); }
+  .end { position:absolute; inset:0; background:linear-gradient(150deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); color:var(--navy); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:900px; height:900px; right:-360px; top:300px"></div>
+  <div class="glow violet" style="width:800px; height:800px; left:-320px; bottom:200px"></div>
+  <div class="top"><div class="brand" style="position:static"><img src="../../../mark.svg" alt="">Studio <b>Akke</b></div><span class="code"><span class="c">//</span> uit mijn portfolio</span></div>
+  <div class="hook" id="hook"><h1>Drie sites.<br><span class="grad">Drie werelden.</span></h1></div>
+
+  <div class="scene" id="s0">
+    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>www.vanxcel.be</span></div><img class="shot" src="../../../media/site-vanxcel.jpg" alt=""></div>
+    <div class="idx">01 / VanXcel</div>
+    <div class="what">LiFePO4 batterijen<br>&amp; off-grid systemen</div>
+    <div class="tags"><span class="tag"><span class="dot"></span>E-commerce &amp; Retail</span><span class="tag">Webshop</span><span class="tag">België</span></div>
+  </div>
+  <div class="scene" id="s1">
+    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>loveke.be</span></div><img class="shot" src="../../../media/site-loveke.jpg" alt=""></div>
+    <div class="idx">02 / Loveke</div>
+    <div class="what">Belgische streetwear<br>met een verhaal</div>
+    <div class="tags"><span class="tag"><span class="dot"></span>Fashion &amp; E-commerce</span><span class="tag">Webshop</span><span class="tag">België</span></div>
+  </div>
+  <div class="scene" id="s2">
+    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>sellqo.app</span></div><img class="shot" src="../../../media/site-sellqo.jpg" alt=""></div>
+    <div class="idx">03 / SellQo</div>
+    <div class="what">Het complete<br>e-commerce platform<br>voor ondernemers</div>
+    <div class="tags"><span class="tag"><span class="dot"></span>SaaS &amp; E-commerce</span><span class="tag">SaaS Platform</span><span class="tag">België &amp; Nederland</span></div>
+  </div>
+  <div class="prog" id="prog"><i><b id="p0"></b></i><i><b id="p1"></b></i><i><b id="p2"></b></i></div>
+
+  <div class="end" id="end">
+    <img src="../../../mark.svg" alt="" style="width:150px; height:auto; filter:brightness(0) opacity(.85)">
+    <h1 class="h" style="font-size:150px; line-height:.95">Wat wordt<br>de jouwe?</h1>
+    <p class="lead" style="color:rgba(15,23,41,.82)">Acht sites live in mijn portfolio: van import tot horeca, van webshop tot platform.</p>
+    <span class="pill" style="background:var(--navy); color:#fff; align-self:flex-start">studioakke.com</span>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const c = (x) => Math.min(Math.max(x, 0), 1);
+  const ease = (x) => 1 - Math.pow(1 - c(x), 3);
+  const S = [1.8, 5.0, 8.2];  // start van elke scène
+  const LEN = 3.2;
+  const END = 11.6;
+  window.setT = (t) => {
+    // hook: in en weer uit
+    const hi = ease(t / 0.5), ho = ease((t - 1.4) / 0.4);
+    $("hook").style.opacity = hi * (1 - ho);
+    $("hook").style.transform = `translateY(${(1-hi)*50 - ho*60}px)`;
+    S.forEach((s, i) => {
+      const el = $("s" + i);
+      const a = ease((t - s) / 0.45), b = ease((t - (s + LEN - 0.35)) / 0.35);
+      const last = i === S.length - 1;
+      const out = last ? ease((t - END) / 0.3) : b;
+      el.style.opacity = t < s ? 0 : a * (1 - out);
+      const br = el.querySelector(".browser");
+      br.style.transform = `translateX(${(1-a)*140 - out*140}px) scale(${0.94 + a*0.06 + c((t-s)/LEN)*0.03})`;
+      const w = el.querySelector(".what");
+      const wa = ease((t - s - 0.25) / 0.45);
+      w.style.opacity = wa; w.style.transform = `translateY(${(1-wa)*40}px)`;
+      const ta = ease((t - s - 0.55) / 0.45);
+      el.querySelector(".tags").style.opacity = ta;
+      $("p" + i).style.width = (c((t - s) / LEN) * 100) + "%";
+    });
+    $("prog").style.opacity = t < 1.6 ? 0 : 1;
+    const e = ease((t - END) / 0.45);
+    $("end").style.opacity = t < END ? 0 : e;
+    $("end").style.transform = `translateY(${(1-e)*40}px)`;
+  };
+  window.setT(0);
+</script>
+</body>
+</html>

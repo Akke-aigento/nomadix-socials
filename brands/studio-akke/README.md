@@ -11,7 +11,7 @@ de werkwijze is dit bestand leidend, voor feiten over het merk de bible.
 | --- | --- |
 | `brand.css`, `fonts/`, `mark.svg` | Huisstijl: navy → violet verloop, teal/cyaan-accent, koraal max. één element; Inter (800/900 titels) + JetBrains Mono (kleine `// labels`). Woordmerk = HTML-tekst `Studio <b>Akke</b>` naast `mark.svg`. |
 | `logo-white.svg`, `logo-color.svg` | Originele logo's van de site (tekst in systeemfont; voor beelden `mark.svg` + HTML-tekst gebruiken). |
-| `templates/` | Donker: `cover` (stelling/carrousel-slide 1), `case` (site in browservenster), `tip` (genummerd), `offer` (pakket + prijs), `compare` (twee kolommen), `story` (vraag/poll/link). Licht: `myth` (mythe vs. feit, `body.paper`). Fel: `statement` (één zin op teal-cyaan verloop). Kopieer en varieer de layout; kleuren, fonts en logo-regels blijven. Nieuwe varianten zijn welkom (zie `../../shared/VARIATIE.md`). |
+| `templates/` | Donker: `cover` (stelling/carrousel-slide 1), `case` (site in browservenster), `tip` (genummerd), `offer` (pakket + prijs), `compare` (twee kolommen), `story` (vraag/poll/link), `question` (carrousel: vraag + antwoordkaart). Fel: `story-fel` (groot cijfer). Licht: `myth` (mythe vs. feit, `body.paper`). Fel: `statement` (één zin op teal-cyaan verloop). Kopieer en varieer de layout; kleuren, fonts en logo-regels blijven. Nieuwe varianten zijn welkom (zie `../../shared/VARIATIE.md`). |
 | `media/` + `media.json` | Schermafbeeldingen van de 8 portfolio-sites (uit de repo `studioakke`, `src/assets/portfolio/`), met `used`. |
 | `weeks/<maandag>/` | HTML-bronnen + `.recipe.json` + `reel-<onderwerp>/index.html`. |
 | `published/<maandag>/` | Wat online gaat (publiek; SellQo haalt het op via de raw-URL). |
