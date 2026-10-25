@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <!-- Camera met flits, lijnstijl Fonske (amber lijn). Voor de Crawl Log / foto's van een avond. -->
+  <g fill="none" stroke="#F4A434" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 260 L360 260 L400 200 L600 200 L640 260 L770 260 Q800 260 800 290 L800 590 Q800 620 770 620 L230 620 Q200 620 200 590 L200 290 Q200 260 230 260 Z" fill="#1D1711"/>
+    <circle cx="500" cy="430" r="130"/>
+    <circle cx="500" cy="430" r="82" stroke-width="6"/>
+    <path d="M445 395 Q470 365 505 362" stroke-width="6" stroke="#F6CB6A"/>
+    <path d="M250 225 L320 225"/>
+    <rect x="680" y="300" width="70" height="40" rx="8" stroke-width="6"/>
+  </g>
+  <g stroke="#F6CB6A" stroke-width="8" stroke-linecap="round">
+    <path d="M715 150 L715 95"/><path d="M780 175 L820 135"/><path d="M650 175 L610 135"/><path d="M800 230 L855 215"/>
+  </g>
+  <circle cx="500" cy="430" r="40" fill="#F4A434" opacity=".85"/>
+</svg>

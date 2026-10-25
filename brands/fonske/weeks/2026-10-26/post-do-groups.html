@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Your own crawl</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Aanbod van de site (/groups): privécrawl vanaf €35 p.p., min. 12, eigen datum; vrijgezellen, studentenverenigingen, ESN/Erasmus, teambuilding. 18+. Illustratie: cheers.svg (nieuw). -->
+<style>
+body.v-cream { background: #F4F1EC; }
+.v-cream .display, .v-cream .lead, .v-cream .body { color:#110C08 } .v-cream .kicker { color:#110C08; opacity:.65 }
+.big { font-family:"Bebas Neue"; font-size:300px; line-height:.8; color:#110C08; }
+.big small { font-size:70px; letter-spacing:.02em; margin-left:14px; color:#E58A2A; }
+.tags { display:flex; flex-wrap:wrap; gap:14px; }
+.tags span { border:2px solid #110C08; border-radius:999px; padding:12px 24px; font-size:26px; font-weight:500; color:#110C08; }
+</style>
+</head>
+<body class="v-cream">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:80px; display:flex; flex-direction:column; gap:22px">
+    <div class="kicker" data-slot="kicker" data-label="Kicker" data-max="30">Private crawls</div>
+    <div class="big" data-slot="prijs" data-label="Prijs" data-max="6">€35<small>p.p.</small></div>
+    <h1 class="display d-m" data-slot="titel" data-label="Titel" data-max="40">Your group. Your date.</h1>
+    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="80" data-multiline="true">From 12 people. We handle the route.</p>
+    <div class="tags"><span data-slot="t1" data-label="Groep 1" data-max="24">Bachelor(ette)s</span><span data-slot="t2" data-label="Groep 2" data-max="24">Student associations</span><span data-slot="t3" data-label="Groep 3" data-max="24">ESN &amp; Erasmus</span><span data-slot="t4" data-label="Groep 4" data-max="24">Teambuilding</span></div>
+  </div>
+  <svg style="position:absolute; left:120px; bottom:40px; width:840px; height:500px" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  
+  <defs>
+    <linearGradient id="bierc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6CB6A"/><stop offset="1" stop-color="#E58A2A"/></linearGradient>
+  </defs>
+  <g stroke="#110C08" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(300 380) rotate(-14)">
+      <path d="M-95 -170 L95 -170 L75 230 L-75 230 Z" fill="url(#bierc)"/>
+      <path d="M-100 -170 Q-80 -215 -40 -195 Q0 -235 40 -195 Q80 -215 100 -170 Z" fill="#F4F1EC"/>
+      <path d="M95 -90 Q170 -80 160 20 Q150 100 85 95" fill="none"/>
+    </g>
+    <g transform="translate(520 430)">
+      <path d="M-55 -110 L55 -110 L42 120 L-42 120 Z" fill="#F4A434"/>
+      <path d="M-50 -60 L50 -60" fill="none" opacity=".5"/>
+    </g>
+    <g transform="translate(730 390) rotate(14)">
+      <path d="M-80 -150 L80 -150 L60 220 L-60 220 Z" fill="#F4F1EC"/>
+      <path d="M-74 -40 L74 -40" fill="none"/>
+      <path d="M20 -150 L60 -280 L110 -290" fill="none"/>
+      <circle cx="-20" cy="40" r="16" fill="none" stroke-width="6"/><circle cx="25" cy="110" r="12" fill="none" stroke-width="6"/>
+    </g>
+  </g>
+  <g stroke="#E58A2A" stroke-width="8" stroke-linecap="round">
+    <path d="M420 170 L405 115"/><path d="M520 150 L520 90"/><path d="M620 170 L640 115"/>
+  </g>
+</svg>
+  <div class="small" style="position:absolute; right:var(--pad); bottom:56px; color:rgba(17,12,8,.6)">18+ with ID</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Not a drinking contest</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- Typografisch, contrast. Feiten van de site: lokale gids, 4 cafés ±45 min, shot per stop, alcoholvrij op aanvraag, finale Oude Markt, 18+ met ID. Klein logo-mark als tekening. -->
+<style>
+.no { font-family:"Bebas Neue"; font-size:118px; line-height:.9; white-space:nowrap; text-transform:uppercase; color:rgba(244,241,236,.55); text-decoration: line-through; text-decoration-thickness: 6px; text-decoration-color: var(--amber); }
+.facts { display:grid; gap:0; }
+.facts div { display:flex; gap:24px; align-items:baseline; padding:20px 0; border-top:2px solid var(--line); font-size:32px; color:rgba(244,241,236,.9); }
+.facts div:last-child { border-bottom:2px solid var(--line); }
+.facts b { font-family:"Bebas Neue"; font-weight:400; font-size:48px; color:var(--amber); min-width:70px; }
+</style>
+</head>
+<body>
+  <div class="grain"></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:90px; display:flex; flex-direction:column; gap:20px">
+    <div class="no" data-slot="nee" data-label="Doorstreept" data-max="28">A drinking contest</div>
+    <h1 class="display d-l" data-slot="titel" data-label="Titel" data-max="40">A night out <span class="gold">with a local.</span></h1>
+  </div>
+  <div class="facts" style="position:absolute; left:var(--pad); right:var(--pad); top:560px">
+    <div><b>01</b><span data-slot="f1" data-label="Feit 1" data-max="44">A local guide who knows the city</span></div>
+    <div><b>02</b><span data-slot="f2" data-label="Feit 2" data-max="44">Four bars, about 45 minutes each</span></div>
+    <div><b>03</b><span data-slot="f3" data-label="Feit 3" data-max="44">A shot per stop, alcohol-free on request</span></div>
+    <div><b>04</b><span data-slot="f4" data-label="Feit 4" data-max="44">The Oude Markt to finish. 18+ with ID</span></div>
+  </div>
+  <img src="../logo-mark.png" alt="" style="position:absolute; right:var(--pad); bottom:60px; width:110px">
+</body>
+</html>
