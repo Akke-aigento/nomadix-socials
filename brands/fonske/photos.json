@@ -1,5 +1,144 @@
 {
   "source": "Crawl Log (fonskecrawl.com), Lovable-project 377b3ca5-a57f-413e-a53a-dc1889be4b40, bucket crawl-photos; enkel crawl_nights.published = true",
-  "types": ["group", "shot", "street", "bar", "finale", "host", "detail"],
-  "photos": []
+  "types": [
+    "group",
+    "shot",
+    "street",
+    "bar",
+    "finale",
+    "host",
+    "detail"
+  ],
+  "photos": [
+    {
+      "id": "b1323f66-591c-4966-876e-a1e9fdd71fae",
+      "night": "2026-10-24",
+      "path": "2026-10-24/b1323f66-591c-4966-876e-a1e9fdd71fae.jpg",
+      "type": "bar",
+      "faces": "ja",
+      "note": "duo met shotjes aan de bar, lachend",
+      "used": []
+    },
+    {
+      "id": "68287ecb-066a-4065-bbb4-25a0cf291352",
+      "night": "2026-10-24",
+      "path": "2026-10-24/68287ecb-066a-4065-bbb4-25a0cf291352.jpg",
+      "type": "group",
+      "faces": "ja",
+      "note": "groep binnen, duimen omhoog (zelfde moment als 37aca576)",
+      "used": []
+    },
+    {
+      "id": "723cff0c-fa80-4bef-a8fa-ff1aaa154d9b",
+      "night": "2026-10-24",
+      "path": "2026-10-24/723cff0c-fa80-4bef-a8fa-ff1aaa154d9b.jpg",
+      "type": "shot",
+      "faces": "ja",
+      "note": "close-up van iemand die drinkt: NIET gebruiken (regel close-up drinken)",
+      "used": []
+    },
+    {
+      "id": "fb738658-38ce-4ffb-ba68-b73d76375309",
+      "night": "2026-10-24",
+      "path": "2026-10-24/fb738658-38ce-4ffb-ba68-b73d76375309.jpg",
+      "type": "bar",
+      "faces": "ja",
+      "note": "groepje aan de toog, Trappistenbordjes",
+      "used": []
+    },
+    {
+      "id": "5a77fe58-16fd-4f4f-bad3-ac6c83ff4e99",
+      "night": "2026-10-24",
+      "path": "2026-10-24/5a77fe58-16fd-4f4f-bad3-ac6c83ff4e99.jpg",
+      "type": "group",
+      "faces": "ja",
+      "note": "hele groep staand binnen, gids wijst omhoog",
+      "used": [
+        "2026-10-26 recap"
+      ]
+    },
+    {
+      "id": "37aca576-af92-4498-8b4d-ac5ac3f0c824",
+      "night": "2026-10-24",
+      "path": "2026-10-24/37aca576-af92-4498-8b4d-ac5ac3f0c824.jpg",
+      "type": "group",
+      "faces": "ja",
+      "note": "groep binnen, duimen omhoog, beste versie",
+      "used": [
+        "2026-10-26 recap"
+      ]
+    },
+    {
+      "id": "226eaaba-9840-49ee-924b-207554c2160e",
+      "night": "2026-10-24",
+      "path": "2026-10-24/226eaaba-9840-49ee-924b-207554c2160e.jpg",
+      "type": "host",
+      "faces": "ja",
+      "note": "gids met piratenhoed aan de toog (stormavond)",
+      "used": [
+        "2026-10-26 recap"
+      ]
+    },
+    {
+      "id": "7f8e63f3-12c7-43cc-b293-9744ca8f86be",
+      "night": "2026-10-24",
+      "path": "2026-10-24/7f8e63f3-12c7-43cc-b293-9744ca8f86be.jpg",
+      "type": "group",
+      "faces": "ja",
+      "note": "vier jongens, duimen en pintjes, affichemuur",
+      "used": [
+        "2026-10-26 recap"
+      ]
+    },
+    {
+      "id": "0eb2b9b0-7b7a-4b7f-84e6-81586123f50b",
+      "night": "2026-10-24",
+      "path": "2026-10-24/0eb2b9b0-7b7a-4b7f-84e6-81586123f50b.jpg",
+      "type": "street",
+      "faces": "nee",
+      "note": "regen, paraplu's, Leuven bij nacht met toren, groep van achteren",
+      "used": [
+        "2026-10-26 recap"
+      ]
+    },
+    {
+      "id": "61c22281-5d73-40bd-a5ec-82c8acd154fb",
+      "night": "2026-10-24",
+      "path": "2026-10-24/61c22281-5d73-40bd-a5ec-82c8acd154fb.jpg",
+      "type": "street",
+      "faces": "nee",
+      "note": "zelfde straat in de regen, iets verder",
+      "used": []
+    },
+    {
+      "id": "e60ef123-6c16-4f66-87e3-e733d223de54",
+      "night": "2026-10-24",
+      "path": "2026-10-24/e60ef123-6c16-4f66-87e3-e733d223de54.jpg",
+      "type": "bar",
+      "faces": "ja",
+      "note": "twee aan een tafel, krijtbord Carolus",
+      "used": []
+    },
+    {
+      "id": "31e6b7bd-3de6-426a-a6bd-748c937ed86f",
+      "night": "2026-10-24",
+      "path": "2026-10-24/31e6b7bd-3de6-426a-a6bd-748c937ed86f.webp",
+      "type": "finale",
+      "faces": "ja",
+      "note": "groep aan tafel, hand in beeld linksboven (webp)",
+      "used": []
+    },
+    {
+      "id": "2fd1c2ab-1b78-4ae1-a331-516dbcd4f7a1",
+      "night": "2026-10-24",
+      "path": "2026-10-24/2fd1c2ab-1b78-4ae1-a331-516dbcd4f7a1.webp",
+      "type": "finale",
+      "faces": "ja",
+      "note": "groep aan tafel met pintjes en shotjes, beste versie (webp)",
+      "used": [
+        "2026-10-26 recap",
+        "2026-10-27 story"
+      ]
+    }
+  ]
 }

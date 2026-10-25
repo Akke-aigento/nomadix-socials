@@ -5,35 +5,23 @@
 <meta name="nx-size" content="1080x1920">
 <title>The photos are up</title>
 <link rel="stylesheet" href="../../brand.css">
-<!-- Story met link-sticker naar /photos/2026-10-24 (Crawl Log). Strook y 1300-1560 vrij. Illustratie: camera.svg (nieuw). -->
 <style>
-body.v-blue { background: radial-gradient(90% 60% at 50% 35%, #1B2A44 0%, #0E1626 70%); }
-.v-blue .kicker { color: var(--gold-a); }
+.photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(17,12,8,.55) 0%, rgba(17,12,8,0) 22%, rgba(17,12,8,0) 55%, rgba(17,12,8,.92) 100%); }
+.shade-top { position:absolute; inset:0; background:linear-gradient(180deg, rgba(17,12,8,.6) 0%, rgba(17,12,8,0) 20%); }
+.tag { position:absolute; right:56px; top:58px; font-size:24px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:var(--cream); background:rgba(17,12,8,.55); padding:12px 18px 10px; border:2px solid rgba(244,164,52,.7); }
 </style>
 </head>
-<body class="v-blue">
+<body>
   <div class="grain"></div>
-  <div class="brandrow" style="top:250px; left:var(--pad)"><img src="../../logo-mark.png" alt=""><span class="wordmark">The Fonske Crawl</span></div>
-  <div style="position:absolute; left:var(--pad); right:var(--pad); top:360px; display:flex; flex-direction:column; gap:28px">
-    <div class="kicker" data-slot="kicker" data-label="Kicker" data-max="30">Crawl Log · Sat 24 Oct</div>
-    <h1 class="display d-xl" data-slot="titel" data-label="Titel" data-max="30">The photos<br><span class="gold">are up.</span></h1>
-    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="90" data-multiline="true">Photos from the first crawl, now on fonskecrawl.com.</p>
+  <div class="brandrow" style="left:72px; top:96px"><img src="../../logo-mark.png" alt=""><span class="wordmark">The Fonske Crawl</span></div>
+  <div style="position:absolute; left:72px; right:72px; top:200px;">
+    <div class="kicker" data-slot="kicker" data-label="Kicker" data-max="32">Crawl Log · Sat 24 Oct</div>
+    <div class="display d-l gold" style="margin-top:18px" data-slot="titel" data-label="Titel" data-max="22">The photos are up.</div>
   </div>
-  <svg style="position:absolute; left:140px; top:880px; width:800px; height:400px" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
-  
-  <g fill="none" stroke="#F4A434" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M230 260 L360 260 L400 200 L600 200 L640 260 L770 260 Q800 260 800 290 L800 590 Q800 620 770 620 L230 620 Q200 620 200 590 L200 290 Q200 260 230 260 Z" fill="#1D1711"/>
-    <circle cx="500" cy="430" r="130"/>
-    <circle cx="500" cy="430" r="82" stroke-width="6"/>
-    <path d="M445 395 Q470 365 505 362" stroke-width="6" stroke="#F6CB6A"/>
-    <path d="M250 225 L320 225"/>
-    <rect x="680" y="300" width="70" height="40" rx="8" stroke-width="6"/>
-  </g>
-  <g stroke="#F6CB6A" stroke-width="8" stroke-linecap="round">
-    <path d="M715 150 L715 95"/><path d="M780 175 L820 135"/><path d="M650 175 L610 135"/><path d="M800 230 L855 215"/>
-  </g>
-  <circle cx="500" cy="430" r="40" fill="#F4A434" opacity=".85"/>
-</svg>
-  <p class="small" style="position:absolute; left:var(--pad); right:var(--pad); top:1600px; text-align:center" data-slot="onder" data-label="Onder sticker" data-max="40">Tap the link to see them</p>
+  <div style="position:absolute; left:72px; right:72px; top:470px; height:780px; overflow:hidden; border:4px solid var(--amber); transform:rotate(-1.5deg); box-shadow:0 30px 80px rgba(0,0,0,.5)">
+    <img src="../../photos/2026-10-24/2fd1c2ab-1b78-4ae1-a331-516dbcd4f7a1.jpg" style="width:100%; height:100%; object-fit:cover; object-position:50% 42%" alt="">
+  </div>
+  <div class="small" style="position:absolute; left:0; right:0; bottom:200px; text-align:center">Tap the link to see them all</div>
 </body>
 </html>
