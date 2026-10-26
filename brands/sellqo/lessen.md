@@ -5,7 +5,7 @@ Doorstreepte regels (`~~…~~`) of regels met `(Akke: nee)` worden nooit meer ge
 
 ## Actief
 
-_(nog geen lessen: 1 gemeten post op 19-10 (feature-split, nog maar 1 bereikt account), 0 Instagram-bezoekers op de site. Pas een les vanaf 3 posts per waarde.)_
+_(nog geen lessen: 4 gemeten posts (3 met score), bereik 0–3 accounts per post, 3 volgers. Geen enkele waarde heeft 3 posts met score. 0 Instagram-bezoekers op de site deze week. Pas een les vanaf 3 posts per waarde.)_
 
 ## Vervallen
 

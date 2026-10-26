@@ -5,7 +5,7 @@ Doorstreepte regels (`~~…~~`) of regels met `(Akke: nee)` worden nooit meer ge
 
 ## Actief
 
-_(nog geen lessen: 1 gemeten post op 19-10 (aankondiging crawl 24-10, score 4,35 op 92 bereik), 4 Instagram-bezoekers op de site, 0 aanvragen, 0 bestellingen. Pas een les vanaf 3 posts per waarde.)_
+_(nog geen lessen: 4 gemeten posts. Hook `statement` + cta `link` (3 posts) scoort 13,5 vs gemiddelde 11,3: geen duidelijk verschil. De reel van 25-10 haalde 284 bereik (score 4,9), de beste beeldpost was de lijst van 20-10 (21,4). Nog geen dagdeel met ≥3 posts. 5 Instagram-bezoekers op de site deze week, 0 aanvragen, 0 bestellingen.)_
 
 ## Vervallen
 
