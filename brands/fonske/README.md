@@ -62,6 +62,7 @@ Sinds 25 okt 2026 (FONSKE-MEDIA-1) uploaden Akke en Nastya in /beheer → tab "C
 - URL: `https://mrwiqgrxsyphbxiahule.supabase.co/storage/v1/object/public/crawl-media/<path>` (exacte URL, niet linken of publiek tonen).
 - `note` = wat Akke erbij zette (bv. "shots aan bar 2"); `night_date` = welke crawl. Bekijk elk bestand zelf (video: een paar frames met ffmpeg) en pas dezelfde regels toe als bij de foto's (geen dronken close-ups, niemand op de grond, niemand buiten de groep in close-up). Twijfel = niet gebruiken.
 - Reels uit video: knippen tot 7–15 s op de beat, 1080x1920, H.264, max 9,5 MB (ffmpeg `-preset veryfast`), stille versie voor eigen muziek; tekst in beeld enkel in de huisstijl. Per week max 1 reel.
+- Muziek (sinds 28 okt): nummer uit `music/` volgens `shared/MUZIEK.md`. Bij video: `ffmpeg … -ss <best_start> -i music/<file> -map 0:v -map 1:a -shortest` met fade-out, naast de stille versie. In SellQo `video_url` = muziekversie, `music_hint.track` ingevuld, status zoals een post (gekoppeld = `pending_approval`). Zonder passend nummer: `manual` + `music`.
 - Gebruikt: zet `used_at = now()` op die rij in `crawl_media` (enige toegelaten wijziging daar) en noteer het id in log.md. Nooit iets verwijderen.
 
 ### Variatie met foto's (nooit enkel feestfoto's)

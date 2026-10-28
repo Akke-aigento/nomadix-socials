@@ -83,7 +83,7 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
 4b. **Recept**: `node shared/recipe.mjs brands/studio-akke/weeks/<maandag>/*.html`.
 5. **Publiceer** naar `published/<maandag>/`, commit + push naar `main`, controleer elke raw-URL met `curl -sI` (200).
 6. **In SellQo** (één insert, nooit update/delete op bestaande rijen, nooit `approved`):
-   - Instagram **gekoppeld**: posts `pending_approval`; stories zonder sticker `story` + `pending_approval`; stickerstories `manual` + `sticker`; reel zonder bibliotheekmuziek `manual` + `music`.
+   - Instagram **gekoppeld**: posts `pending_approval`; stories zonder sticker `story` + `pending_approval`; stickerstories `manual` + `sticker`; reel met bibliotheeknummer `pending_approval`, zonder `manual` + `music` (zie Reels).
    - **Niet gekoppeld** (nu): alles `manual`, reden `other` (stickers `sticker`, reels `music`). SellQo stuurt ±1 u vooraf een push.
    - Carrousel: `media_type` `carousel`, `image_urls` in volgorde, één recept per slide (of `null`).
    - Caption: Nederlands, je-vorm, max 2200 tekens, 3–5 hashtags, CTA met "link in bio" (studioakke.com/contact of de juiste pagina). Controleer met een `select`.
@@ -99,7 +99,8 @@ tip in 3 stappen, het proces in 4 stappen, schermopname die Akke aanlevert. `wee
 Wissel beelden door ze allemaal vooraf te laden en `display` te schakelen (nooit `src` veranderen in `setT`).
 Noem een eigen voortgangsbalk niet `.bar` (botst met het browservenster).
 Render: `node shared/reel.mjs <index.html> out/studio-akke/<maandag>/reel-<onderwerp>` (< 9,5 MB), cover = één frame (`ffmpeg -ss <t> -frames:v 1`).
-In SellQo: `media_type` `reel`, `video_silent_url`, `image_urls` = cover, `music_hint` met 3 concrete songs uit een actuele bron; zonder bibliotheekmuziek `manual` + `music`.
+Muziek: nummer uit `music/` volgens `shared/MUZIEK.md` (`--music brands/studio-akke/music/<file> --music-start <best_start>`), scènes op de beat.
+In SellQo: `media_type` `reel`, `video_url` = `-muziek.mp4`, `video_silent_url` = `-stil.mp4`, `image_urls` = cover, `music_hint.track` ingevuld, status `pending_approval` (gaat na goedkeuring vanzelf online, sinds 28 okt). Enkel zonder passend bibliotheeknummer: `manual` + `music` (met 3 songs uit een actuele bron) en melden.
 
 ## Opnieuw maken
 

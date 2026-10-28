@@ -75,13 +75,14 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
    met `<meta name="nx-size">` en `<link rel="stylesheet" href="../../brand.css">`. Stories: tekst binnen de veilige zone. Tekstvakken met `data-slot`.
    LinkedIn: voor de ma- en vr-post een `linkedin/li-<dag>.html` (kopie van `weeks/2026-10-26/linkedin/li-ma.html`).
 4. **Render**: `PLAYWRIGHT_MODULE=/opt/npm-tools/node_modules/playwright/index.mjs PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers node shared/render.mjs brands/sellqo/weeks/<maandag> out/sellqo/<maandag>`
-   (+ `…/linkedin`), bekijk elk beeld. Reel: `node shared/reel.mjs <index.html> out/sellqo/<maandag>/reel-<onderwerp>` + cover (`ffmpeg -ss 1.5 … -frames:v 1`).
+   (+ `…/linkedin`), bekijk elk beeld. Reel: nummer uit `music/` volgens `shared/MUZIEK.md`, scènes op de beat, `node shared/reel.mjs <index.html> out/sellqo/<maandag>/reel-<onderwerp> --music brands/sellqo/music/<file> --music-start <best_start>` + cover (`ffmpeg -ss 1.5 … -frames:v 1`).
 4b. **Recept**: `node shared/recipe.mjs brands/sellqo/weeks/<maandag>/post-*.html brands/sellqo/weeks/<maandag>/story-*.html`.
 5. **Publiceer** naar `published/<maandag>/` (`post-ma-<onderwerp>.jpg`, `post-wo-<onderwerp>-1.jpg`, …), commit + push naar `main`,
    controleer elke raw-URL met `curl -sI` (200).
 6. **In SellQo** (één insert, nooit update/delete op bestaande rijen, nooit `approved`), zoals bij VanXcel:
    - Instagram **niet gekoppeld** (nu): alles `manual`, `manual_reason` `other`; poll-stories `sticker`; reel `music` (`video_silent_url`, cover in `image_urls`, `music_hint` met 3 songs uit een actuele bron).
    - Instagram **gekoppeld**: posts en carrousels `pending_approval`; stories zonder sticker `story` + `pending_approval`; sticker-stories `manual` + `sticker`.
+   - Reel (sinds 28 okt): met bibliotheeknummer `video_url` = `-muziek.mp4`, `video_silent_url` = `-stil.mp4`, `music_hint.track` ingevuld en dezelfde status als een post (gekoppeld = `pending_approval`, gaat na goedkeuring vanzelf online). Zonder passend nummer: `manual` + `music` en melden.
    - `source` `content_task`, `language` `nl`, `scheduled_for` in `Europe/Brussels`. Carrousel: `media_type` `carousel`, alle URL's in volgorde.
    Caption: Nederlands, kort, 3–5 hashtags uit de bible, CTA met "link in bio". Controleer met een `select`.
    **Recepten niet inline plakken** (±10 kB per beeld, een week is >100 kB SQL). Na de push haalt de database ze zelf op:

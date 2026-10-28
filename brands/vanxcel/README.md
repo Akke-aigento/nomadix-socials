@@ -86,7 +86,7 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
 5. **Publiceer**: kopieer naar `published/<maandag>/` (`post-ma-<onderwerp>.jpg`, …), commit + push naar `main`, controleer elke raw-URL met `curl -sI` (200).
 6. **In SellQo** (één insert, nooit update/delete op bestaande rijen, nooit `approved`):
    - Instagram **gekoppeld**: posts `pending_approval`; stories zonder sticker `story` + `pending_approval`; stories met sticker `manual` + `sticker`; reel zoals hieronder.
-   - Instagram **niet gekoppeld** (nu): alles `manual` met `manual_reason` `other` (sticker-stories `sticker`, reels zonder bibliotheekmuziek `music`). SellQo stuurt ±1 u vooraf een push; Akke post zelf via "Beeld openen" en klikt "Gepost".
+   - Instagram **niet gekoppeld** (nu): alles `manual` met `manual_reason` `other` (sticker-stories `sticker`, reels zonder bibliotheeknummer `music`). SellQo stuurt ±1 u vooraf een push; Akke post zelf via "Beeld openen" en klikt "Gepost".
    ```sql
    insert into social_posts (tenant_id, platform, media_type, status, source, manual_reason, language, post_text, image_urls, image_recipes, scheduled_for) values
    ('54f6b480-280b-42e1-b843-d5beb2831acd','instagram','image','manual','content_task','other','en','<caption>',
@@ -103,8 +103,9 @@ Eén per week (woensdag, op het sterkste slot uit `shared/POSTTIJDEN.md`). Forma
 know-how in 3 stappen, product in actie, de kat. `weeks/<maandag>/reel-<onderwerp>/index.html` met
 `<meta name="nx-reel" content="1080x1920" data-duration="<s>" data-fps="30">` en `window.setT(t)`; clips via
 `<video src="../../../clips/<id>.mp4" muted>` en in `setT` `video.currentTime = …` (wacht op `seeked`).
-Render: `node shared/reel.mjs <index.html> out/vanxcel/<maandag>/reel-<onderwerp>` (elk < 9,5 MB).
-In SellQo zoals bij Loveke (`media_type` `reel`, `video_url`/`video_silent_url`, `music_hint` met 3 concrete songs uit een actuele bron); zonder bibliotheekmuziek `manual` + `music`.
+Muziek: kies een nummer uit `music/` volgens `shared/MUZIEK.md` en zet de scènes op de beat.
+Render: `node shared/reel.mjs <index.html> out/vanxcel/<maandag>/reel-<onderwerp> --music brands/vanxcel/music/<file> --music-start <best_start>` (elk < 9,5 MB).
+In SellQo (`media_type` `reel`): `video_url` = `-muziek.mp4`, `video_silent_url` = `-stil.mp4`, `music_hint.track` ingevuld, status `pending_approval` (gaat na goedkeuring vanzelf online, sinds 28 okt). Enkel zonder passend bibliotheeknummer: `manual` + `music` (met 3 songs uit een actuele bron) en melden dat de bibliotheek aangevuld moet worden.
 
 ## Opnieuw maken
 
