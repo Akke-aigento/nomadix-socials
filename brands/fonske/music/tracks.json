@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "file": "feest-brass-night.mp3",
+    "title": "Brass Night",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Festive brass band party groove with trumpets and tuba, lively European street celebration, 120 BPM, instrumental, clean ending",
+    "mood": [
+      "feest",
+      "koper"
+    ],
+    "bpm": 120,
+    "duration": 30.1,
+    "best_start": 0.5,
+    "used": []
+  },
+  {
+    "file": "indie-old-market.mp3",
+    "title": "Old Market",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Indie rock with jangly guitars and driving drums, a night out with friends, 128 BPM, instrumental, clean ending",
+    "mood": [
+      "indie",
+      "energiek"
+    ],
+    "bpm": 128,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "folk-pub-stomp.mp3",
+    "title": "Pub Stomp",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Upbeat pub folk with accordion and fiddle, stomping and clapping, 112 BPM, instrumental, clean ending",
+    "mood": [
+      "folk",
+      "feest"
+    ],
+    "bpm": 112,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "disco-disco-round.mp3",
+    "title": "Disco Round",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Disco funk with a four-on-the-floor beat, funky rhythm guitar and strings, 118 BPM, instrumental",
+    "mood": [
+      "disco",
+      "funk"
+    ],
+    "bpm": 118,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "swing-swing-by.mp3",
+    "title": "Swing By",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Electro swing with brass and a modern beat, playful and cheeky, 124 BPM, instrumental, clean ending",
+    "mood": [
+      "swing",
+      "speels"
+    ],
+    "bpm": 124,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "chill-morning-after.mp3",
+    "title": "Morning After",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Warm nostalgic indie pop with soft guitars, the morning after a great night, 92 BPM, instrumental",
+    "mood": [
+      "chill",
+      "nostalgisch"
+    ],
+    "bpm": 92,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  }
+]

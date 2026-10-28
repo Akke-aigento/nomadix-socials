@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "file": "synthwave-nachtcode.mp3",
+    "title": "Nachtcode",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Calm synthwave with soft analog pads and a gentle arpeggio, city at night, 98 BPM, instrumental",
+    "mood": [
+      "synthwave",
+      "rustig"
+    ],
+    "bpm": 98,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "minimal-strak.mp3",
+    "title": "Strak",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Minimal tech beat with crisp percussion and a subtle bass line, precise and clean, 120 BPM, instrumental",
+    "mood": [
+      "minimal",
+      "techniek"
+    ],
+    "bpm": 120,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "lo-fi-regen-op-het-raam.mp3",
+    "title": "Regen Op Het Raam",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Lo-fi beat for coding with mellow keys and a soft rain texture, 82 BPM, instrumental",
+    "mood": [
+      "lo-fi",
+      "chill"
+    ],
+    "bpm": 82,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "garage-luchtig.mp3",
+    "title": "Luchtig",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Future garage with airy chords and shuffled drums, modern and calm, 130 BPM, instrumental",
+    "mood": [
+      "garage",
+      "modern"
+    ],
+    "bpm": 130,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "ambient-opbouw.mp3",
+    "title": "Opbouw",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Ambient electronic with slowly rising pads and pulses, something coming together step by step, 100 BPM, instrumental",
+    "mood": [
+      "ambient",
+      "opbouw"
+    ],
+    "bpm": 100,
+    "duration": 30.1,
+    "best_start": 0.5,
+    "used": []
+  },
+  {
+    "file": "elektronisch-live.mp3",
+    "title": "Live",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Upbeat electro pop with bright synths and a confident beat, launch day energy, 118 BPM, instrumental, clean ending",
+    "mood": [
+      "elektronisch",
+      "energiek"
+    ],
+    "bpm": 118,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  }
+]

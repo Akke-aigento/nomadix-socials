@@ -13,7 +13,17 @@ Elke map heeft `tracks.json` (formaat hieronder). Een nummer zonder regel in `tr
 
 ## Bron: ElevenLabs Music
 
-- Gemaakt door Akke in ElevenLabs Music (betaald plan). Commercieel gebruik op social media mag; geen naamsvermelding nodig.
+- ElevenLabs Music (betaald plan). Commercieel gebruik op social media mag; geen naamsvermelding nodig.
+- **Zo maak je nieuwe nummers** (bijvullen kan elke chat of taak met de Lovable-connector): Watchtower heeft de route `/api/public/music-compose` met de eigen sleutel `ELEVENLABS_MUSIC_API_KEY` (enkel Music Generation). Roep ze aan vanuit SQL op het Watchtower-project (`b9945398-c9e9-49cc-bc0b-97a3b0757531`), zodat het secret nooit in een chat komt:
+  ```sql
+  select net.http_post(url := 'https://watchtower.studioakke.com/api/public/music-compose',
+    headers := jsonb_build_object('Content-Type','application/json','x-cron-secret', public.get_cron_secret()),
+    body := jsonb_build_object('name','<merk>/<sfeer>-<titel>','length_ms',30000,'prompt','<prompt>'),
+    timeout_milliseconds := 280000);
+  -- ±60 s later: select status_code, content from net._http_response where id = <request_id>;
+  ```
+  Het nummer staat dan op `https://xlidgtxgqmsxxreghpdg.supabase.co/storage/v1/object/public/social-music/<merk>/<naam>.mp3` (domein toegelaten in de sandbox). Max **2 tegelijk** (ElevenLabs geeft anders 429). Daarna `music-add.mjs` hieronder.
+- Eerste reeks: 28 okt 2026, 30 nummers (6 per merk), model `music_v2_5`.
 - Altijd **instrumentaal**, 30 seconden (reels zijn 12–25 s).
 - Nooit een artiest, band of bestaand nummer in de prompt (geen "in de stijl van …").
 - Deze repo is publiek: de losse nummers zijn dus te downloaden. Dat is aanvaard (28 okt): de reels met de muziek staan sowieso publiek.

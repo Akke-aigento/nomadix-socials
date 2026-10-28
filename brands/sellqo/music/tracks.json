@@ -1,1 +1,109 @@
-[]
+[
+  {
+    "file": "vrolijk-open-voor-zaken.mp3",
+    "title": "Open Voor Zaken",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Friendly modern pop with marimba, plucked synths and hand claps, optimistic small business vibe, 116 BPM, instrumental, clean ending",
+    "mood": [
+      "vrolijk",
+      "pop"
+    ],
+    "bpm": 116,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "lo-fi-focus.mp3",
+    "title": "Focus",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Lo-fi beat with warm electric piano and soft drums, focused and calm, 85 BPM, instrumental",
+    "mood": [
+      "lo-fi",
+      "chill"
+    ],
+    "bpm": 85,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "house-kassa-groove.mp3",
+    "title": "Kassa Groove",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Light deep house groove with clean piano chords and a smooth bass line, modern and positive, 122 BPM, instrumental",
+    "mood": [
+      "house",
+      "energiek"
+    ],
+    "bpm": 122,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "speels-knipoog.mp3",
+    "title": "Knipoog",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Playful pizzicato strings and glockenspiel with light percussion, a wink of humor, 104 BPM, instrumental, clean ending",
+    "mood": [
+      "speels"
+    ],
+    "bpm": 104,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "elektronisch-bouwlog.mp3",
+    "title": "Bouwlog",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Indie electronic with a steady kick and rising synth arpeggios, a sense of progress and building, 112 BPM, instrumental",
+    "mood": [
+      "elektronisch",
+      "opbouw"
+    ],
+    "bpm": 112,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "warm-eerlijk-werk.mp3",
+    "title": "Eerlijk Werk",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-10-28",
+    "prompt": "Warm acoustic guitar with a soft shaker, honest and human, 96 BPM, instrumental, clean ending",
+    "mood": [
+      "warm",
+      "akoestisch"
+    ],
+    "bpm": 96,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  }
+]
