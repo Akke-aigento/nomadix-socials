@@ -24,6 +24,7 @@ do `feature/reel-pov/reel-pov/pov/middel/link` · vr `build/typografisch/buildlo
 
 Gebruikte changelog-items: `regulars_1`, `reservations_online`, `reservations_1`, `ai_agent_2`. Gebruikte scènes: zaalplan + rekening op naam (Bompa Ré, Jef), reservatie (Pizzeria Fiamma, Sam), events-checklist. Gebruikt beeld: `fonske/photos/2026-10-24/0eb2b9b0…jpg`.
 Muziek reel: Knipoog (ElevenLabs, 104 BPM, start 0 s, scènes van 6 tellen = 3,46 s).
+In SellQo gezet op 01-11: 6 rijen (5× `pending_approval`, za `manual` + `sticker`), recepten via net.http_get (md5 gecontroleerd), uurcontrole zonder dubbels, melding `social_posts_ready` verstuurd.
 Nog niet gebruikt: `addon_self_serve` (zelf een spoor aanzetten), `printful_auto_forward`, `photo_order`, kassa-snel-tikken (14h/j/m), barscherm (14i), bonprinters (14d), QR-tafelrekening online betalen (14a), keukenscherm, demowinkels (/voorbeelden), "jouw zaak als voorbeeld", overstappen uit Shopify/WooCommerce, prijzen per plan.
 
 ## Week van 2026-10-19
