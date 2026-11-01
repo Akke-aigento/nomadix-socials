@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Fuse Holder 12 slots</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- fuse-map (nieuw), licht, pijler Product. SellQo 01-11-2026: VanXcel Fuse Holder 12 slots, €33.95, voorraad 30.
+     Specs uit de productomschrijving (12 slots, LED-indicator bij doorgeslagen zekering, doorzichtig deksel met labels,
+     zekeringen 5–20A bij, tot 30A per circuit, 100A totaal, 12–32V DC). Voorbeeldindeling = vanxcel.com configurator
+     phase2Step5 (lighting 5A, USB 5A, fridge 10A, water pump 5A, diesel heater 10A, roof vent 5A). Schema, geen productfoto. -->
+<style>
+  body { background:#F4F3EF; color:var(--ink); }
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; background:var(--ink); padding:26px; border-radius:26px; }
+  .slot { background:#1d1d1d; border-radius:14px; height:150px; padding:18px 18px 16px; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
+  .slot .a { font-family:"Bebas Neue",sans-serif; font-size:60px; line-height:1; color:#fff; }
+  .slot .n { font-size:19px; font-weight:600; color:var(--mute); line-height:1.2; }
+  .slot.on { outline:3px solid var(--petrol); }
+  .slot .led { position:absolute; top:18px; right:18px; width:16px; height:16px; border-radius:50%; background:#2c2c2c; }
+  .slot.blown .led { background:var(--amber); box-shadow:0 0 0 6px rgba(245,158,11,.25), 0 0 22px rgba(245,158,11,.8); }
+  .slot.spare .a { color:#3a3a3a; }
+  .facts { display:flex; flex-wrap:wrap; gap:10px 28px; font-size:25px; color:#333; }
+  .facts span::before { content:""; display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--petrol); margin-right:12px; vertical-align:middle; }
+</style>
+</head>
+<body>
+  <img class="logo tl" src="../logo-black.svg" alt="VanXcel">
+  <div class="kicker" style="position:absolute; top:78px; right:var(--pad)" data-slot="kicker" data-label="Bovenregel" data-max="24">Fuse Holder · 12 slots</div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:190px; display:flex; flex-direction:column; gap:30px">
+    <h1 class="display" style="font-size:110px" data-slot="titel" data-label="Titel" data-max="44">One circuit. One slot.<br><span class="petrol">One label.</span></h1>
+    <div class="grid">
+      <div class="slot on"><span class="a">5A</span><span class="n">Lighting</span></div>
+      <div class="slot on"><span class="a">5A</span><span class="n">USB</span></div>
+      <div class="slot on"><span class="a">10A</span><span class="n">Fridge</span></div>
+      <div class="slot on"><span class="a">5A</span><span class="n">Water pump</span></div>
+      <div class="slot on"><span class="a">10A</span><span class="n">Diesel heater</span></div>
+      <div class="slot on"><span class="a">5A</span><span class="n">Roof vent</span></div>
+      <div class="slot spare"><span class="a">–</span><span class="n">Spare</span></div>
+      <div class="slot spare"><span class="a">–</span><span class="n">Spare</span></div>
+    </div>
+    <p class="body" style="color:#666; font-size:22px; margin-top:-14px" data-slot="noot" data-label="Voetnoot" data-max="70">Example layout from our install guide. 8 of 12 slots shown, schematic.</p>
+    <div class="facts">
+      <span>Blown-fuse indicator LED</span><span>Up to 30A per circuit</span><span>100A total</span><span>12–32V DC</span><span>Clear cover with labels</span><span>Fuses 5–20A included</span>
+    </div>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:flex-end; justify-content:space-between">
+    <span class="price" data-slot="prijs" data-label="Prijs" data-max="10">€33.95</span>
+    <span class="pill petrol" data-slot="cta" data-label="Knop" data-max="34">Shop · link in bio</span>
+  </div>
+</body>
+</html>

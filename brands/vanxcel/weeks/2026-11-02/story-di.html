@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Question: what would you wire differently</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Builders: vraag-sticker (question box) plakken in het lege vak (y ≈ 1060–1520). Lichte variant (nieuw: question-light).
+     Geen bewering, enkel een vraag aan de community. -->
+<style>
+  body { background:#F4F3EF; color:var(--ink); }
+  .q { font-family:"Bebas Neue",sans-serif; font-size:156px; line-height:.9; text-transform:uppercase; }
+  .box { position:absolute; left:var(--pad); right:var(--pad); top:1060px; height:460px; border:3px dashed rgba(0,136,148,.6); border-radius:32px; }
+</style>
+</head>
+<body>
+  <img class="logo" style="top:260px; left:var(--pad)" src="../../logo-black.svg" alt="VanXcel">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:420px; display:flex; flex-direction:column; gap:34px">
+    <div class="kicker" data-slot="reeks" data-label="Reeks" data-max="28">Builders ask builders</div>
+    <h1 class="q" data-slot="titel" data-label="Vraag" data-max="60">Build two.<br>What would you<br><span class="petrol">wire differently?</span></h1>
+    <p class="lead" style="color:#333" data-slot="tekst" data-label="Tekst" data-max="90">One thing. Type it below. We'll share the best lessons.</p>
+  </div>
+  <div class="box"></div>
+</body>
+</html>

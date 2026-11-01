@@ -42,3 +42,23 @@ Productfoto's: in `products/` staat enkel de 1500W-converter. Daarom deze week �
 
 Nieuwe templates: `photo-stamp`, `quiz-story`, `yes-no-story`, `compare-light`, `checklist-story`, `quote-fel`.
 Bronnen know-how: Vanxcel-repo `src/i18n/locales/en.json` (configurator: phase1Step5, safetyFuseDesc, smartAlternatorDesc, altChargeDesc, cableTip1–5, tipLabel, cableSafetyNote; pu_VX1000CV/pu_VX1500CV, pr_converter).
+
+## Week van 2026-11-02
+
+Instagram **gekoppeld** (social_connections actief): posts en stories zonder sticker op `pending_approval`; vraag-story `manual` (sticker). Reel **met bibliotheekmuziek** ("Clean Current", ElevenLabs Music) → `pending_approval` met `video_url` = `-muziek.mp4`.
+Leren: 10 gemeten posts, nog steeds < 3 per waarde, dus vooral explore. Signalen: journey-carrousel ma-avond (46,7) en de licht-typografische productvergelijking vr-avond (46,2) scoren het best; reels halen het grootste bereik (323, 132). Akke vroeg op 26-10 een ander onderwerp voor de kitten-carrousel: deze week geen kat. Know-how-posts/stories scoorden 0 → deze week know-how in nieuwe vormen (reel-tekst, mythe/feit, groot cijfer) in plaats van tip-kaarten.
+Productfoto's: enkel de 1500W-converter in `products/`. Productpost daarom als schema (fuse-map), geen nagemaakte productfoto.
+Batterijen 200Ah/300Ah staan op voorraad 0: niet gepromoot. Links (vanxcel.com/calculator, /configurator, /shop/<slug>) gecontroleerd in de routes van de Vanxcel-repo (`src/App.tsx`); de sandbox kan vanxcel.com zelf niet bereiken (proxy 403).
+
+| Dag | Wat | Pijler | Onderwerp | Media | Uur + reden | Labels |
+| --- | --- | --- | --- | --- | --- | --- |
+| ma 2/11 | carrousel (5), beeld eerst, donker | Journey | "Georgia. Twice.": heenweg dag 34–46 (Kakheti, Sighnaghi), terugweg dag 117 (Samtskhe-Javakheti) | vx-2022-05-11-georgia-0309, vx-2022-05-05-georgia-0291, vx-2022-05-13-georgia-0386, vx-2022-05-17-georgia-0445, vx-2022-07-27-georgia-1188 | 20:35, avondvenster; journey-carrousel ma-avond scoorde het best (46,7) | pillar journey · format carrousel-verhaal · template journey-cover + photo-stamp · hook verhaal · caption lang · cta reageren · people ja · bucket explore |
+| di 3/11 | story + vraag-sticker, licht | Builders | "Build two. What would you wire differently?" | – | 20:55, avondpiek voor stickers | pillar builders · format vraag · template question-light · hook vraag · caption kort · cta reageren · people nee · bucket explore |
+| wo 4/11 | reel (20 s, met muziek "Clean Current" 120 BPM, scène 2 s) | Know-how | "The battery goes on last": aansluitvolgorde power-up day (5 stappen + spark-stop) → configurator | – (motion graphics) | 20:20, sterkste slot (reels 20:05/20:15 = grootste bereik) | pillar know-how · format reel-tekst · template reel-steps · hook statement · caption middel · cta opslaan · people nee · bucket explore |
+| do 5/11 | story zonder sticker, donker | Know-how | Mythe/feit: "The fuse protects my fridge" → "It protects the cable" (binnen 18 cm) → calculator | – | 12:20, middagpauze info-story | pillar know-how · format mythe-feit · template myth-fact · hook contrast · caption kort · cta link · people nee · bucket explore |
+| vr 6/11 | post, licht, schema | Product | Fuse Holder 12 slots €33.95 (voorraad 30): één circuit per slot, labels, indicator-LED, 30A/circuit, 100A totaal | – | 18:50, vrijdagvenster (weekendtrip); vr-avond licht-typografisch scoorde 46,2 | pillar product · format aanbod · template fuse-map · hook belofte · caption lang · cta profiel · product vanxcel-fuse-holder-12-slots · people nee · bucket explore |
+| za 7/11 | story zonder sticker, beeld eerst | Journey | "Build day today? This is what it's for." (nummerplaat vervaagd) | vx-2022-05-26-kazakhstan-0513 | 09:45, weekendochtend = bouwdag | pillar journey · format lifestyle · template photo-story · hook pov · caption kort · cta geen · people nee · bucket explore |
+| zo 8/11 | post, typografisch, groot cijfer, donker | Know-how | "12.8–13.6V": volle LiFePO4 op de multimeter, meten vóór de panelen terug gaan → configurator | – | 13:40 **(test)**: zondag vroege namiddag, nog nooit geprobeerd, buiten het venster | pillar know-how · format groot-cijfer · template big-number · hook cijfer · caption middel · cta profiel · people nee · bucket test · experiment tijd |
+
+Nieuwe templates: `question-light`, `myth-fact`, `fuse-map`, `big-number`, `reel-steps/`.
+Bronnen know-how: Vanxcel-repo `src/i18n/locales/en.json` (calculator tip3; configurator safetyFuseDesc, phase2Step5, phase4OrderWarning, phase4Step1Desc, phase4Step5a–f, phase4SparkWarning, phase5Step2, phase5Warning). Product: SellQo-omschrijving Fuse Holder 12 slots.

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="20" data-fps="30">
+<title>Reel: the battery goes on last</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- reel-tekst (nieuw format; vorige weken reel-montage en reel-slideshow). Know-how in stappen, op de beat van
+     "Clean Current" (120 BPM → scène = 4 tellen = 2 s). Bron: vanxcel.com configurator (en.json) phase4OrderWarning,
+     phase4Step1Desc, phase4Step5a–f, phase4SparkWarning. Geen 230V-stap (die is voor een erkend elektricien). -->
+<style>
+  body { background:var(--ink); }
+  .scene { position:absolute; left:var(--pad); right:var(--pad); top:560px; opacity:0; display:flex; flex-direction:column; gap:34px; }
+  .n { font-family:"Bebas Neue",sans-serif; font-size:250px; line-height:.8; color:transparent; -webkit-text-stroke:3px var(--petrol); }
+  .t { font-family:"Bebas Neue",sans-serif; font-size:138px; line-height:.9; text-transform:uppercase; }
+  .s { font-size:38px; line-height:1.35; color:rgba(255,255,255,.85); font-weight:500; }
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .bar { position:absolute; left:var(--pad); right:var(--pad); top:1556px; height:6px; border-radius:3px; background:rgba(255,255,255,.12); }
+  .bar i { position:absolute; left:0; top:0; bottom:0; background:var(--petrol); border-radius:3px; }
+  /* schema: accu met twee polen, kabels die verbinden */
+  .bat { position:absolute; left:50%; top:1320px; width:360px; height:200px; margin-left:-180px; border:4px solid rgba(255,255,255,.7); border-radius:22px; }
+  .bat b { position:absolute; top:-30px; width:56px; height:28px; border-radius:8px 8px 0 0; background:rgba(255,255,255,.7); }
+  .bat .neg { left:46px; } .bat .pos { right:46px; }
+  .bat span { position:absolute; top:60px; font-family:"Bebas Neue",sans-serif; font-size:80px; color:rgba(255,255,255,.75); }
+  .wire { position:absolute; width:8px; border-radius:4px; transition:none; }
+  .glow2 { position:absolute; width:900px; height:900px; left:90px; top:900px; border-radius:50%; filter:blur(120px); background:rgba(0,136,148,.25); }
+  .end { position:absolute; inset:0; background:var(--ink); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; }
+</style>
+</head>
+<body>
+  <div class="glow2"></div>
+  <div class="top"><img class="logo" style="position:static" src="../../../logo-white.svg" alt="VanXcel"><span class="kicker" style="color:#fff">Power-up day</span></div>
+
+  <div class="scene" id="s0"><h1 class="t" style="font-size:190px">The battery<br>goes on<br><span class="petrol">last.</span></h1></div>
+  <div class="scene" id="s1"><span class="kicker">Connect in this order</span><h1 class="t">Work from the<br>consumers back<br>to the battery.</h1></div>
+  <div class="scene" id="s2"><span class="n">1</span><h1 class="t">Consumers to<br>the fuse box.</h1><p class="s">Positive to the fused output, negative to the negative busbar.</p></div>
+  <div class="scene" id="s3"><span class="n">2</span><h1 class="t">Check<br>everything.</h1><p class="s">Trace every cable. Check every connection.</p></div>
+  <div class="scene" id="s4"><span class="n">3</span><h1 class="t">Multimeter:<br>+ to − reads OL.</h1><p class="s">Infinite resistance means no short circuit.</p></div>
+  <div class="scene" id="s5"><span class="n">4</span><h1 class="t">Negative<br>to the battery<br>first.</h1></div>
+  <div class="scene" id="s6"><span class="n">5</span><h1 class="t">Then positive<br>to the ANL fuse.</h1></div>
+  <div class="scene" id="s7"><h1 class="t">Spark or pop?<br>Stop.</h1><p class="s">Disconnect and find the short circuit.</p></div>
+  <div class="scene" id="s8"><h1 class="t">No sparks.<br>No sounds.<br>No heat.</h1><p class="s">Then the battery switch goes on.</p></div>
+
+  <div class="bat" id="bat"><b class="neg"></b><b class="pos"></b><span style="left:54px">−</span><span style="right:56px">+</span></div>
+  <div class="wire" id="wn" style="background:#bbb"></div>
+  <div class="wire" id="wp" style="background:var(--petrol)"></div>
+  <div class="bar"><i id="prog"></i></div>
+
+  <div class="end" id="end">
+    <img src="../../../logo-white.svg" alt="VanXcel" style="width:300px">
+    <h1 class="display" style="font-size:150px">Full step-by-step<br><span class="petrol">install guide.</span></h1>
+    <p class="lead">Free, in the configurator, for your vehicle.</p>
+    <span class="pill petrol" style="align-self:flex-start">vanxcel.com/configurator</span>
+  </div>
+<script>
+  const SCENE = 2, N = 9, END = SCENE * N; // 18 s stappen, 2 s eindkaart
+  const sc = [...Array(N)].map((_, i) => document.getElementById("s" + i));
+  // polen: neg x≈ 540-180+46+28 = 434, pos x≈ 540+180-46-28 = 646; bovenkant pool y = 1290
+  function wire(el, x, len) { el.style.left = (x - 4) + "px"; el.style.top = (1290 - len) + "px"; el.style.height = len + "px"; }
+  window.setT = async (t) => {
+    await document.fonts.ready;
+    const end = document.getElementById("end");
+    if (t >= END) { end.style.opacity = Math.min(1, (t - END) / 0.3); } else end.style.opacity = 0;
+    const i = Math.min(N - 1, Math.floor(t / SCENE));
+    const local = (t - i * SCENE) / SCENE;
+    sc.forEach((s, k) => {
+      if (k !== i) { s.style.opacity = 0; return; }
+      const a = Math.min(1, local / 0.12) * (k === N - 1 ? 1 : Math.min(1, (1 - local) / 0.08));
+      s.style.opacity = a;
+      s.style.transform = `translateY(${(1 - Math.min(1, local / 0.12)) * 40}px)`;
+    });
+    // kabels: negatief zakt in scène 5 (10–12 s), positief in scène 6 (12–14 s)
+    const ease = (x) => 1 - Math.pow(1 - Math.max(0, Math.min(1, x)), 3);
+    const n = t < 10 ? 0 : ease((t - 10) / 0.8), p = t < 12 ? 0 : ease((t - 12) / 0.8);
+    wire(document.getElementById("wn"), 434, 10 + 60 * n);
+    wire(document.getElementById("wp"), 646, 10 + 60 * p);
+    document.getElementById("wn").style.opacity = n > 0 ? 1 : 0;
+    document.getElementById("wp").style.opacity = p > 0 ? 1 : 0;
+    // in scène 7 (spark) knippert de accu amber, in scène 8 wordt ze petrol
+    const bat = document.getElementById("bat");
+    bat.style.borderColor = (t >= 14 && t < 16 && Math.floor(t * 4) % 2 === 0) ? "#F59E0B" : (t >= 16 ? "#008894" : "rgba(255,255,255,.7)");
+    document.getElementById("prog").style.width = (Math.min(1, t / END) * 100) + "%";
+  };
+</script>
+</body>
+</html>

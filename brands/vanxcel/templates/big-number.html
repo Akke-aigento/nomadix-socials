@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>12.8 to 13.6V</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- big-number (nieuw), typografisch, donker. Bron: vanxcel.com configurator (en.json) phase5Step2: "Measure the battery
+     voltage with a multimeter: should be between 12.8V and 13.6V for a full LiFePO4." en phase5Warning ("BEFORE you put
+     trim panels/furniture back"). -->
+<style>
+  .big { font-family:"Bebas Neue",sans-serif; font-size:330px; line-height:.82; letter-spacing:-.01em; }
+  .big small { font-size:150px; color:var(--petrol); }
+  .meter { height:14px; border-radius:7px; background:#1f1f1f; position:relative; overflow:hidden; }
+  .meter i { position:absolute; left:58%; width:30%; top:0; bottom:0; background:var(--petrol); }
+</style>
+</head>
+<body>
+  <img class="logo tl" src="../logo-white.svg" alt="VanXcel">
+  <div class="kicker" style="position:absolute; top:78px; right:var(--pad)" data-slot="kicker" data-label="Bovenregel" data-max="24">Power-up check</div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:300px; display:flex; flex-direction:column; gap:40px">
+    <p class="lead" style="color:var(--mute)" data-slot="boven" data-label="Boven het cijfer" data-max="60">A full LiFePO4 on your multimeter:</p>
+    <div class="big" data-slot="cijfer" data-label="Cijfer" data-max="14">12.8–13.6<small>V</small></div>
+    <div class="meter"><i></i></div>
+    <p class="lead" style="max-width:900px" data-slot="tekst" data-label="Tekst" data-max="130">Measure it as soon as the system is on. Before the trim panels go back, while you can still reach every connection.</p>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill ghost" data-slot="cta" data-label="Knop" data-max="34">Save for power-up day</span>
+    <span class="body" style="color:var(--mute)" data-slot="link" data-label="Link" data-max="30">vanxcel.com/configurator</span>
+  </div>
+</body>
+</html>

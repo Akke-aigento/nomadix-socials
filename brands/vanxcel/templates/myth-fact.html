@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Myth: the fuse protects your fridge</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- myth-fact (nieuw), story zonder sticker, donker. Bron: vanxcel.com calculator (en.json) tip3: "Place a fuse as close to
+     the battery as possible — it protects the cable, not the device." en safetyFuseDesc ("within 18cm of every positive
+     battery connection"). -->
+<style>
+  .lab { font-size:24px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; }
+  .myth { font-family:"Bebas Neue",sans-serif; font-size:112px; line-height:.92; text-transform:uppercase; color:var(--mute); text-decoration:line-through; text-decoration-thickness:6px; text-decoration-color:rgba(255,255,255,.35); }
+  .fact { font-family:"Bebas Neue",sans-serif; font-size:150px; line-height:.9; text-transform:uppercase; }
+  .card { background:var(--card); border-radius:28px; padding:44px 46px; display:flex; flex-direction:column; gap:22px; }
+</style>
+</head>
+<body>
+  <div class="glow" style="width:900px; height:900px; left:-380px; top:820px"></div>
+  <img class="logo" style="top:260px; left:var(--pad)" src="../logo-white.svg" alt="VanXcel">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:400px; display:flex; flex-direction:column; gap:40px">
+    <div class="card">
+      <span class="lab" style="color:var(--mute)">Myth</span>
+      <p class="myth" data-slot="mythe" data-label="Mythe" data-max="40">The fuse protects my fridge.</p>
+    </div>
+    <div class="card" style="border:2px solid var(--petrol)">
+      <span class="lab petrol">Fact</span>
+      <p class="fact" data-slot="feit" data-label="Feit" data-max="40">It protects<br>the <span class="amber">cable.</span></p>
+      <p class="lead" data-slot="tekst" data-label="Uitleg" data-max="120">That's why it sits as close to the battery as possible: within 18 cm of every positive connection.</p>
+    </div>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:380px; display:flex; flex-direction:column; gap:18px">
+    <p class="body" data-slot="vraag" data-label="Vraag" data-max="60">Which fuse for which cable?</p>
+    <span class="pill petrol" style="align-self:flex-start" data-slot="link" data-label="Link" data-max="34">vanxcel.com/calculator</span>
+  </div>
+</body>
+</html>
