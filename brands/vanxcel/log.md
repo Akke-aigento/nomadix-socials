@@ -61,4 +61,5 @@ Batterijen 200Ah/300Ah staan op voorraad 0: niet gepromoot. Links (vanxcel.com/c
 | zo 8/11 | post, typografisch, groot cijfer, donker | Know-how | "12.8–13.6V": volle LiFePO4 op de multimeter, meten vóór de panelen terug gaan → configurator | – | 13:40 **(test)**: zondag vroege namiddag, nog nooit geprobeerd, buiten het venster | pillar know-how · format groot-cijfer · template big-number · hook cijfer · caption middel · cta profiel · people nee · bucket test · experiment tijd |
 
 Nieuwe templates: `question-light`, `myth-fact`, `fuse-map`, `big-number`, `reel-steps/`.
+In SellQo gezet op 01-11 (7 rijen, recepten nagetrokken met md5) + melding "Week van 2 nov klaar".
 Bronnen know-how: Vanxcel-repo `src/i18n/locales/en.json` (calculator tip3; configurator safetyFuseDesc, phase2Step5, phase4OrderWarning, phase4Step1Desc, phase4Step5a–f, phase4SparkWarning, phase5Step2, phase5Warning). Product: SellQo-omschrijving Fuse Holder 12 slots.
