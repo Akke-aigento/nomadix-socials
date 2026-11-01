@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Post vr: case Borletti (pov, beeld eerst)</title>
+<link rel="stylesheet" href="../brand.css">
+<style>
+  .browser.pov { left:0; right:0; top:0; height:770px; border-radius:0 0 30px 30px; border-left:0; border-right:0; border-top:0; }
+  .browser.pov img.shot { object-position:left top; }
+  .pv { align-self:flex-start; background:var(--teal); color:var(--navy); font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; padding:14px 26px; border-radius:14px; box-shadow:0 20px 40px -20px rgba(0,0,0,.6); }
+</style>
+</head>
+<body>
+  <div class="glow teal" style="width:700px; height:700px; right:-320px; bottom:-300px"></div>
+  <div class="browser pov">
+    <div class="bar"><i></i><i></i><i></i><span data-slot="url" data-label="Webadres" data-max="30">borletti.nl</span></div>
+    <img class="shot" src="../media/site-borletti.jpg" alt="Website van Borletti">
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:830px; display:flex; flex-direction:column; gap:26px">
+    <div class="pv">// pov</div>
+    <h1 class="h" style="font-size:66px; line-height:1.02" data-slot="titel" data-label="Titel" data-max="80">Je zoekt een partner voor<br>import en transport in Europa.<br><span class="grad">Dit zie je eerst.</span></h1>
+    <div style="display:flex; gap:14px; flex-wrap:wrap">
+      <span class="tag"><span class="dot"></span><span data-slot="categorie" data-label="Categorie" data-max="26">Import &amp; Logistiek</span></span>
+      <span class="tag">Professional</span><span class="tag">B2B</span>
+    </div>
+  </div>
+  <div class="brand bl" style="font-size:30px"><img src="../mark.svg" alt="" style="width:52px; height:52px">Studio <b>Akke</b></div>
+  <div class="swipe">// werk</div>
+</body>
+</html>

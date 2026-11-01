@@ -36,3 +36,22 @@ Prijzen op de site ongewijzigd t.o.v. 19 okt (repo `studioakke` laatste commit 1
 
 Muziek reel (SocialPilot, trending 12–25 okt 2026, nog niet bevestigd voor zakelijke accounts): Hello October (Sugar Lime Blue), My October (The Folks), Last Train to London (Rikas).
 In SellQo gezet op 25 okt: 7 rijen (4 pending_approval, 2 manual sticker, 1 manual music), recepten via pg_net, melding verstuurd.
+
+## Week van 2 nov 2026 (weektaak, gemaakt op 1 nov)
+
+Instagram gekoppeld: carrousel, reel (ElevenLabs-nummer in de MP4), hosting-story, case en stelling op "wacht op goedkeuring"; slider- en quiz-story op "zelf posten" (sticker).
+Leren: 9 gemeten items, geen signalen van Akke, `lessen.md` zonder actieve les → alles `explore`, één `test` (tijd).
+Toegepast: (1) de best scorende post tot nu is de aanbod-carrousel op maandagmiddag (19-10, score_48h 33) → deze week weer een aanbod-carrousel op maandagmiddag (12:35); (2) reels halen het meeste bereik (55 en 36 tegenover 4–9 voor posts) → reel op het sterkste slot, en voor het eerst automatisch met bibliotheekmuziek. Test vr 17:10 (vorige week): bereik 4, 1 post → nog geen besluit; nieuw testslot vr 07:40.
+Geen nieuwe klikbare links (URL's in beeld, CTA "link in bio") → geen UTM nodig.
+Prijzen op de site ongewijzigd t.o.v. 26 okt (repo `studioakke` laatste commit 12 okt).
+Nieuwe templates: `story-slider`, `story-quiz`, `case-pov`, `story-compare-paper`.
+
+| Dag | Wat | Pijler | Onderwerp | Format / template / hook / variant | Labels | Uur + reden | Media |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ma 2 | carrousel (6) | Aanbod | Studio Akke Insights: leads, herkomst, wekelijks advies, geen cookiebanner; €15 / €35 per maand excl. btw, Start gratis bij Zakelijk Onderhoud | carrousel-uitleg / nieuw (insights-uitleg) / contrast / donker + licht (slide 5) + fel (slide 6) | aanbod, carrousel-uitleg, insights-uitleg, contrast, lang, link, insights, explore | 12:35 — lunch; de aanbod-carrousel van 19-10 op maandagmiddag scoorde het best | – |
+| di 3 | story, slider-sticker | Ondernemers | Van oeps tot trots: hoe tevreden ben je over je website? | slider / story-slider (nieuw) / grap / donker | ondernemers, slider, story-slider, grap, kort, reageren, explore | 08:40 — start werkdag, ochtend | – |
+| wo 4 | reel 18 s | Tips | Gsm-check: bellen met één tik, adres en uren zonder zoeken, snel open | reel-tekst (tekst bij telefoon in 3 stappen; vorige: montage) / reel-gsm-check / belofte / donker + fel eindkaart | tips, reel-tekst, reel-gsm-check, belofte, middel, link, explore | 20:45 — sterkste slot (avond, denken aan de zaak); reels halen het meeste bereik | muziek: Strak (ElevenLabs, 120 BPM, scènes per 8 tellen) |
+| do 5 | story zonder sticker | Aanbod | Zit hosting bij de prijs? Met onderhoud inbegrepen (vanaf €69/maand), zonder: hulp bij opzetten (circa €10–20/maand bij een provider) | vergelijking / story-compare-paper (nieuw) / vraag / licht | aanbod, vergelijking, story-compare-paper, vraag, kort, link, onderhoud, explore | 12:25 — lunch, middag | – |
+| vr 6 | post | Werk | Case Borletti (Import & Logistiek, B2B, import en transport voor heel Europa) | beeld eerst / case-pov (nieuw) / pov / donker | werk, case, case-pov, pov, middel, link, test (experiment tijd) | 07:40 (test) — vóór de werkdag, nog nooit geprobeerd | site-borletti (op 19-10 enkel als miniatuur in de carrousel) |
+| za 7 | story, quiz-sticker | Ondernemers | Quiz: hoeveel werkdagen tot een Landing Page live staat (5–7, zodra de materialen binnen zijn) | quiz / story-quiz (nieuw) / cijfer / donker | ondernemers, quiz, story-quiz, cijfer, kort, reageren, landing-page, explore | 10:50 — zaterdagvoormiddag, rustig | – |
+| zo 8 | post | Tips | Stelling: je homepage is geen brochure, zeg eerst wat je doet | typografisch / statement / statement / fel | tips, typografisch, statement, statement, kort, reageren, explore | 20:15 — zondagavond, plannen voor de week | – |

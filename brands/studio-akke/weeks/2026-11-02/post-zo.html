@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Post zo: stelling homepage (fel, typografisch)</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .strike { position:relative; display:inline-block; color:rgba(15,23,41,.45); }
+  .strike::after { content:""; position:absolute; left:-6px; right:-6px; top:54%; height:12px; background:var(--coral); border-radius:8px; transform:rotate(-3deg); }
+</style>
+</head>
+<body style="background:linear-gradient(200deg,#5EEAD4 0%,#22D3EE 50%,#38BDF8 100%); color:var(--navy)">
+  <img src="../../mark.svg" alt="" style="position:absolute; left:-200px; top:-160px; width:700px; height:auto; opacity:.13; filter:brightness(0)">
+  <div class="brand" style="top:64px; right:var(--pad); color:var(--navy)"><img src="../../mark.svg" alt="" style="filter:brightness(0) opacity(.85)">Studio <b style="color:var(--navy)">Akke</b></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:200px">
+    <div class="code" style="color:var(--navy); opacity:.7; margin-bottom:40px; font-size:28px"><span style="opacity:.6">//</span> <span data-slot="reeks" data-label="Reeks" data-max="24">stelling</span></div>
+    <h1 class="h" style="font-size:122px; line-height:.95" data-slot="titel" data-label="Stelling" data-max="70">Je homepage is<br>geen <span class="strike">brochure</span>.<br>Zeg eerst wat<br>je doet.</h1>
+  </div>
+  <div class="code" style="position:absolute; left:var(--pad); bottom:84px; color:var(--navy); font-size:26px" data-slot="tekst" data-label="Onderregel" data-max="50">wie je bent, mag daarna</div>
+</body>
+</html>

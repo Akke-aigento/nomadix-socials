@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="18" data-fps="30">
+<title>Reel: check je site op je gsm (3 dingen)</title>
+<link rel="stylesheet" href="../../../brand.css">
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .hook { position:absolute; left:var(--pad); right:var(--pad); top:560px; }
+  .hook h1 { font-size:140px; font-weight:900; letter-spacing:-.045em; line-height:.95; }
+  .hook p { margin-top:44px; font-size:44px; font-weight:600; color:rgba(255,255,255,.85); }
+  .cap { position:absolute; left:var(--pad); right:var(--pad); top:360px; opacity:0; }
+  .cap .n { font-family:"JetBrains Mono",monospace; font-size:32px; font-weight:700; color:var(--teal); }
+  .cap h2 { margin-top:14px; font-size:76px; font-weight:900; letter-spacing:-.035em; line-height:1.0; }
+  .phone { position:absolute; left:50%; top:620px; width:470px; height:930px; margin-left:-235px; border-radius:62px; background:#05080F; border:3px solid rgba(255,255,255,.18); box-shadow:0 60px 120px -40px rgba(0,0,0,.8); padding:16px; opacity:0; }
+  .screen { position:relative; width:100%; height:100%; border-radius:48px; overflow:hidden; background:#F4F7FB; color:var(--navy); }
+  .notch { position:absolute; top:14px; left:50%; width:120px; height:30px; margin-left:-60px; background:#05080F; border-radius:20px; z-index:5; }
+  .page { position:absolute; left:0; right:0; top:0; }
+  .nav { height:110px; padding:56px 26px 0; display:flex; justify-content:space-between; align-items:center; font-weight:800; font-size:24px; }
+  .nav .ham { width:30px; height:4px; background:var(--navy); border-radius:4px; box-shadow:0 10px 0 var(--navy), 0 -10px 0 var(--navy); }
+  .heroP { margin:10px 18px; border-radius:26px; padding:36px 26px; background:linear-gradient(150deg,#0F1729,#211438); color:#fff; }
+  .heroP .k { font-family:"JetBrains Mono",monospace; font-size:16px; color:var(--teal-light); }
+  .heroP h3 { font-size:44px; font-weight:900; letter-spacing:-.03em; line-height:1; margin:14px 0 26px; }
+  .call { position:relative; display:inline-flex; align-items:center; gap:12px; background:var(--teal); color:var(--navy); font-weight:800; font-size:26px; padding:18px 28px; border-radius:999px; }
+  .call i { width:22px; height:22px; border-radius:6px; border:4px solid var(--navy); display:block; }
+  .ripple { position:absolute; left:50%; top:50%; width:40px; height:40px; margin:-20px 0 0 -20px; border-radius:50%; border:5px solid #fff; opacity:0; }
+  .block { margin:16px 18px; border-radius:22px; background:#fff; padding:24px; box-shadow:0 10px 30px -18px rgba(15,23,41,.4); }
+  .block .k { font-family:"JetBrains Mono",monospace; font-size:16px; color:#0D9488; font-weight:700; }
+  .block p { font-size:24px; font-weight:700; margin-top:8px; line-height:1.3; }
+  .block.hl { outline:5px solid var(--teal); outline-offset:0; }
+  .gray { height:16px; border-radius:8px; background:#E2E8F0; margin:12px 0; }
+  .dialing { position:absolute; inset:0; background:linear-gradient(170deg,#0F1729,#211438); color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; opacity:0; z-index:4; }
+  .dialing b { font-size:42px; font-weight:900; }
+  .dialing span { font-family:"JetBrains Mono",monospace; font-size:20px; color:var(--teal-light); }
+  .dialing .ph { width:110px; height:110px; border-radius:50%; background:var(--teal); }
+  .loader { position:absolute; inset:0; background:#F4F7FB; z-index:3; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:26px; opacity:0; }
+  .loader .lb { width:260px; height:12px; border-radius:12px; background:#E2E8F0; overflow:hidden; position:relative; }
+  .loader .lb b { position:absolute; left:0; top:0; bottom:0; width:0; background:linear-gradient(90deg,#5EEAD4,#22D3EE); }
+  .loader span { font-family:"JetBrains Mono",monospace; font-size:20px; color:#64748B; }
+  .prog { position:absolute; left:var(--pad); right:var(--pad); top:1580px; display:flex; gap:12px; opacity:0; }
+  .prog i { flex:1; height:8px; border-radius:8px; background:rgba(255,255,255,.18); display:block; overflow:hidden; position:relative; }
+  .prog i b { position:absolute; left:0; top:0; bottom:0; width:0; background:linear-gradient(90deg,#5EEAD4,#22D3EE); }
+  .end { position:absolute; inset:0; background:linear-gradient(150deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); color:var(--navy); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:900px; height:900px; right:-360px; top:300px"></div>
+  <div class="glow violet" style="width:800px; height:800px; left:-320px; bottom:200px"></div>
+  <div class="top" id="top"><div class="brand" style="position:static"><img src="../../../mark.svg" alt="">Studio <b>Akke</b></div><span class="code"><span class="c">//</span> gsm-check</span></div>
+  <div class="hook" id="hook"><h1>Pak je gsm.<br><span class="grad">Open je<br>eigen site.</span></h1><p>Drie dingen moeten meteen werken.</p></div>
+
+  <div class="cap" id="c0"><div class="n">01 / 03</div><h2>Bellen met<br><span class="grad">één tik.</span></h2></div>
+  <div class="cap" id="c1"><div class="n">02 / 03</div><h2>Adres en uren,<br><span class="grad">zonder zoeken.</span></h2></div>
+  <div class="cap" id="c2"><div class="n">03 / 03</div><h2>Snel open,<br><span class="grad">ook onderweg.</span></h2></div>
+
+  <div class="phone" id="phone"><div class="screen">
+    <div class="notch"></div>
+    <div class="page" id="page">
+      <div class="nav"><span>jouwzaak.be</span><span class="ham"></span></div>
+      <div class="heroP"><div class="k">// jouw zaak</div><h3>Wat je doet,<br>in één zin.</h3><span class="call" id="call"><i></i>Bel ons<span class="ripple" id="rip"></span></span></div>
+      <div class="block"><div class="gray" style="width:70%"></div><div class="gray" style="width:90%"></div><div class="gray" style="width:55%"></div></div>
+      <div class="block" id="addr"><div class="k">// adres</div><p>Voorbeeldstraat 1<br>1000 Jouwstad</p><div class="k" style="margin-top:16px">// open</div><p>di – za, 9 tot 18 uur</p></div>
+      <div class="block"><div class="gray" style="width:80%"></div><div class="gray" style="width:60%"></div></div>
+    </div>
+    <div class="dialing" id="dial"><div class="ph"></div><b>Jouw Zaak</b><span>bellen…</span></div>
+    <div class="loader" id="load"><div class="lb"><b id="lbar"></b></div><span>jouwzaak.be</span></div>
+  </div></div>
+
+  <div class="prog" id="prog"><i><b id="p0"></b></i><i><b id="p1"></b></i><i><b id="p2"></b></i></div>
+
+  <div class="end" id="end">
+    <img src="../../../mark.svg" alt="" style="width:150px; height:auto; filter:brightness(0) opacity(.85)">
+    <h1 class="h" style="font-size:132px; line-height:.95">Lukt er<br>één niet?</h1>
+    <p class="lead" style="color:rgba(15,23,41,.85)">Dan weet je wat er beter kan. Elke site die ik bouw is responsive en supersnel geladen.</p>
+    <span class="pill" style="background:var(--navy); color:#fff; align-self:flex-start">studioakke.com</span>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const c = (x) => Math.min(Math.max(x, 0), 1);
+  const ease = (x) => 1 - Math.pow(1 - c(x), 3);
+  const S = [2, 6, 10], LEN = 4, END = 14;
+  window.setT = (t) => {
+    const hi = ease(t / 0.45), ho = ease((t - 1.6) / 0.35);
+    $("hook").style.opacity = hi * (1 - ho);
+    $("hook").style.transform = `translateY(${(1-hi)*50 - ho*60}px)`;
+    // telefoon
+    const pi = ease((t - 1.8) / 0.5), po = ease((t - END) / 0.3);
+    $("phone").style.opacity = pi * (1 - po);
+    $("phone").style.transform = `translateY(${(1-pi)*120}px) scale(${0.94 + pi*0.06})`;
+    S.forEach((s, i) => {
+      const a = ease((t - s) / 0.4), b = ease((t - (s + LEN - 0.3)) / 0.3);
+      const last = i === S.length - 1;
+      const out = last ? ease((t - END) / 0.3) : b;
+      $("c" + i).style.opacity = t < s ? 0 : a * (1 - out);
+      $("c" + i).style.transform = `translateX(${(1-a)*60}px)`;
+      $("p" + i).style.width = (c((t - s) / LEN) * 100) + "%";
+    });
+    $("prog").style.opacity = t < 1.9 ? 0 : 1 - ease((t - END) / 0.3);
+    // scène 1: tik op "Bel ons" (3,5 s), daarna belscherm
+    const tap = c((t - 3.5) / 0.6);
+    $("rip").style.opacity = t < 3.5 ? 0 : 1 - tap;
+    $("rip").style.transform = `scale(${1 + tap * 5})`;
+    $("call").style.transform = `scale(${t > 3.4 && t < 3.7 ? 0.94 : 1})`;
+    const d = ease((t - 4.0) / 0.35) * (1 - ease((t - 5.7) / 0.3));
+    $("dial").style.opacity = d;
+    // scène 2: pagina scrolt naar adres, kader licht op
+    const sc = ease((t - 6.3) / 0.9) * (1 - ease((t - 9.7) / 0.3));
+    $("page").style.transform = `translateY(${-sc * 300}px)`;
+    $("addr").classList.toggle("hl", t > 7.2 && t < 9.8);
+    // scène 3: laadbalk vult snel, pagina verschijnt
+    const ld = t >= 10 && t < 14;
+    const lv = ld ? 1 - ease((t - 11.6) / 0.35) : 0;
+    $("load").style.opacity = lv;
+    $("lbar").style.width = (c((t - 10.4) / 1.0) * 100) + "%";
+    // eindkaart
+    const e = ease((t - END) / 0.45);
+    $("end").style.opacity = t < END ? 0 : e;
+    $("end").style.transform = `translateY(${(1-e)*40}px)`;
+  };
+  window.setT(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Story di: slider oeps tot trots</title>
+<link rel="stylesheet" href="../brand.css">
+<style>
+  .scale { display:flex; justify-content:space-between; align-items:flex-end; margin-top:10px; }
+  .scale div { display:flex; flex-direction:column; gap:12px; }
+  .scale b { font-size:60px; font-weight:900; letter-spacing:-.03em; }
+  .scale span { font-family:"JetBrains Mono",monospace; font-size:24px; color:var(--mute); }
+  .track { height:14px; border-radius:20px; background:linear-gradient(90deg, rgba(255,255,255,.18), rgba(255,255,255,.35) 45%, #2BD4BD); }
+</style>
+</head>
+<body>
+  <div class="glow violet" style="width:900px; height:900px; left:-380px; top:80px"></div>
+  <div class="glow teal" style="width:760px; height:760px; right:-340px; bottom:260px"></div>
+  <div class="story-safe" style="display:flex; flex-direction:column; gap:42px">
+    <div class="brand" style="position:relative"><img src="../mark.svg" alt="">Studio <b>Akke</b></div>
+    <div class="code" style="font-size:28px" data-slot="reeks" data-label="Reeks" data-max="28"><span class="c">//</span> schuif eens</div>
+    <h1 class="h" style="font-size:96px" data-slot="titel" data-label="Vraag" data-max="70">Op een schaal van<br><span class="coral">oeps</span> tot <span class="grad">trots</span>:<br>hoe tevreden ben<br>je over je website?</h1>
+    <div>
+      <div class="track"></div>
+      <div class="scale"><div><b style="color:rgba(255,255,255,.75)">oeps</b><span>liever niet tonen</span></div><div style="align-items:flex-end"><b class="teal">trots</b><span>stuur ik zo door</span></div></div>
+    </div>
+    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="80">Geen website? Dan mag je helemaal links.</p>
+    <div class="sticker-slot" style="height:300px; margin-top:auto">slider-sticker hier</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Story do: hosting met of zonder onderhoud (licht)</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .opt { border-radius:30px; padding:40px 42px; display:flex; flex-direction:column; gap:18px; }
+  .opt .k { font-family:"JetBrains Mono",monospace; font-size:26px; font-weight:700; letter-spacing:.03em; }
+  .opt h2 { font-size:56px; font-weight:900; letter-spacing:-.03em; line-height:1.02; }
+  .opt p { font-size:30px; line-height:1.4; }
+  .a { background:#fff; border:3px solid #0D9488; box-shadow:0 30px 60px -40px rgba(15,23,41,.45); }
+  .a .k { color:#0D9488; } .a p { color:#334155; }
+  .b { background:rgba(15,23,41,.05); border:2px dashed rgba(15,23,41,.22); }
+  .b .k { color:#64748B; } .b p { color:#475569; }
+</style>
+</head>
+<body class="paper">
+  <img src="../../mark.svg" alt="" style="position:absolute; right:-220px; top:-120px; width:760px; height:auto; opacity:.06; filter:brightness(0)">
+  <div class="story-safe" style="display:flex; flex-direction:column; gap:34px">
+    <div class="brand" style="position:relative"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+    <h1 class="h" style="font-size:100px; color:var(--navy)" data-slot="titel" data-label="Vraag" data-max="40">Zit hosting<br>bij de prijs?</h1>
+    <div class="opt a">
+      <div class="k" data-slot="ka" data-label="Kop 1" data-max="24">// met onderhoud</div>
+      <h2 data-slot="ta" data-label="Antwoord 1" data-max="30">Ja, inbegrepen.</h2>
+      <p data-slot="pa" data-label="Uitleg 1" data-max="120">Vanaf €69/maand excl. btw: hosting, updates, backup en beveiliging, plus 1 uur wijzigingen per maand.</p>
+    </div>
+    <div class="opt b">
+      <div class="k" data-slot="kb" data-label="Kop 2" data-max="24">// zonder onderhoud</div>
+      <h2 style="color:var(--navy)" data-slot="tb" data-label="Antwoord 2" data-max="30">Ik help je het opzetten.</h2>
+      <p data-slot="pb" data-label="Uitleg 2" data-max="120">Hosting kost dan circa €10 tot €20 per maand, afhankelijk van de provider.</p>
+    </div>
+    <div class="code" style="margin-top:auto; color:#0D9488; font-size:30px; font-weight:700" data-slot="link" data-label="Link" data-max="30">studioakke.com/prijzen</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 2: leads</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .lbl { font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; color:var(--teal); letter-spacing:.03em; }
+  .t { font-size:96px; font-weight:900; letter-spacing:-.04em; line-height:.98; }
+  .x { font-size:34px; line-height:1.42; color:rgba(255,255,255,.82); max-width:880px; }
+  .bignum { position:absolute; left:var(--pad); top:150px; font-size:300px; font-weight:900; line-height:.8; letter-spacing:-.06em; color:transparent; -webkit-text-stroke:2px rgba(43,212,189,.45); }
+  .chips { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .chips div { background:rgba(29,40,58,.78); border:1px solid var(--line); border-radius:22px; padding:30px 32px; font-size:36px; font-weight:800; letter-spacing:-.02em; display:flex; align-items:center; gap:18px; }
+  .chips div i { width:16px; height:16px; border-radius:50%; background:var(--teal); display:block; flex:0 0 16px; }
+  .bars { display:flex; flex-direction:column; gap:22px; }
+  .bars .r { display:grid; grid-template-columns:260px 1fr; gap:24px; align-items:center; font-size:32px; font-weight:700; }
+  .bars .r span { height:26px; border-radius:20px; background:rgba(255,255,255,.08); position:relative; overflow:hidden; display:block; }
+  .bars .r span b { position:absolute; inset:0 auto 0 0; background:var(--grad); border-radius:20px; }
+  .note { background:rgba(29,40,58,.82); border:1px solid var(--line); border-left:6px solid var(--teal); border-radius:24px; padding:36px 40px; display:flex; flex-direction:column; gap:14px; }
+  .note p { font-size:32px; line-height:1.4; color:rgba(255,255,255,.88); }
+  .note p b { color:var(--teal-light); }
+</style>
+</head>
+<body>
+  <div class="glow teal" style="width:700px; height:700px; right:-300px; top:-200px"></div>
+  <div class="bignum">01</div>
+  <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad);"><span class="c">//</span> 2/6</div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:470px; display:flex; flex-direction:column; gap:38px">
+    <div class="lbl">// leads, geen bezoekerscijfers</div>
+    <h1 class="t" style="font-size:84px" data-slot="titel" data-label="Titel" data-max="50">Wie nam contact op<br><span class="grad">via je site?</span></h1>
+    <div class="chips">
+      <div><i></i><span data-slot="c1" data-label="Kanaal 1" data-max="14">Gebeld</span></div>
+      <div><i></i><span data-slot="c2" data-label="Kanaal 2" data-max="14">Gemaild</span></div>
+      <div><i></i><span data-slot="c3" data-label="Kanaal 3" data-max="14">WhatsApp</span></div>
+      <div><i></i><span data-slot="c4" data-label="Kanaal 4" data-max="14">Formulier</span></div>
+    </div>
+    <p class="x" data-slot="tekst" data-label="Tekst" data-max="90">Dat is wat telt. Niet hoeveel mensen even passeerden.</p>
+  </div>
+  <div class="dots"><i></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
+</body>
+</html>
