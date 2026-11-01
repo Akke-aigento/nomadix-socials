@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Leuven like a local, cover</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Carrousel mini-gids (Leuven by night). Feiten van fonskecrawl.com/leuven-nightlife: Oude Markt = 'the longest bar in Europe', elke crawl eindigt daar; bars lopen pas vol na 22:00; Leuven draait op de studentenkalender, weekavonden drukker dan je denkt. Geen cafénamen. Cover: straatfoto 61c22281 (regen, toren, groep van achteren, geen gezichten). -->
+<style>
+
+body.v-blue { background: radial-gradient(90% 60% at 50% 0%, rgba(244,164,52,.16) 0%, transparent 65%), linear-gradient(180deg,#132036 0%,#0E1626 100%); }
+.count { position:absolute; right:var(--pad); top:70px; font-size:24px; font-weight:700; letter-spacing:.2em; color:var(--mute); }
+.num { font-family:"Bebas Neue"; font-size:230px; line-height:.8; color:transparent; -webkit-text-stroke:3px var(--amber); }
+
+.photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 58%; }
+.shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(14,22,38,.55) 0%, rgba(14,22,38,0) 18%, rgba(14,22,38,0) 40%, rgba(14,22,38,.9) 70%, #0E1626 100%); }
+.swipe { font-size:26px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--amber); }
+
+</style>
+</head>
+<body class="v-blue">
+  <img class="photo" src="../../photos/2026-10-24/61c22281-5d73-40bd-a5ec-82c8acd154fb.jpg" alt="">
+  <div class="shade"></div>
+  <div class="brandrow" style="left:56px; top:50px"><img src="../../logo-mark.png" alt=""><span class="wordmark">The Fonske Crawl</span></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:90px; display:flex; flex-direction:column; gap:24px">
+    <div class="kicker" data-slot="kicker" data-label="Kicker" data-max="30">Leuven by night</div>
+    <h1 class="display d-xl" data-slot="titel" data-label="Titel" data-max="34">Go out like<br><span class="gold">a local.</span></h1>
+    <p class="lead" data-slot="sub" data-label="Ondertitel" data-max="60">Three things to know before your first night out.</p>
+    <div class="swipe">Swipe &rarr;</div>
+  </div>
+</body>
+</html>

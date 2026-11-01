@@ -26,7 +26,9 @@
       "type": "group",
       "faces": "ja",
       "note": "groep binnen, duimen omhoog (zelfde moment als 37aca576)",
-      "used": []
+      "used": [
+        "2026-11-04 reel-five-things"
+      ]
     },
     {
       "id": "723cff0c-fa80-4bef-a8fa-ff1aaa154d9b",
@@ -43,7 +45,7 @@
       "path": "2026-10-24/fb738658-38ce-4ffb-ba68-b73d76375309.jpg",
       "type": "bar",
       "faces": "ja",
-      "note": "groepje aan de toog, Trappistenbordjes",
+      "note": "groepje aan de toog, Trappistenbordjes; meisje vooraan trekt een grimas en mensen buiten de groep achteraan: liever niet gebruiken",
       "used": []
     },
     {
@@ -108,7 +110,9 @@
       "type": "street",
       "faces": "nee",
       "note": "zelfde straat in de regen, iets verder",
-      "used": []
+      "used": [
+        "2026-11-02 carrousel-cover"
+      ]
     },
     {
       "id": "e60ef123-6c16-4f66-87e3-e733d223de54",
@@ -117,7 +121,9 @@
       "type": "bar",
       "faces": "ja",
       "note": "twee aan een tafel, krijtbord Carolus",
-      "used": []
+      "used": [
+        "2026-11-06 exhibit-a"
+      ]
     },
     {
       "id": "31e6b7bd-3de6-426a-a6bd-748c937ed86f",
@@ -126,7 +132,10 @@
       "type": "finale",
       "faces": "ja",
       "note": "groep aan tafel, hand in beeld linksboven (webp)",
-      "used": []
+      "used": [
+        "2026-11-04 reel-five-things"
+      ],
+      "path_jpg": "photos/2026-10-24/31e6b7bd-3de6-426a-a6bd-748c937ed86f.jpg"
     },
     {
       "id": "2fd1c2ab-1b78-4ae1-a331-516dbcd4f7a1",

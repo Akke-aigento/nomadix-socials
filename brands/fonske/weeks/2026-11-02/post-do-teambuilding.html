@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Four bars, one invoice</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Vergelijking, typografisch. Alles van fonskecrawl.com/teambuilding-leuven: geen vier zaken reserveren, geen rekeningen splitsen bij elke stop; factuur met bedrijfsnaam en btw-nummer; lokale gids; alcoholvrij aan dezelfde prijs; eindejaarsdrink genoemd. Prijs €19.99 p.p., minimum €239.88 (site/README). Tekening tie.svg (nieuw). -->
+<style>
+
+body.v-amber { background: #F4A434; }
+.v-amber .display, .v-amber .lead, .v-amber .body { color:#110C08 } .v-amber .kicker { color:#110C08; opacity:.7 }
+.vs { position:absolute; left:var(--pad); right:var(--pad); top:470px; display:grid; grid-template-columns:1fr 1fr; column-gap:36px; }
+.vs .h { font-size:22px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; padding-bottom:16px; border-bottom:3px solid #110C08; color:#110C08; }
+.vs .h.no { opacity:.55; }
+.vs .c { font-size:29px; line-height:1.3; padding:20px 0; border-bottom:2px solid rgba(17,12,8,.2); color:#110C08; font-weight:500; min-height:116px; }
+.vs .c.no { color:rgba(17,12,8,.55); font-weight:400; }
+.price { position:absolute; left:var(--pad); bottom:84px; right:330px; }
+.price .p { font-family:"Bebas Neue"; font-size:96px; line-height:.9; color:#110C08; }
+
+</style>
+</head>
+<body class="v-amber">
+  <div class="grain"></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:90px; display:flex; flex-direction:column; gap:20px">
+    <div class="kicker" data-slot="kicker" data-label="Kicker" data-max="40">Teambuilding &amp; end-of-year drinks</div>
+    <h1 class="display d-l" data-slot="titel" data-label="Titel" data-max="30">Four bars.<br>One invoice.</h1>
+  </div>
+  <div class="vs">
+    <div class="h no">Doing it yourself</div><div class="h">A private Fonske Crawl</div>
+    <div class="c no" data-slot="n1" data-label="Zelf 1" data-max="40">Book four venues</div><div class="c" data-slot="y1" data-label="Crawl 1" data-max="40">One request, you pick the date</div>
+    <div class="c no" data-slot="n2" data-label="Zelf 2" data-max="40">Split the bill at every stop</div><div class="c" data-slot="y2" data-label="Crawl 2" data-max="44">One invoice, company name and VAT</div>
+    <div class="c no" data-slot="n3" data-label="Zelf 3" data-max="40">Somebody plans the route</div><div class="c" data-slot="y3" data-label="Crawl 3" data-max="40">A local host who knows it</div>
+    <div class="c no" data-slot="n4" data-label="Zelf 4" data-max="40">Colleagues who don't drink?</div><div class="c" data-slot="y4" data-label="Crawl 4" data-max="40">Alcohol-free, same price</div>
+  </div>
+  <div class="price">
+    <div class="p" data-slot="prijs" data-label="Prijs" data-max="20">&euro;19.99 p.p.</div>
+    <p class="body" style="font-weight:500" data-slot="min" data-label="Minimum" data-max="50">Minimum &euro;239.88 &middot; 18+ &middot; Leuven</p>
+  </div>
+<svg style="position:absolute; right:40px; bottom:40px; width:320px; height:290px" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+  
+  <g fill="none" stroke="#110C08" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 160 Q500 260 700 160"/>
+    <path d="M470 230 L530 230 L545 280 L500 300 L455 280 Z" fill="#110C08"/>
+    <path d="M462 290 Q420 450 470 560 Q500 610 540 560 Q590 460 538 290" fill="#F4F1EC"/>
+    <path d="M472 360 L528 340 M466 430 L540 405 M478 500 L540 476" stroke-width="7"/>
+    <path d="M620 470 L640 820 L840 820 L860 470 Z" fill="#F6CB6A"/>
+    <path d="M620 470 Q650 420 700 440 Q740 400 790 435 Q840 415 860 470" fill="#F4F1EC"/>
+    <path d="M860 540 Q930 550 925 620 Q920 690 850 700"/>
+  </g>
+  <g fill="#F4F1EC" opacity=".9"><circle cx="700" cy="600" r="9"/><circle cx="760" cy="700" r="7"/><circle cx="790" cy="580" r="6"/></g>
+</svg>
+
+</body>
+</html>

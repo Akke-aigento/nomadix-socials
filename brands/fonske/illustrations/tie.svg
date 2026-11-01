@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+  <!-- Losgemaakte das over een glas, lijnstijl Fonske. Voor teambuilding en eindejaarsdrinks. Donkere lijn, voor amber of crème. -->
+  <g fill="none" stroke="#110C08" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 160 Q500 260 700 160"/>
+    <path d="M470 230 L530 230 L545 280 L500 300 L455 280 Z" fill="#110C08"/>
+    <path d="M462 290 Q420 450 470 560 Q500 610 540 560 Q590 460 538 290" fill="#F4F1EC"/>
+    <path d="M472 360 L528 340 M466 430 L540 405 M478 500 L540 476" stroke-width="7"/>
+    <path d="M620 470 L640 820 L840 820 L860 470 Z" fill="#F6CB6A"/>
+    <path d="M620 470 Q650 420 700 440 Q740 400 790 435 Q840 415 860 470" fill="#F4F1EC"/>
+    <path d="M860 540 Q930 550 925 620 Q920 690 850 700"/>
+  </g>
+  <g fill="#F4F1EC" opacity=".9"><circle cx="700" cy="600" r="9"/><circle cx="760" cy="700" r="7"/><circle cx="790" cy="580" r="6"/></g>
+</svg>
