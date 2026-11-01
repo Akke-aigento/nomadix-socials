@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Story: poll administratie</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- poll-story (Samen), variant typografisch met klok-blokjes. Geen claim over SellQo. Het lege vak is voor de poll-sticker (zelf plaatsen).
+     De antwoorden helpen ook bij de posttijden (shared/POSTTIJDEN.md). -->
+<style>
+  .slot { display:flex; align-items:center; gap:18px; padding:18px 26px; border-radius:22px; background:#fff; box-shadow:0 0 0 2px var(--line); font-family:"Poppins",sans-serif; font-weight:600; font-size:30px; }
+  .slot i { font-style:normal; color:var(--coral); font-size:26px; min-width:88px; }
+</style>
+</head>
+<body>
+  <div class="blob coral" style="width:520px;height:520px;right:-200px;top:-160px"></div>
+  <div class="story-safe" style="display:flex;flex-direction:column;gap:34px">
+    <img src="../../logo-navy.png" alt="SellQo" style="height:64px;width:auto;align-self:flex-start">
+    <div class="kicker" data-slot="kicker" data-label="Bovenregel" data-max="24">Eerlijk antwoorden mag</div>
+    <h1 class="h h-l" data-slot="titel" data-label="Vraag" data-max="50">Wanneer doe jij<br>je <span class="hl">administratie</span>?</h1>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="slot"><i>07:00</i>Vroeg</div>
+      <div class="slot"><i>12:30</i>Middag</div>
+      <div class="slot"><i>22:00</i>Na sluiting</div>
+      <div class="slot"><i>zo</i>Zondag</div>
+    </div>
+    <div style="flex:1;border:4px dashed rgba(0,20,91,.18);border-radius:36px;display:grid;place-items:center;min-height:300px">
+      <span class="body mute">poll-sticker hier</span>
+    </div>
+  </div>
+</body>
+</html>

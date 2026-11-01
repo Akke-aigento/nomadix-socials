@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Feature: vaste klant op je zaalplan</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- feature-zaalplan (pijler Feature, nieuwe variant: zaalplan + rekening op naam). Bron: publieke changelog 2026.14o `regulars_1`
+     ("Vaste klant" bij Tafel toevoegen, tik opent zijn rekening op dezelfde plek, rekening op naam op het kasticket; voorbeeldnamen Jef en Bompa Ré komen uit de changelog). Geen prijzen. -->
+<style>
+  .plan { position:absolute; left:80px; top:500px; width:600px; height:560px; padding:30px 34px; }
+  .grid { position:relative; height:420px; margin-top:6px; border-radius:20px; background:#F4F5FB; }
+  .tb { position:absolute; display:grid; place-items:center; border-radius:18px; background:#fff; box-shadow:0 0 0 2px var(--line); font-family:"Poppins",sans-serif; font-weight:600; font-size:24px; color:var(--navy); }
+  .tb.busy { background:#E4E8F7; }
+  .tb.reg { background:var(--coral); color:#fff; box-shadow:0 14px 30px -10px rgba(253,123,91,.7); font-size:22px; line-height:1.15; text-align:center; }
+  .tb.reg small { display:block; font-family:"Inter",sans-serif; font-weight:500; font-size:16px; opacity:.9; }
+  .bill { position:absolute; right:80px; top:640px; width:380px; }
+  .bill .row { font-size:22px; padding:14px 0; }
+</style>
+</head>
+<body>
+  <div class="blob soft" style="width:860px;height:860px;right:-340px;top:460px"></div>
+  <div class="dots" style="left:0;right:0;top:1060px;height:300px;opacity:.7"></div>
+  <img class="logo tl" src="../../logo-navy.png" alt="SellQo">
+  <div style="position:absolute;left:var(--pad);right:var(--pad);top:180px">
+    <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="60">Bompa Ré zit altijd<br>aan het raam.<br><span class="hl">Nu ook op je zaalplan.</span></h1>
+  </div>
+
+  <div class="card plan tilt-l">
+    <div class="ttl">Zaal <span class="chip blue">Tafel toevoegen › Vaste klant</span></div>
+    <div class="grid">
+      <div class="tb reg" style="left:24px;top:24px;width:170px;height:110px">Bompa Ré<small>vaste klant</small></div>
+      <div class="tb busy" style="left:220px;top:24px;width:120px;height:110px">T2</div>
+      <div class="tb" style="left:366px;top:24px;width:120px;height:110px">T3</div>
+      <div class="tb" style="left:24px;top:160px;width:120px;height:110px">T4</div>
+      <div class="tb busy" style="left:170px;top:160px;width:170px;height:110px">T5</div>
+      <div class="tb reg" style="left:366px;top:160px;width:120px;height:110px">Jef<small>vaste klant</small></div>
+      <div class="tb" style="left:24px;top:296px;width:462px;height:96px;background:#E4E8F7">Toog</div>
+    </div>
+  </div>
+
+  <div class="card bill tilt-r">
+    <div class="ttl">Rekening op naam</div>
+    <div class="big" style="font-size:46px;margin-bottom:12px">Bompa Ré</div>
+    <div class="row"><span>Elke keer</span><b>dezelfde plek</b></div>
+    <div class="row"><span>Op het kasticket</span><span class="chip ok">op naam</span></div>
+  </div>
+
+  <div class="toast" style="left:220px;top:1080px"><span class="tick">✓</span>Eén tik opent zijn rekening</div>
+
+  <div style="position:absolute;left:var(--pad);right:var(--pad);bottom:70px;display:flex;align-items:center;justify-content:space-between">
+    <span class="body" style="font-weight:500" data-slot="tekst" data-label="Tekst onder" data-max="46">Nieuw in SellQo Kassa voor horeca.</span>
+    <span class="pill coral" data-slot="cta" data-label="Knop" data-max="16">sellqo.app</span>
+  </div>
+</body>
+</html>

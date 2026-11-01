@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Buildlog: vraag het je assistent</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- buildlog-chat (Build in public, nieuwe variant: typografisch, chatbubbels). Bron: publieke changelog 2026.14t `ai_agent_2`
+     (vragen letterlijk uit de changelog; antwoord met dezelfde cijfers als je dashboard, lijsten als tabel met CSV-download;
+     product als concept, aan/uit, prijzen per categorie, kortingscode, altijd pas na jouw bevestiging). Geen cijfers of antwoorden verzonnen. -->
+<style>
+  .q { align-self:flex-end; max-width:860px; background:var(--coral); color:#fff; border-radius:40px 40px 10px 40px; padding:30px 40px; font-family:"Poppins",sans-serif; font-weight:600; font-size:44px; line-height:1.2; }
+  .q.alt { background:var(--deep-2); box-shadow:0 0 0 2px var(--line-d); }
+  .a { align-self:flex-start; max-width:820px; background:#fff; color:var(--navy); border-radius:40px 40px 40px 10px; padding:26px 36px; font-size:28px; line-height:1.4; }
+  .a b { font-weight:600; }
+</style>
+</head>
+<body class="dark">
+  <div class="dots" style="left:0;right:0;top:0;height:420px"></div>
+  <img class="logo tl" src="../logo-white.png" alt="SellQo">
+  <div style="position:absolute;left:var(--pad);right:var(--pad);top:190px;display:flex;flex-direction:column;gap:20px">
+    <div class="kicker" data-slot="kicker" data-label="Bovenregel" data-max="30">Nieuw in oktober</div>
+    <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="50">Geen rapport zoeken.<br><span class="hl">Gewoon vragen.</span></h1>
+  </div>
+  <div style="position:absolute;left:var(--pad);right:var(--pad);top:500px;display:flex;flex-direction:column;gap:24px">
+    <div class="q">Wat was mijn omzet vorige zaterdag?</div>
+    <div class="q alt">Wat was mijn winst in oktober?</div>
+    <div class="q">Maak een lijst van producten zonder foto.</div>
+    <div class="a"><b>Je assistent antwoordt</b> met dezelfde cijfers als je dashboard. Lijsten krijg je als tabel, met CSV-download.</div>
+  </div>
+  <div style="position:absolute;left:var(--pad);right:var(--pad);bottom:70px;display:flex;align-items:center;justify-content:space-between;gap:30px">
+    <span class="body mute" style="font-size:24px" data-slot="tekst" data-label="Tekst onder" data-max="70">Wijzigingen pas na jouw bevestiging.</span>
+    <span class="pill coral" data-slot="cta" data-label="Knop" data-max="24">sellqo.app/changelog</span>
+  </div>
+</body>
+</html>
