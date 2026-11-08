@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="24" data-fps="30">
+<title>Reel: one lake in Greece, day 10 to 11</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- Journey, reel-slideshow (Mountain Dawn, 80 BPM: scène = 4 tellen = 3 s). Zeven foto's van één kampeerplek aan een meer,
+     Central Macedonia (Griekenland), dag 10 → 11, in fotovolgorde. Plaats/regio en dag uit media.json. Nummerplaat in 0121 vervaagd. -->
+<style>
+  .f { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; will-change:transform; }
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .low { position:absolute; left:var(--pad); right:var(--pad); bottom:380px; display:flex; flex-direction:column; gap:22px; }
+  .stamp { font-size:30px; text-shadow:0 2px 10px rgba(0,0,0,.6); }
+  .cap { font-family:"Bebas Neue",sans-serif; font-size:104px; line-height:.92; text-transform:uppercase; text-shadow:0 4px 18px rgba(0,0,0,.45); }
+  .end { position:absolute; inset:0; background:var(--ink); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; }
+  .shade-top { background: linear-gradient(0deg, rgba(10,10,10,0) 72%, rgba(10,10,10,.7) 100%); }
+  .shade-bottom { background: linear-gradient(180deg, rgba(10,10,10,0) 40%, rgba(10,10,10,.55) 65%, rgba(10,10,10,.92) 100%); }
+</style>
+</head>
+<body>
+  <img class="f" id="f0" src="../../../media/vx-2022-04-11-greece-0113.jpg" alt="">
+  <img class="f" id="f1" src="../../../media/vx-2022-04-11-greece-0112.jpg" alt="">
+  <img class="f" id="f2" src="../../../media/vx-2022-04-11-greece-0117.jpg" alt="">
+  <img class="f" id="f3" src="../../../media/vx-2022-04-11-greece-0118.jpg" alt="">
+  <img class="f" id="f4" src="../../../media/vx-2022-04-11-greece-0119.jpg" alt="">
+  <img class="f" id="f5" src="../../../media/vx-2022-04-12-greece-0120.jpg" alt="">
+  <img class="f" id="f6" src="greece-0121-plate-blurred.jpg" alt="">
+  <div class="shade-top"></div>
+  <div class="shade-bottom"></div>
+  <div class="top"><img class="logo" style="position:static" src="../../../logo-white.svg" alt="VanXcel"><span class="kicker" style="color:#fff">One camp spot</span></div>
+  <div class="low">
+    <div class="cap" id="cap">POV: day 10.<br><span class="petrol">You find a lake.</span></div>
+    <div class="stamp"><span class="dot"></span><span>Central Macedonia, Greece</span><span class="sep"></span><span id="day">Day 10</span></div>
+  </div>
+  <div class="end" id="end">
+    <img src="../../../logo-white.svg" alt="VanXcel" style="width:300px">
+    <h1 class="display" style="font-size:160px">Day 10 to 11.<br><span class="petrol">One lake.</span></h1>
+    <p class="lead">Week two of six months in a 1984 Land Cruiser. Save it for your own first nights out.</p>
+    <span class="kicker" style="color:#fff">Our story → link in bio</span>
+  </div>
+<script>
+  const CAP = [
+    "POV: day 10.<br><span class=\"petrol\">You find a lake.</span>",
+    "Unpack.",
+    "Light the grill.",
+    "Dinner with a view.",
+    "Sun's down.",
+    "Day 11.<br><span class=\"petrol\">Same view.</span>",
+    "Pack up. Drive on.",
+  ];
+  const DAY = ["Day 10","Day 10","Day 10","Day 10","Day 10","Day 11","Day 11"];
+  const SEG = 3.0, N = CAP.length, PH = N * SEG; // 21 s, then end card
+  const ims = [...document.querySelectorAll(".f")];
+  const ready = Promise.all(ims.map(im => im.complete ? 1 : new Promise(r => im.addEventListener("load", r, { once: true }))));
+  let last = -1;
+  window.setT = async (t) => {
+    await ready;
+    const end = document.getElementById("end");
+    if (t >= PH) { end.style.opacity = Math.min(1, (t - PH) / 0.5); return; }
+    end.style.opacity = 0;
+    const i = Math.min(N - 1, Math.floor(t / SEG));
+    const local = (t - i * SEG) / SEG;
+    ims.forEach((im, k) => {
+      let o = 0;
+      if (k === i) o = 1;
+      else if (k === i - 1 && local < 0.12) o = 1 - local / 0.12;
+      im.style.opacity = o;
+      if (k === i) im.style.transform = `scale(${1.03 + 0.07 * local}) translateX(${(k % 2 ? -1 : 1) * 12 * local}px)`;
+    });
+    if (i !== last) { document.getElementById("cap").innerHTML = CAP[i]; document.getElementById("day").textContent = DAY[i]; last = i; }
+    const cap = document.getElementById("cap");
+    cap.style.opacity = Math.min(1, local / 0.1) * Math.min(1, (1 - local) / 0.08);
+  };
+</script>
+</body>
+</html>

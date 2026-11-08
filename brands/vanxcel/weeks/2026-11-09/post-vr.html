@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>500W or 1000W power station</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Product, licht, echte productfoto's (nieuw: compare-rows, rijen i.p.v. kolommen). Prijzen en voorraad live uit SellQo (08-11-2026:
+     500W Powerstation €199 voorraad 3, 1000W Powerstation €415 voorraad 8). Specs uit de SellQo-omschrijvingen:
+     560Wh / 7.85 kg, 1120Wh / 14.6 kg; beide pure sine, UPS, solar 12–30V 120W max, 2x USB-C 60W.
+     Productfoto's: SellQo product-images (eerste foto per product), wit weggewerkt. -->
+<style>
+  body { background:#F4F3EF; color:var(--ink); }
+  .row { display:grid; grid-template-columns:330px 1fr; gap:34px; align-items:center; background:#fff; border-radius:28px; padding:28px 40px 28px 28px; box-shadow:0 10px 30px rgba(10,10,10,.06); }
+  .row img { width:330px; height:250px; object-fit:contain; }
+  .w { font-family:"Bebas Neue",sans-serif; font-size:112px; line-height:.85; }
+  .facts { display:flex; gap:28px; margin-top:12px; }
+  .facts div { display:flex; flex-direction:column; }
+  .facts b { font-family:"Bebas Neue",sans-serif; font-size:58px; font-weight:400; line-height:1; }
+  .facts span { font-size:22px; color:#666; letter-spacing:.06em; text-transform:uppercase; font-weight:600; }
+  .both { font-size:28px; line-height:1.45; color:#333; }
+  .both b { color:var(--ink); }
+</style>
+</head>
+<body>
+  <img class="logo tl" src="../../logo-black.svg" alt="VanXcel">
+  <div class="kicker" style="position:absolute; top:78px; right:var(--pad)" data-slot="kicker" data-label="Bovenregel" data-max="24">Power stations</div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:190px; display:flex; flex-direction:column; gap:30px">
+    <h1 class="display" style="font-size:112px" data-slot="titel" data-label="Titel" data-max="40">Double the watts.<br><span class="petrol">Double the hours.</span></h1>
+    <div class="row">
+      <img src="../../products/powerstation-500w.png" alt="VanXcel 500W Power Station">
+      <div>
+        <span class="w" data-slot="a" data-label="Model 1" data-max="8">500W</span>
+        <div class="facts">
+          <div><b data-slot="a1" data-label="Capaciteit 1" data-max="8">560Wh</b><span>capacity</span></div>
+          <div><b data-slot="a2" data-label="Gewicht 1" data-max="8">7.85kg</b><span>weight</span></div>
+          <div><b data-slot="ap" data-label="Prijs 1" data-max="8">€199</b><span>price</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <img src="../../products/powerstation-1000w.png" alt="VanXcel 1000W Power Station">
+      <div>
+        <span class="w" data-slot="b" data-label="Model 2" data-max="8">1000W</span>
+        <div class="facts">
+          <div><b data-slot="b1" data-label="Capaciteit 2" data-max="8">1120Wh</b><span>capacity</span></div>
+          <div><b data-slot="b2" data-label="Gewicht 2" data-max="8">14.6kg</b><span>weight</span></div>
+          <div><b data-slot="bp" data-label="Prijs 2" data-max="8">€415</b><span>price</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="both" data-slot="beide" data-label="Beide" data-max="140"><b>Both:</b> pure sine output · UPS function · solar input up to 120W · 2× USB-C 60W.</p>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:64px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill" style="background:var(--amber); color:var(--ink)" data-slot="cta" data-label="Knop" data-max="34">Shop → link in bio</span>
+    <span class="body" style="color:#666" data-slot="link" data-label="Link" data-max="30">vanxcel.com</span>
+  </div>
+</body>
+</html>

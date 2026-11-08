@@ -65,6 +65,8 @@ Uren: **geen vaste uren**. Volg `shared/POSTTIJDEN.md` (venster van dit merk, uu
 | za | story |
 | zo | post (of reel, afwisselen per week) |
 
+**Reels (Akke, 01-11): drie per week.** Eén op het sterkste slot (wo-avond), de andere twee in een ander dagdeel (bv. middag en late namiddag), nooit twee op dezelfde dag; ze nemen de plaats van een post of story op die dag in (zoals 9 nov: wo 20:15, za 12:25, zo 16:40). Een vierde enkel als er nieuwe clips zijn. Nooit dezelfde clip in twee reels van dezelfde week. Elke reel een ander format en een ander nummer (`shared/MUZIEK.md`).
+
 ## Leren (verplicht)
 
 Volg `shared/LEREN.md` (SOCIAL-6): elke post krijgt `content_tags` (pijler, format, template, hook, captionlengte, cta, bucket), lees vóór je iets bedenkt `lessen.md` van dit merk en de resultaten in `social_post_performance`, kies volgens 70/20/10, en zet UTM-parameters op elke link.
@@ -99,8 +101,8 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
 
 ## Reels
 
-Eén per week (woensdag, op het sterkste slot uit `shared/POSTTIJDEN.md`). Formats afwisselen: rijbeelden-montage op de beat (clips), "day X in <land>"-slideshow,
-know-how in 3 stappen, product in actie, de kat. `weeks/<maandag>/reel-<onderwerp>/index.html` met
+Drie per week (zie Ritme; één op het sterkste slot uit `shared/POSTTIJDEN.md`). Formats afwisselen: rijbeelden-montage op de beat (clips), "day X in <land>"-slideshow,
+know-how in 3 stappen, vraag-antwoord (reel-qa), product in actie, de kat. `weeks/<maandag>/reel-<onderwerp>/index.html` met
 `<meta name="nx-reel" content="1080x1920" data-duration="<s>" data-fps="30">` en `window.setT(t)`; clips via
 `<video src="../../../clips/<id>.mp4" muted>` en in `setT` `video.currentTime = …` (wacht op `seeked`).
 Muziek: kies een nummer uit `music/` volgens `shared/MUZIEK.md` en zet de scènes op de beat.

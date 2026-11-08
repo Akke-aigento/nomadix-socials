@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="21.6" data-fps="30">
+<title>Reel: Kazakhstan, day 56 to 74</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- Journey, reel-montage op de beat (Gravel, 100 BPM: scène = 4 tellen = 2,4 s). Acht clips uit Kazakhstan, nog niet gebruikt.
+     Plaats en dag per clip uit media.json. Geen clip uit de hood-view-reel van 21-10. -->
+<style>
+  video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }
+  video.on { opacity:1; }
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .low { position:absolute; left:var(--pad); right:var(--pad); bottom:370px; display:flex; flex-direction:column; gap:22px; }
+  .stamp { font-size:30px; text-shadow:0 2px 10px rgba(0,0,0,.6); }
+  .count { position:absolute; right:var(--pad); bottom:372px; font-family:"Bebas Neue",sans-serif; font-size:64px; color:#fff; text-shadow:0 2px 12px rgba(0,0,0,.6); }
+  .end { position:absolute; inset:0; background:var(--ink); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; }
+  .shade-top { background: linear-gradient(0deg, rgba(10,10,10,0) 72%, rgba(10,10,10,.7) 100%); }
+  .shade-bottom { background: linear-gradient(180deg, rgba(10,10,10,0) 50%, rgba(10,10,10,.82) 100%); }
+  .flash { position:absolute; inset:0; background:#fff; opacity:0; pointer-events:none; }
+</style>
+</head>
+<body>
+  <video id="v0" src="../../../clips/vx-2022-05-27-kazakhstan-0527.mp4" muted preload="auto"></video>
+  <video id="v1" src="../../../clips/vx-2022-05-27-kazakhstan-0541.mp4" muted preload="auto"></video>
+  <video id="v2" src="../../../clips/vx-2022-05-28-kazakhstan-0555.mp4" muted preload="auto"></video>
+  <video id="v3" src="../../../clips/vx-2022-05-31-kazakhstan-0588.mp4" muted preload="auto"></video>
+  <video id="v4" src="../../../clips/vx-2022-06-11-kazakhstan-0699.mp4" muted preload="auto"></video>
+  <video id="v5" src="../../../clips/vx-2022-06-11-kazakhstan-0705.mp4" muted preload="auto"></video>
+  <video id="v7" src="../../../clips/vx-2022-06-12-kazakhstan-0716.mp4" muted preload="auto"></video>
+  <video id="v8" src="../../../clips/vx-2022-06-14-kazakhstan-0797.mp4" muted preload="auto"></video>
+  <div class="shade-top"></div>
+  <div class="shade-bottom"></div>
+  <div class="flash" id="flash"></div>
+  <div class="top"><img class="logo" style="position:static" src="../../../logo-white.svg" alt="VanXcel"><span class="kicker" style="color:#fff">Kazakhstan</span></div>
+  <div class="low">
+    <h1 class="display" style="font-size:150px; text-shadow:0 4px 20px rgba(0,0,0,.4)" id="head">Day 56<br>to day 74.</h1>
+    <div class="stamp"><span class="dot"></span><span id="place">Mangystau</span><span class="sep"></span><span id="day">Day 56</span></div>
+  </div>
+  <div class="end" id="end">
+    <img src="../../../logo-white.svg" alt="VanXcel" style="width:300px">
+    <h1 class="display" style="font-size:170px">One country.<br><span class="petrol">Eight clips.</span></h1>
+    <p class="lead">Gravel, dunes, camels and red rock. Filmed on the way east with Sandy, our 1984 Land Cruiser.</p>
+    <span class="kicker" style="color:#fff">Our story → link in bio</span>
+  </div>
+<script>
+  // [video, start-in-clip (s), place, day]
+  const S = [
+    ["v0", 2.0, "Mangystau", "Day 56"],
+    ["v1", 1.0, "Mangystau", "Day 56"],
+    ["v2", 3.0, "Mangystau", "Day 57"],
+    ["v3", 1.0, "Aktobe", "Day 60"],
+    ["v4", 0.0, "Taldy Kurgan", "Day 71"],
+    ["v5", 1.0, "Taldy Kurgan", "Day 71"],
+    ["v7", 1.0, "Taldy Kurgan", "Day 72"],
+    ["v8", 2.0, "Almaty", "Day 74"],
+  ];
+  const SEG = 2.4, CLIPS = S.length * SEG; // 19.2 s, then end card
+  const vids = S.map(s => document.getElementById(s[0]));
+  const ready = Promise.all(vids.map(v => v.readyState >= 2 ? 1 : new Promise(r => v.addEventListener("loadeddata", r, { once: true }))));
+  function seek(v, t) {
+    return new Promise(r => { if (Math.abs(v.currentTime - t) < 0.001) return r(); v.addEventListener("seeked", r, { once: true }); v.currentTime = t; });
+  }
+  window.setT = async (t) => {
+    await ready;
+    const end = document.getElementById("end");
+    const head = document.getElementById("head");
+    head.style.opacity = t < 4.8 ? Math.min(1, t / 0.3) * Math.min(1, (4.8 - t) / 0.4) : 0;
+    const local = t % SEG;
+    document.getElementById("flash").style.opacity = (t > 0.1 && t < CLIPS + 0.2 && local < 0.12) ? 0.18 * (1 - local / 0.12) : 0;
+    if (t >= CLIPS) { end.style.opacity = Math.min(1, (t - CLIPS) / 0.4); return; }
+    end.style.opacity = 0;
+    const i = Math.min(S.length - 1, Math.floor(t / SEG));
+    vids.forEach((x, k) => x.classList.toggle("on", k === i));
+    document.getElementById("place").textContent = S[i][2];
+    document.getElementById("day").textContent = S[i][3];
+    await seek(vids[i], S[i][1] + local);
+  };
+</script>
+</body>
+</html>

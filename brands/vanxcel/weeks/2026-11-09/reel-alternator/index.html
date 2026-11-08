@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="21.8" data-fps="30">
+<title>Reel: relay or DC-DC, your alternator decides</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- Know-how/product, reel-qa (vraag → test → antwoord), motion graphics met multimeter-display (nieuw: reel-qa).
+     Workbench, 88 BPM: scène = 4 tellen = 2,727 s; 8 scènes = 21,8 s.
+     Bronnen: vanxcel.com configurator (Vanxcel-repo en.json otherSmartAltHelpText: constant 13.8–14.4V = conventioneel,
+     schommelend 12.5–14.8V of ~12.5V warm = smart, "Not sure? Choose smart … always be safe"; smartAlternatorDesc: relay werkt NIET;
+     pu_VXRELAY140: enkel conventionele alternator; altChargeDesc: 25A DC-DC in de 5-in-1).
+     Relay: SellQo (Automatic Relay 140A, €39.95, voorraad 48; engage ~13.3V, disconnect ~12.8V). Productfoto uit SellQo. -->
+<style>
+  .sc { position:absolute; inset:0; opacity:0; }
+  .wrap { position:absolute; left:var(--pad); right:var(--pad); top:400px; bottom:380px; display:flex; flex-direction:column; gap:40px; }
+  .q { font-family:"Bebas Neue",sans-serif; font-size:150px; line-height:.9; text-transform:uppercase; }
+  .t { font-family:"Bebas Neue",sans-serif; font-size:110px; line-height:.92; text-transform:uppercase; }
+  .meter { align-self:center; width:760px; background:#1b1b1b; border:3px solid rgba(255,255,255,.18); border-radius:44px; padding:48px 54px; box-shadow:0 30px 60px rgba(0,0,0,.5); }
+  .lcd { background:#0f2b2d; border-radius:20px; padding:26px 34px; display:flex; align-items:baseline; justify-content:flex-end; gap:16px; }
+  .lcd b { font-family:"Bebas Neue",sans-serif; font-weight:400; font-size:230px; line-height:.9; color:#7fe3ea; letter-spacing:.02em; }
+  .lcd span { font-family:"Bebas Neue",sans-serif; font-size:90px; color:#7fe3ea; }
+  .mlab { margin-top:26px; font-size:26px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--mute); text-align:center; }
+  .verdict { display:inline-flex; align-self:flex-start; padding:18px 30px; border-radius:999px; font-size:34px; font-weight:700; }
+  .ok { background:var(--petrol); color:#fff; }
+  .no { border:3px solid var(--amber); color:var(--amber); }
+  .card { display:flex; align-items:center; gap:40px; background:#fff; color:var(--ink); border-radius:32px; padding:34px 40px; }
+  .card img { width:250px; height:250px; object-fit:contain; }
+  .card .n { font-family:"Bebas Neue",sans-serif; font-size:72px; line-height:.95; }
+  .card .s { font-size:26px; line-height:1.4; color:#444; margin-top:10px; }
+  .bar { position:absolute; left:var(--pad); right:var(--pad); bottom:330px; height:4px; background:rgba(255,255,255,.14); }
+  .bar i { display:block; height:100%; background:var(--petrol); width:0; }
+</style>
+</head>
+<body>
+  <img class="logo" style="top:250px; left:var(--pad)" src="../../../logo-white.svg" alt="VanXcel">
+  <span class="kicker" style="position:absolute; top:262px; right:var(--pad)">Charging while driving</span>
+
+  <section class="sc" id="s0"><div class="wrap" style="justify-content:center">
+    <h1 class="q">Relay<br>or DC-DC?</h1>
+    <p class="t petrol">Your alternator<br>decides.</p>
+  </div></section>
+
+  <section class="sc" id="s1"><div class="wrap" style="justify-content:center">
+    <p class="kicker">The test</p>
+    <h2 class="t">Engine running.<br>Multimeter on the<br><span class="petrol">starter battery.</span></h2>
+  </div></section>
+
+  <section class="sc" id="s2"><div class="wrap" style="justify-content:center">
+    <div class="meter"><div class="lcd"><b id="v2">14.1</b><span>V</span></div><div class="mlab">Steady between 13.8 and 14.4V</div></div>
+    <h2 class="t">Conventional<br>alternator.</h2>
+  </div></section>
+
+  <section class="sc" id="s3"><div class="wrap" style="justify-content:center">
+    <span class="verdict ok">A split-charge relay works</span>
+    <div class="card"><img src="../../../products/relay-140a.png" alt="VanXcel Automatic Relay 140A"><div><div class="n">Automatic<br>Relay 140A</div><div class="s">Connects at ~13.3V, disconnects at ~12.8V. €39.95</div></div></div>
+  </div></section>
+
+  <section class="sc" id="s4"><div class="wrap" style="justify-content:center">
+    <div class="meter"><div class="lcd"><b id="v4">12.5</b><span>V</span></div><div class="mlab">Jumps 12.5–14.8V, or ~12.5V when warm</div></div>
+    <h2 class="t">Smart<br>alternator.</h2>
+  </div></section>
+
+  <section class="sc" id="s5"><div class="wrap" style="justify-content:center">
+    <span class="verdict no">A relay will NOT work</span>
+    <h2 class="t">You need a<br><span class="petrol">DC-DC charger.</span></h2>
+    <p class="lead">Our 5-in-1 Converters have a 25A DC-DC charger built in.</p>
+  </div></section>
+
+  <section class="sc" id="s6"><div class="wrap" style="justify-content:center">
+    <p class="kicker">Not sure?</p>
+    <h2 class="q">Treat it<br>as <span class="petrol">smart.</span></h2>
+    <p class="lead">That choice is always safe.</p>
+  </div></section>
+
+  <section class="sc" id="s7"><div class="wrap" style="justify-content:center; align-items:flex-start">
+    <img src="../../../logo-white.svg" alt="VanXcel" style="width:300px">
+    <h2 class="t">Your vehicle,<br><span class="petrol">your setup.</span></h2>
+    <span class="pill petrol">Configurator → link in bio</span>
+  </div></section>
+
+  <div class="bar"><i id="prog"></i></div>
+<script>
+  const SEG = 60 / 88 * 4, N = 8, DUR = 21.8;
+  const secs = [...document.querySelectorAll(".sc")];
+  // deterministische "meetwaarden"
+  const steady = [14.1, 14.2, 14.1, 14.0, 14.2, 14.3, 14.2, 14.1];
+  const smart = [12.5, 13.9, 14.8, 13.1, 12.6, 14.4, 12.9, 14.7, 13.4, 12.5];
+  window.setT = async (t) => {
+    const i = Math.min(N - 1, Math.floor(t / SEG));
+    const local = t - i * SEG;
+    secs.forEach((s, k) => {
+      let o = 0;
+      if (k === i) o = Math.min(1, local / 0.18);
+      s.style.opacity = o;
+      s.style.transform = k === i ? `translateY(${(1 - Math.min(1, local / 0.25)) * 30}px)` : "none";
+    });
+    document.getElementById("v2").textContent = steady[Math.floor(t * 3) % steady.length].toFixed(1);
+    document.getElementById("v4").textContent = smart[Math.floor(t * 4) % smart.length].toFixed(1);
+    document.getElementById("prog").style.width = Math.min(100, t / DUR * 100) + "%";
+  };
+</script>
+</body>
+</html>

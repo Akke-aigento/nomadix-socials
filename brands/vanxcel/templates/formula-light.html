@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Watts times hours</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- Know-how, story zonder sticker, licht (nieuw: formula-light). Bron: vanxcel.com power calculator (Vanxcel-repo en.json
+     powerSeo.text1: "a 10W LED light running 4 hours consumes 40Wh per day"; tip3 battery monitor). Link: /calculator. -->
+<style>
+  body { background:#F4F3EF; color:var(--ink); }
+  .eq { display:grid; grid-template-columns:auto 1fr; gap:6px 34px; align-items:baseline; }
+  .eq .n { font-family:"Bebas Neue",sans-serif; font-size:230px; line-height:.86; }
+  .eq .u { font-size:34px; font-weight:600; color:#555; }
+  .eq .op { font-family:"Bebas Neue",sans-serif; font-size:110px; line-height:1; color:var(--petrol); }
+  .rule { height:4px; background:var(--ink); grid-column:1 / -1; margin:14px 0 18px; }
+</style>
+</head>
+<body>
+  <img class="logo" style="top:260px; left:var(--pad)" src="../logo-black.svg" alt="VanXcel">
+  <div class="story-safe" style="top:400px; display:flex; flex-direction:column; gap:40px">
+    <div class="kicker" data-slot="reeks" data-label="Reeks" data-max="28">Power budget, line one</div>
+    <div class="eq">
+      <span class="n" data-slot="a" data-label="Watt" data-max="6">10W</span><span class="u" data-slot="au" data-label="Toestel" data-max="22">LED light</span>
+      <span class="op">×</span><span></span>
+      <span class="n" data-slot="b" data-label="Uren" data-max="6">4H</span><span class="u" data-slot="bu" data-label="Gebruik" data-max="22">a day</span>
+      <div class="rule"></div>
+      <span class="n petrol" data-slot="c" data-label="Resultaat" data-max="6">40WH</span><span class="u" data-slot="cu" data-label="Eenheid" data-max="22">per day</span>
+    </div>
+    <p class="lead" style="color:#222" data-slot="tekst" data-label="Tekst" data-max="120">Do this for every device, add it up, and you know what your battery has to carry.</p>
+    <span class="pill petrol" style="align-self:flex-start" data-slot="link" data-label="Link" data-max="34">vanxcel.com/calculator</span>
+  </div>
+</body>
+</html>
