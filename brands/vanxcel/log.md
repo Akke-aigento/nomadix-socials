@@ -83,3 +83,4 @@ Nummerplaten (en het merklogo op de grille) vervaagd in de foto's van ma 1, 2 en
 
 Nieuwe templates: `poll-schema`, `formula-light`, `compare-rows`, `reel-qa/`.
 Bronnen know-how: Vanxcel-repo `src/i18n/locales/en.json` (powerSeo.text1; otherSmartAltHelpText, smartAlternatorDesc, altChargeDesc, pu_VXRELAY140). Product: SellQo-omschrijvingen 500W/1000W Powerstation en Automatic Relay 140A. Links (/calculator, /configurator) gecontroleerd in `src/App.tsx`; vanxcel.com zelf geeft 403 vanuit de sandbox.
+In SellQo gezet op 08-11 (7 rijen; recepten via raw-URL opgehaald en nagetrokken met md5, geen dubbele uren) + melding "Week van 9 nov klaar".
