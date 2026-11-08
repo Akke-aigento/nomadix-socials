@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- Amberkleurig polsbandje (site: "Look for the amber wristbands"). Lijnstijl zoals het Fonske-logo. Voor donkere of blauwe achtergrond. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- pols en hand (schets) -->
+    <path d="M140 760 C190 610 250 520 330 470 L520 360 C580 325 640 330 690 360 L860 470" stroke="#F4F1EC" stroke-width="5" opacity=".55"/>
+    <path d="M250 800 C300 680 360 600 440 560 L600 470" stroke="#F4F1EC" stroke-width="5" opacity=".55"/>
+    <path d="M690 360 C740 300 800 280 850 300 M720 395 C780 360 840 360 880 390 M740 435 C800 420 850 430 880 460" stroke="#F4F1EC" stroke-width="5" opacity=".55"/>
+    <!-- het bandje -->
+    <path d="M395 455 C430 420 520 380 560 400 C585 412 600 470 565 505 C530 540 450 585 420 570 C385 552 370 480 395 455 Z" stroke="#F4A434" stroke-width="9"/>
+    <path d="M420 470 C460 440 520 415 545 425" stroke="#F6CB6A" stroke-width="5" opacity=".8"/>
+    <!-- sluiting -->
+    <path d="M548 405 L600 360 L635 395 L582 440" stroke="#F4A434" stroke-width="7"/>
+    <!-- glans -->
+    <path d="M300 250 l0 -50 M275 225 l50 0 M760 180 l0 -40 M740 160 l40 0 M180 420 l0 -34 M163 403 l34 0" stroke="#F6CB6A" stroke-width="5"/>
+  </g>
+</svg>

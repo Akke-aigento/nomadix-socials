@@ -148,6 +148,17 @@
         "2026-10-26 recap",
         "2026-10-27 story"
       ]
+    },
+    {
+      "id": "still-cdd717dc-t16-8",
+      "night": "2026-10-24",
+      "path": "photos/2026-10-24/still-cdd717dc-t16-8.jpg",
+      "type": "street",
+      "faces": "nee",
+      "note": "still uit crawlvideo cdd717dc (crawl_media) op 16,8 s: groep in kappen van achteren op een plein in de regen, toren en verlichte gevels; geen gezichten",
+      "used": [
+        "2026-11-09 post-ma-crawl-02"
+      ]
     }
   ]
 }
