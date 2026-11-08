@@ -29,6 +29,7 @@ Gebruikte scènes: menukaart-boekje (Pizzeria Fiamma), Nu-paneel + QR-menu terra
 Muziek: di Kassa Groove (122 BPM, 8 tellen = 3,934 s), do Focus (85 BPM, 6 tellen = 4,235 s), za Open Voor Zaken (116 BPM, 8 tellen = 4,138 s); alle drie start 0 s.
 Nog niet gebruikt: `table_together` (samen bestellen aan tafel, één mandje), `kassa_offline_state`, `my_business_settings` + `settings_search` ("tik fooi"), `opening_hours` + `website_horeca` + `horeca_themes`, `qr_menu_allergen_filter`, `qr_order_progress`, `qr_staff_call`, `allergens_declared`, `dining_courses` (gangen), `kassa_staff_hours`, `kaart_food_cost`, `kassa_z_to_odoo`, `horeca_reports_admin`, `addon_self_serve`, `printful_auto_forward`, `photo_order`, barscherm, bonprinters, demowinkels (/voorbeelden, elf winkels), overstappen, prijzen per plan.
 Bewust niet: `social_ai_post_proposal` ("Post met AI"): social planning is geen klantfeature volgens README/bible.
+In SellQo gezet op 08-11: 7 rijen, alle `pending_approval` (3 reels met `video_url` = `-muziek.mp4` en `music_hint.track`), recepten via net.http_get (md5 gecontroleerd), uurcontrole zonder dubbels, melding `social_posts_ready` verstuurd.
 
 ## Week van 2026-11-02
 
