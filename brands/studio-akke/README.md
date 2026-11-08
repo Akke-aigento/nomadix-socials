@@ -64,6 +64,8 @@ Uren: **geen vaste uren**. Volg `shared/POSTTIJDEN.md` (venster van dit merk, uu
 | za | story |
 | zo | post |
 
+**Reels (Akke, 01-11): drie per week.** Eén op het sterkste slot (wo-avond), de andere twee in een ander dagdeel (ochtend en middag), nooit twee op dezelfde dag; ze nemen de plaats van een post of story op die dag in (zoals 9 nov: wo 20:40, vr 08:10, za 12:20). Een vierde enkel bij een schermopname of ander vers materiaal van Akke. Elke reel een ander format en een ander nummer (`shared/MUZIEK.md`).
+
 ## Leren (verplicht)
 
 Volg `shared/LEREN.md` (SOCIAL-6): elke post krijgt `content_tags` (pijler, format, template, hook, captionlengte, cta, bucket), lees vóór je iets bedenkt `lessen.md` van dit merk en de resultaten in `social_post_performance`, kies volgens 70/20/10, en zet UTM-parameters op elke link.
@@ -93,7 +95,7 @@ Volg `shared/VARIATIE.md` (beslissing Akke, 16 okt 2026): elke post uniek, per w
 
 ## Reels
 
-Eén per week (woensdag, op het sterkste slot uit `shared/POSTTIJDEN.md`). Formats afwisselen: sites in een browservenster (portfolio), "pakket in 15 seconden",
+Drie per week (zie Ritme; één op het sterkste slot uit `shared/POSTTIJDEN.md`). Formats afwisselen: sites in een browservenster (portfolio), "pakket in 15 seconden",
 tip in 3 stappen, het proces in 4 stappen, schermopname die Akke aanlevert. `weeks/<maandag>/reel-<onderwerp>/index.html` met
 `<meta name="nx-reel" content="1080x1920" data-duration="<s>" data-fps="30">` en `window.setT(t)`.
 Wissel beelden door ze allemaal vooraf te laden en `display` te schakelen (nooit `src` veranderen in `setT`).
