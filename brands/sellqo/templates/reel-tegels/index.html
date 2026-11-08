@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="23.6" data-fps="30">
+<title>Reel: het Nu-paneel</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- reel-ui (pijler Feature, nieuw format: scherm-demo met tegels die omklikken, donker). Bron: publieke changelog 2026.15g `now_panel`
+     (tegels bovenaan Vandaag, één tik: online bestellen, QR aan tafel, keuken pauzeren, uitverkocht, dicht, zones, dagschotel; in de kassa
+     onder ⋯ › Nu), `zone_closed` (terras dicht bij regen; gasten aan een tafel in die zone zien in het QR-menu dat de zone gesloten is en
+     kunnen er niet bestellen), `daily_special` (dagschotel; morgen om 5 uur vervalt de aanduiding) en 2026.15h `kitchen_pause_drinks`
+     ("Keuken even dicht tot …", dranken aan tafel blijven bestelbaar). Pizzeria Fiamma = landing.scene.horeca; gerechten zijn demo-inhoud.
+     Muziek: Kassa Groove (122 BPM), scènes van 8 tellen = 3,934 s. -->
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); }
+  .cap { position:absolute; top:360px; left:var(--pad); right:var(--pad); height:240px; }
+  .cap h1 { position:absolute; left:0; right:0; opacity:0; font-size:60px; }
+  .scene { position:absolute; left:var(--pad); right:var(--pad); top:640px; height:900px; }
+  .scene > div { position:absolute; left:0; right:0; opacity:0; }
+  .intro { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .tile { border-radius:28px; background:#fff; color:var(--navy); padding:30px 30px 28px; min-height:200px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 24px 48px -24px rgba(0,0,0,.6); transition:none; }
+  .tile .n { font-family:Poppins; font-weight:600; font-size:30px; line-height:1.15; }
+  .tile .s { font-size:26px; font-weight:600; display:flex; align-items:center; gap:12px; }
+  .dot { width:18px; height:18px; border-radius:50%; background:var(--green); }
+  .tile.off { background:#3A3F63; color:#fff; }
+  .tile.off .dot { background:var(--coral); }
+  .phone { margin:0 auto; width:640px; height:720px; border-radius:60px; background:#fff; color:var(--navy); padding:40px 34px; box-shadow:0 0 0 14px #1B2150, 0 40px 80px -30px #000; overflow:hidden; }
+  .phone .shop { font-family:Poppins; font-weight:700; font-size:34px; margin-bottom:6px; }
+  .banner { border-radius:18px; padding:20px 24px; font-size:26px; font-weight:600; margin:18px 0; }
+  .banner.red { background:#FFE3DA; color:#B23A1E; }
+  .banner.navy { background:var(--navy); color:#fff; }
+  .mi { display:flex; justify-content:space-between; align-items:center; padding:20px 0; border-top:1px solid var(--line); font-size:28px; }
+  .mi b { font-weight:600; }
+  .mi .p { width:52px; height:52px; border-radius:50%; background:var(--orange); color:#fff; display:grid; place-items:center; font-size:34px; font-weight:700; }
+  .mi.dim { opacity:.4; }
+  .mi.dim .p { background:#C9CEE6; }
+  .mi .why { font-size:20px; color:var(--mute); }
+  .end { position:absolute; inset:0; background:var(--cream); color:var(--navy); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .prog { position:absolute; left:var(--pad); right:var(--pad); bottom:330px; height:6px; border-radius:3px; background:rgba(255,255,255,.15); }
+  .prog i { display:block; height:100%; border-radius:3px; background:var(--coral); width:0; }
+  .tapr { position:absolute; width:90px; height:90px; border-radius:50%; border:6px solid var(--coral); opacity:0; pointer-events:none; }
+</style>
+</head>
+<body class="dark">
+  <div class="blob coral" style="width:900px;height:900px;right:-560px;bottom:-460px;opacity:.9"></div>
+  <div class="dots" style="left:0;right:0;top:0;height:560px"></div>
+  <div class="top" id="logo"><img src="../../logo-white.png" alt="SellQo" style="height:60px"></div>
+
+  <div class="intro" id="intro">
+    <div class="kicker" style="font-size:34px">Pizzeria Fiamma, dinsdag</div>
+    <h1 class="h" style="font-size:118px">12:05.<br><span class="hl">Het begint<br>te regenen.</span></h1>
+    <p class="lead" style="color:#C9CEE6">Je terras moet dicht. Nu.</p>
+  </div>
+
+  <div class="cap">
+    <h1 class="h" id="c1">Eén tik op Zones.<br><span class="hl">Terras dicht.</span></h1>
+    <h1 class="h" id="c2">Wie op het terras scant,<br><span class="hl">ziet dat het dicht is.</span></h1>
+    <h1 class="h" id="c3">Keuken even pauzeren.<br><span class="hl">Dranken blijven bestelbaar.</span></h1>
+    <h1 class="h" id="c4">Dagschotel aanduiden.<br><span class="hl">Morgen vervalt hij vanzelf.</span></h1>
+  </div>
+
+  <div class="scene">
+    <div id="s1">
+      <div class="kicker" style="margin-bottom:22px;color:#C9CEE6">Vandaag › Nu</div>
+      <div class="grid">
+        <div class="tile"><span class="n">Online bestellen</span><span class="s"><i class="dot"></i>Aan</span></div>
+        <div class="tile"><span class="n">QR aan tafel</span><span class="s"><i class="dot"></i>Aan</span></div>
+        <div class="tile"><span class="n">Keuken</span><span class="s"><i class="dot"></i>Open</span></div>
+        <div class="tile"><span class="n">Uitverkocht vandaag</span><span class="s">Niets</span></div>
+        <div class="tile" id="zone"><span class="n">Zones</span><span class="s" id="zs"><i class="dot"></i>Terras open</span></div>
+        <div class="tile"><span class="n">Dagschotel</span><span class="s">Geen</span></div>
+      </div>
+      <div class="tapr" id="tap1" style="left:120px;top:540px"></div>
+    </div>
+    <div id="s2">
+      <div class="phone">
+        <div class="shop">Pizzeria Fiamma</div>
+        <div style="font-size:24px;color:var(--mute)">Terras · tafel 12</div>
+        <div class="banner red">Terras: gesloten</div>
+        <div class="mi dim"><b>Margherita</b><span class="p">+</span></div>
+        <div class="mi dim"><b>Diavola</b><span class="p">+</span></div>
+        <div class="mi dim"><b>Spa bruis</b><span class="p">+</span></div>
+        <div class="mi dim"><b>Bediening roepen</b><span class="p">!</span></div>
+      </div>
+    </div>
+    <div id="s3">
+      <div class="phone">
+        <div class="shop">Pizzeria Fiamma</div>
+        <div style="font-size:24px;color:var(--mute)">Binnen · tafel 4</div>
+        <div class="banner navy" id="kp">Keuken even dicht tot 13:15</div>
+        <div class="mi dim"><div><b>Margherita</b><div class="why">keuken even dicht</div></div><span class="p">+</span></div>
+        <div class="mi dim"><div><b>Diavola</b><div class="why">keuken even dicht</div></div><span class="p">+</span></div>
+        <div class="mi"><b>Spa bruis</b><span class="p">+</span></div>
+        <div class="mi"><b>Huiswijn rood</b><span class="p">+</span></div>
+      </div>
+    </div>
+    <div id="s4">
+      <div class="phone">
+        <div class="shop">Pizzeria Fiamma</div>
+        <div style="font-size:24px;color:var(--mute)">Menukaart</div>
+        <div class="banner" id="ds" style="background:#FFF1EA;box-shadow:0 0 0 3px var(--coral) inset">
+          <div style="font-family:Poppins;font-weight:700;font-size:22px;letter-spacing:.12em;color:var(--coral)">VANDAAG</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><b style="font-size:32px;color:var(--navy)">Calzone della casa</b><span class="chip new">Dagschotel</span></div>
+        </div>
+        <div class="mi"><b>Margherita</b><span class="p">+</span></div>
+        <div class="mi"><b>Diavola</b><span class="p">+</span></div>
+        <div class="mi"><b>Tiramisu</b><span class="p">+</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="prog" id="pw"><i id="pi"></i></div>
+  <div class="end" id="end">
+    <img src="../../logo-navy.png" alt="SellQo" style="height:90px;align-self:flex-start">
+    <h1 class="h" style="font-size:112px">Het Nu-paneel.<br><span class="hl">Bovenaan Vandaag.</span></h1>
+    <p class="lead">Voor horecazaken. In de kassa vind je het onder ⋯ › Nu.</p>
+    <div><span class="pill coral" style="font-size:32px">sellqo.app/horeca</span></div>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  const win = (t, a, b) => ease((t - a) / 0.35) * clamp((b - t) / 0.3);
+  const S = 3.934;
+  window.setT = (t) => {
+    $("intro").style.opacity = win(t, 0, S); $("intro").style.transform = `translateY(${(1 - ease(t / 0.5)) * 40}px)`;
+    for (let i = 1; i <= 4; i++) {
+      const a = i * S, b = (i + 1) * S, o = win(t, a, b);
+      $("s" + i).style.opacity = o; $("s" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 60}px)`;
+      $("c" + i).style.opacity = o; $("c" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 30}px)`;
+    }
+    // s1: tik op Zones
+    const tp = S + 1.6; const r = clamp((t - tp) / 0.5);
+    $("tap1").style.opacity = t > tp && t < tp + 0.5 ? 1 - r : 0; $("tap1").style.transform = `scale(${0.6 + r})`;
+    const off = t > tp + 0.15;
+    $("zone").className = "tile" + (off ? " off" : ""); $("zs").innerHTML = off ? '<i class="dot"></i>Terras dicht' : '<i class="dot"></i>Terras open';
+    $("zone").style.transform = (t > tp && t < tp + 0.2) ? "scale(.96)" : "none";
+    // s3: banner schuift in
+    $("kp").style.transform = `translateY(${(1 - ease((t - 3*S - 0.7) / 0.4)) * -30}px)`; $("kp").style.opacity = ease((t - 3*S - 0.7) / 0.4);
+    // s4: dagschotel verschijnt
+    $("ds").style.opacity = ease((t - 4*S - 0.8) / 0.4); $("ds").style.transform = `scale(${0.92 + 0.08 * ease((t - 4*S - 0.8) / 0.4)})`;
+    $("pw").style.opacity = (t >= S && t < 5*S + 0.3) ? 1 : 0;
+    $("pi").style.width = Math.min(100, (t - S) / (4 * S) * 100) + "%";
+    $("end").style.opacity = ease((t - 5*S) / 0.45);
+  };
+</script>
+</body>
+</html>

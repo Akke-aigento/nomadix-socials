@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel OSS 1/6</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- tip-carousel (Ondernemerstips, variant groot cijfer). Algemene btw-regels voor afstandsverkopen aan particulieren in de EU sinds 1 juli 2021
+     (drempel EUR 10.000 voor alle EU-landen samen, per kalenderjaar; daarboven btw van het land van de klant; OSS = een kwartaalaangifte
+     in je eigen land; geen OSS voor B2B). Feitelijk, geen advies: "vraag je boekhouder". Enige SellQo-zin: landing.core.invoices_text
+     ("Na een betaalde bestelling maakt SellQo meteen de factuur, met btw en OSS correct berekend"). -->
+<style>
+  .ex { display:flex; gap:18px; flex-wrap:wrap; }
+  .ex .card { position:relative; padding:24px 28px; flex:1; min-width:250px; }
+  .ex .card b { font-family:"Poppins",sans-serif; font-weight:700; font-size:40px; display:block; }
+  .ex .card .sub { font-size:22px; }
+  .no { display:flex; gap:18px; align-items:flex-start; font-size:30px; line-height:1.4; padding:18px 0; border-top:1px solid var(--line); }
+  .no:first-child { border-top:0; }
+  .no i { flex:none; font-style:normal; width:46px; height:46px; border-radius:50%; background:var(--coral-soft); color:#C9452A; display:grid; place-items:center; font-weight:700; font-size:26px; margin-top:2px; }
+</style>
+</head>
+<body class="dark">
+<img class="logo tl" src="../../logo-white.png" alt="SellQo">
+<div class="counter">1/6</div>
+<div class="blob coral" style="width:640px;height:640px;left:-300px;bottom:-300px;opacity:.95"></div>
+<div class="dots" style="left:0;right:0;top:0;height:260px"></div>
+<div style="position:absolute;left:var(--pad);right:var(--pad);top:300px;display:flex;flex-direction:column;gap:26px">
+  <div class="kicker" data-slot="kicker" data-label="Bovenregel" data-max="30">Online verkopen in de EU</div>
+  <div class="h" style="font-size:230px;letter-spacing:-.04em;line-height:.95" data-slot="cijfer" data-label="Groot cijfer" data-max="9">€10.000</div>
+  <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="60">Daarboven verandert<br><span class="hl">de btw op je factuur.</span></h1>
+  <p class="lead" style="max-width:820px;color:#C9CEE6" data-slot="tekst" data-label="Tekst" data-max="90">Verkoop je aan particulieren in andere EU-landen? Dit moet je weten.</p>
+</div>
+<div class="swipe">Swipe <span class="coral" style="font-size:34px">→</span></div>
+</body>
+</html>

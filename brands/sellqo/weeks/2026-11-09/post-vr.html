@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Buildlog: logo en merkkleur op één plek</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- buildlog-voorna (Build in public, nieuwe variant: voor/na in twee kolommen, donker). Bron: publieke changelog 2026.15d
+     `branding_one_place` (logo, favicon en merkkleur enkel onder Instellingen › Branding; gelden voor website, mails, facturen en
+     kassabonnen; gebruiken facturen of mails een ander logo of andere kleur, dan meldt Branding dat; bij opslaan krijgen ze allemaal
+     hetzelfde). Atelier Nord = demowinkel uit landing.scene.retail; het logo is een tekening. -->
+<style>
+  .col { position:absolute; top:470px; width:430px; height:640px; border-radius:30px; padding:30px; }
+  .col.voor { left:80px; background:var(--deep-2); box-shadow:0 0 0 2px var(--line-d); }
+  .col.na { right:80px; background:#fff; color:var(--navy); }
+  .col .tag { margin-bottom:22px; }
+  .it { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:20px 22px; border-radius:18px; margin-bottom:16px; font-size:24px; font-weight:600; }
+  .voor .it { background:rgba(255,255,255,.06); color:#C9CEE6; }
+  .na .it { background:#F4F5FB; }
+  .mk { font-family:"Poppins",sans-serif; font-weight:800; font-size:22px; letter-spacing:.04em; padding:8px 14px; border-radius:10px; white-space:nowrap; }
+  .arrow { position:absolute; left:50%; top:760px; width:84px; height:84px; margin-left:-42px; border-radius:50%; background:var(--coral); color:#fff; display:grid; place-items:center; font-family:"Poppins"; font-weight:700; font-size:40px; z-index:2; box-shadow:0 14px 30px -10px rgba(253,123,91,.8); }
+</style>
+</head>
+<body class="dark">
+  <div class="dots" style="left:0;right:0;top:0;height:420px"></div>
+  <img class="logo tl" src="../../logo-white.png" alt="SellQo">
+  <div style="position:absolute;left:var(--pad);right:var(--pad);top:190px">
+    <div class="kicker" style="margin-bottom:18px" data-slot="kicker" data-label="Bovenregel" data-max="30">Nieuw in SellQo</div>
+    <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="60">Vier plekken.<br><span class="hl">Eén logo.</span></h1>
+  </div>
+
+  <div class="col voor">
+    <div class="tag" style="color:var(--mute)">Voor</div>
+    <div class="it"><span>Website</span><span class="mk" style="background:#2F6B4F;color:#fff">ATELIER NORD</span></div>
+    <div class="it"><span>Mails</span><span class="mk" style="background:#B8572F;color:#fff">atelier nord</span></div>
+    <div class="it"><span>Facturen</span><span class="mk" style="background:#6B6F80;color:#fff">AN</span></div>
+    <div class="it"><span>Kassabon</span><span class="mk" style="background:#3A4C9A;color:#fff">Atelier N.</span></div>
+    <p style="font-size:22px;color:var(--mute);margin-top:18px;line-height:1.4">Branding meldt het als iets afwijkt.</p>
+  </div>
+  <div class="arrow">→</div>
+  <div class="col na">
+    <div class="tag" style="color:var(--coral)">Na</div>
+    <div class="it"><span>Website</span><span class="mk" style="background:#2F6B4F;color:#fff">ATELIER NORD</span></div>
+    <div class="it"><span>Mails</span><span class="mk" style="background:#2F6B4F;color:#fff">ATELIER NORD</span></div>
+    <div class="it"><span>Facturen</span><span class="mk" style="background:#2F6B4F;color:#fff">ATELIER NORD</span></div>
+    <div class="it"><span>Kassabon</span><span class="mk" style="background:#2F6B4F;color:#fff">ATELIER NORD</span></div>
+    <p style="font-size:22px;color:#4A557F;margin-top:18px;line-height:1.4">Eén keer opslaan, overal hetzelfde.</p>
+  </div>
+
+  <div style="position:absolute;left:var(--pad);right:var(--pad);bottom:70px;display:flex;align-items:center;justify-content:space-between">
+    <span class="body" style="font-weight:500" data-slot="tekst" data-label="Tekst onder" data-max="46">Instellingen › Branding</span>
+    <span class="pill coral" data-slot="cta" data-label="Knop" data-max="20">sellqo.app/changelog</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="23.5" data-fps="30">
+<title>Reel: je kortingscode klaar voor Black Friday</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- reel-lijst (pijler Ondernemerstips, seizoen; nieuw format: checklist die vinkje per vinkje opbouwt, fel koraal).
+     Black Friday = vrijdag 27 november 2026 (dag na Thanksgiving, do 26/11). Bronnen SellQo: landing.core.promos_title/promos_text
+     (kortingscodes in elke SellQo, klanten vullen ze in in het winkelmandje) en de publieke changelog: `discount_code_case_insensitive`
+     ("welkom10" = "WELKOM10", hoofdletters, kleine letters en extra spaties maken geen verschil), `discount_dates_scope`
+     (geldig tot 23:59 op de einddatum; korting voor bepaalde producten of categorieën blijft bewaard), `discount_once_per_customer`
+     ("één keer per klant", ook bij gastbestellingen, herkend aan e-mailadres), `cart_discount_totals` (winkelwagen toont korting,
+     verzendkosten, btw en eindtotaal). Geen doorgestreepte prijzen. Atelier Nord = landing.scene.retail; code VRIJDAG20 is een voorbeeld.
+     Muziek: Open Voor Zaken (116 BPM), scènes van 8 tellen = 4,138 s. -->
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); }
+  .intro { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:34px; }
+  .tag2 { font-family:Poppins; font-weight:700; font-size:40px; letter-spacing:.06em; color:var(--navy); }
+  .code { display:inline-block; font-family:"Inter"; font-weight:600; font-size:64px; background:#fff; color:var(--navy); border-radius:20px; padding:14px 30px; box-shadow:0 0 0 4px var(--navy) inset; }
+  .list { position:absolute; left:var(--pad); right:var(--pad); top:420px; opacity:0; }
+  .list h2 { font-size:68px; margin-bottom:40px; }
+  .it { display:flex; gap:26px; align-items:flex-start; background:#fff; color:var(--navy); border-radius:28px; padding:36px 34px; margin-bottom:26px; box-shadow:0 24px 40px -24px rgba(0,20,91,.45); opacity:0; }
+  .it .bx { flex:none; width:64px; height:64px; border-radius:18px; border:5px solid var(--navy); display:grid; place-items:center; color:#fff; font-weight:700; font-size:38px; }
+  .it.on .bx { background:var(--navy); }
+  .it b { font-family:Poppins; font-weight:700; font-size:42px; line-height:1.2; display:block; }
+  .it span { font-size:30px; line-height:1.4; color:#4A557F; display:block; margin-top:6px; }
+  .end { position:absolute; inset:0; background:var(--deep); color:#fff; opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .end .hl { background:none; color:var(--coral); }
+</style>
+</head>
+<body style="background:var(--coral);color:var(--navy)">
+  <div class="blob" style="width:900px;height:900px;right:-460px;bottom:-420px;background:#FF9478"></div>
+  <div class="dots" style="left:0;right:0;top:0;height:380px;background-image:radial-gradient(rgba(0,20,91,.12) 3px, transparent 3px)"></div>
+  <div class="top"><span style="display:inline-block;background:#fff;border-radius:22px;padding:16px 24px"><img src="../../../logo-navy.png" alt="SellQo" style="height:52px;display:block"></span></div>
+
+  <div class="intro" id="intro">
+    <div class="tag2">POV: BLACK FRIDAY</div>
+    <h1 class="h" style="font-size:96px">Je klant typt<br>je code zo:</h1>
+    <div><span class="code" id="typed">&nbsp;</span></div>
+    <p class="lead" style="font-size:40px;font-weight:600">Kleine letters. Met een spatie. Werkt het?</p>
+  </div>
+
+  <div class="list" id="list">
+    <h2 class="h">Je code klaar voor<br>vrijdag 27 november</h2>
+    <div class="it" id="i1"><div class="bx">✓</div><div><b>Kleine letters of spaties? Werkt.</b><span>"vrijdag20 " is gewoon VRIJDAG20.</span></div></div>
+    <div class="it" id="i2"><div class="bx">✓</div><div><b>Geldig tot 23:59.</b><span>Tot het einde van je laatste dag.</span></div></div>
+    <div class="it" id="i3"><div class="bx">✓</div><div><b>Eén keer per klant.</b><span>Ook bij gastbestellingen, herkend aan het e-mailadres.</span></div></div>
+    <div class="it" id="i4"><div class="bx">✓</div><div><b>Enkel voor wat jij kiest.</b><span>Bepaalde producten of categorieën, of het hele mandje.</span></div></div>
+  </div>
+
+  <div class="end" id="end">
+    <img src="../../../logo-white.png" alt="SellQo" style="height:90px;align-self:flex-start">
+    <h1 class="h" style="font-size:108px">Bewaar dit<br><span class="hl">voor Black Friday.</span></h1>
+    <p class="lead">Kortingscodes zitten in elke SellQo. Je winkelmandje toont korting, verzending, btw en totaal.</p>
+    <div><span class="pill coral" style="font-size:32px">sellqo.app</span></div>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  const S = 4.138;
+  const word = "vrijdag20 ";
+  window.setT = (t) => {
+    const io = ease(t / 0.4) * clamp((S - t) / 0.3);
+    $("intro").style.opacity = io; $("intro").style.transform = `translateY(${(1 - ease(t / 0.5)) * 40}px)`;
+    const n = Math.max(0, Math.min(word.length, Math.floor((t - 0.9) / 0.12)));
+    $("typed").innerHTML = (word.slice(0, n).replace(/ /g, "&nbsp;") || "&nbsp;") + (t % 0.8 < 0.45 ? "|" : "&nbsp;");
+    const lo = ease((t - S) / 0.35) * clamp((5 * S - t) / 0.3);
+    $("list").style.opacity = lo;
+    for (let i = 1; i <= 4; i++) {
+      const a = i * S; const k = ease((t - a - 0.15) / 0.4);
+      $("i" + i).style.opacity = k; $("i" + i).style.transform = `translateX(${(1 - k) * 80}px)`;
+      $("i" + i).className = "it" + (t > a + 1.0 ? " on" : "");
+    }
+    $("end").style.opacity = ease((t - 5 * S) / 0.45);
+  };
+</script>
+</body>
+</html>

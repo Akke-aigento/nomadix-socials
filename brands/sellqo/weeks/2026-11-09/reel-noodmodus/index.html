@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="23.8" data-fps="30">
+<title>Reel: kassa noodmodus</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- reel-vraag (pijler Feature, nieuw format: vraag-antwoord, licht met donkere eindkaart). Bron: publieke changelog 2026.15q
+     `kassa_noodmodus_1` (valt SellQo of het internet weg: op één aangewezen hoofdtoestel verder; na 30 seconden zonder verbinding de knop
+     "Noodmodus starten"; aantikken, rondes versturen (bon voor de keuken op het scherm), voorlopige rekening, afrekenen met contant, je
+     losse betaalterminal of overschrijving via QR met bedrag en gestructureerde mededeling; alles op het toestel bewaard; daarna in
+     volgorde naar SellQo met het uur van de handeling; niet in een zaak met GKS; vraagt een nieuwe app-versie).
+     Pizzeria Fiamma = landing.scene.horeca; tafel en gerechten zijn demo-inhoud. Muziek: Focus (85 BPM), scènes van 6 tellen = 4,235 s. -->
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); }
+  .cap { position:absolute; top:360px; left:var(--pad); right:var(--pad); height:240px; }
+  .cap h1 { position:absolute; left:0; right:0; opacity:0; font-size:62px; }
+  .scene { position:absolute; left:var(--pad); right:var(--pad); top:650px; height:880px; }
+  .scene > div { position:absolute; left:0; right:0; opacity:0; }
+  .intro { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; }
+  .scene .card { position:relative; padding:40px 44px; }
+  .scene .card .ttl { font-size:32px; margin-bottom:22px; }
+  .scene .card .row { font-size:30px; padding:22px 0; }
+  .scene .chip { font-size:24px; padding:10px 20px; }
+  .offl { display:flex; align-items:center; gap:14px; background:#FFE3DA; color:#B23A1E; border-radius:16px; padding:18px 22px; font-size:26px; font-weight:600; margin-bottom:26px; }
+  .offl i { width:16px; height:16px; border-radius:50%; background:#E0492A; }
+  .bigbtn { border-radius:24px; background:var(--orange); color:#fff; font-family:Poppins; font-weight:700; font-size:44px; text-align:center; padding:44px 20px; }
+  .pay { display:flex; flex-direction:column; gap:18px; }
+  .pay .o { display:flex; justify-content:space-between; align-items:center; border-radius:20px; background:#F4F5FB; padding:28px 30px; font-size:32px; font-weight:600; }
+  .pay .o.sel { background:#FFF1EA; box-shadow:0 0 0 3px var(--coral) inset; }
+  .bon { position:absolute !important; left:auto !important; right:0; top:160px; width:400px; background:#FFFDF7; border-radius:10px; padding:24px 26px; font-family:"Inter"; font-size:24px; box-shadow:0 30px 60px -20px rgba(0,20,91,.4); transform:rotate(3deg); }
+  .bon b { font-family:Poppins; }
+  .sync .row .chip { min-width:150px; justify-content:center; }
+  .end { position:absolute; inset:0; background:var(--deep); color:#fff; opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .end .hl { background:none; color:var(--coral); }
+  .prog { position:absolute; left:var(--pad); right:var(--pad); bottom:330px; height:6px; border-radius:3px; background:rgba(0,20,91,.1); }
+  .prog i { display:block; height:100%; border-radius:3px; background:var(--coral); width:0; }
+</style>
+</head>
+<body>
+  <div class="blob soft" style="width:1000px;height:1000px;left:-460px;top:900px"></div>
+  <div class="dots" style="left:0;right:0;top:0;height:600px"></div>
+  <div class="top"><img src="../../../logo-navy.png" alt="SellQo" style="height:60px"></div>
+
+  <div class="intro" id="intro">
+    <div class="kicker" style="font-size:34px">Vrijdag, 20:40, volle zaal</div>
+    <h1 class="h" style="font-size:120px">Het internet<br><span class="hl">valt weg.</span></h1>
+    <p class="lead" style="font-size:42px">En nu? Je kassa?</p>
+  </div>
+
+  <div class="cap">
+    <h1 class="h" id="c1">Na 30 seconden:<br><span class="hl">Noodmodus starten.</span></h1>
+    <h1 class="h" id="c2">Je tikt aan en verstuurt.<br><span class="hl">De bon staat op het scherm.</span></h1>
+    <h1 class="h" id="c3">Afrekenen gaat ook.<br><span class="hl">Contant, terminal of QR.</span></h1>
+    <h1 class="h" id="c4">Verbinding terug?<br><span class="hl">Alles gaat in volgorde mee.</span></h1>
+  </div>
+
+  <div class="scene">
+    <div id="s1">
+      <div class="card">
+        <div class="ttl">Kassa · hoofdtoestel <span class="chip blue">Pizzeria Fiamma</span></div>
+        <div class="offl"><i></i>Geen verbinding · <span id="secs">0:00</span></div>
+        <div class="bigbtn" id="nb">Noodmodus starten</div>
+        <div class="sub" style="font-size:24px;margin-top:22px">Andere toestellen tonen: werk verder op het hoofdtoestel.</div>
+      </div>
+    </div>
+    <div id="s2">
+      <div class="card" style="width:540px">
+        <div class="ttl">Tafel 4 <span class="chip new">Noodmodus</span></div>
+        <div class="row"><b>2× Margherita</b><span class="sub" style="font-size:24px">ronde 2</span></div>
+        <div class="row"><b>1× Diavola</b><span class="sub" style="font-size:24px">ronde 2</span></div>
+        <div class="row"><b>2× Spa bruis</b><span class="sub" style="font-size:24px">ronde 2</span></div>
+        <div class="btn" id="rv" style="width:100%;margin-top:18px;font-size:30px;padding:26px">Ronde versturen</div>
+      </div>
+      <div class="bon" id="bon"><b style="font-size:28px">KEUKEN · Tafel 4</b><div style="margin-top:12px;line-height:1.6">2× Margherita<br>1× Diavola</div><div style="margin-top:10px;color:var(--mute);font-size:20px">op het scherm</div></div>
+    </div>
+    <div id="s3">
+      <div class="card">
+        <div class="ttl">Afrekenen · Tafel 4 <span class="chip new">Noodmodus</span></div>
+        <div class="pay">
+          <div class="o">Contant</div>
+          <div class="o">Losse betaalterminal</div>
+          <div class="o" id="qr">Overschrijving via QR <span class="chip blue" style="font-size:22px">bedrag + mededeling</span></div>
+        </div>
+        <div class="sub" style="font-size:24px;margin-top:22px">Alles wordt meteen op het toestel bewaard.</div>
+      </div>
+    </div>
+    <div id="s4">
+      <div class="card sync">
+        <div class="ttl">Terug online <span class="chip ok" id="syn">Verbonden</span></div>
+        <div class="row"><div><b>Tafel 4 · ronde 2</b><div class="sub" style="font-size:22px">20:41</div></div><span class="chip" id="r1">wacht</span></div>
+        <div class="row"><div><b>Tafel 7 · ronde 1</b><div class="sub" style="font-size:22px">20:44</div></div><span class="chip" id="r2">wacht</span></div>
+        <div class="row"><div><b>Tafel 4 · afgerekend</b><div class="sub" style="font-size:22px">20:52</div></div><span class="chip" id="r3">wacht</span></div>
+        <div class="sub" style="font-size:24px;margin-top:16px">Met het uur van de handeling. Past iets niet meer, dan staat het in Kassa (POS) › Kassa's.</div>
+      </div>
+    </div>
+  </div>
+  <div class="prog" id="pw"><i id="pi"></i></div>
+  <div class="end" id="end">
+    <img src="../../../logo-white.png" alt="SellQo" style="height:90px;align-self:flex-start">
+    <h1 class="h" style="font-size:112px">Noodmodus.<br><span class="hl">Je kassa werkt door.</span></h1>
+    <p class="lead">Op één hoofdtoestel dat je zelf kiest.</p>
+    <p class="body" style="color:#C9CEE6">Niet in een zaak met een geregistreerd kassasysteem (GKS). Vraagt een nieuwe versie van de kassa-app.</p>
+    <div><span class="pill coral" style="font-size:32px">sellqo.app/changelog</span></div>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  const win = (t, a, b) => ease((t - a) / 0.35) * clamp((b - t) / 0.3);
+  const S = 4.235;
+  window.setT = (t) => {
+    $("intro").style.opacity = win(t, 0, S); $("intro").style.transform = `translateY(${(1 - ease(t / 0.5)) * 40}px)`;
+    for (let i = 1; i <= 4; i++) {
+      const a = i * S, b = (i + 1) * S, o = win(t, a, b);
+      $("s" + i).style.opacity = o; $("s" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 60}px)`;
+      $("c" + i).style.opacity = o; $("c" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 30}px)`;
+    }
+    // s1: teller loopt naar 0:30, knop licht op
+    const k = clamp((t - S - 0.2) / 1.6); const sec = Math.round(k * 30);
+    $("secs").textContent = "0:" + String(sec).padStart(2, "0");
+    $("nb").style.opacity = 0.35 + 0.65 * ease((t - S - 1.8) / 0.3);
+    $("nb").style.transform = (t > S + 2.9 && t < S + 3.15) ? "scale(.96)" : "none";
+    // s2: ronde versturen, bon verschijnt
+    $("rv").style.transform = (t > 2*S + 1.4 && t < 2*S + 1.65) ? "scale(.96)" : "none";
+    $("rv").textContent = t > 2*S + 1.65 ? "Ronde verstuurd" : "Ronde versturen";
+    $("bon").style.opacity = ease((t - 2*S - 1.8) / 0.35);
+    // s3: QR gekozen
+    $("qr").className = "o" + (t > 3*S + 1.6 ? " sel" : "");
+    // s4: rijen worden groen, in volgorde
+    ["r1","r2","r3"].forEach((r, i) => { const on = t > 4*S + 1.0 + i * 0.6; $(r).textContent = on ? "doorgestuurd" : "wacht"; $(r).className = "chip " + (on ? "ok" : "blue"); });
+    $("pw").style.opacity = (t >= S && t < 5*S + 0.3) ? 1 : 0;
+    $("pi").style.width = Math.min(100, (t - S) / (4 * S) * 100) + "%";
+    $("end").style.opacity = ease((t - 5*S) / 0.45);
+  };
+</script>
+</body>
+</html>

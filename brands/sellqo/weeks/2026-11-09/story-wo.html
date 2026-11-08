@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Story: jouw zaak als voorbeeld</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- story-steps (pijler Bewijs, nieuwe variant: licht, drie genummerde stappen). Bron: landing.examples.own_title/own_text/own_s1-3
+     ("Jouw eigen zaak als voorbeeld?", menukaart of een tiental producten, demowinkel in jouw kleuren op een eigen adres,
+     rondklikken, test bestellen, pas daarna beslissen). Geen sticker: link in bio (sellqo.app/voorbeelden). -->
+<style>
+  .st { display:flex; gap:30px; align-items:flex-start; background:#fff; border-radius:30px; padding:34px 36px; box-shadow:0 24px 48px -22px rgba(0,20,91,.3), 0 0 0 1px var(--line); }
+  .st .step { flex:none; width:84px; height:84px; font-size:40px; }
+  .st b { font-family:"Poppins",sans-serif; font-weight:600; font-size:36px; line-height:1.2; display:block; }
+  .st span { font-size:27px; line-height:1.4; color:#4A557F; display:block; margin-top:8px; }
+</style>
+</head>
+<body>
+  <div class="blob coral" style="width:700px;height:700px;right:-330px;top:-260px"></div>
+  <div class="blob soft" style="width:900px;height:900px;left:-420px;bottom:-380px"></div>
+  <div class="story-safe" style="display:flex;flex-direction:column;justify-content:space-between">
+    <div style="display:flex;flex-direction:column;gap:30px">
+      <img src="../../logo-navy.png" alt="SellQo" style="height:64px;width:auto;align-self:flex-start">
+      <div class="kicker" data-slot="kicker" data-label="Bovenregel" data-max="24">Eerst zien, dan beslissen</div>
+      <h1 class="h" style="font-size:84px" data-slot="titel" data-label="Titel" data-max="50">Jouw zaak<br><span class="hl">als demowinkel.</span></h1>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div class="st"><div class="step">1</div><div><b>Je stuurt je menukaart of een tiental producten.</b><span>Of je productlijst of website.</span></div></div>
+      <div class="st"><div class="step">2</div><div><b>Wij bouwen een demowinkel in jouw stijl.</b><span>In jouw kleuren, op een eigen adres.</span></div></div>
+      <div class="st"><div class="step">3</div><div><b>Jij klikt rond en bestelt een test.</b><span>En beslist pas daarna.</span></div></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="body" style="font-weight:600" data-slot="tekst" data-label="Tekst" data-max="40">Vraag je demo aan</span>
+      <span class="pill navy" style="font-size:28px">link in bio</span>
+    </div>
+  </div>
+</body>
+</html>

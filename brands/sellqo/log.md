@@ -2,6 +2,34 @@
 
 Wat er gepost is, per week (maandag). Lees dit vóór je een nieuwe week maakt: geen onderwerp, scène of changelog-item herhalen.
 
+## Week van 2026-11-09
+
+Gemaakt op 08-11 door de weektaak. Instagram **gekoppeld**: alle 7 items `pending_approval` (geen stickers deze week; de drie reels met bibliotheeknummer gaan na "Week goedkeuren" vanzelf online).
+**Drie reels** (Akke, 01-11): do-avond op het sterkste slot, di-middag en za-ochtend, elk een ander format en nummer; ze nemen de plaats van de story di en de story za in. Geen vierde reel (geen aparte release-reel nodig: de changelog-items zitten in de reels zelf).
+LinkedIn-versies (1200×1200) in `published/2026-11-09/linkedin/`. Meetdata: 13 posts, bereik 0–6, geen signalen van Akke, `lessen.md` leeg.
+Toegepast uit de data (nog geen les in `lessen.md`): de drie carrousels (wo-avond, cta `opslaan`) halen score_48h 100, 120 en 50, gemiddeld 90 tegen ±40 voor de rest → carrousel weer wo-avond met cta `opslaan`, als enige `exploit`. Bij dit bereik (4–6 accounts) blijft het een zwak signaal.
+Geen eigen links in captions (overal "link in bio"), dus geen UTM nodig. Geen prijzen in beeld of caption (enkel demoprijzen op de menukaart van Pizzeria Fiamma).
+
+| Dag + uur | Wat | Pijler | Onderwerp | Format / template | Hook | Licht/donker | Bron |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ma 09/11 07:40 — vóór de zaak opengaat | post | Feature | "Je kaart op papier. In je eigen kleuren.": A5-boekje van Pizzeria Fiamma (kaft + binnenkant met allergeennummers en QR) | beeld-eerst / feature-print (nieuw) | belofte | licht (crème) | changelog 2026.15k `menu_card_print` |
+| di 10/11 12:35 — lunch, het moment uit de reel zelf | reel (23,6 s, Kassa Groove) | Feature | "12:05. Het begint te regenen.": Nu-paneel → terras dicht, QR-menu op het terras gesloten, keuken pauzeren (dranken blijven), dagschotel | reel-ui / reel-tegels (nieuw) | verhaal | donker, lichte eindkaart | changelog 2026.15g `now_panel`, `zone_closed`, `daily_special`, 2026.15h `kitchen_pause_drinks` |
+| wo 11/11 12:15 — lunch, ander piekmoment dan de carrousel | story | Bewijs | "Jouw zaak als demowinkel.": 3 stappen (menukaart sturen → wij bouwen → rondklikken en pas daarna beslissen) | lijst / story-steps (nieuw) | statement | licht (crème + koraal) | landing.examples.own_* |
+| wo 11/11 20:55 — na sluiting, administratietijd (bewaren) | carrousel (6) | Ondernemerstips | "€10.000. Daarboven verandert de btw op je factuur.": afstandsverkopen aan particulieren in de EU, drempel, btw van de klant, OSS, "vraag je boekhouder" | tip / tip-bigcijfer (nieuw) + tip-step + cta-dark | cijfer | donker + licht | EU-btw-regels e-commerce sinds 1-7-2021; landing.core.invoices_text |
+| do 12/11 21:20 — sterkste slot (avond) | reel (23,8 s, Focus) | Feature | "Het internet valt weg.": kassa-noodmodus op het hoofdtoestel (30 s, aantikken + bon op scherm, afrekenen contant/terminal/QR, in volgorde terug) | reel-vraag / reel-vraag (nieuw) | vraag | licht, donkere eindkaart | changelog 2026.15q `kassa_noodmodus_1` |
+| vr 13/11 17:35 **(test)** — einde werkdag, pendel naar huis; nog nooit geprobeerd | post | Build in public | "Vier plekken. Eén logo.": voor/na van logo op website, mails, facturen, kassabon (Atelier Nord) | voor-na / buildlog-voorna (nieuw) | contrast | donker | changelog 2026.15d `branding_one_place` |
+| za 14/11 09:10 — zaterdag kort en vroeg | reel (23,5 s, Open Voor Zaken) | Ondernemerstips (seizoen) | "POV: Black Friday" (vr 27/11): je kortingscode klaarzetten, 4 vinkjes (kleine letters, tot 23:59, één keer per klant, enkel bepaalde producten) | reel-lijst / reel-lijst (nieuw) | pov | fel (koraal), donkere eindkaart | landing.core.promos_*; changelog `discount_code_case_insensitive`, `discount_dates_scope`, `discount_once_per_customer`, `cart_discount_totals` |
+
+Labels (`content_tags`), alle `bucket: explore` behalve wo-carrousel (`exploit`) en vr (`test`, `experiment: tijd`):
+ma `feature/beeld-eerst/feature-print/belofte/kort/link` · di `feature/reel-ui/reel-tegels/verhaal/middel/link` · wo-story `bewijs/lijst/story-steps/statement/kort/profiel` ·
+wo `tips/tip/tip-step/cijfer/lang/opslaan` · do `feature/reel-vraag/reel-vraag/vraag/lang/delen` · vr `build/voor-na/buildlog-voorna/contrast/middel/link` · za `tips/reel-lijst/reel-lijst/pov/kort/opslaan`.
+
+Gebruikte changelog-items: `menu_card_print`, `now_panel`, `zone_closed`, `daily_special`, `kitchen_pause_drinks`, `kassa_noodmodus_1`, `branding_one_place`, `discount_code_case_insensitive`, `discount_dates_scope`, `discount_once_per_customer`, `cart_discount_totals`.
+Gebruikte scènes: menukaart-boekje (Pizzeria Fiamma), Nu-paneel + QR-menu terras/keuken/dagschotel (Fiamma, "Calzone della casa"), kassa-noodmodus (Fiamma, tafel 4/7), branding voor/na (Atelier Nord), kortingscode VRIJDAG20. Geen foto's gebruikt.
+Muziek: di Kassa Groove (122 BPM, 8 tellen = 3,934 s), do Focus (85 BPM, 6 tellen = 4,235 s), za Open Voor Zaken (116 BPM, 8 tellen = 4,138 s); alle drie start 0 s.
+Nog niet gebruikt: `table_together` (samen bestellen aan tafel, één mandje), `kassa_offline_state`, `my_business_settings` + `settings_search` ("tik fooi"), `opening_hours` + `website_horeca` + `horeca_themes`, `qr_menu_allergen_filter`, `qr_order_progress`, `qr_staff_call`, `allergens_declared`, `dining_courses` (gangen), `kassa_staff_hours`, `kaart_food_cost`, `kassa_z_to_odoo`, `horeca_reports_admin`, `addon_self_serve`, `printful_auto_forward`, `photo_order`, barscherm, bonprinters, demowinkels (/voorbeelden, elf winkels), overstappen, prijzen per plan.
+Bewust niet: `social_ai_post_proposal` ("Post met AI"): social planning is geen klantfeature volgens README/bible.
+
 ## Week van 2026-11-02
 
 Gemaakt op 01-11 door de weektaak. Instagram **gekoppeld**: posts, carrousel, story di en reel `pending_approval` (reel met bibliotheeknummer, gaat na "Week goedkeuren" vanzelf online); poll-story za `manual` + `sticker`.

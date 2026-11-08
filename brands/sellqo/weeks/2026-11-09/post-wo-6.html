@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel OSS 6/6</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- tip-carousel (Ondernemerstips, variant groot cijfer). Algemene btw-regels voor afstandsverkopen aan particulieren in de EU sinds 1 juli 2021
+     (drempel EUR 10.000 voor alle EU-landen samen, per kalenderjaar; daarboven btw van het land van de klant; OSS = een kwartaalaangifte
+     in je eigen land; geen OSS voor B2B). Feitelijk, geen advies: "vraag je boekhouder". Enige SellQo-zin: landing.core.invoices_text
+     ("Na een betaalde bestelling maakt SellQo meteen de factuur, met btw en OSS correct berekend"). -->
+<style>
+  .ex { display:flex; gap:18px; flex-wrap:wrap; }
+  .ex .card { position:relative; padding:24px 28px; flex:1; min-width:250px; }
+  .ex .card b { font-family:"Poppins",sans-serif; font-weight:700; font-size:40px; display:block; }
+  .ex .card .sub { font-size:22px; }
+  .no { display:flex; gap:18px; align-items:flex-start; font-size:30px; line-height:1.4; padding:18px 0; border-top:1px solid var(--line); }
+  .no:first-child { border-top:0; }
+  .no i { flex:none; font-style:normal; width:46px; height:46px; border-radius:50%; background:var(--coral-soft); color:#C9452A; display:grid; place-items:center; font-weight:700; font-size:26px; margin-top:2px; }
+</style>
+</head>
+<body class="dark">
+<img class="logo tl" src="../../logo-white.png" alt="SellQo">
+<div class="counter" style="color:#fff">6/6</div>
+<div class="blob coral" style="width:560px;height:560px;right:-320px;top:400px;opacity:.9"></div>
+<div style="position:absolute;left:var(--pad);right:var(--pad);top:260px;display:flex;flex-direction:column;gap:34px">
+  <div class="kicker">In SellQo</div>
+  <h2 class="h h-m" data-slot="titel" data-label="Titel" data-max="60">De factuur rekent<br><span class="hl">de juiste btw.</span></h2>
+  <div class="card" style="position:relative;margin-top:6px">
+    <div class="ttl">Factuur <span class="chip ok">klaar</span></div>
+    <div class="row" style="padding:22px 0"><div><b style="font-size:28px">Na een betaalde bestelling</b><div class="sub">maakt SellQo meteen de factuur</div></div><span class="chip ok">automatisch</span></div>
+    <div class="row" style="padding:22px 0"><div><b style="font-size:28px">Btw en OSS</b><div class="sub">correct berekend</div></div><span class="chip ok">in orde</span></div>
+  </div>
+  <p class="lead" style="color:#C9CEE6">De aangifte zelf blijft voor jou of je boekhouder.</p>
+</div>
+<div style="position:absolute;left:var(--pad);right:var(--pad);bottom:80px;display:flex;justify-content:space-between;align-items:center">
+  <span class="body" data-slot="tekst" data-label="Tekst" data-max="40">Bewaar dit voor je volgende aangifte</span>
+  <span class="pill coral" data-slot="cta" data-label="Knop" data-max="20">sellqo.app</span>
+</div>
+</body>
+</html>
