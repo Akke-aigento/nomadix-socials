@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 4: prijzen (licht)</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .lbl { font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; color:var(--teal); letter-spacing:.03em; }
+  .t { font-size:96px; font-weight:900; letter-spacing:-.04em; line-height:.98; }
+  .x { font-size:34px; line-height:1.42; color:rgba(255,255,255,.82); max-width:880px; }
+  .frames { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .frames div { aspect-ratio:1/1; border-radius:20px; border:2px solid rgba(255,255,255,.16); background:rgba(29,40,58,.6); display:flex; flex-direction:column; justify-content:flex-end; padding:18px; font-family:"JetBrains Mono",monospace; font-size:21px; color:var(--mute); position:relative; overflow:hidden; }
+  .frames div::before { content:""; position:absolute; left:50%; top:42%; width:38%; height:38%; transform:translate(-50%,-50%) rotate(var(--r,0deg)); border-radius:14px; background:linear-gradient(150deg, rgba(94,234,212,.55), rgba(56,189,248,.35)); }
+  .frames div.s { border-color:var(--teal); background:rgba(43,212,189,.12); color:var(--teal-light); }
+  .frames div.s::before { width:70%; height:30%; top:55%; border-radius:10px; background:linear-gradient(90deg, rgba(124,58,237,.5), rgba(43,212,189,.5)); }
+
+  .row { display:flex; justify-content:space-between; align-items:center; background:#fff; border:2px solid rgba(15,23,41,.08); border-radius:26px; padding:34px 42px; box-shadow:0 24px 50px -36px rgba(15,23,41,.45); }
+  .row span { font-size:40px; font-weight:800; letter-spacing:-.02em; color:var(--navy); }
+  .row b { font-size:72px; font-weight:900; letter-spacing:-.04em; color:var(--navy); }
+  .row.hot { border:3px solid #0D9488; }
+  .row.hot b { color:#0D9488; }
+  .paper .dots i { background:rgba(15,23,41,.18); } .paper .dots i.on { background:#0D9488; }</style>
+</head>
+<body class="paper">
+  <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+  <img src="../../mark.svg" alt="" style="position:absolute; right:-200px; bottom:-160px; width:700px; height:auto; opacity:.06; filter:brightness(0)">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:220px; display:flex; flex-direction:column; gap:28px">
+    <div class="lbl" style="color:#0D9488">// 03 prijs per product</div>
+    <h1 class="t" style="color:var(--navy); font-size:88px" data-slot="titel" data-label="Titel" data-max="50">Hoe meer producten,<br><span style="color:#0D9488">hoe lager per stuk.</span></h1>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:620px; display:flex; flex-direction:column; gap:22px">
+    <div class="row"><span data-slot="r1" data-label="Aantal 1" data-max="20">1 tot 5 producten</span><b>€95</b></div>
+    <div class="row"><span data-slot="r2" data-label="Aantal 2" data-max="20">6 tot 15 producten</span><b>€79</b></div>
+    <div class="row hot"><span data-slot="r3" data-label="Aantal 3" data-max="20">16 producten of meer</span><b>€65</b></div>
+    <p style="font-family:'JetBrains Mono',monospace; font-size:26px; color:#475569; margin-top:10px">per product, excl. btw &middot; telkens 8 foto's</p>
+  </div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad); color:#0D9488"><span class="c">//</span> 4/6</div>
+  <div class="dots"><i></i><i></i><i></i><i class="on"></i><i></i><i></i></div>
+</body>
+</html>

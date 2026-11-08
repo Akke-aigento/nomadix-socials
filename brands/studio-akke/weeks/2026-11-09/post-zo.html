@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Post zo: collage acht sites (beeld eerst)</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .wall { position:absolute; left:28px; right:28px; top:28px; bottom:330px; display:grid; grid-template-columns:1fr 1fr; grid-template-rows:repeat(4,1fr); gap:18px; }
+  .mini { position:relative; border-radius:18px; overflow:hidden; background:#0B1222; border:1px solid rgba(255,255,255,.14); box-shadow:0 30px 60px -30px rgba(0,0,0,.8); }
+  .mini .b { height:30px; display:flex; align-items:center; gap:7px; padding:0 14px; background:#111A2E; }
+  .mini .b i { width:9px; height:9px; border-radius:50%; background:#334155; display:block; }
+  .mini .b i:nth-child(1){background:#F2456D} .mini .b i:nth-child(2){background:#F5B83D} .mini .b i:nth-child(3){background:#2BD4BD}
+  .mini img { display:block; width:100%; height:calc(100% - 30px); object-fit:cover; object-position:top center; }
+  .mini em { position:absolute; right:10px; top:4px; font-style:normal; font-family:"JetBrains Mono",monospace; font-size:15px; font-weight:700; color:var(--teal-light); background:transparent; padding:2px 6px; }
+</style>
+</head>
+<body>
+  <div class="glow teal" style="width:700px; height:700px; right:-300px; bottom:-320px"></div>
+  <div class="wall">
+    <div class="mini"><div class="b"><i></i><i></i><i></i></div><img src="../../media/site-margriet.jpg" alt=""><em>Horeca</em></div>
+    <div class="mini"><div class="b"><i></i><i></i><i></i></div><img src="../../media/site-yeketi.jpg" alt=""><em>Automotive</em></div>
+    <div class="mini"><div class="b"><i></i><i></i><i></i></div><img src="../../media/site-vanxcel.jpg" alt=""><em>E-commerce</em></div>
+    <div class="mini"><div class="b"><i></i><i></i><i></i></div><img src="../../media/site-borletti.jpg" alt=""><em>Logistiek</em></div>
+    <div class="mini"><div class="b"><i></i><i></i><i></i></div><img src="../../media/site-mancini.jpg" alt=""><em>Fashion</em></div>
+    <div class="mini"><div class="b"><i></i><i></i><i></i></div><img src="../../media/site-astrasleep.jpg" alt=""><em>Lifestyle</em></div>
+    <div class="mini"><div class="b"><i></i><i></i><i></i></div><img src="../../media/site-sellqo.jpg" alt=""><em>SaaS</em></div>
+    <div class="mini"><div class="b"><i></i><i></i><i></i></div><img src="../../media/site-loveke.jpg" alt=""><em>Streetwear</em></div>
+  </div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:70px; display:flex; justify-content:space-between; align-items:flex-end">
+    <h1 class="h" style="font-size:72px; line-height:1" data-slot="titel" data-label="Titel" data-max="50">Jouw zaak is niet<br><span class="grad">die van de buren.</span></h1>
+    <div class="brand" style="position:static; font-size:28px; flex-direction:column; align-items:flex-end; gap:8px"><img src="../../mark.svg" alt="" style="width:56px; height:56px"><span>Studio <b>Akke</b></span></div>
+  </div>
+</body>
+</html>

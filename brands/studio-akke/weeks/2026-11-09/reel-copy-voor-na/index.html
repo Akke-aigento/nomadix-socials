@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="18" data-fps="30">
+<title>Reel: tekst voor en na</title>
+<link rel="stylesheet" href="../../../brand.css">
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .hook { position:absolute; left:var(--pad); right:var(--pad); top:600px; }
+  .hook h1 { font-size:138px; font-weight:900; letter-spacing:-.045em; line-height:.95; }
+  .hook p { margin-top:44px; font-size:44px; font-weight:600; color:rgba(255,255,255,.85); }
+  .sheet { position:absolute; left:var(--pad); right:var(--pad); top:420px; border-radius:34px; padding:50px 52px; opacity:0; }
+  .sheet .k { font-family:"JetBrains Mono",monospace; font-size:34px; font-weight:700; }
+  .sheet .txt { margin-top:28px; font-size:52px; line-height:1.3; font-weight:600; }
+  .voor { background:rgba(29,40,58,.85); border:2px solid rgba(255,255,255,.14); }
+  .voor .k { color:var(--coral); }
+  .voor .txt { color:rgba(255,255,255,.62); }
+  .na { background:#F4F7FB; color:var(--navy); border:3px solid var(--teal); box-shadow:0 60px 120px -50px rgba(43,212,189,.6); }
+  .na .k { color:#0D9488; }
+  .tags { position:absolute; left:var(--pad); right:var(--pad); top:1080px; display:flex; flex-direction:column; gap:22px; }
+  .tg { align-self:flex-start; display:flex; align-items:center; gap:18px; padding:20px 30px; border-radius:20px; border:2px solid rgba(255,255,255,.28); background:rgba(15,23,41,.7); font-size:40px; font-weight:800; opacity:0; }
+  .tg i { font-style:normal; font-family:"JetBrains Mono",monospace; color:var(--mute); }
+  .ok { display:flex; gap:22px; align-items:flex-start; font-size:46px; font-weight:800; letter-spacing:-.02em; line-height:1.15; margin-top:30px; opacity:0; }
+  .ok b { flex:0 0 54px; height:54px; border-radius:50%; background:var(--teal); color:var(--navy); font-size:30px; display:flex; align-items:center; justify-content:center; font-family:"JetBrains Mono",monospace; }
+  .end { position:absolute; inset:0; background:linear-gradient(150deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); color:var(--navy); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:900px; height:900px; right:-360px; top:300px"></div>
+  <div class="glow violet" style="width:800px; height:800px; left:-320px; bottom:200px"></div>
+  <div class="top"><div class="brand" style="position:static"><img src="../../../mark.svg" alt="">Studio <b>Akke</b></div><span class="code"><span class="c">//</span> voor &amp; na</span></div>
+  <div class="hook" id="hook"><h1>Zelfde zaak.<br><span class="grad">Andere tekst.</span></h1><p>Waarom de ene site werkt en de andere niet.</p></div>
+
+  <div class="sheet voor" id="voor"><div class="k">// voor</div><div class="txt">"Wij zijn een bedrijf dat websites maakt. We doen dit al lang en zijn er goed in. Neem contact op als je een website wilt."</div></div>
+  <div class="tags" id="tags">
+    <div class="tg" id="t0"><i>&times;</i>Geen duidelijke belofte</div>
+    <div class="tg" id="t1"><i>&times;</i>Geen reden om nu te bellen</div>
+    <div class="tg" id="t2"><i>&times;</i>Saai en algemeen</div>
+  </div>
+
+  <div class="sheet na" id="na"><div class="k">// na: zo pak je het aan</div>
+    <div class="ok" id="o0"><b>1</b><span>Zeg wat je klant eraan heeft.</span></div>
+    <div class="ok" id="o1"><b>2</b><span>Maak het concreet: wat, voor wie, wanneer.</span></div>
+    <div class="ok" id="o2"><b>3</b><span>Eindig met één duidelijke stap.</span></div>
+  </div>
+
+  <div class="end" id="end">
+    <img src="../../../mark.svg" alt="" style="width:150px; height:auto; filter:brightness(0) opacity(.85)">
+    <h1 class="h" style="font-size:120px; line-height:.95">Teksten<br>laten schrijven?</h1>
+    <p class="lead" style="color:rgba(15,23,41,.85)">€65 per pagina (±300 woorden), excl. btw. Eén revisieronde inbegrepen.</p>
+    <span class="pill" style="background:var(--navy); color:#fff; align-self:flex-start">studioakke.com/diensten/copywriting</span>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const c = (x) => Math.min(Math.max(x, 0), 1);
+  const ease = (x) => 1 - Math.pow(1 - c(x), 3);
+  const B = 60 / 82, B4 = 4 * B;          // 82 BPM: scènes per 4 tellen
+  const V = B4, N = 3 * B4, END = 5 * B4; // 2,93 / 8,78 / 14,63
+  window.setT = (t) => {
+    const hi = ease(t / 0.45), ho = ease((t - (V - 0.35)) / 0.35);
+    $("hook").style.opacity = hi * (1 - ho);
+    $("hook").style.transform = `translateY(${(1-hi)*50 - ho*60}px)`;
+    const vi = ease((t - V) / 0.45), vo = ease((t - (N - 0.35)) / 0.35);
+    $("voor").style.opacity = t < V ? 0 : vi * (1 - vo);
+    $("voor").style.transform = `translateY(${(1-vi)*80}px)`;
+    [0,1,2].forEach((i) => {
+      const s = V + B4 * 0.55 + i * 2 * B, a = ease((t - s) / 0.3);
+      $("t" + i).style.opacity = t < s ? 0 : a * (1 - vo);
+      $("t" + i).style.transform = `translateX(${(1-a)*-60}px) scale(${1 + (1-a)*0.15})`;
+    });
+    const ni = ease((t - N) / 0.45), no = ease((t - (END - 0.3)) / 0.3);
+    $("na").style.opacity = t < N ? 0 : ni * (1 - no);
+    $("na").style.transform = `translateY(${(1-ni)*80}px)`;
+    [0,1,2].forEach((i) => {
+      const s = N + 0.7 + i * 2 * B, a = ease((t - s) / 0.35);
+      $("o" + i).style.opacity = t < s ? 0 : a;
+      $("o" + i).style.transform = `translateX(${(1-a)*50}px)`;
+    });
+    const e = ease((t - END) / 0.45);
+    $("end").style.opacity = t < END ? 0 : e;
+    $("end").style.transform = `translateY(${(1-e)*40}px)`;
+  };
+  window.setT(0);
+</script>
+</body>
+</html>

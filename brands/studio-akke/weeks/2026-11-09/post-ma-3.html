@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 3: zo gaat het</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .lbl { font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; color:var(--teal); letter-spacing:.03em; }
+  .t { font-size:96px; font-weight:900; letter-spacing:-.04em; line-height:.98; }
+  .x { font-size:34px; line-height:1.42; color:rgba(255,255,255,.82); max-width:880px; }
+  .step { padding:38px 0; } .step .t { font-size:42px; } .step .d { font-size:29px; }
+  .frames { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .frames div { aspect-ratio:1/1; border-radius:20px; border:2px solid rgba(255,255,255,.16); background:rgba(29,40,58,.6); display:flex; flex-direction:column; justify-content:flex-end; padding:18px; font-family:"JetBrains Mono",monospace; font-size:21px; color:var(--mute); position:relative; overflow:hidden; }
+  .frames div::before { content:""; position:absolute; left:50%; top:42%; width:38%; height:38%; transform:translate(-50%,-50%) rotate(var(--r,0deg)); border-radius:14px; background:linear-gradient(150deg, rgba(94,234,212,.55), rgba(56,189,248,.35)); }
+  .frames div.s { border-color:var(--teal); background:rgba(43,212,189,.12); color:var(--teal-light); }
+  .frames div.s::before { width:70%; height:30%; top:55%; border-radius:10px; background:linear-gradient(90deg, rgba(124,58,237,.5), rgba(43,212,189,.5)); }
+</style>
+</head>
+<body>
+  <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div class="glow violet" style="width:760px; height:760px; left:-320px; top:-200px"></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:220px; display:flex; flex-direction:column; gap:30px">
+    <div class="lbl">// 02 zo gaat het</div>
+    <h1 class="t" data-slot="titel" data-label="Titel" data-max="40">Van doos<br><span class="grad">tot download.</span></h1>
+  </div>
+  <div class="steps" style="position:absolute; left:var(--pad); right:var(--pad); top:600px; gap:0">
+    <div class="step"><div class="n">01</div><div><div class="t" data-slot="s1" data-label="Stap 1" data-max="30">Je stuurt je producten op</div><div class="d">Veilig verpakt, naar mijn studio.</div></div><div></div></div>
+    <div class="step"><div class="n">02</div><div><div class="t" data-slot="s2" data-label="Stap 2" data-max="30">Fotoshoot</div><div class="d">Elk product van zes hoeken.</div></div><div></div></div>
+    <div class="step"><div class="n">03</div><div><div class="t" data-slot="s3" data-label="Stap 3" data-max="30">Nabewerking</div><div class="d">Kleur, achtergrond en retouche, plus twee sfeerfoto's.</div></div><div></div></div>
+    <div class="step" style="border-bottom:1px solid var(--line)"><div class="n">04</div><div><div class="t" data-slot="s4" data-label="Stap 4" data-max="30">Digitale levering</div><div class="d">Hoge resolutie, via een beveiligde downloadlink.</div></div><div></div></div>
+  </div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad);"><span class="c">//</span> 3/6</div>
+  <div class="dots"><i></i><i></i><i class="on"></i><i></i><i></i><i></i></div>
+</body>
+</html>

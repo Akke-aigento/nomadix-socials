@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Story di: poll wie schrijft je teksten</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .doc { background:rgba(29,40,58,.78); border:1px solid var(--line); border-radius:28px; padding:34px 38px; display:flex; flex-direction:column; gap:16px; }
+  .doc .ln { height:18px; border-radius:10px; background:rgba(255,255,255,.12); }
+  .doc .cur { display:flex; align-items:center; gap:6px; font-family:"JetBrains Mono",monospace; font-size:26px; color:var(--mute); }
+  .doc .cur i { width:4px; height:38px; background:var(--teal); display:block; border-radius:2px; }
+  .opts { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .opts div { border:2px dashed rgba(255,255,255,.22); border-radius:22px; padding:22px 26px; font-size:30px; font-weight:700; color:rgba(255,255,255,.85); }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:820px; height:820px; right:-340px; top:160px"></div>
+  <div class="glow violet" style="width:820px; height:820px; left:-340px; bottom:200px"></div>
+  <div class="story-safe" style="display:flex; flex-direction:column; gap:38px">
+    <div class="brand" style="position:relative"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+    <div class="code" style="font-size:28px" data-slot="reeks" data-label="Reeks" data-max="28"><span class="c">//</span> even eerlijk</div>
+    <h1 class="h" style="font-size:100px" data-slot="titel" data-label="Vraag" data-max="60">Wie schrijft<br>de teksten op<br><span class="grad">jouw website?</span></h1>
+    <div class="doc">
+      <div class="cur"><span>Welkom op onze website</span><i></i></div>
+      <div class="ln" style="width:92%"></div><div class="ln" style="width:76%"></div><div class="ln" style="width:58%"></div>
+    </div>
+    <p class="lead" data-slot="tekst" data-label="Tekst" data-max="80">Of: wie zou ze moeten schrijven?</p>
+    <div class="sticker-slot" style="height:300px; margin-top:auto">poll-sticker hier</div>
+  </div>
+</body>
+</html>

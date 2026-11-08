@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 1: cover productfoto's</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .lbl { font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; color:var(--teal); letter-spacing:.03em; }
+  .t { font-size:96px; font-weight:900; letter-spacing:-.04em; line-height:.98; }
+  .x { font-size:34px; line-height:1.42; color:rgba(255,255,255,.82); max-width:880px; }
+  .frames { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .frames div { aspect-ratio:1/1; border-radius:20px; border:2px solid rgba(255,255,255,.16); background:rgba(29,40,58,.6); display:flex; flex-direction:column; justify-content:flex-end; padding:18px; font-family:"JetBrains Mono",monospace; font-size:21px; color:var(--mute); position:relative; overflow:hidden; }
+  .frames div::before { content:""; position:absolute; left:50%; top:42%; width:38%; height:38%; transform:translate(-50%,-50%) rotate(var(--r,0deg)); border-radius:14px; background:linear-gradient(150deg, rgba(94,234,212,.55), rgba(56,189,248,.35)); }
+  .frames div.s { border-color:var(--teal); background:rgba(43,212,189,.12); color:var(--teal-light); }
+  .frames div.s::before { width:70%; height:30%; top:55%; border-radius:10px; background:linear-gradient(90deg, rgba(124,58,237,.5), rgba(43,212,189,.5)); }
+</style>
+</head>
+<body>
+  <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:820px; height:820px; right:-320px; top:-160px"></div>
+  <div class="glow violet" style="width:760px; height:760px; left:-320px; bottom:-260px"></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:250px; display:flex; flex-direction:column; gap:36px">
+    <div class="lbl" data-slot="reeks" data-label="Reeks" data-max="30"><span style="color:var(--mute)">//</span> productfotografie</div>
+    <h1 class="h" style="font-size:128px; line-height:.94" data-slot="titel" data-label="Titel" data-max="40">Eén product.<br><span class="grad">Acht foto's.</span></h1>
+    <p class="lead" style="max-width:860px" data-slot="tekst" data-label="Tekst" data-max="90">Zo ziet het eruit als je je producten bij mij laat fotograferen.</p>
+  </div>
+  <div class="frames" style="position:absolute; left:var(--pad); right:var(--pad); top:790px">
+    <div style="--r:-8deg">hoek 1</div><div style="--r:0deg">hoek 2</div><div style="--r:8deg">hoek 3</div><div style="--r:16deg">hoek 4</div>
+    <div style="--r:24deg">hoek 5</div><div style="--r:32deg">hoek 6</div><div class="s">sfeer 1</div><div class="s">sfeer 2</div>
+  </div>
+  <div class="swipe" style="right:auto; left:var(--pad)">swipe &rarr;</div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad);"><span class="c">//</span> 1/6</div>
+  <div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+</body>
+</html>
