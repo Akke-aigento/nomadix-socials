@@ -4,6 +4,10 @@ Beslissing Akke (16 okt 2026): de content mag nooit eentonig worden. Elke post i
 als zeven verschillende dingen, niet als zeven keer hetzelfde ontwerp met andere tekst.
 Dit geldt voor elke weektaak, "Opnieuw maken" en "post op aanvraag", voor alle merken. Bij twijfel wint dit bestand van gewoonte.
 
+**Sinds 14 nov 2026: lees ook `GENRES.md`.** Variëren in layout alleen volstaat niet ("alles is zowat dezelfde stijl", Akke).
+Elk item krijgt een genre (kassabon, POV-scène, polaroids, krantenkop, rauwe foto …). Per week geen enkel genre twee keer,
+hoogstens 2 items in de oude kaartstijl, minstens 4 families en één wildcard. Bij verschil wint `GENRES.md` §2.
+
 ## Harde regels
 
 1. **Nooit iets herhalen.** Geen titel, hook, beeld, case, tip of opbouw die al in `log.md` staat (ook niet licht herschreven).

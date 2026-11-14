@@ -114,5 +114,42 @@
     "duration": 30.1,
     "best_start": 0,
     "used": []
+  },
+  {
+    "file": "fanfare-straatfanfare.mp3",
+    "title": "Straatfanfare",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-11-14",
+    "prompt": "Rowdy Belgian street brass fanfare with sousaphone, marching snare, cymbals and big horn stabs, a fun night out in an old city square, 126 BPM, instrumental, clean ending",
+    "mood": [
+      "fanfare",
+      "feest",
+      "koper"
+    ],
+    "bpm": 126,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "surf-nachtjacht.mp3",
+    "title": "Nachtjacht",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-11-14",
+    "prompt": "Fast surf rock with twangy reverb-drenched electric guitar, rumbling bass and pounding drums, a cheeky late-night chase through old streets, 150 BPM, instrumental, clean ending",
+    "mood": [
+      "surf",
+      "energiek"
+    ],
+    "bpm": 150,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
   }
 ]

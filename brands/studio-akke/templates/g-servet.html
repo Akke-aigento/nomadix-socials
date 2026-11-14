@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Van servetje naar live</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- genre: schets → echt (servetje met wireframe, pijl naar de live site). Site: media/site-margriet.jpg (portfolio).
+     Termijn: brand-studio-akke §2 "5 tot 14 werkdagen, zodra de materialen binnen zijn". -->
+<style>
+  body { background:#2a2118; }
+  .table { position:absolute; inset:0; background:
+     repeating-linear-gradient(90deg, rgba(0,0,0,.12) 0 2px, transparent 2px 60px),
+     linear-gradient(160deg,#3b2d20,#1f1812); }
+  .napkin { position:absolute; left:60px; top:300px; width:520px; height:520px; transform:rotate(-8deg);
+    background:
+      radial-gradient(circle, rgba(0,0,0,.05) 1px, transparent 1.5px) 0 0/12px 12px,
+      #f7f4ee; box-shadow: 16px 20px 0 rgba(0,0,0,.35); }
+  .napkin::before { content:""; position:absolute; inset:18px; border:3px dotted rgba(0,0,0,.12); }
+  .napkin svg { position:absolute; inset:40px; }
+  .arrow { position:absolute; left:470px; top:520px; }
+  .browser { position:absolute; left:560px; top:330px; width:470px; height:560px; border-radius:20px; overflow:hidden; background:#0F1729; box-shadow: 0 30px 60px rgba(0,0,0,.5), 0 0 0 2px rgba(255,255,255,.08); transform:rotate(3deg); }
+  .browser .chrome { height:44px; display:flex; align-items:center; gap:10px; padding:0 18px; background:#1D283A; }
+  .browser .chrome i { width:14px; height:14px; border-radius:50%; background:#94A3B8; opacity:.6; }
+  .browser .shot { height:516px; background:url(../media/site-margriet.jpg) top/cover; }
+  .head { position:absolute; left:var(--pad); top:80px; color:#fff; }
+  .head .t { font:900 92px/1 Inter; letter-spacing:-.03em; }
+  .head .t span { background:var(--grad); -webkit-background-clip:text; color:transparent; }
+  .foot { position:absolute; left:var(--pad); right:var(--pad); bottom:80px; display:flex; justify-content:space-between; align-items:flex-end; color:#fff; }
+  .foot p { font:500 30px/1.4 Inter; color:rgba(255,255,255,.85); max-width:640px; }
+  .foot .code { font-size:22px; }
+  .mark { height:64px; }
+</style>
+</head>
+<body>
+  <div class="table"></div>
+  <div class="head"><div class="t">Van servetje<br>naar <span>live.</span></div></div>
+  <div class="napkin">
+    <svg viewBox="0 0 440 440" fill="none" stroke="#1d3a8a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 14 L428 18 L424 60 L10 56 Z"/>
+      <path d="M30 36 h70 M300 36 h40 M356 36 h50" />
+      <path d="M14 90 L426 94 L424 230 L12 226 Z"/>
+      <path d="M40 130 h220 M40 160 h160" stroke-width="7"/>
+      <path d="M40 196 h90 l0 0" stroke="#F2456D" stroke-width="10"/>
+      <path d="M16 262 L136 264 L134 380 L14 378 Z M156 264 L280 266 L278 382 L154 380 Z M300 266 L424 268 L422 384 L298 382 Z"/>
+      <path d="M30 300 l90 60 M120 300 l-90 60" stroke-width="2"/>
+      <text x="230" y="425" font-family="Caveat, cursive" font-size="30" fill="#1d3a8a" stroke="none">menu? foto's!</text>
+    </svg>
+  </div>
+  <svg class="arrow" width="140" height="120" viewBox="0 0 140 120" fill="none" stroke="#2BD4BD" stroke-width="8" stroke-linecap="round"><path d="M10 90 C 50 10, 90 10, 122 52"/><path d="M98 50 l26 4 l-6 -26"/></svg>
+  <div class="browser"><div class="chrome"><i></i><i></i><i></i></div><div class="shot"></div></div>
+  <div class="foot">
+    <p>Live in 5 tot 14 werkdagen,<br>zodra ik je materialen heb.<br><span class="code">// studioakke.com</span></p>
+    <img class="mark" src="../mark.svg" alt="">
+  </div>
+</body>
+</html>

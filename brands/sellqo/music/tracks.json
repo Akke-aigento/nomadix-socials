@@ -113,5 +113,42 @@
     "duration": 30.1,
     "best_start": 0,
     "used": []
+  },
+  {
+    "file": "funk-kassa-percussie.mp3",
+    "title": "Kassa Percussie",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-11-14",
+    "prompt": "Tight playful funk groove where the percussion is made of cash register bells, receipt printer clicks and keyboard taps, slap bass and bright horns, busy happy shop, 112 BPM, instrumental, clean ending",
+    "mood": [
+      "funk",
+      "speels",
+      "percussie"
+    ],
+    "bpm": 112,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "bossa-terras.mp3",
+    "title": "Terras",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-11-14",
+    "prompt": "Light bossa nova with nylon string guitar, soft brushed drums, upright bass and a warm vibraphone melody, relaxed cafe terrace on a sunny afternoon, 92 BPM, instrumental, clean ending",
+    "mood": [
+      "bossa",
+      "rustig"
+    ],
+    "bpm": 92,
+    "duration": 30.1,
+    "best_start": 0.4,
+    "used": []
   }
 ]

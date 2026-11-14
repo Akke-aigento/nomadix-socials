@@ -114,5 +114,42 @@
     "used": [
       "2026-11-09 reel-alternator"
     ]
+  },
+  {
+    "file": "folk-steppe-strings.mp3",
+    "title": "Steppe Strings",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-11-14",
+    "prompt": "Plucked two-string folk lute and frame drum over a deep cinematic drone, wide steppe atmosphere slowly building into a powerful driving rhythm, 100 BPM, instrumental, clean ending",
+    "mood": [
+      "folk",
+      "filmisch",
+      "opbouw"
+    ],
+    "bpm": 100,
+    "duration": 30.1,
+    "best_start": 0.6,
+    "used": []
+  },
+  {
+    "file": "synthwave-nachtrit.mp3",
+    "title": "Nachtrit",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-11-14",
+    "prompt": "Retro 1980s road movie synthwave with a pulsing bass, gated drums and a soaring lead melody, night drive on an empty highway, building to a big final hit, 108 BPM, instrumental",
+    "mood": [
+      "synthwave",
+      "energiek"
+    ],
+    "bpm": 108,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
   }
 ]

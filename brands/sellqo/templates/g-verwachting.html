@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Verwachting vs. realiteit</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- genre: eigen meme-vorm (verwachting/realiteit), getekend. Rechterkant = taken die SellQo meedoet volgens §8
+     (factuur btw/OSS, voorraad kassa, bol.com, kortingscodes). -->
+<style>
+  body { background:#fff; }
+  .lbl { position:absolute; top:76px; font:800 54px Poppins; color:var(--navy); }
+  .split { position:absolute; left:540px; top:0; bottom:0; width:6px; background:var(--navy); }
+  .box { position:absolute; left:110px; top:470px; width:330px; height:330px; border:6px solid var(--navy); border-radius:28px; display:grid; place-items:center; font:700 44px Poppins; color:var(--navy); background:var(--cream); }
+  .smile { position:absolute; left:205px; top:860px; font:600 30px Inter; color:var(--mute); }
+  .note { position:absolute; width:230px; padding:22px 20px; font:600 27px/1.2 Inter; color:var(--navy); box-shadow: 6px 8px 0 rgba(0,20,91,.15); }
+  .y { background:#FFE98A; } .c { background:var(--coral-soft); } .b { background:#D9E4FF; }
+  .scribble { position:absolute; left:560px; top:180px; width:520px; height:1000px; }
+  .bottom { position:absolute; left:0; right:0; bottom:0; height:200px; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:space-between; padding:0 var(--pad); }
+  .bottom .h { font-size:46px; max-width:700px; }
+  .logo { position:static; height:52px; }
+</style>
+</head>
+<body>
+  <div class="lbl" style="left:70px">Verwachting</div>
+  <div class="lbl" style="left:600px;color:var(--coral)">Realiteit</div>
+  <div class="split"></div>
+  <div class="box">Webshop</div>
+  <div class="smile">klaar, toch?</div>
+  <svg class="scribble" viewBox="0 0 520 1000" fill="none" stroke="#00145B" stroke-width="4" stroke-linecap="round">
+    <path d="M60 200 C 200 120, 400 320, 260 420 S 80 620, 300 700 S 470 860, 200 900"/>
+    <path d="M440 160 C 300 260, 120 300, 220 520 S 480 560, 380 800"/>
+    <path d="M100 760 C 200 640, 420 700, 460 560"/>
+  </svg>
+  <div class="note y" style="left:590px;top:220px;transform:rotate(-5deg)">facturen maken</div>
+  <div class="note c" style="left:820px;top:330px;transform:rotate(6deg)">btw en OSS juist zetten</div>
+  <div class="note b" style="left:600px;top:500px;transform:rotate(4deg)">voorraad in de kassa bijwerken</div>
+  <div class="note y" style="left:830px;top:640px;transform:rotate(-7deg)">bol.com gelijk houden</div>
+  <div class="note c" style="left:610px;top:800px;transform:rotate(-3deg)">kortingscode aanmaken</div>
+  <div class="note b" style="left:820px;top:930px;transform:rotate(5deg);width:200px">Excel. Overal Excel.</div>
+  <div class="bottom">
+    <div class="h">SellQo doet die rechterkant mee.</div>
+    <img class="logo" src="../logo-white.png" alt="SellQo">
+  </div>
+</body>
+</html>

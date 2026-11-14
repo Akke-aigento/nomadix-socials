@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Leuven Lore as a front page, 1225</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- genre: voorpagina (verzonnen krantenkop, duidelijk Fonske-stijl, geen echte krant).
+     Feiten: README Leuven Lore (Fiere Margriet, vermoord in 1225 aan de Dijle) + "Our first bar is named after a murder victim". -->
+<style>
+  body { background:#2b241b; }
+  .paper { position:absolute; left:70px; top:60px; width:940px; height:1230px; background:#efe7d6; color:#1d1712; transform:rotate(-1.5deg);
+     box-shadow: 18px 24px 0 rgba(0,0,0,.4); padding:50px 56px;
+     background-image: radial-gradient(circle at 80% 20%, rgba(120,90,40,.12), transparent 40%), radial-gradient(circle at 10% 90%, rgba(120,90,40,.15), transparent 35%); }
+  .mast { text-align:center; font-family:"Bebas Neue"; font-size:110px; line-height:.9; letter-spacing:.04em; }
+  .meta { display:flex; justify-content:space-between; border-top:4px solid #1d1712; border-bottom:2px solid #1d1712; padding:10px 0; margin-top:12px; font:700 22px "Space Grotesk"; letter-spacing:.12em; text-transform:uppercase; }
+  .head { font-family:"Bebas Neue"; font-size:180px; line-height:.85; margin:34px 0 10px; }
+  .deck { font:500 34px/1.35 "Space Grotesk"; max-width:820px; }
+  .cols { display:grid; grid-template-columns: 1.2fr 1fr; gap:36px; margin-top:34px; }
+  .ill { height:360px; border:3px solid #1d1712; background:#110C08; display:grid; place-items:center; overflow:hidden; }
+  .ill img { width:100%; height:100%; object-fit:cover; }
+  .box { border:3px solid #1d1712; padding:22px; font:700 30px/1.25 "Space Grotesk"; }
+  .box small { display:block; font:700 20px "Space Grotesk"; letter-spacing:.14em; color:#D45A4F; margin-bottom:10px; }
+  .lines div { height:14px; background:rgba(29,23,18,.18); margin:14px 0; }
+</style>
+</head>
+<body>
+  <div class="paper">
+    <div class="mast">The Fonske Courier</div>
+    <div class="meta"><span>Leuven</span><span>Anno 1225</span><span>Leuven Lore</span></div>
+    <div class="head">Murder by the Dijle</div>
+    <div class="deck">A young woman called Margriet is killed by the river. Eight centuries later, Leuven still calls her Fiere Margriet.</div>
+    <div class="cols">
+      <div class="ill"><img src="../illustrations/dijle.svg" alt=""></div>
+      <div>
+        <div class="box"><small>Page 4</small>Our first bar is named after a murder victim.</div>
+        <div class="lines"><div></div><div style="width:80%"></div><div></div><div style="width:60%"></div></div>
+        <div class="box" style="font-size:26px"><small>Join a crawl</small>Meet at The Totem, 21:00.<br>fonskecrawl.com</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

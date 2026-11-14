@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>5 tot 14 werkdagen, op een kalender</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- genre: object (muurkalender), licht. Bron: brand-studio-akke §2 USP 1. Werkdagen genummerd vanaf de dag dat de materialen binnen zijn. -->
+<style>
+  body { background: var(--paper); color:#0F1729; }
+  .wall { position:absolute; inset:0; background: radial-gradient(circle at 50% 0%, #fff, var(--paper) 70%); }
+  .cal { position:absolute; left:80px; right:80px; top:250px; background:#fff; border-radius:24px; box-shadow: 0 30px 60px rgba(15,23,41,.12); overflow:hidden; }
+  .cal .hd { background:#0F1729; color:#fff; padding:28px 40px; display:flex; justify-content:space-between; font:800 40px Inter; }
+  .cal .hd span { font:500 24px "JetBrains Mono"; color:var(--teal); align-self:center; }
+  .rings { position:absolute; left:0; right:0; top:-26px; display:flex; justify-content:space-around; padding:0 120px; }
+  .rings i { width:18px; height:56px; border-radius:9px; background:#94A3B8; }
+  .dows, .days { display:grid; grid-template-columns: repeat(7,1fr); }
+  .dows div { padding:16px 0; text-align:center; font:700 22px "JetBrains Mono"; color:#94A3B8; }
+  .days div { height:170px; border-top:2px solid #eef1f6; border-left:2px solid #eef1f6; padding:12px 14px; position:relative; font:700 34px Inter; }
+  .days .we { background:#f6f7fa; color:#c4ccd8; }
+  .days .x::after { content:""; position:absolute; inset:28px 26px; background:
+      linear-gradient(45deg, transparent 46%, #0F1729 46% 54%, transparent 54%),
+      linear-gradient(-45deg, transparent 46%, #0F1729 46% 54%, transparent 54%); opacity:.55; }
+  .days .note { position:absolute; left:10px; right:6px; bottom:10px; font:600 17px/1.15 Inter; color:#0F1729; }
+  .days .start { background:#e9fbf8; }
+  .days .live { background:var(--grad); }
+  .days .max { outline:6px solid #F2456D; outline-offset:-10px; }
+  .t { position:absolute; left:var(--pad); top:80px; font:900 80px/1 Inter; letter-spacing:-.03em; }
+  .foot { position:absolute; left:var(--pad); right:var(--pad); bottom:70px; display:flex; justify-content:space-between; align-items:center; }
+  .foot p { font:500 28px Inter; color:#334; }
+  .foot img { height:60px; }
+</style>
+</head>
+<body>
+  <div class="wall"></div>
+  <div class="t">Van materialen<br>tot live.</div>
+  <div class="cal">
+    <div class="hd">Jouw project <span>// werkdagen</span></div>
+    <div class="dows"><div>MA</div><div>DI</div><div>WO</div><div>DO</div><div>VR</div><div>ZA</div><div>ZO</div></div>
+    <div class="days">
+      <div class="start">1<span class="note">materialen binnen</span></div><div class="x">2</div><div class="x">3</div><div class="x">4</div><div class="live">5<span class="note">vroegst live</span></div><div class="we"></div><div class="we"></div>
+      <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div class="we"></div><div class="we"></div>
+      <div>11</div><div>12</div><div>13</div><div class="max">14<span class="note">uiterlijk live</span></div><div style="color:#c4ccd8"></div><div class="we"></div><div class="we"></div>
+    </div>
+  </div>
+  <div class="foot"><p>De klok start zodra ik je logo, teksten en foto's heb.</p><img src="../logo-color.svg" alt="Studio Akke"></div>
+</body>
+</html>

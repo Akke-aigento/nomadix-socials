@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Kassabon: wat zit erin</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- genre: object uit het echte leven (kassabon). Elke regel komt uit brand-sellqo §8 (bewezen claims).
+     Geen bedragen behalve €0,00 per bestelling (faq: geen kosten per bestelling). -->
+<style>
+  body { background: var(--coral); }
+  .bg { position:absolute; inset:0; background: radial-gradient(circle at 80% 10%, #ffb39f, transparent 55%); }
+  .receipt { position:absolute; left:250px; top:-30px; width:580px; height:1250px; background:#fbfaf6; transform:rotate(3deg);
+    box-shadow: 30px 40px 0 rgba(0,20,91,.22); padding:120px 52px 0; color:#222; font-family:"Inter"; font-variant-numeric: tabular-nums;
+  }
+  .receipt::after { content:""; position:absolute; left:0; right:0; bottom:-18px; height:36px;
+    background: linear-gradient(135deg,#fbfaf6 25%,transparent 25%) 0 0/36px 36px, linear-gradient(225deg,#fbfaf6 25%,transparent 25%) 0 0/36px 36px; }
+  .receipt h1 { font:800 54px Poppins; text-align:center; letter-spacing:.04em; color:var(--navy); }
+  .receipt .sub { text-align:center; font:500 22px Inter; letter-spacing:.2em; text-transform:uppercase; color:#777; margin-top:6px; }
+  .dash { border-top:4px dashed #bbb; margin:30px 0; }
+  .ln { display:flex; justify-content:space-between; gap:12px; font:500 27px/1.25 Inter; padding:9px 0; }
+  .ln span:first-child { flex:1; }
+  .ln b { font-weight:700; color:var(--navy); white-space:nowrap; }
+  .tot { display:flex; justify-content:space-between; font:800 46px Poppins; color:var(--navy); }
+  .foot { text-align:center; font:500 22px/1.5 Inter; color:#666; margin-top:26px; }
+  .bars { height:90px; margin:28px 30px 0; background: repeating-linear-gradient(90deg,#222 0 4px,transparent 4px 9px,#222 9px 11px,transparent 11px 18px,#222 18px 24px,transparent 24px 27px); }
+  .side { position:absolute; left:60px; bottom:90px; width:170px; color:var(--navy); font:700 34px/1.15 Poppins; transform:rotate(-90deg); transform-origin:left bottom; white-space:nowrap; }
+  .logo { right:60px; bottom:60px; height:52px; }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="receipt">
+    <h1>SELLQO</h1>
+    <div class="sub">Dagafsluiting</div>
+    <div class="dash"></div>
+    <div class="ln"><span>Webshop</span><b>ja</b></div>
+    <div class="ln"><span>Kassa, zelfde voorraad*</span><b>ja</b></div>
+    <div class="ln"><span>bol.com, voorraad elk half uur*</span><b>ja</b></div>
+    <div class="ln"><span>Factuur met btw en OSS</span><b>meteen</b></div>
+    <div class="ln"><span>Kortingscodes</span><b>ja</b></div>
+    <div class="dash"></div>
+    <div class="ln"><span>Kosten per bestelling</span><b>€0,00</b></div>
+    <div class="ln"><span>Proefperiode</span><b>14 dagen</b></div>
+    <div class="ln"><span>Kredietkaart nodig</span><b>nee</b></div>
+    <div class="ln"><span>Opzeggen</span><b>maandelijks</b></div>
+    <div class="dash"></div>
+    <div class="tot"><span>TOTAAL</span><span>1 systeem</span></div>
+    <div class="foot">* kassa vanaf Pro en Horeca,<br>bol.com vanaf Pro<br>sellqo.app/pricing</div>
+    <div class="bars"></div>
+  </div>
+  <img class="logo" src="../logo-white.png" alt="SellQo">
+</body>
+</html>

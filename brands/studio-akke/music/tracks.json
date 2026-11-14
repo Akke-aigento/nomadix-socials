@@ -114,5 +114,42 @@
     "duration": 30.1,
     "best_start": 0,
     "used": []
+  },
+  {
+    "file": "beat-typemachine.mp3",
+    "title": "Typemachine",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-11-14",
+    "prompt": "Minimal hip hop beat built from typewriter keys, mouse clicks and soft keyboard taps over a warm sub bass and mellow electric piano, creative late-night coding session, 90 BPM, instrumental, clean ending",
+    "mood": [
+      "beat",
+      "chill",
+      "percussie"
+    ],
+    "bpm": 90,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
+  },
+  {
+    "file": "glitch-glitch.mp3",
+    "title": "Glitch",
+    "artist": "ElevenLabs Music (gegenereerd voor Nomadix BV)",
+    "source_url": "https://elevenlabs.io/music",
+    "license": "ElevenLabs Music, betaald plan: commercieel gebruik incl. social media",
+    "attribution_required": false,
+    "generated_on": "2026-11-14",
+    "prompt": "Glitchy bright electronic pop with stuttering chopped synths, crisp drums and a sudden euphoric drop after a short quiet intro, fresh and digital, 140 BPM, instrumental, clean ending",
+    "mood": [
+      "glitch",
+      "energiek"
+    ],
+    "bpm": 140,
+    "duration": 30.1,
+    "best_start": 0,
+    "used": []
   }
 ]
