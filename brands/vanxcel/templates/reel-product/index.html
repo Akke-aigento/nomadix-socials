@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="15" data-fps="30">
+<title>Reel: Switch Panel 5 slots</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Product in actie (nieuw: reel-product), motion graphics op de beat (Clean Current, 120 BPM: scène = 4 tellen = 2 s).
+     Prijs en voorraad live uit SellQo (15-11-2026: Switch Panel 5 Slots €23.95, voorraad 44). Specs en toepassingen uit de SellQo-omschrijving:
+     5 rocker switches, max 15A per switch, blue LED backlight, screw terminal or spade connector, surface or recessed. 12V/24V bewust weggelaten: en.json other24vWarning zegt dat VanXcel-producten enkel op 12V werken (tegenstrijdig met de omschrijving).
+     Zekeringwaarden per circuit uit vanxcel.com configurator (en.json configurator.phase2Step5). Productfoto's: SellQo product-images, wit weggewerkt. -->
+<style>
+  .glow { width:900px; height:900px; left:90px; top:560px; }
+  .prod { position:absolute; left:50%; top:820px; width:900px; transform:translate(-50%,0); filter:drop-shadow(0 30px 40px rgba(0,0,0,.6)); }
+  .scene { position:absolute; inset:0; opacity:0; }
+  .head { position:absolute; left:var(--pad); right:var(--pad); top:290px; }
+  .h { font-family:"Bebas Neue",sans-serif; font-size:150px; line-height:.88; text-transform:uppercase; }
+  .labels { position:absolute; left:var(--pad); right:var(--pad); top:1470px; display:grid; grid-template-columns:repeat(5,1fr); gap:10px; text-align:center; }
+  .labels span { font-size:25px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#fff; padding:16px 0; border-top:3px solid var(--petrol); opacity:0; }
+  .big { font-family:"Bebas Neue",sans-serif; font-size:330px; line-height:.8; }
+  .rows { position:absolute; left:var(--pad); right:var(--pad); top:640px; display:flex; flex-direction:column; }
+  .rows div { display:flex; justify-content:space-between; align-items:baseline; padding:26px 0; border-top:1px solid var(--line); font-size:44px; font-weight:500; opacity:0; }
+  .rows div b { font-family:"Bebas Neue",sans-serif; font-weight:400; font-size:90px; color:var(--petrol); line-height:1; }
+  .src { position:absolute; left:var(--pad); bottom:370px; font-size:24px; color:var(--mute); }
+</style>
+</head>
+<body>
+  <div class="glow" id="glow"></div>
+  <img class="prod" id="front" src="../../products/switch-panel-front.png" alt="VanXcel Switch Panel 5 Slots">
+  <img class="prod" id="back" src="../../products/switch-panel-back.png" alt="VanXcel Switch Panel 5 Slots, back with spade connectors" style="opacity:0; width:860px; top:900px">
+  <div class="top" style="position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; z-index:2">
+    <img class="logo" style="position:static; width:170px" src="../../logo-white.svg" alt="VanXcel"><span class="kicker" style="color:#fff">Switch Panel · 5 slots</span>
+  </div>
+
+  <div class="scene" id="s0"><div class="head" style="top:400px"><h1 class="h">Five switches.<br><span class="petrol">Zero guessing.</span></h1></div></div>
+  <div class="scene" id="s1">
+    <div class="head" style="top:400px"><h1 class="h" style="font-size:120px">One switch<br>per circuit.</h1></div>
+    <div class="labels"><span>Lights</span><span>Pump</span><span>USB</span><span>Fan</span><span>Fridge</span></div>
+  </div>
+  <div class="scene" id="s2"><div class="head" style="top:380px"><div class="big petrol">15A</div><p class="lead" style="margin-top:20px">max. per switch</p></div></div>
+  <div class="scene" id="s3"><div class="head" style="top:400px"><h1 class="h" style="font-size:120px">Blue LED<br><span class="petrol">backlight.</span></h1><p class="lead" style="margin-top:24px">Find the right switch in the dark.</p></div></div>
+  <div class="scene" id="s4">
+    <div class="head" style="top:400px"><h1 class="h" style="font-size:110px">And every circuit<br><span class="petrol">gets its own fuse.</span></h1></div>
+    <div class="rows" style="top:760px">
+      <div>Lighting <b>5A</b></div><div>USB <b>5A</b></div><div>Water pump <b>5A</b></div><div style="border-bottom:1px solid var(--line)">Fridge <b>10A</b></div>
+    </div>
+    <div class="src">Fuse values: VanXcel configurator</div>
+  </div>
+  <div class="scene" id="s5"><div class="head" style="top:400px"><h1 class="h" style="font-size:120px">Screw or<br><span class="petrol">spade.</span></h1><p class="lead" style="margin-top:24px">Wire it with screw terminals or spade connectors. Surface or recessed mount.</p></div></div>
+  <div class="scene" id="s6" style="background:var(--ink)">
+    <div style="position:absolute; left:var(--pad); right:var(--pad); top:470px; display:flex; flex-direction:column; gap:34px">
+      <img src="../../logo-white.svg" alt="VanXcel" style="width:300px">
+      <h1 class="display" style="font-size:150px">Switch Panel<br><span class="petrol">5 slots.</span></h1>
+      <div class="price">€23.95</div>
+      <span class="kicker" style="color:#fff">Shop → link in bio</span>
+    </div>
+  </div>
+<script>
+  const SEG = 2.0;
+  const ease = (x) => 1 - Math.pow(1 - Math.max(0, Math.min(1, x)), 3);
+  window.setT = (t) => {
+    const i = Math.min(6, Math.floor(t / SEG)), local = t - i * SEG;
+    for (let k = 0; k <= 6; k++) {
+      const el = document.getElementById("s" + k);
+      el.style.opacity = k === i ? ease(local / 0.25) : 0;
+    }
+    // product: front in s0-s3, back in s5, hidden in s4 and s6
+    const front = document.getElementById("front"), back = document.getElementById("back"), glow = document.getElementById("glow");
+    const showFront = i <= 3, showBack = i === 5;
+    front.style.opacity = showFront ? 1 : 0;
+    back.style.opacity = showBack ? ease(local / 0.3) : 0;
+    glow.style.opacity = (showFront || showBack) ? 1 : 0;
+    const zoom = i === 3 ? 1.25 : 1;
+    front.style.transform = `translate(-50%,0) scale(${zoom + 0.03 * Math.sin(t)})`;
+    front.style.filter = i === 3 ? "drop-shadow(0 30px 40px rgba(0,0,0,.6)) brightness(.7)" : "drop-shadow(0 30px 40px rgba(0,0,0,.6))";
+    if (i === 1) document.querySelectorAll(".labels span").forEach((s, n) => s.style.opacity = ease((local - 0.15 - n * 0.2) / 0.2));
+    if (i === 4) document.querySelectorAll(".rows div").forEach((s, n) => s.style.opacity = ease((local - 0.1 - n * 0.25) / 0.2));
+    if (i === 6) document.getElementById("s6").style.opacity = ease(local / 0.4);
+  };
+</script>
+</body>
+</html>

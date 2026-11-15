@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>One blows. One resets.</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Product, licht, vergelijking (compare-light-variant met echte productfoto rechts). Prijzen en voorraad live uit SellQo (15-11-2026:
+     Automatic Fuse 100A €26.95 voorraad 49, 150A €23.95 voorraad 49). Specs uit de SellQo-omschrijving 100A: automatic reset (cycling fuse),
+     12V DC, water-resistant ABS, -25°C tot +85°C, mounting bracket + protective cap inbegrepen. Linkerkolom: enkel wat de omschrijving zelf
+     impliceert ("no need to replace the fuse after tripping"); geen merk of prijs van een ander product.
+     Productfoto: SellQo product-images (eerste foto), wit weggewerkt (products/auto-fuse-100a.png). -->
+<style>
+  body { background:#F4F3EF; color:var(--ink); }
+  .kicker { color:var(--petrol); }
+  .cols { display:grid; grid-template-columns:400px 1fr; gap:28px; }
+  .col { background:#fff; border-radius:28px; padding:36px 36px 34px; display:flex; flex-direction:column; gap:18px; box-shadow:0 10px 30px rgba(10,10,10,.06); }
+  .col.off { background:transparent; box-shadow:none; border:3px solid rgba(10,10,10,.12); }
+  .col .w { font-family:"Bebas Neue",sans-serif; font-size:112px; line-height:.85; }
+  .col .n { font-size:24px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:#777; }
+  .col .p { font-family:"Bebas Neue",sans-serif; font-size:76px; line-height:1; }
+  .col .l { font-size:28px; line-height:1.4; color:#444; border-top:1px solid rgba(10,10,10,.1); padding-top:16px; }
+  .col img { width:100%; height:190px; object-fit:contain; margin:-6px 0 -4px; }
+  .both { font-size:27px; line-height:1.5; color:#333; }
+  .both b { color:var(--ink); }
+</style>
+</head>
+<body>
+  <img class="logo tl" src="../../logo-black.svg" alt="VanXcel">
+  <div class="kicker" style="position:absolute; top:78px; right:var(--pad)" data-slot="kicker" data-label="Bovenregel" data-max="24">Automatic Fuse 100A</div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:180px; display:flex; flex-direction:column; gap:32px">
+    <h1 class="display d-l" data-slot="titel" data-label="Titel" data-max="34">One blows.<br><span class="petrol">One resets.</span></h1>
+    <div class="cols">
+      <div class="col off">
+        <span class="n" data-slot="a" data-label="Links" data-max="20">Standard fuse</span>
+        <span class="w" style="color:#888" data-slot="aw" data-label="Woord links" data-max="8">Blows.</span>
+        <span class="l" data-slot="al" data-label="Tekst links" data-max="80">Does its job once. After a short or overload, it needs replacing.</span>
+      </div>
+      <div class="col">
+        <img src="../../products/auto-fuse-100a.png" alt="VanXcel Automatic Fuse 100A">
+        <span class="w" data-slot="bw" data-label="Woord rechts" data-max="8">Resets.</span>
+        <span class="p" data-slot="bp" data-label="Prijs" data-max="8">€26.95</span>
+        <span class="l" data-slot="bl" data-label="Tekst rechts" data-max="80">Resets itself after a short or overload. 100A, 12V DC.</span>
+      </div>
+    </div>
+    <p class="both" data-slot="beide" data-label="Onderregel" data-max="160"><b>Built for the van:</b> water-resistant ABS housing · -25°C to +85°C · mounting bracket included. Also in 150A.</p>
+  </div>
+
+  <div style="position:absolute; left:var(--pad); right:var(--pad); bottom:72px; display:flex; align-items:center; justify-content:space-between">
+    <span class="pill" style="background:var(--amber); color:var(--ink)" data-slot="cta" data-label="Knop" data-max="34">Shop → link in bio</span>
+    <span class="body" style="color:#666" data-slot="link" data-label="Link" data-max="30">vanxcel.com/shop</span>
+  </div>
+</body>
+</html>

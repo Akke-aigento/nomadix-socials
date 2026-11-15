@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Slider: how far is your build</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- Builders: emoji-slider-sticker (bv. ⚡) plakken op de lege baan (y ≈ 1180–1420), tussen "Not started" en "Powered up".
+     Lichte variant (nieuw: slider-story). Geen bewering, enkel een vraag aan de community. -->
+<style>
+  body { background:#F4F3EF; color:var(--ink); }
+  .q { font-family:"Bebas Neue",sans-serif; font-size:150px; line-height:.9; text-transform:uppercase; }
+  .lane { position:absolute; left:var(--pad); right:var(--pad); top:1180px; height:240px; border-radius:32px; background:#fff; box-shadow:0 10px 30px rgba(10,10,10,.06); }
+  .ends { position:absolute; left:var(--pad); right:var(--pad); top:1446px; display:flex; justify-content:space-between; font-size:26px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#555; }
+  .ends span:last-child { color:var(--petrol); }
+</style>
+</head>
+<body>
+  <img class="logo" style="top:260px; left:var(--pad)" src="../../logo-black.svg" alt="VanXcel">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:420px; display:flex; flex-direction:column; gap:34px">
+    <div class="kicker" data-slot="reeks" data-label="Reeks" data-max="28">Builders ask builders</div>
+    <h1 class="q" data-slot="titel" data-label="Vraag" data-max="60">Be honest.<br>How far is your<br><span class="petrol">electrical build?</span></h1>
+    <p class="lead" style="color:#333" data-slot="tekst" data-label="Tekst" data-max="90">Slide it. No judgement, every build starts at zero.</p>
+  </div>
+  <div class="lane"></div>
+  <div class="ends"><span data-slot="links" data-label="Links" data-max="16">Not started</span><span data-slot="rechts" data-label="Rechts" data-max="16">Powered up</span></div>
+</body>
+</html>
