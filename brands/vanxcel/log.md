@@ -106,3 +106,4 @@ Nummerplaat, grille-logo en sticker vervaagd op dag 1 (belgium-0003). Op 0474 is
 
 Nieuwe templates: `slider-story`, `mistake-carousel`, `reel-3-dingen/`, `reel-product/`, `reel-voor-na/`.
 Bronnen know-how: Vanxcel-repo `src/i18n/locales/en.json` (configurator.phase3Warning, phase2Step5, other24vWarning). Product: SellQo-omschrijvingen Switch Panel 5 Slots en Automatic Fuse 100A. Link /configurator gecontroleerd in `src/App.tsx`.
+In SellQo gezet op 15-11 (7 rijen; recepten via raw-URL opgehaald en nagetrokken met md5, geen dubbele uren) + melding "Week van 16 nov klaar".
