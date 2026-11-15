@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="20.4" data-fps="30">
+<title>Reel: POV meldingen pauzeren</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- reel-pov (pijler Feature, licht). Bron: publieke changelog 2026.16a `melding_pauze_1` (bovenaan je dashboard en in Mijn meldingen pauzeer je de
+     pushmeldingen op je telefoon: een uur, tot morgen 10:00 of tot je ze zelf terug aanzet; de pauze geldt voor jou, in al je zaken; de
+     kassatoestellen blijven gewoon piepen, en je meldingen in SellQo zelf blijven staan). De meldingen op het vergrendelscherm zijn demo-inhoud.
+     Muziek: Knipoog (104 BPM), scènes van 6 tellen = 3,462 s, eindkaart vanaf 17,3 s. -->
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); }
+  .cap { position:absolute; top:360px; left:var(--pad); right:var(--pad); height:240px; }
+  .cap h1 { position:absolute; left:0; right:0; opacity:0; font-size:62px; }
+  .scene { position:absolute; left:var(--pad); right:var(--pad); top:640px; height:900px; }
+  .scene > div { position:absolute; left:0; right:0; opacity:0; }
+  .pov { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; }
+  .pov .tag { font-family:Poppins; font-weight:700; font-size:40px; color:var(--coral); letter-spacing:.06em; }
+  .phone { margin:0 auto; width:640px; height:780px; border-radius:60px; background:linear-gradient(170deg,#2B3566,#0A1033); padding:60px 34px; box-shadow:0 0 0 14px #1B2150, 0 40px 80px -30px rgba(0,20,91,.6); overflow:hidden; color:#fff; }
+  .clock { text-align:center; font-family:Poppins; font-weight:600; font-size:96px; line-height:1; }
+  .date { text-align:center; font-size:26px; opacity:.75; margin:10px 0 34px; }
+  .nt { background:rgba(255,255,255,.92); color:var(--navy); border-radius:24px; padding:20px 24px; margin-bottom:14px; font-size:24px; opacity:0; }
+  .nt b { display:block; font-size:20px; color:var(--mute); font-weight:600; margin-bottom:4px; }
+  .sheet { background:#fff; border-radius:30px; padding:40px 44px; box-shadow:0 30px 60px -20px rgba(0,20,91,.28), 0 0 0 1px var(--line); }
+  .sheet .ttl { font-family:Poppins; font-weight:600; font-size:36px; margin-bottom:24px; }
+  .opt { display:flex; justify-content:space-between; align-items:center; padding:26px 28px; border-radius:20px; background:#F4F5FB; font-size:32px; font-weight:600; margin-bottom:16px; }
+  .opt.on { background:var(--navy); color:#fff; }
+  .rad { width:34px; height:34px; border-radius:50%; border:4px solid #C9CEE6; }
+  .opt.on .rad { border-color:var(--coral); background:var(--coral); }
+  .ban { display:flex; align-items:center; gap:22px; padding:30px 34px; border-radius:24px; background:var(--navy); color:#fff; font-size:32px; font-weight:600; }
+  .moon { width:64px; height:64px; border-radius:50%; background:var(--coral); flex:none; position:relative; overflow:hidden; }
+  .moon:after { content:""; position:absolute; width:52px; height:52px; border-radius:50%; background:var(--navy); left:22px; top:-8px; }
+  .shop { display:flex; justify-content:space-between; align-items:center; padding:24px 0; border-top:1px solid var(--line); font-size:30px; }
+  .two { display:flex; flex-direction:column; gap:22px; }
+  .two .card { position:relative; padding:36px 40px; }
+  .two .card .ttl { font-size:34px; margin:0 0 8px; }
+  .two .card .sub { font-size:24px; }
+  .end { position:absolute; inset:0; background:var(--deep); color:#fff; opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .end .hl { background:none; color:var(--coral); }
+  .bar { position:absolute; left:var(--pad); right:var(--pad); bottom:330px; height:6px; border-radius:3px; background:rgba(0,20,91,.1); }
+  .bar i { display:block; height:100%; border-radius:3px; background:var(--coral); width:0; }
+  .tapr { position:absolute; width:90px; height:90px; border-radius:50%; border:6px solid var(--coral); opacity:0; }
+</style>
+</head>
+<body>
+  <div class="blob soft" style="width:1000px;height:1000px;right:-440px;top:760px"></div>
+  <div class="dots" style="left:0;right:0;top:600px;height:900px"></div>
+  <div class="top"><img src="../../../logo-navy.png" alt="SellQo" style="height:60px"></div>
+
+  <div class="pov" id="pov">
+    <div class="tag">POV</div>
+    <h1 class="h" style="font-size:104px">Zaterdag.<br>Je zaak is dicht.<br><span class="hl">Je gsm niet.</span></h1>
+  </div>
+
+  <div class="cap">
+    <h1 class="h" id="c1">Ping. Ping.<br><span class="hl">Ping.</span></h1>
+    <h1 class="h" id="c2">Bovenaan je dashboard:<br><span class="hl">meldingen pauzeren.</span></h1>
+    <h1 class="h" id="c3">De pauze geldt voor jou.<br><span class="hl">In al je zaken.</span></h1>
+    <h1 class="h" id="c4">Je kassa piept gewoon.<br><span class="hl">Je meldingen blijven staan.</span></h1>
+  </div>
+
+  <div class="scene">
+    <div id="s1">
+      <div class="phone">
+        <div class="clock">09:41</div>
+        <div class="date">zaterdag</div>
+        <div class="nt" id="m1"><b>SellQo · nu</b>Nieuwe bestelling #0043</div>
+        <div class="nt" id="m2"><b>SellQo · nu</b>Reservatie-aanvraag · 4 personen, 19:00</div>
+        <div class="nt" id="m3"><b>SellQo · nu</b>Nieuwe bestelling #0044</div>
+        <div class="nt" id="m4"><b>SellQo · nu</b>Nieuwe bestelling #0045</div>
+      </div>
+    </div>
+    <div id="s2">
+      <div class="sheet">
+        <div class="ttl">Meldingen pauzeren</div>
+        <div class="opt"><span>Een uur</span><i class="rad"></i></div>
+        <div class="opt" id="o2"><span>Tot morgen 10:00</span><i class="rad"></i></div>
+        <div class="opt"><span>Tot ik ze zelf terug aanzet</span><i class="rad"></i></div>
+      </div>
+      <div class="tapr" id="tap" style="left:640px;top:200px"></div>
+    </div>
+    <div id="s3">
+      <div class="ban"><span class="moon"></span>Gepauzeerd tot morgen 10:00</div>
+      <div class="sheet" style="margin-top:26px">
+        <div class="ttl" style="margin-bottom:8px">Je zaken</div>
+        <div class="shop" style="border-top:0"><b>Pizzeria Fiamma</b><span class="chip blue">Gepauzeerd</span></div>
+        <div class="shop"><b>Atelier Nord</b><span class="chip blue">Gepauzeerd</span></div>
+      </div>
+    </div>
+    <div id="s4">
+      <div class="two">
+        <div class="card"><div class="ttl">Kassatoestellen <span class="chip ok">piepen gewoon</span></div><div class="sub">De pauze geldt voor de pushmeldingen op je telefoon.</div></div>
+        <div class="card"><div class="ttl">Je meldingen in SellQo <span class="chip ok">blijven staan</span></div><div class="sub">Maandag lees je ze rustig na.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="bar" id="pw"><i id="pi"></i></div>
+  <div class="end" id="end">
+    <img src="../../../logo-white.png" alt="SellQo" style="height:90px;align-self:flex-start">
+    <h1 class="h" style="font-size:112px">Meldingen<br>pauzeren.<br><span class="hl">Eén tik.</span></h1>
+    <p class="lead">Bovenaan je dashboard of in Mijn meldingen.</p>
+    <div><span class="pill coral" style="font-size:32px">sellqo.app</span></div>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  const win = (t, a, b) => ease((t - a) / 0.35) * clamp((b - t) / 0.3);
+  const S = 3.462;
+  window.setT = (t) => {
+    $("pov").style.opacity = win(t, 0, S); $("pov").style.transform = `translateY(${(1 - ease(t / 0.5)) * 40}px)`;
+    for (let i = 1; i <= 4; i++) {
+      const a = i * S, b = (i + 1) * S, o = win(t, a, b);
+      $("s" + i).style.opacity = o; $("s" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 60}px)`;
+      $("c" + i).style.opacity = o; $("c" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 30}px)`;
+    }
+    // s1: meldingen stapelen op de beat (2 tellen = 0,577 s)
+    for (let k = 1; k <= 4; k++) { const tk = S + 0.3 + (k - 1) * 0.577; $("m" + k).style.opacity = ease((t - tk) / 0.2); $("m" + k).style.transform = `translateY(${(1 - ease((t - tk) / 0.25)) * -30}px)`; }
+    // s2: tik op Tot morgen 10:00
+    const tp = 2 * S + 1.5, r = clamp((t - tp) / 0.5);
+    $("tap").style.opacity = t > tp && t < tp + 0.5 ? 1 - r : 0; $("tap").style.transform = `scale(${0.6 + r})`;
+    $("o2").className = "opt" + (t > tp + 0.15 ? " on" : "");
+    $("pw").style.opacity = (t >= S && t < 5 * S + 0.3) ? 1 : 0;
+    $("pi").style.width = Math.min(100, (t - S) / (4 * S) * 100) + "%";
+    $("end").style.opacity = ease((t - 5 * S) / 0.45);
+  };
+</script>
+</body>
+</html>

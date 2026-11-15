@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="24.0" data-fps="30">
+<title>Reel: dag afsluiten</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- reel-flow (pijler Feature, donkere variant: het einde van een dienst). Bron: publieke changelog 2026.16f `z_uitklokken_1` (bij het Z-rapport
+     toont de kassa eerst wie er nog ingeklokt is en sinds wanneer; vergat iemand uit te klokken, dan kan de zaakvoerder toch afsluiten) en
+     2026.16g `personeelskost_1` (kost per uur per medewerker; Rapporten › Horeca toont gewerkte uren, personeelskost en omzet per dag, met de kost
+     als percentage van de omzet; ook hoeveel er contant, per overschrijving of met de kaart binnenkwam). Pizzeria Fiamma = landing.scene.horeca;
+     namen, uren en bedragen zijn demo-inhoud. Muziek: Bouwlog (112 BPM), scènes van 8 tellen = 4,286 s. -->
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); }
+  .cap { position:absolute; top:360px; left:var(--pad); right:var(--pad); height:240px; }
+  .cap h1 { position:absolute; left:0; right:0; opacity:0; font-size:60px; }
+  .scene { position:absolute; left:var(--pad); right:var(--pad); top:660px; height:880px; }
+  .scene > div { position:absolute; left:0; right:0; opacity:0; }
+  .intro { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; }
+  .scene .card { position:relative; padding:44px 48px; }
+  .scene .card .ttl { font-size:34px; margin-bottom:22px; }
+  .scene .card .row { font-size:32px; padding:26px 0; }
+  .scene .card .sub { font-size:24px; }
+  .scene .chip { font-size:24px; padding:10px 20px; }
+  .av { width:64px; height:64px; border-radius:50%; display:grid; place-items:center; font-family:Poppins; font-weight:700; font-size:28px; color:#fff; flex:none; }
+  .who { display:flex; align-items:center; gap:22px; }
+  .kpi { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:6px; }
+  .kpi div { background:#F4F5FB; border-radius:20px; padding:24px 26px; }
+  .kpi small { display:block; font-size:22px; color:var(--mute); margin-bottom:8px; }
+  .kpi b { font-family:Poppins; font-weight:700; font-size:46px; }
+  .pay { display:flex; align-items:center; gap:20px; padding:20px 0; font-size:30px; }
+  .pay span:first-child { width:250px; }
+  .pay .bar { flex:1; height:34px; border-radius:17px; background:#EEF0F8; overflow:hidden; }
+  .pay .bar i { display:block; height:100%; border-radius:17px; background:var(--coral); width:0; }
+  .pay b { width:90px; text-align:right; font-weight:600; }
+  .end { position:absolute; inset:0; background:var(--cream); color:var(--navy); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .prog { position:absolute; left:var(--pad); right:var(--pad); bottom:330px; height:6px; border-radius:3px; background:rgba(255,255,255,.15); }
+  .prog i { display:block; height:100%; border-radius:3px; background:var(--coral); width:0; }
+  .tapr { position:absolute; width:90px; height:90px; border-radius:50%; border:6px solid var(--coral); opacity:0; }
+</style>
+</head>
+<body class="dark">
+  <div class="blob coral" style="width:900px;height:900px;left:-560px;bottom:-480px;opacity:.9"></div>
+  <div class="dots" style="left:0;right:0;top:0;height:560px"></div>
+  <div class="top"><img src="../../../logo-white.png" alt="SellQo" style="height:60px"></div>
+
+  <div class="intro" id="intro">
+    <div class="kicker" style="font-size:34px">Pizzeria Fiamma, vrijdag</div>
+    <h1 class="h" style="font-size:124px">23:10.<br><span class="hl">Laatste gast<br>is weg.</span></h1>
+    <p class="lead" style="color:#C9CEE6">Nu nog de dag afsluiten.</p>
+  </div>
+
+  <div class="cap">
+    <h1 class="h" id="c1">Z-rapport. Eerst zie je<br><span class="hl">wie nog ingeklokt is.</span></h1>
+    <h1 class="h" id="c2">Iemand vergeten?<br><span class="hl">De zaakvoerder sluit toch af.</span></h1>
+    <h1 class="h" id="c3">Rapporten › Horeca:<br><span class="hl">uren, personeelskost, omzet.</span></h1>
+    <h1 class="h" id="c4">En hoe het geld<br><span class="hl">binnenkwam.</span></h1>
+  </div>
+
+  <div class="scene">
+    <div id="s1">
+      <div class="card">
+        <div class="ttl">Dag afsluiten <span class="chip new">Nog ingeklokt: <span id="n1">2</span></span></div>
+        <div class="row"><div class="who"><span class="av" style="background:#3A4C9A">S</span><div><b>Sam</b><div class="sub">sinds 17:02</div></div></div><span class="chip new" id="st1">Ingeklokt</span></div>
+        <div class="row"><div class="who"><span class="av" style="background:#C8402A">L</span><div><b>Lien</b><div class="sub">sinds 18:00</div></div></div><span class="chip new" id="st2">Ingeklokt</span></div>
+        <div class="btn" id="b1" style="width:100%;margin-top:18px;font-size:30px;padding:24px">Sam uitklokken</div>
+      </div>
+      <div class="tapr" id="tap1" style="left:420px;top:470px"></div>
+    </div>
+    <div id="s2">
+      <div class="card">
+        <div class="ttl">Z-rapport <span class="chip blue">Zaakvoerder</span></div>
+        <div class="row"><div class="who"><span class="av" style="background:#C8402A">L</span><div><b>Lien</b><div class="sub">sinds 18:00 · vergeten uit te klokken</div></div></div><span class="chip new">Ingeklokt</span></div>
+        <div class="btn" id="b2" style="width:100%;margin-top:18px;font-size:30px;padding:24px;background:var(--navy)">Toch afsluiten</div>
+      </div>
+      <div class="toast" id="t2" style="left:40px;right:40px;top:480px;opacity:0;font-size:30px"><span class="tick">✓</span>Dag afgesloten</div>
+    </div>
+    <div id="s3">
+      <div class="card">
+        <div class="ttl">Rapporten › Horeca <span class="chip blue">Vrijdag</span></div>
+        <div class="kpi">
+          <div><small>Gewerkte uren</small><b>21,5 u</b></div>
+          <div><small>Omzet</small><b>€ 2.140</b></div>
+          <div><small>Personeelskost</small><b>€ 452</b></div>
+          <div id="pct" style="background:#FFF1EA;box-shadow:0 0 0 3px var(--coral) inset"><small>Van de omzet</small><b style="color:#C9452A">21 %</b></div>
+        </div>
+      </div>
+    </div>
+    <div id="s4">
+      <div class="card">
+        <div class="ttl">Betaalwijzen <span class="chip blue">Vrijdag</span></div>
+        <div class="pay"><span>Kaart</span><span class="bar"><i id="p1"></i></span><b>62 %</b></div>
+        <div class="pay"><span>Contant</span><span class="bar"><i id="p2"></i></span><b>29 %</b></div>
+        <div class="pay"><span>Overschrijving</span><span class="bar"><i id="p3"></i></span><b>9 %</b></div>
+      </div>
+    </div>
+  </div>
+  <div class="prog" id="pw"><i id="pi"></i></div>
+  <div class="end" id="end">
+    <img src="../../../logo-navy.png" alt="SellQo" style="height:90px;align-self:flex-start">
+    <h1 class="h" style="font-size:112px">Dag afgesloten.<br><span class="hl">Uren die kloppen.</span></h1>
+    <p class="lead">Vul per medewerker een kost per uur in. Je rapport toont de rest.</p>
+    <div><span class="pill coral" style="font-size:32px">sellqo.app/horeca</span></div>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  const win = (t, a, b) => ease((t - a) / 0.35) * clamp((b - t) / 0.3);
+  const S = 4.286;
+  window.setT = (t) => {
+    $("intro").style.opacity = win(t, 0, S); $("intro").style.transform = `translateY(${(1 - ease(t / 0.5)) * 40}px)`;
+    for (let i = 1; i <= 4; i++) {
+      const a = i * S, b = (i + 1) * S, o = win(t, a, b);
+      $("s" + i).style.opacity = o; $("s" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 60}px)`;
+      $("c" + i).style.opacity = o; $("c" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 30}px)`;
+    }
+    // s1: tik op Sam uitklokken
+    const tp = S + 2.0, r = clamp((t - tp) / 0.5);
+    $("tap1").style.opacity = t > tp && t < tp + 0.5 ? 1 - r : 0; $("tap1").style.transform = `scale(${0.6 + r})`;
+    const out = t > tp + 0.15;
+    $("st1").textContent = out ? "Uitgeklokt" : "Ingeklokt"; $("st1").className = "chip " + (out ? "ok" : "new");
+    $("n1").textContent = out ? "1" : "2";
+    $("b1").style.transform = (t > tp && t < tp + 0.2) ? "scale(.96)" : "none";
+    // s2: toch afsluiten
+    const t2 = 2 * S + 2.0;
+    $("b2").style.transform = (t > t2 && t < t2 + 0.2) ? "scale(.96)" : "none";
+    $("t2").style.opacity = ease((t - t2 - 0.2) / 0.3); $("t2").style.transform = `translateY(${(1 - ease((t - t2 - 0.2) / 0.4)) * 40}px)`;
+    // s3: percentage licht op
+    $("pct").style.transform = `scale(${0.9 + 0.1 * ease((t - 3 * S - 1.2) / 0.35)})`;
+    // s4: balken groeien
+    [[62, "p1"], [29, "p2"], [9, "p3"]].forEach(([w, id], i) => { $(id).style.width = w * ease((t - 4 * S - 0.6 - i * 0.25) / 0.7) + "%"; });
+    $("pw").style.opacity = (t >= S && t < 5 * S + 0.3) ? 1 : 0;
+    $("pi").style.width = Math.min(100, (t - S) / (4 * S) * 100) + "%";
+    $("end").style.opacity = ease((t - 5 * S) / 0.45);
+  };
+</script>
+</body>
+</html>

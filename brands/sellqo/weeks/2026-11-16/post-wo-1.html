@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel kostprijs per glas 1/6</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- tip-carrousel (Ondernemerstips, mini-gids: rekenvoorbeeld). Bron in SellQo: publieke changelog 2026.16g `vat_portie_1` (kostprijs per portie
+     uit een vat of fles: vatprijs, inhoud, portie en verlies; één tik en het is de kostprijs, met meteen je foodcost) en 2026.14x `kaart_food_cost`
+     (foodcost = kostprijs tegenover de verkoopprijs zonder btw; boven 35 % kleurt het getal rood). Alle bedragen zijn een rekenvoorbeeld, geen marktprijzen. -->
+<style>
+  .calc { display:flex; flex-direction:column; gap:0; }
+  .calc .row { font-size:34px !important; padding:24px 0 !important; }
+  .calc .row b { font-family:Poppins; font-weight:700; }
+  .res { background:var(--navy); color:#fff; border-radius:24px; padding:30px 36px; display:flex; justify-content:space-between; align-items:center; font-size:34px; font-weight:600; }
+  .res b { font-family:Poppins; font-size:60px; color:var(--coral); }
+</style>
+</head>
+<body class="dark">
+<img class="logo tl" src="../../logo-white.png" alt="SellQo">
+<div class="counter">1/6</div>
+<div class="blob coral" style="width:820px;height:820px;right:-300px;bottom:-320px"></div>
+<div style="position:absolute;left:var(--pad);right:var(--pad);top:300px;display:flex;flex-direction:column;gap:40px">
+  <div class="kicker" data-slot="kicker" data-label="Bovenregel" data-max="30">Rekenvoorbeeld voor je toog</div>
+  <h1 class="h h-xl" style="font-size:104px" data-slot="titel" data-label="Titel" data-max="50">€ 80 voor een vat.<br><span class="hl">Wat kost dan<br>één glas?</span></h1>
+  <p class="lead" style="max-width:760px" data-slot="tekst" data-label="Tekst" data-max="90">Vier stappen, één getal. Bewaar dit voor je volgende levering.</p>
+</div>
+<div class="swipe" style="color:#fff">Swipe <span style="font-size:34px">→</span></div>
+</body>
+</html>

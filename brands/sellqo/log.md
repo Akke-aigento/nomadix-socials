@@ -2,6 +2,34 @@
 
 Wat er gepost is, per week (maandag). Lees dit vóór je een nieuwe week maakt: geen onderwerp, scène of changelog-item herhalen.
 
+## Week van 2026-11-16
+
+Gemaakt op 15-11 door de weektaak. Instagram **gekoppeld**: alle 7 items `pending_approval` (geen stickers; de drie reels met bibliotheeknummer gaan na "Week goedkeuren" vanzelf online).
+**Drie reels** (Akke, 01-11): do-avond op het sterkste slot, di-middag en za-ochtend, elk een ander format en nummer. Geen vierde reel: de nieuwe changelog-items (2026.15r–16g) zitten in de reels, de carrousel, de story en de vr-post.
+Bron voor claims: de sellqo-repo was niet te clonen vanuit deze sessie (repo niet in de sessie-scope); dezelfde bestanden (`landing.nl.json`, `PublicChangelog.tsx`, claim-audit-skill) zijn read-only gelezen via de Lovable-connector op het SellQo-project (synct main).
+LinkedIn-versies (1200×1200) in `published/2026-11-16/linkedin/`. Meetdata 14 dagen: 12 posts, bereik 0–6, behalve de za-reel 14-11 09:10 (reel-lijst, Black Friday): **bereik 74** (één post, nog geen 48u-score). Geen signalen van Akke.
+Toegepast uit `lessen.md`: tip-carrousel met cta `opslaan` op wo-avond (`exploit`); avond 19:00–21:30 voor carrousel en sterkste reel. Uit de data (zwak signaal, 1 post): za-ochtendreel herhaald (09:20). Reel-formats: geen enkel format van vorige week herhaald (VARIATIE regel 6).
+Geen eigen links in captions (overal "link in bio"), dus geen UTM nodig. Geen prijzen van SellQo in beeld of caption; bedragen in carrousel en reel zijn als rekenvoorbeeld/demo gemarkeerd.
+
+| Dag + uur | Wat | Pijler | Onderwerp | Format / template | Hook | Licht/donker | Bron |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ma 16/11 08:05 — vóór de zaak opengaat | post | Feature | "Dicht met de feestdagen? Hang het aan je deur.": A4 met openingsuren en uitzonderlijke sluitingsdagen aan de deur van Pizzeria Fiamma + knop Afdrukken (A4) | beeld-eerst / feature-deur (nieuw) | vraag | licht (crème) | changelog 2026.15y `uren_print_1`, 2026.15d `opening_hours` |
+| di 17/11 12:20 — lunch, kort kijkmoment | reel (21,3 s, Eerlijk Werk) | Feature | "Voor. En nu.": apart afrekenen bij Afrekenen, vaste klanten altijd in je tabs, reden Andere kort invullen | reel-voor-na / reel-voorna (nieuw) | contrast | fel (koraal), donkere eindkaart | changelog 2026.15z `split_pay_1`, `vaste_tabs_1`, 2026.16f `void_note_1` |
+| wo 18/11 12:40 — lunch, ander piekmoment dan de carrousel | story | Build in public | "Je wachtwoord. Plus zes cijfers.": tweestapsverificatie in 3 stappen | typografisch / story-code (nieuw) | statement | donker | changelog 2026.15w `tweestap_1` |
+| wo 18/11 20:45 — na sluiting, administratietijd (bewaren) | carrousel (6) | Ondernemerstips | "€ 80 voor een vat. Wat kost dan één glas?": rekenvoorbeeld vatprijs → verlies → portie → foodcost, "vraag je boekhouder" + SellQo-slide | mini-gids / tip-cover + tip-step + cta-dark | cijfer | donker + licht | changelog 2026.16g `vat_portie_1`, 2026.14x `kaart_food_cost` |
+| do 19/11 21:15 — sterkste slot (avond) | reel (24,0 s, Bouwlog) | Feature | "23:10. Laatste gast is weg.": Z-rapport toont wie nog ingeklokt is, zaakvoerder sluit toch af, Rapporten › Horeca (uren, personeelskost, omzet, %), betaalwijzen | reel-flow / reel-flow (donkere variant) | verhaal | donker, lichte eindkaart | changelog 2026.16f `z_uitklokken_1`, 2026.16g `personeelskost_1` |
+| vr 20/11 22:05 **(test)** — na het venster, laat op vrijdag; nog nooit geprobeerd | post | Build in public | "Je beheer luistert beter naar jou.": zoeken in instellingen (ook webshops/events), app volgt je taal, zelf je account verwijderen | lijst / buildlog | belofte | donker | changelog 2026.15s `zoek_sporen_1`, 2026.15u `app_taal_1`, 2026.15t `account_verwijderen_1` |
+| za 21/11 09:20 — zaterdag kort en vroeg (za-reel 14-11 haalde bereik 74) | reel (20,4 s, Knipoog) | Feature | "POV: Zaterdag. Je zaak is dicht. Je gsm niet.": meldingen pauzeren (een uur / tot morgen 10:00 / tot je ze zelf aanzet), geldt in al je zaken, kassa blijft piepen | reel-pov / reel-pov | pov | licht, donkere eindkaart | changelog 2026.16a `melding_pauze_1` |
+
+Labels (`content_tags`), alle `bucket: explore` behalve wo-carrousel (`exploit`) en vr (`test`, `experiment: tijd`):
+ma `feature/beeld-eerst/feature-deur/vraag/middel/link` · di `feature/reel-voor-na/reel-voorna/contrast/middel/link` · wo-story `build/typografisch/story-code/statement/kort/geen` ·
+wo `tips/tip/tip-step/cijfer/lang/opslaan` · do `feature/reel-flow/reel-flow/verhaal/lang/delen` · vr `build/lijst/buildlog/belofte/middel/link` · za `feature/reel-pov/reel-pov/pov/kort/profiel`.
+
+Gebruikte changelog-items: `uren_print_1`, `opening_hours`, `split_pay_1`, `vaste_tabs_1`, `void_note_1`, `tweestap_1`, `vat_portie_1`, `kaart_food_cost`, `z_uitklokken_1`, `personeelskost_1`, `zoek_sporen_1`, `app_taal_1`, `account_verwijderen_1`, `melding_pauze_1`.
+Gebruikte scènes: openingsuren-A4 aan de deur (Fiamma), kassa voor/nu (tafel 6, tabs Mariette/Dirk/Voetbalploeg, "omgestoten glas"), tweestapscode, vat 20 l / € 80 / 25 cl rekenvoorbeeld, Z-rapport met Sam en Lien + rapport vrijdag, meldingen pauzeren (Fiamma + Atelier Nord). Geen foto's gebruikt.
+Muziek: di Eerlijk Werk (96 BPM, intro 4 tellen, scènes 8 tellen = 5 s), do Bouwlog (112 BPM, 8 tellen = 4,286 s), za Knipoog (104 BPM, 6 tellen = 3,462 s); alle drie start 0 s.
+Nog niet gebruikt: `reservatie_herinnering_1`, `menukaft_a4_1`, `menu_vrij_1` (wifi-code op je menukaart), `setup_skip_1`, `vrije_ruimte_1` (strook naast het zaalplan), `tabs_sort_2`, `personeel_archief_1`, `kassa_wissel_1`, `kassa_knop_1`, `table_together`, `qr_menu_allergen_filter`, `qr_order_progress`, `qr_staff_call`, `dining_courses`, `kassa_staff_hours`, `settings_search`, `addon_self_serve`, `printful_auto_forward`, `photo_order`, demowinkels (/voorbeelden), overstappen, prijzen per plan.
+
 ## Week van 2026-11-09
 
 Gemaakt op 08-11 door de weektaak. Instagram **gekoppeld**: alle 7 items `pending_approval` (geen stickers deze week; de drie reels met bibliotheeknummer gaan na "Week goedkeuren" vanzelf online).

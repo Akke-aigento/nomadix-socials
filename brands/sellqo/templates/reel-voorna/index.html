@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="21.25" data-fps="30">
+<title>Reel: kassa, voor en nu</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- reel-voorna (pijler Feature, nieuw reelformat: per scène een "Voor"-kaart die door een "Nu"-kaart wordt overschoven; fel koraal).
+     Bron: publieke changelog 2026.15z `split_pay_1` (apart afrekenen zit nu bij Afrekenen, bovenaan; niet meer zoeken in het menu met de drie
+     puntjes), 2026.15z `vaste_tabs_1` (vaste klanten altijd in de rij met tabs bovenaan de kassa, ook zonder iets open; nemen geen plaats meer in
+     op je zaalplan) en 2026.16f `void_note_1` (reden Andere bij annuleren: kort invullen waarom, bv. een omgestoten glas).
+     Namen en tafels zijn demo-inhoud. Muziek: Eerlijk Werk (96 BPM): intro 4 tellen = 2,5 s, scènes 8 tellen = 5 s, eindkaart vanaf 17,5 s. -->
+<style>
+  body { background:var(--coral); }
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); }
+  .cap { position:absolute; top:360px; left:var(--pad); right:var(--pad); height:240px; }
+  .cap h1 { position:absolute; left:0; right:0; opacity:0; font-size:62px; color:#fff; }
+  .cap .u { color:var(--navy); }
+  .scene { position:absolute; left:var(--pad); right:var(--pad); top:640px; height:900px; }
+  .scene > div { position:absolute; left:0; right:0; top:0; height:900px; opacity:0; }
+  .intro { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:36px; color:#fff; }
+  .k { position:absolute; left:0; right:0; border-radius:30px; padding:40px 44px; }
+  .k.voor { top:0; background:#FFE9E2; color:#7A5A55; box-shadow:0 0 0 2px rgba(0,20,91,.08); }
+  .k.nu { top:300px; background:#fff; color:var(--navy); box-shadow:0 40px 70px -24px rgba(0,20,91,.55); }
+  .tag { font-family:Poppins; font-weight:700; font-size:26px; letter-spacing:.12em; text-transform:uppercase; margin-bottom:20px; }
+  .k.voor .tag { color:#A9786E; }
+  .k.nu .tag { color:var(--coral); }
+  .k .t { font-family:Poppins; font-weight:600; font-size:40px; line-height:1.2; }
+  .k .s { font-size:26px; margin-top:10px; color:var(--mute); }
+  .menu { margin-top:22px; display:flex; flex-direction:column; gap:10px; }
+  .menu span { font-size:26px; padding:14px 18px; border-radius:12px; background:rgba(0,0,0,.04); }
+  .tabs { display:flex; gap:12px; margin-top:24px; flex-wrap:wrap; }
+  .tabs span { font-size:26px; font-weight:600; padding:14px 22px; border-radius:999px; background:#E4E8F7; }
+  .tabs span.v { background:var(--navy); color:#fff; }
+  .seg { display:flex; gap:12px; margin-top:24px; }
+  .seg span { flex:1; text-align:center; font-size:28px; font-weight:600; padding:20px; border-radius:16px; background:#F4F5FB; }
+  .seg span.on { background:var(--navy); color:#fff; }
+  .inp { margin-top:20px; font-size:30px; padding:22px 24px; border-radius:16px; box-shadow:0 0 0 3px var(--coral) inset; }
+  .end { position:absolute; inset:0; background:var(--deep); color:#fff; opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+  .end .hl { background:none; color:var(--coral); }
+  .prog { position:absolute; left:var(--pad); right:var(--pad); bottom:330px; height:6px; border-radius:3px; background:rgba(255,255,255,.35); }
+  .prog i { display:block; height:100%; border-radius:3px; background:var(--navy); width:0; }
+</style>
+</head>
+<body>
+  <div class="blob" style="width:900px;height:900px;right:-520px;top:-380px;background:#FF9478"></div>
+  <div class="top"><span style="display:inline-block;background:#fff;padding:14px 24px;border-radius:20px"><img src="../../logo-navy.png" alt="SellQo" style="height:52px;display:block"></span></div>
+
+  <div class="intro" id="intro">
+    <div class="kicker" style="font-size:34px;color:var(--navy)">Kassa, november</div>
+    <h1 class="h" style="font-size:132px">Voor.<br><span style="color:var(--navy)">En nu.</span></h1>
+    <p class="lead">Drie kleine dingen, elke dienst.</p>
+  </div>
+
+  <div class="cap">
+    <h1 class="h" id="c1">Een tafel wil<br><span class="u">apart betalen.</span></h1>
+    <h1 class="h" id="c2">Je vaste klanten<br><span class="u">altijd bij de hand.</span></h1>
+    <h1 class="h" id="c3">Een lijn annuleren<br><span class="u">met reden Andere.</span></h1>
+  </div>
+
+  <div class="scene">
+    <div id="s1">
+      <div class="k voor"><div class="tag">Voor</div><div class="t">⋯ › Apart afrekenen</div><div class="s">Verstopt in het menu met de drie puntjes.</div></div>
+      <div class="k nu" id="n1"><div class="tag">Nu</div><div class="t">Tafel 6 › Afrekenen</div>
+        <div class="seg"><span class="on">Apart afrekenen</span></div>
+        <div class="s">Bovenaan, waar je het zoekt.</div></div>
+    </div>
+    <div id="s2">
+      <div class="k voor"><div class="tag">Voor</div><div class="t">Vaste klanten op je zaalplan</div><div class="s">Tussen je tafels.</div></div>
+      <div class="k nu" id="n2"><div class="tag">Nu</div><div class="t">Altijd in je tabs, bovenaan de kassa</div>
+        <div class="tabs"><span class="v">Mariette</span><span class="v">Dirk</span><span class="v">Voetbalploeg</span><span>Tab: Kevin</span></div>
+        <div class="s">Ook als ze niets openstaan hebben.</div></div>
+    </div>
+    <div id="s3">
+      <div class="k voor"><div class="tag">Voor</div><div class="t">Reden: Andere</div><div class="s">En achteraf? Geen idee meer.</div></div>
+      <div class="k nu" id="n3"><div class="tag">Nu</div><div class="t">Reden: Andere</div>
+        <div class="inp" id="typ">&nbsp;</div>
+        <div class="s">Zo weet je achteraf wat er gebeurde.</div></div>
+    </div>
+  </div>
+  <div class="prog" id="pw"><i id="pi"></i></div>
+  <div class="end" id="end">
+    <img src="../../logo-white.png" alt="SellQo" style="height:90px;align-self:flex-start">
+    <h1 class="h" style="font-size:112px">Kleine dingen.<br><span class="hl">Elke dienst.</span></h1>
+    <p class="lead">SellQo Kassa, voor horecazaken.</p>
+    <div><span class="pill coral" style="font-size:32px">sellqo.app/horeca</span></div>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  const win = (t, a, b) => ease((t - a) / 0.35) * clamp((b - t) / 0.3);
+  const I = 2.5, S = 5.0, TXT = "omgestoten glas";
+  window.setT = (t) => {
+    $("intro").style.opacity = win(t, 0, I); $("intro").style.transform = `translateY(${(1 - ease(t / 0.5)) * 40}px)`;
+    for (let i = 1; i <= 3; i++) {
+      const a = I + (i - 1) * S, b = a + S, o = win(t, a, b);
+      $("s" + i).style.opacity = o; $("s" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 60}px)`;
+      $("c" + i).style.opacity = o; $("c" + i).style.transform = `translateY(${(1 - ease((t - a) / 0.45)) * 30}px)`;
+      // Nu-kaart schuift op tel 4 over de Voor-kaart
+      const k = ease((t - a - 1.875) / 0.5);
+      $("n" + i).style.opacity = k; $("n" + i).style.transform = `translateY(${(1 - k) * 220}px)`;
+    }
+    // s3: typen
+    const ts = I + 2 * S + 2.6, n = Math.max(0, Math.min(TXT.length, Math.floor((t - ts) / 0.07)));
+    $("typ").innerHTML = n ? TXT.slice(0, n) : "&nbsp;";
+    $("pw").style.opacity = (t >= I && t < I + 3 * S + 0.3) ? 1 : 0;
+    $("pi").style.width = Math.min(100, (t - I) / (3 * S) * 100) + "%";
+    $("end").style.opacity = ease((t - I - 3 * S) / 0.45);
+  };
+</script>
+</body>
+</html>

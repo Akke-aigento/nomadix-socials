@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Feature: openingsuren aan de deur</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- feature-deur (Feature, nieuwe variant: beeld-eerst, A4-blad aan een deur, licht). Bron: publieke changelog 2026.15y `uren_print_1`
+     (onder Openingsuren een knop Afdrukken (A4); PDF met je logo, je huiskleur, je uren per dag en je komende uitzonderlijke sluitingsdagen;
+     uren wijzigen = in een paar tikken een nieuwe afdrukken) + 2026.15d `opening_hours` (per dag één tot drie blokken, uitzonderlijke
+     sluitingsdagen met een korte reden). Pizzeria Fiamma = landing.scene.horeca; uren en sluitingsdagen zijn demo-inhoud. -->
+<style>
+  .door { position:absolute; left:80px; top:420px; width:600px; height:1000px; border-radius:26px 26px 0 0; background:linear-gradient(90deg,#2B3566,#1D2552); box-shadow:inset 0 0 0 14px #3A4579; }
+  .glass { position:absolute; left:40px; right:40px; top:40px; height:720px; border-radius:14px; background:linear-gradient(160deg,#DDE6F4 0%,#B9C6E0 60%,#A9B7D6 100%); }
+  .knob { position:absolute; right:14px; top:800px; width:30px; height:110px; border-radius:15px; background:#C9CEE6; }
+  .sheet { position:absolute; left:36px; top:60px; width:448px; background:#fff; border-radius:4px; box-shadow:0 16px 30px -10px rgba(0,0,0,.35); padding:30px 30px 24px; color:var(--navy); transform:rotate(-1.5deg); }
+  .tape { position:absolute; width:110px; height:34px; background:rgba(255,236,200,.85); top:-14px; }
+  .band { height:12px; border-radius:6px; background:#C8402A; margin:12px 0 18px; }
+  .fl { font-family:Poppins; font-weight:700; font-size:30px; display:flex; align-items:center; gap:12px; }
+  .fl i { width:42px; height:42px; border-radius:50%; background:#C8402A; display:block; }
+  .d { display:flex; justify-content:space-between; font-size:16px; padding:7px 0; border-top:1px solid var(--line); }
+  .d b { font-weight:600; }
+  .d .x { color:var(--mute); }
+  .cl { margin-top:14px; padding:12px 14px; border-radius:10px; background:#FBEDE8; font-size:16px; line-height:1.45; }
+  .cl b { color:#C8402A; }
+</style>
+</head>
+<body>
+  <div class="blob soft" style="width:820px;height:820px;right:-300px;top:500px"></div>
+  <img class="logo tl" src="../../logo-navy.png" alt="SellQo">
+  <div style="position:absolute;left:var(--pad);right:var(--pad);top:180px">
+    <h1 class="h h-m" data-slot="titel" data-label="Titel" data-max="50">Dicht met de feestdagen?<br><span class="hl">Hang het aan je deur.</span></h1>
+  </div>
+
+  <div class="door">
+    <div class="glass">
+      <div class="sheet">
+        <span class="tape" style="left:20px;transform:rotate(-8deg)"></span><span class="tape" style="right:20px;transform:rotate(7deg)"></span>
+        <div class="fl"><i></i>Pizzeria Fiamma</div>
+        <div class="band"></div>
+        <div style="font-family:Poppins;font-weight:600;font-size:20px;margin-bottom:6px">Openingsuren</div>
+        <div class="d"><b>Maandag</b><span class="x">gesloten</span></div>
+        <div class="d"><b>Dinsdag</b><span>11:30–14:00 · 17:30–22:00</span></div>
+        <div class="d"><b>Woensdag</b><span>11:30–14:00 · 17:30–22:00</span></div>
+        <div class="d"><b>Donderdag</b><span>11:30–14:00 · 17:30–22:00</span></div>
+        <div class="d"><b>Vrijdag</b><span>11:30–14:00 · 17:30–23:00</span></div>
+        <div class="d"><b>Zaterdag</b><span>17:00–23:00</span></div>
+        <div class="d"><b>Zondag</b><span>17:00–22:00</span></div>
+        <div class="cl"><b>Uitzonderlijk gesloten</b><br>24 t.e.m. 26 december · kerstverlof<br>1 januari · nieuwjaar</div>
+      </div>
+    </div>
+    <div class="knob"></div>
+  </div>
+
+  <div class="card tilt-r" style="right:60px;top:600px;width:360px">
+    <div class="ttl">Openingsuren</div>
+    <div class="row"><span>Uren per dag</span><span class="chip ok">ingevuld</span></div>
+    <div class="row"><span>Sluitingsdagen</span><span class="chip ok">2</span></div>
+    <div class="btn" style="width:100%;margin-top:12px">Afdrukken (A4)</div>
+  </div>
+  <div class="toast" style="right:60px;top:960px;width:360px"><span class="tick">✓</span>PDF met je logo en je huiskleur</div>
+
+  <div style="position:absolute;left:var(--pad);right:var(--pad);bottom:64px;display:flex;align-items:center;justify-content:flex-end;gap:24px">
+    <span class="pill coral" data-slot="cta" data-label="Knop" data-max="16">sellqo.app/horeca</span>
+  </div>
+</body>
+</html>
