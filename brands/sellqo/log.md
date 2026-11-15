@@ -23,12 +23,13 @@ Geen eigen links in captions (overal "link in bio"), dus geen UTM nodig. Geen pr
 
 Labels (`content_tags`), alle `bucket: explore` behalve wo-carrousel (`exploit`) en vr (`test`, `experiment: tijd`):
 ma `feature/beeld-eerst/feature-deur/vraag/middel/link` · di `feature/reel-voor-na/reel-voorna/contrast/middel/link` · wo-story `build/typografisch/story-code/statement/kort/geen` ·
-wo `tips/tip/tip-step/cijfer/lang/opslaan` · do `feature/reel-flow/reel-flow/verhaal/lang/delen` · vr `build/lijst/buildlog/belofte/middel/link` · za `feature/reel-pov/reel-pov/pov/kort/profiel`.
+wo `tips/tip/tip-step/cijfer/lang/opslaan` · do `feature/reel-flow/reel-flow/verhaal/lang/delen` · vr `build/lijst/buildlog/belofte/lang/link` · za `feature/reel-pov/reel-pov/pov/kort/profiel`.
 
 Gebruikte changelog-items: `uren_print_1`, `opening_hours`, `split_pay_1`, `vaste_tabs_1`, `void_note_1`, `tweestap_1`, `vat_portie_1`, `kaart_food_cost`, `z_uitklokken_1`, `personeelskost_1`, `zoek_sporen_1`, `app_taal_1`, `account_verwijderen_1`, `melding_pauze_1`.
 Gebruikte scènes: openingsuren-A4 aan de deur (Fiamma), kassa voor/nu (tafel 6, tabs Mariette/Dirk/Voetbalploeg, "omgestoten glas"), tweestapscode, vat 20 l / € 80 / 25 cl rekenvoorbeeld, Z-rapport met Sam en Lien + rapport vrijdag, meldingen pauzeren (Fiamma + Atelier Nord). Geen foto's gebruikt.
 Muziek: di Eerlijk Werk (96 BPM, intro 4 tellen, scènes 8 tellen = 5 s), do Bouwlog (112 BPM, 8 tellen = 4,286 s), za Knipoog (104 BPM, 6 tellen = 3,462 s); alle drie start 0 s.
 Nog niet gebruikt: `reservatie_herinnering_1`, `menukaft_a4_1`, `menu_vrij_1` (wifi-code op je menukaart), `setup_skip_1`, `vrije_ruimte_1` (strook naast het zaalplan), `tabs_sort_2`, `personeel_archief_1`, `kassa_wissel_1`, `kassa_knop_1`, `table_together`, `qr_menu_allergen_filter`, `qr_order_progress`, `qr_staff_call`, `dining_courses`, `kassa_staff_hours`, `settings_search`, `addon_self_serve`, `printful_auto_forward`, `photo_order`, demowinkels (/voorbeelden), overstappen, prijzen per plan.
+In SellQo gezet op 15-11: 7 rijen, alle `pending_approval` (3 reels met `video_url` = `-muziek.mp4` en `music_hint.track`), recepten via net.http_get (md5 gecontroleerd), uurcontrole zonder dubbels, melding `social_posts_ready` verstuurd.
 
 ## Week van 2026-11-09
 
