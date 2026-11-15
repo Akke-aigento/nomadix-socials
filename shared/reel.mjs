@@ -2,7 +2,7 @@
 // en een functie window.setT(seconden) die de pagina deterministisch op tijdstip t zet.
 // Elke frame wordt een screenshot; ffmpeg maakt er MP4's van (H.264 yuv420p, AAC, moov vooraan).
 //
-// Gebruik: node shared/reel.mjs <index.html> <uitvoer-basis> [--music <mp3/m4a/wav>] [--music-start <s>]
+// Gebruik: node shared/reel.mjs <index.html> <uitvoer-basis> [--music <mp3/m4a/wav>] [--music-start <s>] [--sfx <bestand>@<s>[@<vol>]]…
 //   → <uitvoer-basis>-stil.mp4    altijd: stil audiospoor, voor "zelf muziek kiezen" in de Instagram-app
 //   → <uitvoer-basis>-muziek.mp4  met --music: nummer vanaf --music-start, fade-in 0,3 s, fade-out 1,5 s
 // Elke MP4 blijft onder 9,5 MB (SellQo-opslag aanvaardt maximaal 10 MB per bestand).
@@ -20,6 +20,12 @@ const flag = (name) => { const i = argv.indexOf(name); return i >= 0 ? argv[i + 
 const positional = argv.filter((a, i) => !a.startsWith("--") && !(i > 0 && argv[i - 1].startsWith("--")));
 const [src, outArg] = positional;
 const music = flag("--music");
+// --sfx <bestand>@<seconde>[@<volume>] mag meermaals: geluidseffecten (ping, tik, trein …) op een vast moment, over de muziek heen.
+const sfx = argv.flatMap((a, i) => (a === "--sfx" ? [argv[i + 1]] : [])).map((v) => {
+  const [file, at, vol] = v.split("@");
+  if (!fs.existsSync(file)) { console.error(`SFX niet gevonden: ${file}`); process.exit(1); }
+  return { file, at: Number(at ?? 0), vol: Number(vol ?? 1) };
+});
 const musicStart = Number(flag("--music-start") ?? 0);
 if (!src || !outArg) {
   console.error("Gebruik: node reel.mjs <index.html> <uitvoer-basis> [--music <bestand>] [--music-start <s>]");
@@ -69,13 +75,25 @@ function ffmpeg(args, out) {
   console.log(`✓ ${path.relative(process.cwd(), out)} (${w}x${h}, ${dur}s, ${fps} fps, ${(size / 1048576).toFixed(1)} MB)`);
 }
 ffmpeg([...video, "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100", "-map", "0:v", "-map", "1:a", ...enc], `${base}-stil.mp4`);
-if (music) {
+if (music || sfx.length) {
   const fadeOut = Math.max(0, dur - 1.5);
-  ffmpeg([
-    ...video, "-ss", String(musicStart), "-i", music,
-    "-map", "0:v", "-map", "1:a",
-    "-af", `afade=t=in:st=0:d=0.3,afade=t=out:st=${fadeOut}:d=1.5,loudnorm=I=-14:TP=-1.5:LRA=11`,
-    ...enc,
-  ], `${base}-muziek.mp4`);
+  const inputs = [...video];
+  const parts = [];
+  let n = 1;
+  if (music) {
+    inputs.push("-ss", String(musicStart), "-i", music);
+    parts.push(`[${n}:a]afade=t=in:st=0:d=0.3,afade=t=out:st=${fadeOut}:d=1.5,volume=${sfx.length ? 0.8 : 1}[m]`);
+    n++;
+  }
+  sfx.forEach((s, k) => {
+    inputs.push("-i", s.file);
+    const ms = Math.round(s.at * 1000);
+    parts.push(`[${n}:a]adelay=${ms}|${ms},volume=${s.vol}[s${k}]`);
+    n++;
+  });
+  const labels = [...(music ? ["[m]"] : []), ...sfx.map((_, k) => `[s${k}]`)];
+  const mix = labels.length > 1 ? `${labels.join("")}amix=inputs=${labels.length}:duration=longest:normalize=0[mx];[mx]` : `${labels[0]}`;
+  const graph = `${parts.join(";")};${mix}apad,loudnorm=I=-14:TP=-1.5:LRA=11[a]`;
+  ffmpeg([...inputs, "-filter_complex", graph, "-map", "0:v", "-map", "[a]", ...enc], `${base}-muziek.mp4`);
 }
 fs.rmSync(tmp, { recursive: true, force: true });

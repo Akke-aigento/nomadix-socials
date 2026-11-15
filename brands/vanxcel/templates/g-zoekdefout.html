@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Spot the mistake: fuse placement</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- genre: "zoek de fout" op ruitjespapier (licht). Bron: brand-vanxcel §5 know-how "zekering binnen 18 cm".
+     Antwoord komt in de caption en in een story de dag erna. -->
+<style>
+  body { background:#f4f1e8; color:#1b1b1b; }
+  .grid { position:absolute; inset:0; background:
+      linear-gradient(rgba(0,136,148,.18) 2px, transparent 2px) 0 0/54px 54px,
+      linear-gradient(90deg, rgba(0,136,148,.18) 2px, transparent 2px) 0 0/54px 54px; }
+  .top { position:absolute; left:var(--pad); top:80px; }
+  .top .display { font-size:150px; color:#0A0A0A; }
+  .top p { font:500 32px Inter; color:#444; margin-top:8px; }
+  svg { position:absolute; left:40px; top:400px; }
+  .lbl { font-family:"Bebas Neue"; font-size:44px; fill:#0A0A0A; }
+  .sm { font-family:Inter; font-weight:600; font-size:26px; fill:#555; }
+  .foot { position:absolute; left:var(--pad); right:var(--pad); bottom:70px; display:flex; justify-content:space-between; align-items:flex-end; }
+  .foot p { font:600 30px Inter; color:#0A0A0A; }
+  .foot img { height:46px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="top">
+    <div class="display">Spot the mistake</div>
+    <p>One thing in this sketch can start a fire.</p>
+  </div>
+  <svg width="1000" height="700" viewBox="0 0 1000 700" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- accu -->
+    <rect x="40" y="200" width="250" height="300" rx="14" stroke="#0A0A0A" stroke-width="7"/>
+    <rect x="80" y="170" width="50" height="30" stroke="#0A0A0A" stroke-width="7"/>
+    <rect x="200" y="170" width="50" height="30" stroke="#0A0A0A" stroke-width="7"/>
+    <text x="70" y="330" class="lbl">LiFePO4</text><text x="70" y="380" class="sm">12V</text>
+    <text x="96" y="160" class="lbl" style="font-size:38px">+</text>
+    <!-- plus-kabel lang -->
+    <path d="M105 170 C 105 80, 300 60, 420 70 L 640 70" stroke="#c0392b" stroke-width="12"/>
+    <!-- zekering ver weg -->
+    <rect x="640" y="40" width="130" height="60" rx="12" stroke="#0A0A0A" stroke-width="7" fill="#fff"/>
+    <path d="M660 70 h90" stroke="#0A0A0A" stroke-width="5" stroke-dasharray="10 8"/>
+    <text x="650" y="140" class="sm">fuse</text>
+    <path d="M770 70 L 900 70 L 900 260" stroke="#c0392b" stroke-width="12"/>
+    <!-- maatlijn -->
+    <path d="M105 610 L 705 610" stroke="#008894" stroke-width="5"/>
+    <path d="M105 590 v40 M705 590 v40" stroke="#008894" stroke-width="5"/>
+    <text x="330" y="665" class="lbl" style="fill:#008894">±60 cm</text>
+    <!-- busbar / converter -->
+    <rect x="820" y="260" width="160" height="240" rx="14" stroke="#0A0A0A" stroke-width="7"/>
+    <text x="842" y="390" class="lbl" style="font-size:36px">LOADS</text>
+    <!-- min -->
+    <path d="M225 170 C 225 120, 330 140, 330 540 L 900 540 L 900 500" stroke="#0A0A0A" stroke-width="12"/>
+    <circle cx="560" cy="300" r="70" stroke="#F59E0B" stroke-width="6" stroke-dasharray="4 14"/>
+    <text x="545" y="320" class="lbl" style="fill:#F59E0B;font-size:64px">?</text>
+  </svg>
+  <div class="foot">
+    <p>Answer in the caption.</p>
+    <img src="../logo-black.svg" alt="VanXcel">
+  </div>
+</body>
+</html>

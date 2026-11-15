@@ -1,5 +1,37 @@
 # Muziek voor reels (alle merken)
 
+## v2 (14 nov 2026): geluid met karakter
+
+Beslissing Akke: "muziek is wat saai nu, maak er echt iets van." De eerste reeks was veilig: per merk zes sferen
+(akoestisch, lo-fi, pop, funk). Vanaf nu:
+
+1. **Genrewiel voor muziek.** Elk merk krijgt naast de bestaande sferen een reeks verrassende genres (tabel "Reeks 2" onderaan).
+   Regel: nooit twee reels na elkaar in hetzelfde genre, minstens 3 verschillende genres per maand per merk, en het genre
+   van de muziek past bij het genre van de reel (`GENRES.md` §5): een `ping`-reel krijgt percussie, een `tijdreis` iets dat bouwt.
+2. **Structuur in de prompt.** Vraag om wat de montage nodig heeft: "quiet intro for 2 seconds, then the full beat",
+   "big hit at 15 seconds, then a clean ending". Zet daarna de knippen op de beat (`SCENE = 60 / bpm` per tel).
+3. **Geluidseffecten (SFX) als tweede laag.** `shared/reel.mjs` mengt nu `--sfx <bestand>@<seconde>[@<volume>]` over de muziek
+   (meermaals mogelijk), of zonder muziek voor een reel die enkel op geluid draait (ping van een bestelling, bon die print,
+   camera-flits, trein, de motor van Sandy). SFX-bestanden in `brands/<slug>/sfx/` of `shared/sfx/` met een `sfx.json` (bron, licentie).
+   Bron: zie "SFX-bron" hieronder.
+4. **Klankhandtekening (sting).** Per merk één kort herkenbaar slot van ±2 s (bv. Loveke: ukelele + handklap, VanXcel: diepe
+   drone + metalen tik, SellQo: kassabel, Studio Akke: toetsenbordtik + synthblip, Fonske: koperstoot). Altijd hetzelfde,
+   op het einde van elke reel via `--sfx sting.mp3@<duur−2>`. Zo herken je het merk met je ogen dicht.
+5. **Echte stem of echt geluid van Akke** (optioneel): een spraakmemo of een opname uit de zaak maakt een reel meteen echter
+   dan om het even welk nummer.
+6. Trending audio uit de Instagram-app blijft handwerk (API kan het niet).
+
+### SFX-bron (voorstel WATCHTOWER-SFX-1, wacht op go van Akke)
+
+- ElevenLabs heeft naast Music ook **Sound Effects** (geluid uit een korte omschrijving, 0,5 tot 22 s, commercieel bruikbaar).
+  De huidige sleutel `ELEVENLABS_MUSIC_API_KEY` mag enkel Music Generation. Nodig:
+  1. Akke: in ElevenLabs een sleutel `nomadix-sfx` met enkel **Sound Effects**, als secret `ELEVENLABS_SFX_API_KEY` in Watchtower.
+  2. Watchtower: route `/api/public/sfx-compose` naar het model van `music-compose` (zelfde `x-cron-secret`, zelfde bucket
+     `social-music`, map `sfx/<merk>/`), body `{ name, prompt, duration_s }`.
+  3. Eerste set per merk (±10 per merk): pint tappen, glazen klinken, kassabel, bonprinter, gsm-tik, trein op de rails, envelop
+     openen, polaroid-flits, motor van een oude 4x4, grind onder banden, toetsenbord, muisklik, menigte die juicht.
+- Tot dan: geen SFX uit willekeurige sites halen (licentie). Wel toegelaten: geluid dat Akke zelf opneemt.
+
 Stand: 28 okt 2026. Beslissing Akke: reels met muziek gaan **volledig automatisch**, net als posts en stories zonder sticker. Daarvoor zit de muziek al in de MP4 (`-muziek.mp4` → `video_url`). Muziek uit de Instagram-bibliotheek kan via de API niet; trending audio blijft dus handwerk ("Ik kies zelf muziek").
 
 ## Waar
@@ -45,6 +77,29 @@ Het script zet de luidheid gelijk (-14 LUFS), maakt er mp3 192 kbps van (max 5 M
 5. `music_hint.songs` (3 trending nummers) is dan **optioneel**: enkel als je een goede actuele bron hebt, voor wie toch zelf muziek wil kiezen.
 6. Voeg `"<maandag> reel-<onderwerp>"` toe aan `used` en noteer het nummer in `log.md`.
 7. Geen passend nummer (lege bibliotheek of geen enkele sfeer past): zoals vroeger `manual` + `music`, en meld het aan Akke ("bibliotheek <merk> aanvullen: <sfeer>").
+
+## Reeks 2 (14 nov 2026): verrassende genres + stings
+
+Gemaakt via Watchtower, model `music_v2_5`, 30 s, in `tracks.json` met de volledige prompt. De stings staan als `sting.mp3`
+in de muziekmap (niet in `tracks.json`, ze zijn geen nummer): max 3,5 s, eindigt in stilte.
+
+| Merk | Titel | Genre | BPM | Past bij reelformat |
+|---|---|---|---|---|
+| Loveke | Balkan Trein | accordeonfolk, treinritme | 132 | `parallax`, `zoom-uit` (de treinreis) |
+| Loveke | Hartje | 8-bit chiptune | 140 | `stop-motion`, `fotohokje`, `quiz` |
+| VanXcel | Steppe Strings | getokkelde luit + drone, bouwt op | 100 | `tijdreis`, `kaart-tekent` |
+| VanXcel | Nachtrit | jaren-80 synthwave | 108 | `rauwe-clip` bij nacht, `slot` |
+| SellQo | Kassa Percussie | funk met kassabel en bonprinter als drums | 112 | `ping`, `bon-print`, `pov-tik` |
+| SellQo | Terras | bossa nova | 92 | horeca, `dag-in-het-leven` |
+| Studio Akke | Typemachine | hiphop uit typemachine en muisklikken | 90 | `bouwwerf`, `scroll` |
+| Studio Akke | Glitch | glitch-pop met drop | 140 | `glitch` (404) |
+| Fonske | Straatfanfare | Belgische straatfanfare | 126 | `kaartflip`, `aftellen` |
+| Fonske | Nachtjacht | surfrock | 150 | `kaart-tekent`, `rauwe-clip` |
+
+Ideeën voor reeks 3 (telkens 2 per merk, nooit een artiest in de prompt): Loveke: Franse musette-wals, lo-fi bossa voor twee,
+kinderliedjes-glockenspiel (bodysuit); VanXcel: Georgische meerstemmige zang als instrumentale bewerking (strijkers), desert blues-gitaar,
+industriële percussie uit gereedschap; SellQo: swing big band "openingsuur", minimal techno uit scannerbiepjes, schlager-polka (knipoog);
+Studio Akke: ambient piano, drum and bass, vaporwave; Fonske: ska met blazers, Ierse pubfolk, middeleeuwse luit en trommel (Leuven Lore 1225).
 
 ## Prompts (eerste reeks, 6 per merk)
 

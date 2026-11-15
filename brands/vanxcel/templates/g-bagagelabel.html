@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Luggage tag: Issyk Kul, day 80</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- genre: object uit het echte leven (bagagelabel) op een full-bleed reisfoto.
+     Feiten: media.json (vx-2022-06-20-kyrgyzstan-0864, dag 80, Issyk Kul) + brand-vanxcel §4 (Land Cruiser 1984 "Sandy", 120Ah LiFePO4). -->
+<style>
+  .photo { position:absolute; inset:0; background:url("../media/vx-2022-06-20-kyrgyzstan-0864.jpg") center 60%/cover; }
+  .shade { position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.0) 40%, rgba(0,0,0,.55)); }
+  .string { position:absolute; left:770px; top:-40px; width:6px; height:330px; background:#d9c7a3; transform:rotate(18deg); transform-origin:top; box-shadow:2px 0 0 rgba(0,0,0,.2); }
+  .tag { position:absolute; left:470px; top:200px; width:520px; height:1010px; transform:rotate(9deg);
+    background: linear-gradient(160deg,#d8b98a,#c49d68); color:#2a1d0e; padding:150px 48px 40px;
+    clip-path: polygon(22% 0, 78% 0, 100% 9%, 100% 100%, 0 100%, 0 9%); box-shadow: 0 0 0 rgba(0,0,0,0);
+    filter: drop-shadow(18px 24px 0 rgba(0,0,0,.35)); }
+  .hole { position:absolute; left:50%; top:46px; width:64px; height:64px; margin-left:-32px; border-radius:50%; background:rgba(0,0,0,.65); box-shadow: 0 0 0 14px #efe2c8; }
+  .row { border-bottom:3px solid rgba(42,29,14,.35); padding:14px 0 10px; }
+  .row small { display:block; font:700 18px Inter; letter-spacing:.2em; color:rgba(42,29,14,.6); }
+  .row b { font-family:"Bebas Neue"; font-weight:400; font-size:58px; line-height:1; letter-spacing:.02em; }
+  .stamp { position:absolute; right:40px; bottom:40px; width:200px; height:210px; border:6px solid #8c2b1a; border-radius:50%; color:#8c2b1a; display:grid; place-items:center; text-align:center; transform:rotate(-16deg); font-family:"Bebas Neue"; font-size:40px; line-height:.95; opacity:.85; }
+  .logo { left:var(--pad); bottom:70px; height:46px; }
+</style>
+</head>
+<body>
+  <div class="photo"></div><div class="shade"></div>
+  <div class="string"></div>
+  <div class="tag">
+    <div class="hole"></div>
+    <div class="row"><small>FROM</small><b>Belgium</b></div>
+    <div class="row"><small>NOW</small><b>Issyk Kul, Kyrgyzstan</b></div>
+    <div class="row"><small>VEHICLE</small><b>Land Cruiser '84 "Sandy"</b></div>
+    <div class="row"><small>POWER</small><b>120Ah LiFePO4</b></div>
+    <div class="stamp">DAY<br><span style="font-size:96px">80</span></div>
+  </div>
+  <img class="logo" src="../logo-white.svg" alt="VanXcel">
+</body>
+</html>

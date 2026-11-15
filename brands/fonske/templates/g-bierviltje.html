@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>The crawl on a beer mat</title>
+<link rel="stylesheet" href="../brand.css">
+<!-- genre: object (bierviltje met streepjes) op een bar. Feiten: README "Feiten" (Totem 21:00, 4 cafés, shot per stop,
+     alcoholvrij op aanvraag, finale Oude Markt, 18+). Geen datum of prijs: die komen live uit SellQo. -->
+<style>
+  body { background:#1a0f08; }
+  .bar { position:absolute; inset:0; background:
+     repeating-linear-gradient(0deg, rgba(0,0,0,.25) 0 3px, transparent 3px 70px),
+     radial-gradient(circle at 50% 40%, #5a3418, #2a170b 70%); }
+  .stain { position:absolute; border-radius:50%; border:14px solid rgba(160,100,40,.35); filter: blur(1px); }
+  .mat { position:absolute; left:140px; top:240px; width:800px; height:800px; border-radius:50%; transform:rotate(-7deg);
+     background: radial-gradient(circle at 40% 35%, #fbf5ea, #efe3cc); box-shadow: 20px 26px 0 rgba(0,0,0,.4); color:#2a1a0c; }
+  .mat::before { content:""; position:absolute; inset:28px; border-radius:50%; border:10px solid var(--amber); }
+  .mat::after { content:""; position:absolute; inset:52px; border-radius:50%; border:3px dashed rgba(42,26,12,.35); }
+  .in { position:absolute; inset:110px; display:flex; flex-direction:column; align-items:center; text-align:center; }
+  .in img { width:120px; filter: brightness(.3) sepia(1) saturate(3) hue-rotate(-10deg); }
+  .in .display { font-size:84px; margin-top:6px; color:#2a1a0c; }
+  .tally { display:flex; gap:34px; margin:18px 0 10px; }
+  .tally svg { width:150px; height:110px; }
+  .pen { font:700 34px/1.2 "Space Grotesk"; transform:rotate(-2deg); }
+  .pen small { display:block; font:500 26px "Space Grotesk"; opacity:.75; margin-top:8px; }
+  .title { position:absolute; left:var(--pad); top:90px; color:var(--cream); }
+  .title .display { font-size:96px; }
+  .title .display span { color:var(--amber); }
+  .foot { position:absolute; left:var(--pad); right:var(--pad); bottom:70px; display:flex; justify-content:space-between; color:var(--mute); font:500 26px "Space Grotesk"; }
+</style>
+</head>
+<body>
+  <div class="bar"></div>
+  <div class="stain" style="left:760px;top:120px;width:260px;height:260px"></div>
+  <div class="stain" style="left:40px;top:1040px;width:200px;height:200px"></div>
+  <div class="title"><div class="display">Keep <span>score</span></div></div>
+  <div class="mat"><div class="in">
+    <img src="../logo-mark.png" alt="">
+    <div class="display">The Fonske Crawl</div>
+    <div class="tally">
+      <svg viewBox="0 0 150 110" fill="none" stroke="#2a1a0c" stroke-width="7" stroke-linecap="round"><path d="M20 10 L24 100 M50 12 L52 98 M80 10 L82 100 M110 14 L112 98"/></svg>
+    </div>
+    <div class="pen">4 bars · 1 shot each<small>alcohol-free on request</small></div>
+    <div class="pen" style="margin-top:22px">Finale: the Oude Markt<small>Meet at The Totem, 21:00 · 18+</small></div>
+  </div></div>
+  <div class="foot"><span>fonskecrawl.com</span><span>Drink smart. Have fun.</span></div>
+</body>
+</html>

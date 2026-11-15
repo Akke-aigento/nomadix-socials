@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="19" data-fps="30">
+<title>Reel: the whole trip in 19 seconds</title>
+<link rel="stylesheet" href="../../brand.css">
+<!-- reel-genre: tijdreis. Echte foto's uit media.json in volgorde van dag, één foto per halve tel (BEAT/2),
+     dagteller = echte dag van de foto. Eindkaart: feiten uit brand-vanxcel §4 ("6 months", 17 landen, 120Ah LiFePO4).
+     FRAMES wordt ingevuld door build.py (kiest gelijkmatig verspreide foto's). -->
+<style>
+  .ph { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; }
+  .ph.on { opacity:1; }
+  .shade { position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, transparent 28%, transparent 62%, rgba(0,0,0,.75) 100%); }
+  .day { position:absolute; left:var(--pad); top:260px; font-family:"Bebas Neue"; font-size:220px; line-height:.85; color:#fff; }
+  .day small { display:block; font-size:56px; color:var(--amber); letter-spacing:.08em; }
+  .where { position:absolute; left:var(--pad); right:var(--pad); bottom:420px; font-family:"Bebas Neue"; font-size:96px; line-height:.9; color:#fff; text-transform:uppercase; }
+  .where span { display:block; font:600 32px Inter; color:rgba(255,255,255,.8); text-transform:none; margin-top:12px; }
+  .track { position:absolute; left:var(--pad); right:var(--pad); bottom:360px; height:8px; background:rgba(255,255,255,.25); border-radius:4px; }
+  .track i { position:absolute; left:0; top:0; bottom:0; background:var(--petrol); border-radius:4px; }
+  .end { position:absolute; inset:0; background:var(--ink); display:none; flex-direction:column; justify-content:center; padding:0 var(--pad); }
+  .end.on { display:flex; }
+  .end .display { font-size:170px; }
+  .end .display em { font-style:normal; color:var(--petrol); }
+  .end p { font:500 40px/1.4 Inter; color:rgba(255,255,255,.85); margin-top:30px; }
+  .end img { height:70px; margin-top:80px; align-self:flex-start; }
+</style>
+</head>
+<body>
+  <div id="stack"></div>
+  <div class="shade"></div>
+  <div class="day" id="day"></div>
+  <div class="where" id="where"></div>
+  <div class="track"><i id="bar"></i></div>
+  <div class="end" id="end">
+    <div class="display" id="endT">Six months.<br>17 countries.<br><em>One battery.</em></div>
+    <p>120Ah LiFePO4, built back home in Belgium.<br>That's where VanXcel started.</p>
+    <img src="../../logo-white.svg" alt="VanXcel">
+  </div>
+<script>
+const FRAMES = /*FRAMES*/[];
+const BPM = 110, STEP = 60 / BPM / 2, PHOTOS_END = FRAMES.length * STEP;
+const stack = document.getElementById('stack');
+const els = FRAMES.map(f => { const d = document.createElement('div'); d.className = 'ph'; d.style.backgroundImage = `url(../../${f.file})`; stack.appendChild(d); return d; });
+let cur = -1;
+window.setT = (t) => {
+  const end = t >= PHOTOS_END;
+  document.getElementById('end').classList.toggle('on', end);
+  if (end) {
+    const k = Math.min(1, (t - PHOTOS_END) / 0.5);
+    document.getElementById('endT').style.transform = `translateY(${(1 - k) * 60}px)`;
+    document.getElementById('endT').style.opacity = k;
+    return;
+  }
+  const i = Math.min(FRAMES.length - 1, Math.floor(t / STEP));
+  if (i !== cur) { if (cur >= 0) els[cur].classList.remove('on'); els[i].classList.add('on'); cur = i; }
+  const local = (t - i * STEP) / STEP;
+  els[i].style.transform = `scale(${1.08 - local * 0.05})`;
+  const f = FRAMES[i];
+  document.getElementById('day').innerHTML = `<small>DAY</small>${String(f.day).padStart(3, '0')}`;
+  document.getElementById('where').innerHTML = `${f.country}<span>${f.place || ''}</span>`;
+  document.getElementById('bar').style.width = `${(f.day / 126) * 100}%`;
+};
+</script>
+</body>
+</html>
