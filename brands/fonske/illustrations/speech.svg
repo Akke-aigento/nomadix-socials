@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- Tekstballon met vraagteken, voor vraag- en Q&A-stories. Lijnstijl Fonske. Amber + crème, voor donkere achtergrond. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 160 H780 Q860 160 860 240 V500 Q860 580 780 580 H470 L330 700 L360 580 H220 Q140 580 140 500 V240 Q140 160 220 160 Z" stroke="#F4A434" stroke-width="10"/>
+    <path d="M430 300 Q430 240 500 240 Q570 240 570 300 Q570 345 510 370 Q500 375 500 400 V420" stroke="#F4F1EC" stroke-width="12"/>
+    <circle cx="500" cy="490" r="10" fill="#F4F1EC" stroke="#F4F1EC" stroke-width="6"/>
+    <path d="M880 110 l0 -44 M858 88 l44 0 M100 660 l0 -40 M80 640 l40 0" stroke="#F6CB6A" stroke-width="5"/>
+  </g>
+</svg>

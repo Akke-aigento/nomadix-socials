@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+  <!-- Paraplu in de regen (crawl 01 was een stormavond). Lijnstijl Fonske. Amber + crème, voor donkere achtergrond. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M190 420 Q500 90 810 420" stroke="#F4A434" stroke-width="10"/>
+    <path d="M190 420 Q245 380 300 420 Q355 380 410 420 Q465 380 500 420 Q545 380 600 420 Q655 380 700 420 Q755 380 810 420" stroke="#F4A434" stroke-width="8"/>
+    <path d="M500 175 L500 140" stroke="#F4A434" stroke-width="10"/>
+    <path d="M500 420 Q480 260 500 175 M330 405 Q380 250 500 175 M670 405 Q620 250 500 175" stroke="#F6CB6A" stroke-width="5" opacity=".7"/>
+    <path d="M500 420 L500 720 Q500 780 450 780 Q405 780 405 735" stroke="#F4F1EC" stroke-width="9"/>
+    <path d="M150 120 l-24 60 M260 70 l-24 60 M760 90 l-24 60 M880 170 l-24 60 M120 520 l-24 60 M860 520 l-24 60 M220 640 l-24 60 M780 650 l-24 60" stroke="#F4F1EC" stroke-width="6" opacity=".6"/>
+  </g>
+</svg>

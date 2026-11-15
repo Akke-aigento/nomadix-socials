@@ -17,7 +17,9 @@
       "type": "bar",
       "faces": "ja",
       "note": "duo met shotjes aan de bar, lachend",
-      "used": []
+      "used": [
+        "2026-11-16 post-do-between-bars"
+      ]
     },
     {
       "id": "68287ecb-066a-4065-bbb4-25a0cf291352",
@@ -158,6 +160,17 @@
       "note": "still uit crawlvideo cdd717dc (crawl_media) op 16,8 s: groep in kappen van achteren op een plein in de regen, toren en verlichte gevels; geen gezichten",
       "used": [
         "2026-11-09 post-ma-crawl-02"
+      ]
+    },
+    {
+      "id": "still-f3f4f5c4-t10-4",
+      "night": "2026-10-24",
+      "path": "photos/2026-10-24/still-f3f4f5c4-t10-4.jpg",
+      "type": "street",
+      "faces": "ja",
+      "note": "still uit crawlvideo f3f4f5c4 (crawl_media) op 10,4 s: groep met paraplu's op een zebrapad in de regen, halftotaal (geen close-up), verlichte gevels en boom",
+      "used": [
+        "2026-11-16 post-ma-rain"
       ]
     }
   ]

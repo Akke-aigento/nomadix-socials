@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- ID-kaart met 18+ (site: 18+ met ID). Lijnstijl Fonske. Amber + crème, voor donkere of blauwe achtergrond; vervang kleuren voor crème/amber. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="180" y="200" width="640" height="410" rx="44" stroke="#F4A434" stroke-width="10"/>
+    <circle cx="350" cy="370" r="72" stroke="#F4F1EC" stroke-width="7"/>
+    <path d="M250 540 C270 470 320 450 350 450 C380 450 430 470 450 540" stroke="#F4F1EC" stroke-width="7"/>
+    <path d="M520 330 L740 330 M520 400 L700 400 M520 470 L650 470" stroke="#F4F1EC" stroke-width="7" opacity=".7"/>
+    <circle cx="700" cy="540" r="58" stroke="#F4A434" stroke-width="8"/>
+    <path d="M150 150 l0 -44 M128 128 l44 0 M860 680 l0 -40 M840 660 l40 0" stroke="#F6CB6A" stroke-width="5"/>
+  </g>
+  <text x="700" y="568" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="76" fill="#F6CB6A">18+</text>
+</svg>
