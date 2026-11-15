@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="17" data-fps="30">
+<title>Reel: van gesprek tot live (tijdlijn Landing Page)</title>
+<link rel="stylesheet" href="../../../brand.css">
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .hook { position:absolute; left:var(--pad); right:var(--pad); top:470px; }
+  .hook .n { font-size:560px; font-weight:900; letter-spacing:-.07em; line-height:.8; }
+  .hook h1 { font-size:120px; font-weight:900; letter-spacing:-.045em; line-height:.95; margin-top:20px; }
+  .hook p { margin-top:40px; font-family:"JetBrains Mono",monospace; font-size:32px; line-height:1.5; color:var(--mute); }
+  .tl { position:absolute; left:var(--pad); right:var(--pad); top:400px; opacity:0; }
+  .ctr { display:flex; align-items:baseline; gap:24px; margin-bottom:60px; }
+  .ctr .k { font-family:"JetBrains Mono",monospace; font-size:34px; color:var(--mute); }
+  .ctr .v { font-size:200px; font-weight:900; letter-spacing:-.06em; line-height:.8; }
+  .track { position:relative; padding-left:90px; }
+  .rail { position:absolute; left:24px; top:20px; width:6px; bottom:20px; background:rgba(255,255,255,.1); border-radius:4px; }
+  .fill { position:absolute; left:24px; top:20px; width:6px; height:0; background:var(--grad); border-radius:4px; }
+  .ms { position:relative; padding:26px 0 46px; opacity:0; }
+  .ms::before { content:""; position:absolute; left:-80px; top:34px; width:34px; height:34px; border-radius:50%; background:var(--navy); border:6px solid var(--teal); box-shadow:0 0 0 10px rgba(43,212,189,.12); }
+  .ms .d { font-family:"JetBrains Mono",monospace; font-size:30px; color:var(--teal); font-weight:700; }
+  .ms .t { font-size:64px; font-weight:900; letter-spacing:-.03em; margin-top:8px; }
+  .ms.live .t { background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .note { position:absolute; left:var(--pad); right:var(--pad); top:520px; opacity:0; }
+  .note h2 { font-size:104px; font-weight:900; letter-spacing:-.04em; line-height:.96; }
+  .note .rows { margin-top:60px; border-top:1px solid var(--line); }
+  .note .rows div { display:flex; justify-content:space-between; padding:30px 0; border-bottom:1px solid var(--line); font-size:40px; font-weight:700; }
+  .note .rows span { font-family:"JetBrains Mono",monospace; color:var(--teal-light); font-weight:500; font-size:34px; }
+  .end { position:absolute; inset:0; background:linear-gradient(150deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); color:var(--navy); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:900px; height:900px; right:-360px; top:260px"></div>
+  <div class="glow violet" style="width:800px; height:800px; left:-320px; bottom:180px"></div>
+  <div class="top"><div class="brand" style="position:static"><img src="../../../mark.svg" alt="">Studio <b>Akke</b></div><span class="code"><span class="c">//</span> tijdlijn</span></div>
+
+  <div class="hook" id="hook">
+    <div class="n grad">7</div>
+    <h1>werkdagen.<br>Van gesprek<br>tot live.</h1>
+    <p>// voorbeeld: Landing Page<br>// zodra je materialen binnen zijn</p>
+  </div>
+
+  <div class="tl" id="tl">
+    <div class="ctr"><span class="k">werkdag</span><span class="v grad" id="day">0</span></div>
+    <div class="track">
+      <div class="rail"></div><div class="fill" id="fill"></div>
+      <div class="ms" id="m0"><div class="d">werkdag 0</div><div class="t">Onboardinggesprek</div></div>
+      <div class="ms" id="m1"><div class="d">werkdag 3–5</div><div class="t">Eerste preview</div></div>
+      <div class="ms" id="m2"><div class="d">werkdag 5–7</div><div class="t">Revisies klaar</div></div>
+      <div class="ms live" id="m3"><div class="d">werkdag 7</div><div class="t">Je site staat live</div></div>
+    </div>
+  </div>
+
+  <div class="note" id="note">
+    <div class="code" style="font-size:30px; margin-bottom:30px"><span class="c">//</span> eerlijk is eerlijk</div>
+    <h2>De klok start zodra je <span class="grad">logo, teksten en foto's</span> binnen zijn.</h2>
+    <div class="rows">
+      <div>Landing Page<span>5–7 werkdagen</span></div>
+      <div>Business Starter<span>7–10 werkdagen</span></div>
+      <div>Professional<span>10–14 werkdagen</span></div>
+    </div>
+  </div>
+
+  <div class="end" id="end">
+    <img src="../../../mark.svg" alt="" style="width:150px; height:auto; filter:brightness(0) opacity(.85)">
+    <h1 class="h" style="font-size:130px; line-height:.95">Jouw<br>werkdag 0?</h1>
+    <p class="lead" style="color:rgba(15,23,41,.85)">Vul het onboardingformulier in en ik plan een gesprek met je in.</p>
+    <span class="pill" style="background:var(--navy); color:#fff; align-self:flex-start">studioakke.com/contact</span>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const c = (x) => Math.min(Math.max(x, 0), 1);
+  const ease = (x) => 1 - Math.pow(1 - c(x), 3);
+  const B = 4 * 60 / 118;            // 118 BPM: scènes per 4 tellen (2,03 s)
+  const NOTE = 5 * B, END = 7 * B;   // 10,2 en 14,2
+  const days = [0, 4, 6, 7];
+  window.setT = (t) => {
+    // hook staat er meteen (geen fade-in), gaat weg op de eerste beat
+    const ho = ease((t - (B - 0.3)) / 0.3);
+    $("hook").style.opacity = 1 - ho;
+    $("hook").style.transform = `translateY(${-ho * 80}px)`;
+    // tijdlijn
+    const ti = ease((t - B) / 0.35), to = ease((t - (NOTE - 0.3)) / 0.3);
+    $("tl").style.opacity = t < B ? 0 : ti * (1 - to);
+    let shown = -1;
+    [0,1,2,3].forEach((i) => {
+      const s = B + i * B, a = ease((t - s) / 0.35);
+      $("m" + i).style.opacity = t < s ? 0 : a;
+      $("m" + i).style.transform = `translateX(${(1 - a) * 60}px)`;
+      if (t >= s) shown = i;
+    });
+    const track = document.querySelector(".track").getBoundingClientRect().height - 40;
+    const prog = c((t - B) / (4 * B - 0.4));
+    $("fill").style.height = (track * prog) + "px";
+    $("day").textContent = shown < 0 ? "0" : (shown === 1 ? "3–5" : shown === 2 ? "5–7" : String(days[shown]));
+    // noot
+    const ni = ease((t - NOTE) / 0.4), no = ease((t - (END - 0.3)) / 0.3);
+    $("note").style.opacity = t < NOTE ? 0 : ni * (1 - no);
+    $("note").style.transform = `translateY(${(1 - ni) * 60}px)`;
+    // eindkaart
+    const e = ease((t - END) / 0.45);
+    $("end").style.opacity = t < END ? 0 : e;
+    $("end").style.transform = `translateY(${(1 - e) * 40}px)`;
+  };
+  window.setT(0);
+</script>
+</body>
+</html>

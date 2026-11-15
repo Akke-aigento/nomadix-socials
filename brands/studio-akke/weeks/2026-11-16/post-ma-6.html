@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 6: termijn en CTA (fel)</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .lbl { font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; color:var(--navy); opacity:.75; letter-spacing:.03em; }
+  .mat { display:flex; gap:16px; flex-wrap:wrap; }
+  .mat span { background:rgba(15,23,41,.1); border:2px solid rgba(15,23,41,.25); border-radius:999px; padding:16px 28px; font-size:32px; font-weight:800; }
+  .dots i { background:rgba(15,23,41,.22); } .dots i.on { background:var(--navy); }
+</style>
+</head>
+<body style="background:linear-gradient(150deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); color:var(--navy)">
+  <div class="brand tl" style="color:var(--navy)"><img src="../../mark.svg" alt="" style="filter:brightness(0) opacity(.85)">Studio <b style="color:var(--navy)">Akke</b></div>
+  <img src="../../mark.svg" alt="" style="position:absolute; right:-160px; bottom:-140px; width:680px; height:auto; opacity:.15; filter:brightness(0)">
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:240px; display:flex; flex-direction:column; gap:40px">
+    <div class="lbl">// goed om te weten</div>
+    <h2 class="h" style="font-size:108px; line-height:.94" data-slot="titel" data-label="Titel" data-max="50">De klok start<br>zodra je<br>materialen<br>binnen zijn.</h2>
+    <div class="mat"><span>logo</span><span>teksten</span><span>foto's</span></div>
+    <p style="font-size:34px; line-height:1.4; font-weight:600; max-width:860px" data-slot="tekst" data-label="Tekst" data-max="110">Geen logo of teksten? Ook dat kan ik maken. Twijfel je tussen twee pakketten, vraag het me gewoon.</p>
+    <span class="pill" style="background:var(--navy); color:#fff; align-self:flex-start" data-slot="cta" data-label="Link" data-max="30">studioakke.com/prijzen</span>
+  </div>
+  <div class="dots"><i></i><i></i><i></i><i></i><i></i><i class="on"></i></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 1: pakketkiezer cover</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .lbl { font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; color:var(--teal); letter-spacing:.03em; }
+  .row { position:absolute; left:var(--pad); right:var(--pad); top:820px; display:grid; grid-template-columns:1fr 1.25fr 1.6fr; gap:22px; align-items:end; }
+  .pg { border-radius:22px; border:2px solid rgba(255,255,255,.16); background:rgba(29,40,58,.6); padding:22px; display:flex; flex-direction:column; justify-content:space-between; }
+  .pg .stack { display:flex; gap:8px; flex-wrap:wrap; }
+  .pg .stack i { display:block; width:46px; height:60px; border-radius:7px; background:linear-gradient(160deg, rgba(94,234,212,.55), rgba(56,189,248,.3)); }
+  .pg b { font-family:"JetBrains Mono",monospace; font-size:24px; color:var(--mute); font-weight:500; margin-top:18px; }
+  .pg.hot { border-color:var(--teal); }
+</style>
+</head>
+<body>
+  <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:820px; height:820px; right:-320px; top:-160px"></div>
+  <div class="glow violet" style="width:760px; height:760px; left:-320px; bottom:-260px"></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:240px; display:flex; flex-direction:column; gap:34px">
+    <div class="lbl" data-slot="reeks" data-label="Reeks" data-max="30"><span style="color:var(--mute)">//</span> pakketkiezer</div>
+    <h1 class="h" style="font-size:150px; line-height:.92" data-slot="titel" data-label="Titel" data-max="30">1 pagina<br><span class="grad">of 10?</span></h1>
+    <p class="lead" style="max-width:860px" data-slot="tekst" data-label="Tekst" data-max="90">Drie vaste pakketten. Zo kies je het pakket dat bij je zaak past.</p>
+  </div>
+  <div class="row">
+    <div class="pg" style="height:220px"><div class="stack"><i></i></div><b>1</b></div>
+    <div class="pg" style="height:300px"><div class="stack"><i></i><i></i><i></i><i></i><i></i></div><b>3–5</b></div>
+    <div class="pg hot" style="height:380px"><div class="stack"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><b>6–10 pagina's</b></div>
+  </div>
+  <div class="swipe" style="right:auto; left:var(--pad)">swipe &rarr;</div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad);"><span class="c">//</span> 1/6</div>
+  <div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+</body>
+</html>

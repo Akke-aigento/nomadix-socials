@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 2: Landing Page</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .lbl { font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; color:var(--teal); letter-spacing:.03em; }
+  .big { text-align:right; }
+  .big b { display:block; font-size:190px; font-weight:900; line-height:.8; letter-spacing:.04em; color:transparent; -webkit-text-stroke:3px rgba(43,212,189,.65); }
+  .big span { display:block; font-family:"JetBrains Mono",monospace; font-size:24px; color:var(--mute); margin-top:14px; }
+  .when { font-size:34px; line-height:1.38; font-weight:600; color:rgba(255,255,255,.9); max-width:560px; }
+  .checks { gap:14px; } .checks li { font-size:29px; }
+  .foot { position:absolute; left:var(--pad); right:var(--pad); bottom:120px; display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid var(--line); padding-top:34px; }
+  .time { align-self:flex-start; margin-top:12px; font-family:"JetBrains Mono",monospace; font-size:26px; color:var(--teal-light); border:2px solid rgba(43,212,189,.5); border-radius:999px; padding:14px 24px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:700px; height:700px; right:-300px; top:-200px"></div>
+  <div class="glow violet" style="width:700px; height:700px; left:-340px; bottom:-300px"></div>
+  <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+  
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:250px; display:flex; flex-direction:column; gap:26px">
+    <div class="lbl"><span style="color:var(--mute)">//</span> perfect voor startende ondernemers</div>
+    <h2 class="h" style="font-size:88px; max-width:620px" data-slot="naam" data-label="Pakket" data-max="20">Landing Page</h2>
+    <p class="when" data-slot="wanneer" data-label="Kies dit als" data-max="80">Je start net en één sterke pagina zegt genoeg.</p>
+    <ul class="checks" style="margin-top:10px"><li>Responsive design</li><li>Contactformulier</li><li>Basis technische setup</li><li>Google Analytics</li><li>1 revisieronde</li></ul>
+    <div class="time">5–7 werkdagen</div>
+  </div>
+  <div class="foot">
+    <div><div class="price">€895</div><div class="vat" style="margin-top:10px; font-size:24px">eenmalig, excl. btw</div></div>
+    <div class="big"><b>1</b><span>pagina</span></div>
+  </div>
+  <div class="code" style="position:absolute; top:84px; right:var(--pad); display:none"></div>
+  <div class="swipe" style="right:auto; left:var(--pad)">2/6</div>
+  <div class="dots"><i></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1920">
+<title>Story do: zeg wanneer je antwoordt (melding)</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .form { background:rgba(29,40,58,.78); border:1px solid var(--line); border-radius:30px; padding:36px 40px; display:flex; flex-direction:column; gap:18px; }
+  .form .f { height:64px; border-radius:14px; border:2px solid rgba(255,255,255,.12); display:flex; align-items:center; padding:0 22px; font-size:26px; color:var(--mute); }
+  .form .btn { height:70px; border-radius:16px; background:var(--teal); color:var(--navy); font-weight:800; font-size:28px; display:flex; align-items:center; justify-content:center; }
+  .toast { position:relative; margin-top:-90px; margin-left:60px; background:#fff; color:var(--navy); border-radius:26px; padding:30px 34px; display:flex; gap:24px; align-items:flex-start; box-shadow:0 50px 90px -30px rgba(0,0,0,.8); }
+  .toast .ok { flex:0 0 58px; height:58px; border-radius:50%; background:rgba(43,212,189,.2) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230D9488' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M6 12.5l4 4 8-9'/></svg>") center/32px no-repeat; }
+  .toast b { display:block; font-size:34px; font-weight:900; letter-spacing:-.02em; }
+  .toast span { display:block; font-size:29px; line-height:1.35; color:#334155; margin-top:6px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:820px; height:820px; right:-340px; top:200px"></div>
+  <div class="glow violet" style="width:820px; height:820px; left:-340px; bottom:220px"></div>
+  <div class="story-safe" style="display:flex; flex-direction:column; gap:40px">
+    <div class="brand" style="position:relative"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+    <h1 class="h" style="font-size:92px; line-height:.98" data-slot="titel" data-label="Titel" data-max="60">Iemand vult je<br>formulier in.<br><span class="grad">En dan?</span></h1>
+    <div class="form">
+      <div class="f">Naam</div><div class="f">E-mail</div><div class="f" style="height:110px; align-items:flex-start; padding-top:18px">Vertel over je project...</div>
+      <div class="btn">Verstuur bericht</div>
+    </div>
+    <div class="toast"><i class="ok"></i><p><b>Bericht verzonden!</b><span>Ik neem binnen 24 uur contact met je op.</span></p></div>
+    <p class="lead" style="font-size:34px" data-slot="tekst" data-label="Tip" data-max="90">Tip: zeg op je site hoe snel je antwoordt. Zo staat het op de mijne.</p>
+  </div>
+</body>
+</html>

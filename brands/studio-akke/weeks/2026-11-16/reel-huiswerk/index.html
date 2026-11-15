@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="17" data-fps="30">
+<title>Reel: drie vragen uit het onboardingformulier (huiswerk)</title>
+<link rel="stylesheet" href="../../../brand.css">
+<style>
+  .top { position:absolute; top:250px; left:var(--pad); right:var(--pad); display:flex; justify-content:space-between; align-items:center; }
+  .hook { position:absolute; left:var(--pad); right:var(--pad); top:560px; }
+  .hook h1 { font-size:190px; font-weight:900; letter-spacing:-.05em; line-height:.9; }
+  .hook p { margin-top:50px; font-size:50px; font-weight:700; color:rgba(255,255,255,.9); line-height:1.2; }
+  .q { position:absolute; left:var(--pad); right:var(--pad); top:620px; opacity:0; }
+  .q .n { font-family:"JetBrains Mono",monospace; font-size:34px; color:var(--teal); font-weight:700; }
+  .q h2 { font-size:92px; font-weight:900; letter-spacing:-.04em; line-height:1; margin-top:24px; min-height:290px; }
+  .q h2 i { display:inline-block; width:8px; height:80px; background:var(--teal); vertical-align:-8px; margin-left:6px; }
+  .field { margin-top:40px; background:rgba(29,40,58,.78); border:2px solid rgba(43,212,189,.45); border-radius:28px; padding:36px 40px; display:flex; flex-direction:column; gap:22px; }
+  .field .ln { height:20px; border-radius:10px; background:rgba(255,255,255,.12); transform-origin:left center; }
+  .field .hint { font-family:"JetBrains Mono",monospace; font-size:26px; color:var(--mute); }
+  .end { position:absolute; inset:0; background:linear-gradient(150deg,#5EEAD4 0%,#22D3EE 55%,#38BDF8 100%); color:var(--navy); opacity:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--pad); gap:40px; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow teal" style="width:900px; height:900px; right:-360px; top:260px"></div>
+  <div class="glow violet" style="width:800px; height:800px; left:-320px; bottom:180px"></div>
+  <div class="top"><div class="brand" style="position:static"><img src="../../../mark.svg" alt="">Studio <b>Akke</b></div><span class="code"><span class="c">//</span> onboarding</span></div>
+  <div class="hook" id="hook"><h1>Huis&shy;werk.<br><span class="grad">Sorry.</span></h1><p>Drie vragen die ik je stel<br>vóór ik begin.</p></div>
+
+  <div class="q" id="q0"><div class="n">// vraag 1 van 3</div><h2><span class="tx" data-t="Wat wil je bereiken met je website?"></span><i></i></h2>
+    <div class="field"><div class="ln" style="width:94%"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:56%"></div><div class="hint">bv. meer aanvragen, reservaties, verkoop</div></div></div>
+  <div class="q" id="q1"><div class="n">// vraag 2 van 3</div><h2><span class="tx" data-t="Wie is je doelgroep?"></span><i></i></h2>
+    <div class="field"><div class="ln" style="width:88%"></div><div class="ln" style="width:64%"></div><div class="hint">je ideale klant of bezoeker</div></div></div>
+  <div class="q" id="q2"><div class="n">// vraag 3 van 3</div><h2><span class="tx" data-t="Welke websites vind je mooi?"></span><i></i></h2>
+    <div class="field"><div class="ln" style="width:70%"></div><div class="ln" style="width:52%"></div><div class="hint">helpt me je smaak te begrijpen</div></div></div>
+
+  <div class="end" id="end">
+    <img src="../../../mark.svg" alt="" style="width:150px; height:auto; filter:brightness(0) opacity(.85)">
+    <h1 class="h" style="font-size:120px; line-height:.95">Antwoorden<br>al klaar?</h1>
+    <p class="lead" style="color:rgba(15,23,41,.85)">Ze staan in mijn onboardingformulier. Daarna plan ik een gesprek met je in.</p>
+    <span class="pill" style="background:var(--navy); color:#fff; align-self:flex-start">studioakke.com/contact</span>
+  </div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const c = (x) => Math.min(Math.max(x, 0), 1);
+  const ease = (x) => 1 - Math.pow(1 - c(x), 3);
+  const B = 4 * 60 / 120;            // 120 BPM: 4 tellen = 2 s
+  const END = 7 * B;                 // 14
+  window.setT = (t) => {
+    const ho = ease((t - (B - 0.3)) / 0.3);
+    $("hook").style.opacity = 1 - ho;
+    $("hook").style.transform = `scale(${1 + ho * 0.08})`;
+    [0,1,2].forEach((i) => {
+      const s = B + i * 2 * B, a = ease((t - s) / 0.3), o = ease((t - (s + 2 * B - 0.3)) / 0.3);
+      const q = $("q" + i);
+      q.style.opacity = t < s ? 0 : a * (1 - o);
+      q.style.transform = `translateY(${(1 - a) * 50 - o * 50}px)`;
+      const tx = q.querySelector(".tx"), full = tx.dataset.t;
+      tx.textContent = full.slice(0, Math.round(full.length * c((t - s - 0.15) / 0.9)));
+      q.querySelector("i").style.opacity = (Math.floor(t * 2.5) % 2 === 0 || t - s < 1.1) ? 1 : 0;
+      q.querySelectorAll(".ln").forEach((ln, k) => { ln.style.transform = `scaleX(${ease((t - s - 1.1 - k * 0.2) / 0.4)})`; });
+    });
+    const e = ease((t - END) / 0.45);
+    $("end").style.opacity = t < END ? 0 : e;
+    $("end").style.transform = `translateY(${(1 - e) * 40}px)`;
+  };
+  window.setT(0);
+</script>
+</body>
+</html>

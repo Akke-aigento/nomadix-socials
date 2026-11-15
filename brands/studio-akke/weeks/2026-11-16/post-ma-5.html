@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="nx-size" content="1080x1350">
+<title>Carrousel 5: extra's (licht)</title>
+<link rel="stylesheet" href="../../brand.css">
+<style>
+  .lbl { font-family:"JetBrains Mono",monospace; font-size:28px; font-weight:700; color:#0D9488; letter-spacing:.03em; }
+  .ex { display:grid; gap:0; border-top:2px solid rgba(15,23,41,.12); }
+  .ex div { display:flex; justify-content:space-between; align-items:baseline; gap:30px; padding:38px 0; border-bottom:2px solid rgba(15,23,41,.12); }
+  .ex b { font-size:48px; font-weight:900; letter-spacing:-.025em; display:block; }
+  .ex span { display:block; font-size:28px; color:#475569; margin-top:8px; font-weight:500; }
+  .ex em { font-style:normal; font-size:54px; font-weight:900; letter-spacing:-.03em; color:#0D9488; white-space:nowrap; }
+  .dots i { background:rgba(15,23,41,.18); } .dots i.on { background:#0D9488; }
+</style>
+</head>
+<body class="paper">
+  <div class="brand tl"><img src="../../mark.svg" alt="">Studio <b>Akke</b></div>
+  <div style="position:absolute; left:var(--pad); right:var(--pad); top:240px; display:flex; flex-direction:column; gap:34px">
+    <div class="lbl"><span style="color:#64748B">//</span> net iets anders nodig?</div>
+    <h2 class="h" style="font-size:100px; line-height:.95" data-slot="titel" data-label="Titel" data-max="30">Past het<br><span style="color:#0D9488">net niet?</span></h2>
+    <div class="ex" style="margin-top:20px">
+      <div><p><b>Extra pagina</b><span>bovenop je pakket</span></p><em>+ €200–400</em></div>
+      <div><p><b>Spoedlevering</b><span>afhankelijk van het pakket</span></p><em>+ €300–500</em></div>
+      <div><p><b>Webshop of maatwerk</b><span>neem contact op</span></p><em>offerte</em></div>
+    </div>
+    <p style="font-family:'JetBrains Mono',monospace; font-size:24px; color:#64748B">// alle prijzen excl. btw</p>
+  </div>
+  <div class="swipe" style="right:auto; left:var(--pad); color:#64748B">5/6</div>
+  <div class="dots"><i></i><i></i><i></i><i></i><i class="on"></i><i></i></div>
+</body>
+</html>
