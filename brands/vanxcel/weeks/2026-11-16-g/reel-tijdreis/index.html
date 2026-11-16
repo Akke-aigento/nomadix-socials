@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="15" data-fps="30">
+<title>Reel tijdreis: day 1 to day 88</title>
+<link rel="stylesheet" href="../../../brand.css">
+<!-- reel-genre: tijdreis. Echte foto's uit media.json in volgorde van dag, één foto per halve tel (BEAT/2),
+     dagteller = echte dag van de foto. Eindkaart: feiten uit brand-vanxcel §4 ("6 months", 17 landen, 120Ah LiFePO4).
+     FRAMES wordt ingevuld door build.py (kiest gelijkmatig verspreide foto's). -->
+<style>
+  .ph { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; }
+  .ph.on { opacity:1; }
+  .shade { position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, transparent 28%, transparent 62%, rgba(0,0,0,.75) 100%); }
+  .day { position:absolute; left:var(--pad); top:260px; font-family:"Bebas Neue"; font-size:220px; line-height:.85; color:#fff; }
+  .day small { display:block; font-size:56px; color:var(--amber); letter-spacing:.08em; }
+  .where { position:absolute; left:var(--pad); right:var(--pad); bottom:420px; font-family:"Bebas Neue"; font-size:96px; line-height:.9; color:#fff; text-transform:uppercase; }
+  .where span { display:block; font:600 32px Inter; color:rgba(255,255,255,.8); text-transform:none; margin-top:12px; }
+  .track { position:absolute; left:var(--pad); right:var(--pad); bottom:360px; height:8px; background:rgba(255,255,255,.25); border-radius:4px; }
+  .track i { position:absolute; left:0; top:0; bottom:0; background:var(--petrol); border-radius:4px; }
+  .end { position:absolute; inset:0; background:var(--ink); display:none; flex-direction:column; justify-content:center; padding:0 var(--pad); }
+  .end.on { display:flex; }
+  .end .display { font-size:170px; }
+  .end .display em { font-style:normal; color:var(--petrol); }
+  .end p { font:500 40px/1.4 Inter; color:rgba(255,255,255,.85); margin-top:30px; }
+  .end img { height:70px; margin-top:80px; align-self:flex-start; }
+</style>
+</head>
+<body>
+  <div id="stack"></div>
+  <div class="shade"></div>
+  <div class="day" id="day"></div>
+  <div class="where" id="where"></div>
+  <div class="track"><i id="bar"></i></div>
+  <div class="end" id="end">
+    <div class="display" id="endT">Day 1: Belgium.<br>Day 88: <em>Kyrgyzstan.</em></div>
+    <p>Our turning point.<br>Same Land Cruiser.</p>
+    <img src="../../../logo-white.svg" alt="VanXcel">
+  </div>
+<script>
+const FRAMES = [{"file": "weeks/2026-11-16/belgium-0003-plate-blurred.jpg", "day": 1, "country": "Belgium", "place": "Soumagne"}, {"file": "media/vx-2022-04-05-bosnia-0050.jpg", "day": 4, "country": "Bosnia", "place": "Jajce"}, {"file": "media/vx-2022-04-09-greece-0081.jpg", "day": 8, "country": "Greece", "place": "Agios\u00a0Panteleimonas"}, {"file": "media/vx-2022-04-11-greece-0107.jpg", "day": 10, "country": "Greece", "place": "Skotina"}, {"file": "media/vx-2022-04-11-greece-0118.jpg", "day": 10, "country": "Greece", "place": "Nea Apollonia"}, {"file": "media/vx-2022-04-16-turkey-0145.jpg", "day": 15, "country": "Turkey", "place": "Adala"}, {"file": "media/vx-2022-04-20-turkey-0178.jpg", "day": 19, "country": "Turkey", "place": "Kayseri & Malatya"}, {"file": "media/vx-2022-04-21-turkey-0205.jpg", "day": 20, "country": "Turkey", "place": "Kars"}, {"file": "media/vx-2022-04-23-georgia-0214.jpg", "day": 22, "country": "Georgia", "place": "Tbilisi"}, {"file": "media/vx-2022-05-03-georgia-0278.jpg", "day": 32, "country": "Georgia", "place": "Tbilisi"}, {"file": "media/vx-2022-05-11-georgia-0328.jpg", "day": 40, "country": "Georgia", "place": "Tbilisi"}, {"file": "media/vx-2022-05-12-georgia-0334.jpg", "day": 41, "country": "Georgia", "place": "Tbilisi"}, {"file": "media/vx-2022-05-12-georgia-0364.jpg", "day": 41, "country": "Georgia", "place": "Tbilisi"}, {"file": "media/vx-2022-05-14-azerbaijan-0406.jpg", "day": 43, "country": "Azerbaijan", "place": "Tbilisi"}, {"file": "media/vx-2022-05-14-azerbaijan-0408.jpg", "day": 43, "country": "Azerbaijan", "place": "Tbilisi"}, {"file": "media/vx-2022-05-17-georgia-0438.jpg", "day": 46, "country": "Georgia", "place": "Lagodekhi"}, {"file": "media/vx-2022-05-21-azerbaijan-0468.jpg", "day": 50, "country": "Azerbaijan", "place": ""}, {"file": "media/vx-2022-05-21-azerbaijan-0482.jpg", "day": 50, "country": "Azerbaijan", "place": ""}, {"file": "media/vx-2022-05-26-kazakhstan-0510.jpg", "day": 55, "country": "Kazakhstan", "place": "Mangystau"}, {"file": "media/vx-2022-05-27-kazakhstan-0523.jpg", "day": 56, "country": "Kazakhstan", "place": "Mangystau"}, {"file": "media/vx-2022-05-28-kazakhstan-0561.jpg", "day": 57, "country": "Kazakhstan", "place": "Atyrau"}, {"file": "media/vx-2022-06-02-kazakhstan-0605.jpg", "day": 62, "country": "Kazakhstan", "place": "Kyzylorda"}, {"file": "media/vx-2022-06-06-kazakhstan-0656.jpg", "day": 66, "country": "Kazakhstan", "place": "Shymkent\u00a0Qalasy"}, {"file": "media/vx-2022-06-08-kazakhstan-0668.jpg", "day": 68, "country": "Kazakhstan", "place": "Jambyl"}, {"file": "media/vx-2022-06-12-kazakhstan-0724.jpg", "day": 72, "country": "Kazakhstan", "place": "Taldy\u00a0Kurgan"}, {"file": "media/vx-2022-06-12-kazakhstan-0744.jpg", "day": 72, "country": "Kazakhstan", "place": "Taldy\u00a0Kurgan"}, {"file": "media/vx-2022-06-14-kazakhstan-0782.jpg", "day": 74, "country": "Kazakhstan", "place": "Almaty"}, {"file": "media/vx-2022-06-14-kyrgyzstan-0802.jpg", "day": 74, "country": "Kyrgyzstan", "place": "Almaty"}, {"file": "media/vx-2022-06-17-kazakhstan-0835.jpg", "day": 77, "country": "Kazakhstan", "place": "Almaty"}, {"file": "media/vx-2022-06-20-kyrgyzstan-0865.jpg", "day": 80, "country": "Kyrgyzstan", "place": "Issyk\u00a0Kul"}, {"file": "media/vx-2022-06-21-kyrgyzstan-0883.jpg", "day": 81, "country": "Kyrgyzstan", "place": "Issyk\u00a0Kul"}, {"file": "media/vx-2022-06-23-kyrgyzstan-0914.jpg", "day": 83, "country": "Kyrgyzstan", "place": "Issyk\u00a0Kul"}, {"file": "media/vx-2022-06-24-kyrgyzstan-0952.jpg", "day": 84, "country": "Kyrgyzstan", "place": "Issyk\u00a0Kul"}, {"file": "media/vx-2022-06-24-kyrgyzstan-0960.jpg", "day": 84, "country": "Kyrgyzstan", "place": "Bokombayevskoye"}, {"file": "media/vx-2022-06-25-kyrgyzstan-0985.jpg", "day": 85, "country": "Kyrgyzstan", "place": "Bokombayevskoye"}, {"file": "media/vx-2022-06-26-kyrgyzstan-0994.jpg", "day": 86, "country": "Kyrgyzstan", "place": "Naryn"}, {"file": "media/vx-2022-06-26-kyrgyzstan-1010.jpg", "day": 86, "country": "Kyrgyzstan", "place": "Naryn"}, {"file": "media/vx-2022-06-28-kyrgyzstan-1039.jpg", "day": 88, "country": "Kyrgyzstan", "place": "Osh"}];
+const BPM = 110, STEP = 60 / BPM / 2, PHOTOS_END = FRAMES.length * STEP;
+const stack = document.getElementById('stack');
+const els = FRAMES.map(f => { const d = document.createElement('div'); d.className = 'ph'; d.style.backgroundImage = `url(../../../${f.file})`; stack.appendChild(d); return d; });
+let cur = -1;
+window.setT = (t) => {
+  const end = t >= PHOTOS_END;
+  document.getElementById('end').classList.toggle('on', end);
+  if (end) {
+    const k = Math.min(1, (t - PHOTOS_END) / 0.5);
+    document.getElementById('endT').style.transform = `translateY(${(1 - k) * 60}px)`;
+    document.getElementById('endT').style.opacity = k;
+    return;
+  }
+  const i = Math.min(FRAMES.length - 1, Math.floor(t / STEP));
+  if (i !== cur) { if (cur >= 0) els[cur].classList.remove('on'); els[i].classList.add('on'); cur = i; }
+  const local = (t - i * STEP) / STEP;
+  els[i].style.transform = `scale(${1.08 - local * 0.05})`;
+  const f = FRAMES[i];
+  document.getElementById('day').innerHTML = `<small>DAY</small>${String(f.day).padStart(3, '0')}`;
+  document.getElementById('where').innerHTML = `${f.country}<span>${f.place || ''}</span>`;
+  document.getElementById('bar').style.width = `${(f.day / 88) * 100}%`;
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="15" data-fps="30">
+<title>Reel bon-print: dag afsluiten</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: bon-print. Alle regels uit de weekpost (changelog): Z-rapport toont eerst wie nog ingeklokt is; zaakvoerder kan toch afsluiten; Rapporten › Horeca: gewerkte uren, personeelskost, omzet per dag, kost als % van omzet, contant/overschrijving/kaart. Geen verzonnen bedragen of namen. -->
+<style>
+body{background:var(--deep)}
+.glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(253,123,91,.18),transparent 55%)}
+.clock{position:absolute;left:var(--pad);top:260px;font:800 120px/1 Poppins;color:#fff;letter-spacing:-.02em}
+.clock small{display:block;font:500 36px Inter;color:var(--mute);margin-top:12px;letter-spacing:0}
+.printer{position:absolute;left:170px;right:170px;top:1380px;height:170px;background:#1c2350;border-radius:14px 14px 30px 30px;border:3px solid #2a3270;z-index:3}
+.printer::after{content:"";position:absolute;left:60px;right:60px;top:22px;height:16px;border-radius:8px;background:#05081c}
+.led{position:absolute;right:40px;top:30px;width:18px;height:18px;border-radius:50%;background:#1FA971;box-shadow:0 0 18px #1FA971}
+.clip{position:absolute;left:230px;right:230px;top:470px;height:930px;overflow:hidden;z-index:2}
+.bon{position:absolute;left:0;right:0;background:#fbfaf6;padding:40px 40px 60px;color:#222;font:500 30px/1.45 ui-monospace,"DejaVu Sans Mono",monospace}
+.bon h3{margin:0 0 10px;font:800 40px Poppins;color:var(--navy);text-align:center}
+.bon .d{border-top:3px dashed #bbb;margin:16px 0}
+.bon .ok{color:#1FA971;font-weight:700}
+.bon b{color:var(--navy)}
+.end{position:absolute;inset:0;background:var(--coral);display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0;z-index:5}
+.end h2{font:800 130px/1 Poppins;color:var(--navy);margin:0;letter-spacing:-.03em}
+.end p{font:600 40px/1.35 Inter;color:var(--navy);margin-top:30px}
+.end img{height:60px;margin-top:60px;align-self:flex-start}
+</style></head><body><div class="glow"></div>
+<div class="clock" id="clock">23:10<small>De laatste gast is weg.</small></div>
+<div class="printer"><div class="led"></div></div>
+<div class="clip"><div class="bon" id="bon">
+<h3>Z-RAPPORT</h3><div style="text-align:center;color:#777">dag afsluiten</div><div class="d"></div>
+<div><b>Eerst: wie is nog ingeklokt?</b></div><div>en sinds wanneer, zodat je personeelsuren kloppen</div><div class="d"></div>
+<div>Uitklokken vergeten?</div><div class="ok">zaakvoerder sluit toch af</div><div class="d"></div>
+<div><b>Rapporten › Horeca</b></div><div>gewerkte uren .......... ✓</div><div>personeelskost ......... ✓</div><div>omzet per dag .......... ✓</div><div>kost als % van omzet ... ✓</div><div class="d"></div>
+<div><b>Binnengekomen</b></div><div>contant · overschrijving · kaart</div><div class="d"></div><div style="text-align:center">*** dag afgesloten ***</div>
+</div></div>
+<div class="end" id="end"><h2>Dag<br>afgesloten.</h2><p>Kassa en rapporten in SellQo.<br>Stuur het door naar wie elke avond afsluit.</p><img src="../../../logo-white.png"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const bon=document.getElementById('bon');let BH=0;
+window.setT=t=>{
+ if(!BH)BH=bon.offsetHeight;
+ // regel per regel uit de printer: schokjes van 0,25 s
+ const step=Math.floor(t/0.25);const prog=cl((t-0.8)/10.2);const printed=Math.min(BH,Math.round(prog*BH/46)*46);const y=930-printed+(step%2?2:0);
+ bon.style.top=y+'px';
+ document.getElementById('end').style.opacity=cl((t-12)/0.5);
+};
+</script></body></html>

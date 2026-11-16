@@ -1,0 +1,48 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="16" data-fps="30">
+<title>Reel bouwwerf: Landing Page in 7 werkdagen</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: bouwwerf. Termijnen van de site (weekpost): werkdag 0 onboarding, 3–5 eerste preview, 5–7 revisies, 7 live; voorwaarde: klok start zodra logo, teksten en foto's binnen zijn. Business Starter 7–10, Professional 10–14 werkdagen. -->
+<style>
+body{background:linear-gradient(170deg,var(--navy),var(--violet))}
+.wd{position:absolute;left:var(--pad);top:260px;font:500 30px "JetBrains Mono";color:var(--teal)}
+.big{position:absolute;left:var(--pad);right:var(--pad);top:310px;font:900 110px/.95 Inter;color:#fff;letter-spacing:-.03em}
+.big span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.site{position:absolute;left:110px;right:110px;top:640px;height:760px;border-radius:24px;background:#0b111f;border:3px solid var(--line);overflow:hidden}
+.bar{height:56px;background:#141c2e;display:flex;align-items:center;gap:12px;padding:0 22px}.bar i{width:16px;height:16px;border-radius:50%;background:#334}
+.bar span{margin-left:14px;font:500 20px "JetBrains Mono";color:var(--mute)}
+.blk{position:absolute;border-radius:14px;border:3px dashed rgba(94,234,212,.5)}
+.blk.f{border-style:solid;border-color:transparent}
+.fence{position:absolute;left:60px;right:60px;top:1060px;height:420px;display:flex;gap:10px}
+.fence div{flex:1;border:8px solid #f2b705;background:repeating-linear-gradient(0deg,transparent 0 36px,rgba(242,183,5,.6) 36px 40px),repeating-linear-gradient(90deg,transparent 0 36px,rgba(242,183,5,.6) 36px 40px);position:relative}
+.fence div::after{content:"";position:absolute;left:-8px;right:-8px;bottom:-40px;height:40px;background:#e8522d}
+.sign{position:absolute;left:300px;top:1180px;width:480px;padding:24px;background:#f2b705;color:#111;text-align:center;font:900 46px/1.05 Inter;border:6px solid #111;transform:rotate(-3deg)}
+.sign small{display:block;font:700 26px "JetBrains Mono";margin-top:8px}
+.live{position:absolute;left:50%;top:960px;transform:translateX(-50%);background:var(--teal);color:var(--navy);font:900 90px Inter;padding:14px 50px;border-radius:99px;opacity:0;letter-spacing:.04em}
+.cond{position:absolute;left:var(--pad);right:var(--pad);bottom:360px;font:600 34px/1.35 Inter;color:#fff;opacity:0}
+.cond b{color:var(--teal)}
+.end{position:absolute;inset:0;background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0}
+.end h2{font:900 120px/.95 Inter;color:var(--navy);margin:0;letter-spacing:-.03em}
+.end p{font:500 38px/1.45 Inter;color:#334155;margin-top:30px}
+.end img{height:60px;margin-top:60px;align-self:flex-start}
+</style></head><body>
+<div class="wd" id="wd">// werkdag 0</div><div class="big" id="big">Onboarding&shy;gesprek.</div>
+<div class="site"><div class="bar"><i></i><i></i><i></i><span>jouwzaak.be</span></div><div id="blocks"></div></div>
+<div class="fence" id="fence"><div></div><div></div><div></div></div>
+<div class="sign" id="sign">WERF<small>werkdag 0 → 7</small></div>
+<div class="live" id="live">LIVE</div>
+<div class="cond" id="cond">Eén voorwaarde: de klok start zodra je <b>logo, teksten en foto's</b> binnen zijn.</div>
+<div class="end" id="end"><h2>Landing Page:<br>7 werkdagen.</h2><p>Business Starter 7 tot 10.<br>Professional 10 tot 14.<br>Jouw werkdag 0 plannen? Link in bio.</p><img src="../../../logo-color.svg"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),ez=x=>1-Math.pow(1-cl(x),3);
+const B=[[40,90,780,90,'#2BD4BD'],[40,210,500,250,'#22D3EE'],[570,210,250,250,'#38BDF8'],[40,490,380,150,'#F2456D'],[450,490,370,150,'#5EEAD4']];
+const box=document.getElementById('blocks');const els=B.map(b=>{const d=document.createElement('div');d.className='blk';Object.assign(d.style,{left:b[0]+'px',top:b[1]+'px',width:b[2]+'px',height:b[3]+'px'});box.appendChild(d);return d});
+const ST=[[0,'// werkdag 0','Onboarding&shy;gesprek.'],[2.6,'// werkdag 3 tot 5','Eerste <span>preview.</span>'],[5.2,'// werkdag 5 tot 7','Revisies.'],[7.8,'// werkdag 7','<span>Live.</span>']];
+window.setT=t=>{
+ let s=ST[0];for(const x of ST)if(t>=x[0])s=x;document.getElementById('wd').textContent=s[1];document.getElementById('big').innerHTML=s[2];
+ els.forEach((e,i)=>{const k=ez((t-2.6-i*0.25)/0.3);e.style.opacity=k;const f=t>5.2+i*0.25;e.className='blk'+(f?' f':'');e.style.background=f?B[i][4]:'transparent'});
+ const lv=ez((t-7.8)/0.8);document.getElementById('fence').style.transform=`translateY(${lv*1100}px)`;document.getElementById('sign').style.transform=`translateY(${lv*1100}px) rotate(-3deg)`;
+ const L=document.getElementById('live');L.style.opacity=cl((t-8.3)/0.3);L.style.transform=`translateX(-50%) scale(${0.6+0.4*ez((t-8.3)/0.3)})`;
+ document.getElementById('cond').style.opacity=cl((t-9.2)/0.4);
+ document.getElementById('end').style.opacity=cl((t-12)/0.5);
+};
+</script></body></html>

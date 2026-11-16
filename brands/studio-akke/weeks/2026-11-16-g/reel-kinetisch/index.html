@@ -1,0 +1,29 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="14" data-fps="30">
+<title>Reel kinetisch: huiswerk</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: kinetisch. De drie vragen staan in het onboardingformulier van studioakke.com (weekpost). -->
+<style>
+body{background:#0a0f1c}
+.w{position:absolute;left:var(--pad);right:var(--pad);font:900 150px/.9 Inter;color:#fff;letter-spacing:-.04em;opacity:0}
+.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.n{font:700 34px "JetBrains Mono";color:var(--teal);display:block;letter-spacing:0;margin-bottom:16px}
+.end{position:absolute;inset:0;background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0}
+.end h2{font:900 110px/.95 Inter;color:var(--navy);margin:0;letter-spacing:-.03em}.end p{font:600 36px/1.4 Inter;color:#334155;margin-top:26px}
+.end img{height:60px;margin-top:60px;align-self:flex-start}
+</style></head><body>
+<div id="words"></div>
+<div class="end" id="end"><h2>Antwoorden klaar?</h2><p>Ze staan in mijn onboardingformulier.<br>Formulier → link in bio.</p><img src="../../../logo-color.svg"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),ez=x=>1-Math.pow(1-cl(x),4);
+// 120 BPM: één woordgroep per tel (0,5 s)
+const W=[
+ {a:0.0,b:1.9,y:640,h:'Huiswerk.'},{a:0.5,b:1.9,y:800,h:'<span class="g">Sorry.</span>'},
+ {a:2.0,b:5.4,y:560,h:'<span class="n">vraag 1</span>Wat wil je'},{a:2.5,b:5.4,y:760,h:'bereiken'},{a:3.0,b:5.4,y:900,h:'met je'},{a:3.5,b:5.4,y:1040,h:'<span class="g">website?</span>'},
+ {a:5.5,b:8.4,y:600,h:'<span class="n">vraag 2</span>Wie is je'},{a:6.5,b:8.4,y:800,h:'<span class="g">doelgroep?</span>'},
+ {a:8.5,b:11.4,y:560,h:'<span class="n">vraag 3</span>Welke'},{a:9.0,b:11.4,y:760,h:'websites'},{a:9.5,b:11.4,y:900,h:'vind je'},{a:10.0,b:11.4,y:1040,h:'<span class="g">mooi?</span>'}];
+const box=document.getElementById('words');const els=W.map(w=>{const d=document.createElement('div');d.className='w';d.innerHTML=w.h;d.style.top=w.y+'px';box.appendChild(d);return d});
+window.setT=t=>{
+ W.forEach((w,i)=>{const k=ez((t-w.a)/0.22);const out=cl((t-w.b)/0.15);els[i].style.opacity=t<w.a?0:(1-out);els[i].style.transform=`translateY(${(1-k)*-180}px) scale(${1+(1-k)*0.4})`});
+ document.getElementById('end').style.opacity=cl((t-11.6)/0.4);
+};
+</script></body></html>

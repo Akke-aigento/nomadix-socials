@@ -1,0 +1,36 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="14" data-fps="30">
+<title>Reel scroll: acht sites, de negende is de jouwe</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: scroll. Echte schermafbeeldingen uit het portfolio (media/). Yeketi-tekst uit de site: restauratie van klassiekers door meester-ambachtslieden, klantenportaal, internationaal publiek. Klant heet Baram Maro (niet in beeld). -->
+<style>
+body{background:var(--navy)}
+.pov{position:absolute;left:var(--pad);right:var(--pad);top:260px;font:900 76px/1.02 Inter;color:#fff;letter-spacing:-.02em}
+.pov small{display:block;font:500 28px "JetBrains Mono";color:var(--teal);margin-bottom:14px}
+.vp{position:absolute;left:60px;right:60px;top:640px;height:658px;border-radius:26px;overflow:hidden;background:#0b111f;border:3px solid var(--line)}
+.bar{height:58px;background:#141c2e;display:flex;align-items:center;gap:12px;padding:0 22px;position:relative;z-index:2}.bar i{width:16px;height:16px;border-radius:50%;background:#334}
+.bar span{margin-left:14px;font:500 22px "JetBrains Mono";color:var(--mute)}
+.track{position:absolute;left:0;right:0;top:58px}
+.track img{display:block;width:960px;height:600px;object-fit:cover;object-position:top;border-bottom:16px solid #0b111f}
+.lab{position:absolute;left:var(--pad);right:var(--pad);bottom:360px;font:700 38px/1.3 Inter;color:#fff;opacity:0}
+.lab b{color:var(--teal)}
+.cnt{position:absolute;right:var(--pad);top:560px;font:700 28px "JetBrains Mono";color:var(--teal)}
+.end{position:absolute;inset:0;background:var(--grad);display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0}
+.end h2{font:900 120px/.95 Inter;color:var(--navy);margin:0;letter-spacing:-.03em}.end p{font:600 38px/1.4 Inter;color:var(--navy);margin-top:30px}
+.end img{height:60px;margin-top:60px;align-self:flex-start}
+</style></head><body>
+<div class="pov"><small>// pov</small>Je zoekt iemand voor je klassieker.</div><div class="cnt" id="cnt">1 / 8</div>
+<div class="vp"><div class="bar"><i></i><i></i><i></i><span id="url">studioakke.com/portfolio</span></div><div class="track" id="track"></div></div>
+<div class="lab" id="lab"><b>Yeketi Motorworks</b><br>Restauratie van klassiekers door meester-ambachtslieden, met een klantenportaal.</div>
+<div class="end" id="end"><h2>Acht sites live.<br>De negende is de jouwe.</h2><p>Alle projecten → link in bio.</p><img src="../../../logo-white.svg"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const S=['astrasleep','borletti','loveke','mancini','margriet','sellqo','vanxcel','yeketi'];
+const tr=document.getElementById('track');S.forEach(s=>{const i=document.createElement('img');i.src=`../../../media/site-${s}.jpg`;tr.appendChild(i)});
+const H=616,END=7*H;
+window.setT=t=>{
+ const p=io(cl((t-1)/6.5));const y=p*END;tr.style.transform=`translateY(${-y}px)`;
+ const idx=Math.min(7,Math.round(y/H));document.getElementById('cnt').textContent=(idx+1)+' / 8';
+ document.getElementById('lab').style.opacity=cl((t-7.8)/0.4);
+ document.getElementById('end').style.opacity=cl((t-10.8)/0.5);
+};
+</script></body></html>

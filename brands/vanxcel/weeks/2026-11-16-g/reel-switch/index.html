@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="13" data-fps="30">
+<title>Reel stop-motion: Switch Panel</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: stop-motion. Live (16-11): Switch Panel 5 Slots €23.95. Specs uit de productpagina (weekpost): max 15A per schakelaar, blauwe LED, schroef of kabelschoen, opbouw of inbouw. Zekeringwaarden uit de configurator. -->
+<style>
+body{background:#e9e4da}
+.mat{position:absolute;inset:0;background:linear-gradient(#e9e4da,#ddd6c8);}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.06) 2px,transparent 2px),linear-gradient(90deg,rgba(0,0,0,.06) 2px,transparent 2px);background-size:60px 60px}
+.hd{position:absolute;left:var(--pad);right:var(--pad);top:270px;font:400 130px/.88 "Bebas Neue";color:#111;text-transform:uppercase}
+.hd em{font-style:normal;color:var(--petrol)}
+.panel{position:absolute;left:140px;top:640px;width:800px;filter:drop-shadow(16px 22px 0 rgba(0,0,0,.25))}
+.chip{position:absolute;background:#111;color:#fff;font:400 54px "Bebas Neue";padding:10px 26px;border-radius:12px;letter-spacing:.04em;box-shadow:8px 8px 0 var(--petrol)}
+.spec{position:absolute;left:var(--pad);right:var(--pad);top:1270px;font:600 38px/1.4 Inter;color:#111}
+.price{position:absolute;right:var(--pad);bottom:350px;font:400 170px/1 "Bebas Neue";color:var(--petrol)}
+.logo{position:absolute;left:var(--pad);bottom:370px;height:56px}
+</style></head><body><div class="mat"></div><div class="grid"></div>
+<div class="hd" id="hd">Five switches.<br><em>Zero guessing.</em></div>
+<img class="panel" id="panel" src="../../../products/switch-panel-front.png">
+<div id="chips"></div><div class="spec" id="spec"></div><div class="price" id="price">€23.95</div><img class="logo" id="logo" src="../../../logo-black.svg">
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const L=[['Lights',90,1010],['Water pump',420,1000],['USB',820,1020],['Fan',220,1120],['Fridge',560,1130]];
+const C=L.map(([n,x,y])=>{const d=document.createElement('div');d.className='chip';d.textContent=n;d.style.left=x+'px';d.style.top=y+'px';document.getElementById('chips').appendChild(d);return d});
+const SP=['Max 15A per switch','Blue LED backlight: find it in the dark','Screw terminals or spade connectors','Surface or recessed mount'];
+const rnd=k=>{const x=Math.sin(k*999)*10000;return x-Math.floor(x)};
+window.setT=t=>{
+ const q=Math.floor(t*8)/8, f=Math.floor(t*8);   // stop-motion: 8 beelden per seconde
+ const pin=cl((q-0.5)/1.5);const P=document.getElementById('panel');
+ P.style.transform=`translateX(${(1-pin)*1100}px) rotate(${(1-pin)*14+ (rnd(f)-.5)*1.2}deg)`;
+ C.forEach((c,i)=>{const k=cl((q-2.2-i*0.6)/0.25);c.style.opacity=k>0?1:0;c.style.transform=`scale(${0.4+0.6*k}) rotate(${(rnd(f+i)-.5)*4-2+i}deg)`});
+ const si=Math.floor((q-5.6)/1.0);const sp=document.getElementById('spec');
+ sp.textContent=si>=0&&si<SP.length?SP[si]:'';
+ const hd=document.getElementById('hd');hd.style.opacity=q<9.8?1:0;
+ const e=q>=9.8;document.getElementById('price').style.opacity=e?1:0;document.getElementById('logo').style.opacity=e?1:0;
+ if(e){sp.innerHTML='One switch per circuit,<br>one fuse per circuit.';}
+};
+</script></body></html>

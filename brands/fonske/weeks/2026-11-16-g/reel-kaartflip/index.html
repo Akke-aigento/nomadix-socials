@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="15" data-fps="30">
+<title>Reel kaartflip: four quick answers</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: kaartflip. Antwoorden van fonskecrawl.com (README "Feiten"): Engels standaard, shot alcoholvrij op aanvraag, ±45 min per bar, finale Oude Markt. Crawl 02 live uit SellQo: 27-11, 21:00, Ladeuzeplein. -->
+<style>
+body{background:var(--ink)}
+.felt{position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,#2a1d12,#110C08 70%)}
+.hd{position:absolute;left:var(--pad);right:var(--pad);top:260px;font:400 104px/.88 "Bebas Neue";color:var(--cream);text-transform:uppercase}
+.hd em{font-style:normal;color:var(--amber)}
+.grid{position:absolute;left:90px;right:90px;top:620px;height:940px;display:grid;grid-template-columns:1fr 1fr;gap:40px;perspective:2000px}
+.card{position:relative;transform-style:preserve-3d}
+.card>div{position:absolute;inset:0;border-radius:28px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;padding:34px;border:4px solid var(--amber)}
+.fr{background:var(--card);color:var(--cream)}
+.fr .q{font:700 22px "Space Grotesk";letter-spacing:.2em;color:var(--amber);text-transform:uppercase}
+.fr h3{font:400 74px/.9 "Bebas Neue";margin:14px 0 0;text-transform:uppercase}
+.bk{background:linear-gradient(135deg,var(--gold-a),var(--gold-b));color:var(--ink);transform:rotateY(180deg)}
+.bk .q{font:700 22px "Space Grotesk";letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.bk h3{font:400 88px/.88 "Bebas Neue";margin:14px 0 10px;text-transform:uppercase}
+.bk p{margin:0;font:600 26px/1.3 "Space Grotesk"}
+.end{position:absolute;inset:0;background:var(--ink);display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0}
+.end h2{font:400 150px/.86 "Bebas Neue";color:var(--cream);margin:0;text-transform:uppercase}.end h2 em{font-style:normal;color:var(--amber)}
+.end p{font:600 38px/1.4 "Space Grotesk";color:var(--mute);margin-top:30px}.end img{height:110px;margin-top:50px;align-self:flex-start}
+</style></head><body><div class="felt"></div>
+<div class="hd">First pub crawl? <em>Flip the card.</em></div>
+<div class="grid" id="grid"></div>
+<div class="end" id="end"><h2>Crawl 02.<br><em>Friday 27 November.</em></h2><p>21:00 at the Totem, Ladeuzeplein.<br>18+ with ID. Tickets → link in profile.</p><img src="../../../logo-mark.png"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),io=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+const C=[['Do I need to speak Dutch?','No.','English by default.'],['Do I have to drink alcohol?','No.','The shot at every stop comes alcohol-free on request.'],['How long at each bar?','± 45 min','Then we move on together.'],['Where does it end?','Oude Markt.','The longest bar in Europe.']];
+const g=document.getElementById('grid');const els=C.map((c,i)=>{const d=document.createElement('div');d.className='card';d.innerHTML=`<div class="fr"><div class="q">Q${i+1}</div><h3>${c[0]}</h3></div><div class="bk"><div class="q">A${i+1}</div><h3>${c[1]}</h3><p>${c[2]}</p></div>`;g.appendChild(d);return d});
+window.setT=t=>{
+ els.forEach((e,i)=>{const a=1.6+i*2.4;const k=io(cl((t-a)/0.6));const lift=Math.sin(k*Math.PI);e.style.transform=`rotateY(${k*180}deg) translateZ(${lift*120}px)`;const intro=cl((t-0.2-i*0.12)/0.4);e.style.opacity=intro});
+ document.getElementById('end').style.opacity=cl((t-11.8)/0.5);
+};
+</script></body></html>

@@ -68,3 +68,12 @@ Nieuw: templates street-photo-band, ask-story-night, snapshot-cream, price-amber
 - za 21 17:40 (late namiddag, plannen voor de avond; za 16:50 en 14:15 al geprobeerd) story · POV: Fri 27 Nov 20:55, walking to the Totem. Who's with you? (pollsticker solo/crew + linksticker /crawls) · format poll · template poll-story-blue (nieuw) · hook pov · Dijleblauw · tekening route · {pillar crawl, kort, reageren, nee, explore}
 - zo 22 10:40 (test: zondagvoormiddag, nog niet geprobeerd) reel · Pack list for Friday: ID, a hood, a ticket, 21:00 (18,3 s, 6 scènes op 92 BPM) · format reel-checklist (nieuw) · template reel-checklist (nieuw) · hook grap · gemengd (nacht, crème, blauw, amber, goud) · tekeningen route, id-card, umbrella, early-bird, last-call, totem · muziek Morning After · {pillar crawl, middel, opslaan, nee, test, experiment tijd}
 SellQo-insert 15 nov: 8 rijen (ids 1761b933, 437bca6a, c3f71b25, 8175441a, 8a6ae1e0, c6bfa3cf, d3455aca, 984e810e), recepten via net.http_get (md5 gecontroleerd), uurcontrole zonder dubbels, melding social_posts_ready. Link /crawls bestaat als route in fonske-crawl-hq; fonskecrawl.com niet te checken vanuit de sandbox.
+
+## Week 16 nov 2026: genres v2, opnieuw gemaakt op 16-11 (Akke: "mega variatie")
+Wo–zo opnieuw gemaakt in een eigen genre per item (shared/GENRES.md). Bron: weeks/2026-11-16-g/. Oude versies blijven in weeks/2026-11-16/ (niet gebruikt).
+- c3f71b25 · genre `kaartflip` · template `g-reel-kaartflip` · muziek fanfare-straatfanfare.mp3 + sting (opnieuw gemaakt)
+- 8175441a · genre `fotostrip` · template `g-fotostrip` (opnieuw gemaakt)
+- 8a6ae1e0 · genre `ticket` · template `g-ticket` (opnieuw gemaakt)
+- c6bfa3cf · genre `kaart-tekent` · template `g-reel-route` · muziek surf-nachtjacht.mp3 + sting (opnieuw gemaakt)
+- d3455aca · genre `wanted` · template `g-wanted` (opnieuw gemaakt)
+- 984e810e · genre `aftellen` · template `g-reel-aftellen` · muziek disco-disco-round.mp3 + sting (opnieuw gemaakt)

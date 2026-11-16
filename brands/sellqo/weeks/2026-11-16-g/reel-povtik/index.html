@@ -1,0 +1,46 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="11" data-fps="30">
+<title>Reel POV-tik: meldingen pauzeren</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: pov-tik. Feit uit de weekpost/changelog: "Meldingen pauzeren: één tik bovenaan je dashboard." Meldingen in beeld zijn generiek (geen klantnamen of bedragen). -->
+<style>
+body{background:#f3e9df}
+.sofa{position:absolute;inset:0;background:radial-gradient(circle at 30% 80%,#e6cdb5,transparent 60%),radial-gradient(circle at 90% 10%,#fff7f2,transparent 50%)}
+.pov{position:absolute;left:var(--pad);right:var(--pad);top:260px;font:700 64px/1.1 Poppins;color:var(--navy)}
+.pov small{display:block;font:600 30px Inter;color:var(--coral);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.ph{position:absolute;left:170px;top:560px;width:740px;height:1300px;background:#0b0f2a;border-radius:90px;padding:28px;box-shadow:0 50px 90px rgba(0,20,91,.35);transform:rotate(-4deg)}
+.scr{position:absolute;inset:28px;border-radius:66px;background:var(--cream);overflow:hidden}
+.top{display:flex;justify-content:space-between;align-items:center;padding:110px 40px 20px;font:700 34px Poppins;color:var(--navy)}
+.tog{display:flex;align-items:center;gap:16px;font:600 26px Inter;color:var(--navy);background:#fff;border-radius:99px;padding:12px 18px 12px 24px;border:3px solid var(--line)}
+.sw{width:84px;height:46px;border-radius:99px;background:#cfd3e6;position:relative}.sw i{position:absolute;left:5px;top:5px;width:36px;height:36px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.n{margin:14px 34px;background:#fff;border-radius:26px;padding:22px 26px;font:600 28px/1.3 Inter;color:var(--navy);box-shadow:0 6px 16px rgba(0,20,91,.08);display:flex;gap:18px;align-items:center}
+.n i{width:44px;height:44px;border-radius:12px;background:var(--coral);flex:none}
+.zz{position:absolute;left:0;right:0;top:640px;text-align:center;font:700 40px Poppins;color:var(--navy);opacity:0}
+.zz small{display:block;font:500 28px Inter;color:var(--mute);margin-top:10px}
+.thumb{position:absolute;width:190px;height:240px;border-radius:95px 95px 80px 80px;background:radial-gradient(circle at 40% 30%,#e9b796,#c98a68);box-shadow:-10px 20px 30px rgba(0,0,0,.25);opacity:.95}
+.ring{position:absolute;width:120px;height:120px;border-radius:50%;border:6px solid var(--coral);opacity:0}
+.cap{position:absolute;left:var(--pad);right:var(--pad);bottom:360px;font:700 54px/1.15 Poppins;color:var(--navy);opacity:0;background:#fff;border-radius:24px;padding:22px 30px;box-shadow:0 10px 30px rgba(0,20,91,.15)}
+.logo{position:absolute;right:var(--pad);top:270px;height:48px}
+</style></head><body><div class="sofa"></div>
+<div class="pov"><small>POV</small>Zaterdag. Je zaak is dicht.<br>Je gsm niet.</div><img class="logo" src="../../../logo-navy.png">
+<div class="ph"><div class="scr"><div class="top">Dashboard<div class="tog">Meldingen pauzeren<div class="sw" id="sw"><i id="knob"></i></div></div></div>
+<div id="list"></div><div class="zz" id="zz">Meldingen gepauzeerd<small>geniet van je zaterdag</small></div></div></div>
+<div class="ring" id="ring"></div><div class="thumb" id="thumb"></div>
+<div class="cap" id="cap">Eén tik bovenaan je dashboard.</div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),ez=x=>1-Math.pow(1-cl(x),3);
+const N=['Nieuwe bestelling','Nieuw bericht','Voorraad bijna op','Nieuwe bestelling','Nieuwe reservatie','Nieuw bericht'];
+const list=document.getElementById('list');const els=N.map(n=>{const d=document.createElement('div');d.className='n';d.innerHTML='<i></i>'+n;list.appendChild(d);return d});
+window.setT=t=>{
+ const tap=5.2;
+ els.forEach((e,i)=>{const a=0.5+i*0.7;const k=t<tap?ez((t-a)/0.25):Math.max(0,1-(t-tap)/0.4);e.style.display=t>=a||t>=tap?'flex':'none';e.style.opacity=t<a?0:k;e.style.transform=`translateY(${(1-ez((t-a)/0.25))*-40}px)`});
+ list.style.display=t>tap+0.4?'none':'block';
+ document.getElementById('zz').style.opacity=cl((t-tap-0.5)/0.4);
+ const on=t>=tap;document.getElementById('sw').style.background=on?'var(--coral)':'#cfd3e6';document.getElementById('knob').style.left=on?'43px':'5px';
+ // duim beweegt naar de schakelaar
+ const th=document.getElementById('thumb');const k=ez((t-3.6)/1.4);const press=t>tap-0.15&&t<tap+0.25?1:0;
+ const x=900-(900-760)*k, y=1700-(1700-760)*k+press*14;th.style.left=x+'px';th.style.top=y+'px';th.style.transform=`rotate(${-20+10*k}deg) scale(${1-press*.05})`;
+ th.style.opacity=t>tap+1.2?Math.max(0,1-(t-tap-1.2)/0.5):.95;
+ const r=document.getElementById('ring');const rk=cl((t-tap)/0.5);r.style.left=(790-rk*30)+'px';r.style.top=(690-rk*30)+'px';r.style.width=r.style.height=(120+rk*60)+'px';r.style.opacity=t>=tap?1-rk:0;
+ document.getElementById('cap').style.opacity=cl((t-tap-0.8)/0.4);
+};
+</script></body></html>

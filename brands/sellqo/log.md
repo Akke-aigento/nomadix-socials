@@ -125,3 +125,11 @@ Instagram niet gekoppeld: alles op `manual` in SellQo (Akke post zelf). LinkedIn
 
 Gebruikte changelog-items: `media_library_all_photos`, `photo_standard`, `photo_editor_frame`, `media_library_ai_social`.
 Gebruikte scènes: retail (Atelier Nord). Nog niet gebruikt: horeca (Pizzeria Fiamma), events (Leuven Pub Crawl / Fonske), kassa, bol.com apart, Events Flex, demowinkels (/voorbeelden), "jouw zaak als voorbeeld", overstappen uit Shopify/WooCommerce, prijzen per plan.
+
+## Week 16 nov 2026: genres v2, opnieuw gemaakt op 16-11 (Akke: "mega variatie")
+Wo–zo opnieuw gemaakt in een eigen genre per item (shared/GENRES.md). Bron: weeks/2026-11-16-g/. Oude versies blijven in weeks/2026-11-16/ (niet gebruikt).
+- e4cca352 · genre `terminal` · template `g-terminal` (opnieuw gemaakt)
+- 15ed933d · genre `bierviltje` · template `g-bierviltje` (opnieuw gemaakt)
+- 4d81da2c · genre `bon-print` · template `g-reel-bonprint` · muziek funk-kassa-percussie.mp3 + sting (opnieuw gemaakt)
+- acb9e3c4 · genre `dagboek` · template `g-dagboek` (opnieuw gemaakt)
+- 97570c9c · genre `pov-tik` · template `g-reel-povtik` · muziek bossa-terras.mp3 + sting (opnieuw gemaakt)

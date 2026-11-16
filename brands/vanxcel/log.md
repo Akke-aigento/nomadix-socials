@@ -107,3 +107,11 @@ Nummerplaat, grille-logo en sticker vervaagd op dag 1 (belgium-0003). Op 0474 is
 Nieuwe templates: `slider-story`, `mistake-carousel`, `reel-3-dingen/`, `reel-product/`, `reel-voor-na/`.
 Bronnen know-how: Vanxcel-repo `src/i18n/locales/en.json` (configurator.phase3Warning, phase2Step5, other24vWarning). Product: SellQo-omschrijvingen Switch Panel 5 Slots en Automatic Fuse 100A. Link /configurator gecontroleerd in `src/App.tsx`.
 In SellQo gezet op 15-11 (7 rijen; recepten via raw-URL opgehaald en nagetrokken met md5, geen dubbele uren) + melding "Week van 16 nov klaar".
+
+## Week 16 nov 2026: genres v2, opnieuw gemaakt op 16-11 (Akke: "mega variatie")
+Wo–zo opnieuw gemaakt in een eigen genre per item (shared/GENRES.md). Bron: weeks/2026-11-16-g/. Oude versies blijven in weeks/2026-11-16/ (niet gebruikt).
+- 0dc8ae8a · genre `slot` · template `g-reel-slot` · muziek synthwave-nachtrit.mp3 + sting (opnieuw gemaakt)
+- 32d0bdcf · genre `stop-motion` · template `g-reel-switch` · muziek lo-fi-workbench.mp3 + sting (opnieuw gemaakt)
+- 666d695e · genre `handleiding` · template `g-handleiding` (opnieuw gemaakt)
+- b4183aff · genre `tijdreis` · template `g-reel-tijdreis` · muziek folk-steppe-strings.mp3 + sting (opnieuw gemaakt)
+- a44774f0 · genre `zoek-de-fout` · template `g-zoekdefout` (opnieuw gemaakt)

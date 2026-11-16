@@ -1,0 +1,32 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="nx-size" content="1080x1920">
+<title>Terminal: tweestapsverificatie</title><link rel="stylesheet" href="../../brand.css">
+<!-- genre: terminal (F). Feiten uit de changelog: Instellingen › Mijn profiel, QR met authenticator-app, code van 6 cijfers, vrijwillig, zelfde plek uitzetten. -->
+<style>
+body{background:var(--deep)}
+.glow{position:absolute;inset:0;background:radial-gradient(circle at 20% 15%,rgba(253,123,91,.25),transparent 45%),radial-gradient(circle at 90% 90%,rgba(31,169,113,.15),transparent 50%)}
+h1{position:absolute;left:80px;right:80px;top:270px;font:700 92px/1.02 Poppins;color:#fff;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--coral)}
+.win{position:absolute;left:60px;right:60px;top:620px;height:760px;background:#05081c;border-radius:28px;border:2px solid rgba(255,255,255,.1);box-shadow:0 40px 80px rgba(0,0,0,.5);overflow:hidden}
+.bar{height:64px;background:#10163a;display:flex;align-items:center;gap:14px;padding:0 28px}
+.bar i{width:20px;height:20px;border-radius:50%;background:#FD7B5B;display:block}.bar i:nth-child(2){background:#f5c451}.bar i:nth-child(3){background:#1FA971}
+.bar span{margin-left:20px;font:500 22px "Inter";color:#8A93B8}
+pre{margin:0;padding:40px 44px;font:500 31px/1.7 ui-monospace,"DejaVu Sans Mono",monospace;color:#d8dcf0;white-space:pre-wrap}
+.p{color:var(--coral)}.ok{color:#1FA971}.c{color:#6b739a}
+.cur{display:inline-block;width:18px;height:34px;background:var(--coral);vertical-align:-6px}
+.logo{position:absolute;left:80px;bottom:120px;height:48px}
+</style></head><body><div class="glow"></div>
+<h1 data-slot="titel" data-label="Titel" data-max="40" data-multiline="true">Je wachtwoord.<br><em>Plus zes cijfers.</em></h1>
+<div class="win"><div class="bar"><i></i><i></i><i></i><span>sellqo · build log</span></div>
+<pre><span class="p">$</span> open instellingen › mijn-profiel
+<span class="c"># tweestapsverificatie: uit</span>
+<span class="p">$</span> scan qr --met authenticator-app
+<span class="ok">✓ gekoppeld</span>
+<span class="p">$</span> inloggen
+  wachtwoord   ••••••••••
+  code         _ _ _ _ _ _
+<span class="ok">✓ binnen</span>
+<span class="c"># vrijwillig. op dezelfde plek
+# zet je het weer uit.</span>
+<span class="p">$</span> <span class="cur"></span></pre></div>
+<img class="logo" src="../../logo-white.png" alt="SellQo">
+</body></html>

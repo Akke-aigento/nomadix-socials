@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="15" data-fps="30">
+<title>Reel slot: three things on the road</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: slot (wildcard VanXcel). Stills uit echte clips: turkey-0196 (dag 20, schapen), georgia-0368 (dag 41, sneeuwmuur), kyrgyzstan-0934 (dag 83, rivier). -->
+<style>
+body{background:var(--ink)}
+.full{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6),transparent 30%,transparent 60%,rgba(0,0,0,.8))}
+.mach{position:absolute;left:80px;right:80px;top:560px;height:720px;background:#151515;border:10px solid var(--amber);border-radius:40px;box-shadow:0 0 80px rgba(245,158,11,.25)}
+.mach .top{position:absolute;left:0;right:0;top:-120px;text-align:center;font:400 120px "Bebas Neue";color:#fff;letter-spacing:.04em}
+.win{position:absolute;top:60px;bottom:180px;width:250px;background:#000;border-radius:18px;overflow:hidden;border:4px solid #333}
+.win .reel{position:absolute;left:0;right:0}
+.win .reel div{height:480px;background-size:cover;background-position:center;border-bottom:6px solid #222}
+.w1{left:30px}.w2{left:300px}.w3{left:570px}
+.lbl{position:absolute;left:0;right:0;bottom:40px;text-align:center;font:400 88px "Bebas Neue";color:var(--amber);letter-spacing:.04em}
+.lever{position:absolute;right:-70px;top:120px;width:24px;height:300px;background:#666;border-radius:12px;transform-origin:bottom}
+.lever::before{content:"";position:absolute;left:-24px;top:-60px;width:72px;height:72px;border-radius:50%;background:#d6322e}
+.big{position:absolute;left:var(--pad);right:var(--pad);top:280px;font:400 150px/.88 "Bebas Neue";color:#fff;text-transform:uppercase;opacity:0}
+.big small{display:block;font:600 40px Inter;color:var(--amber);text-transform:none;margin-bottom:10px}
+.cap{position:absolute;left:var(--pad);right:var(--pad);bottom:400px;font:600 40px/1.35 Inter;color:#fff;opacity:0}
+.end{position:absolute;inset:0;background:var(--ink);display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0}
+.end .display{font-size:150px;color:#fff}.end .display em{font-style:normal;color:var(--petrol)}
+.end p{font:500 40px/1.4 Inter;color:#ccc;margin-top:24px}.end img{height:66px;margin-top:70px;align-self:flex-start}
+.intro{position:absolute;left:var(--pad);right:var(--pad);top:270px;font:400 110px/.9 "Bebas Neue";color:#fff;text-transform:uppercase}
+.intro em{font-style:normal;color:var(--amber)}
+</style></head><body>
+<div class="full" id="f0" style="background-image:url(turkey.jpg)"></div>
+<div class="full" id="f1" style="background-image:url(georgia.jpg)"></div>
+<div class="full" id="f2" style="background-image:url(kyrgyzstan.jpg)"></div>
+<div class="shade" id="shade" style="opacity:0"></div>
+<div class="intro" id="intro">Spin the road.<br><em>Three things you share it with.</em></div>
+<div class="mach" id="mach"><div class="lever" id="lever"></div>
+<div class="win w1"><div class="reel" id="r0"></div></div><div class="win w2"><div class="reel" id="r1"></div></div><div class="win w3"><div class="reel" id="r2"></div></div>
+<div class="lbl" id="lbl">Day ???</div></div>
+<div class="big" id="big"></div><div class="cap" id="cap"></div>
+<div class="end" id="end"><div class="display">Sheep. Snow.<br><em>Water.</em></div><p>All filmed from Sandy, our 1984 Land Cruiser.<br>The whole six-month story → link in bio.</p><img src="../../../logo-white.svg"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),ez=x=>1-Math.pow(1-cl(x),3);
+const IM=['turkey.jpg','georgia.jpg','kyrgyzstan.jpg'];
+const R=[0,1,2].map(i=>{const r=document.getElementById('r'+i);for(let k=0;k<24;k++){const d=document.createElement('div');d.style.backgroundImage=`url(${IM[(k+i)%3]})`;r.appendChild(d)}return r});
+const SP=[{a:0.9,d:1.8,res:0,day:'Day 20 · Turkey',big:'Sheep',cap:'On the asphalt in Turkey.'},{a:4.5,d:1.8,res:1,day:'Day 41 · Georgia',big:'Snow',cap:'Walls of it, beside the track in Georgia.'},{a:8.1,d:1.8,res:2,day:'Day 83 · Kyrgyzstan',big:'Water',cap:'A river in full flow in Kyrgyzstan.'}];
+const H=486;
+window.setT=t=>{
+ const s=SP.findLast?SP.findLast(x=>t>=x.a):[...SP].reverse().find(x=>t>=x.a);
+ document.getElementById('intro').style.opacity=1-cl((t-0.8)/0.3);
+ for(let i=0;i<3;i++){let off=0;
+  if(s){const p=cl((t-s.a)/(s.d-0.3+i*0.15));const k=21+((s.res-i)%3+3)%3;off=k*H*ez(p);}
+  R[i].style.transform=`translateY(${-off}px)`;}
+ const lv=s?Math.sin(cl((t-s.a)/0.4)*Math.PI):0;document.getElementById('lever').style.transform=`rotate(${lv*35}deg)`;
+ let rev=0,cur=null;for(const x of SP){const k=(t-x.a-x.d-0.15);if(k>0&&k<1.5){cur=x;rev=cl(k/0.35)}}
+ document.getElementById('lbl').textContent=s&&t>s.a+s.d?s.day:'Spinning…';
+ IM.forEach((_,i)=>document.getElementById('f'+i).style.opacity=cur&&cur.res===i?rev:0);
+ document.getElementById('shade').style.opacity=cur?rev:0;document.getElementById('mach').style.opacity=t<1?cl(t/0.4):(cur?1-rev:1);
+ const b=document.getElementById('big'),c=document.getElementById('cap');
+ if(cur){b.innerHTML=`<small>${cur.day}</small>${cur.big}`;c.textContent=cur.cap;b.style.opacity=rev;c.style.opacity=rev;b.style.transform=`translateY(${(1-rev)*40}px)`}else{b.style.opacity=0;c.style.opacity=0}
+ const e=cl((t-11.6)/0.5);document.getElementById('end').style.opacity=e;
+};
+</script></body></html>

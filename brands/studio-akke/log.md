@@ -96,3 +96,11 @@ Nieuwe varianten: carrousel `pakketkiezer` (groot omlijnd paginacijfer in de voe
 | za 21 | reel 17 s | Tips | Huiswerk. Sorry. Drie vragen uit het onboardingformulier: wat wil je bereiken, wie is je doelgroep, welke websites vind je mooi | reel-formulier (nieuw) / formulier / grap / donker + fel eindkaart | tips, reel-formulier, formulier, grap, middel, link, explore | 10:25 — zaterdagvoormiddag, rustig; derde reel in een ander dagdeel | muziek: Strak (120 BPM, scènes per 4 tellen) |
 | zo 22 | post | Ondernemers | Waar ik in geloof: een goede website hoeft geen maanden te duren, of een vermogen te kosten (Over Akke-pagina) | typografisch / geloof-paper (nieuw) / statement / licht | ondernemers, typografisch, geloof-paper, statement, kort, geen, explore | 20:20 — zondagavond, plannen voor de week | – |
 In SellQo gezet op 15 nov: 7 rijen (6 pending_approval, 1 manual sticker), recepten via pg_net (4 rijen, 9 slides), melding verstuurd.
+
+## Week 16 nov 2026: genres v2, opnieuw gemaakt op 16-11 (Akke: "mega variatie")
+Wo–zo opnieuw gemaakt in een eigen genre per item (shared/GENRES.md). Bron: weeks/2026-11-16-g/. Oude versies blijven in weeks/2026-11-16/ (niet gebruikt).
+- 9d4db627 · genre `bouwwerf` · template `g-reel-bouwwerf` · muziek beat-typemachine.mp3 + sting (opnieuw gemaakt)
+- a31d3d53 · genre `post-it` · template `g-post-it` (opnieuw gemaakt)
+- c9cdae92 · genre `scroll` · template `g-reel-scroll` · muziek lo-fi-regen-op-het-raam.mp3 + sting (opnieuw gemaakt)
+- fded88dc · genre `kinetisch` · template `g-reel-kinetisch` · muziek glitch-glitch.mp3 + sting (opnieuw gemaakt)
+- 10449184 · genre `fluister` · template `g-fluister` (opnieuw gemaakt)

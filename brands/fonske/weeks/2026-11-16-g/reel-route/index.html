@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="12" data-fps="30">
+<title>Reel kaart-tekent: seven days</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: kaart-tekent. Schatkaart, geen echte plattegrond; geen cafénamen (README). Live: 27-11, 21:00, the Totem op het Ladeuzeplein; finale Oude Markt. -->
+<style>
+body{background:#e9dcc0}
+.paper{position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,#f2e7cf,#d9c49c 85%)}
+.hd{position:absolute;left:var(--pad);right:var(--pad);top:260px;font:400 150px/.86 "Bebas Neue";color:var(--ink);text-transform:uppercase}
+.hd small{display:block;font:700 30px "Space Grotesk";letter-spacing:.18em;color:#9a3b2f;margin-bottom:10px}
+svg{position:absolute;left:0;top:520px;width:1080px;height:1060px}
+.end{position:absolute;inset:0;background:var(--ink);display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0}
+.end h2{font:400 140px/.86 "Bebas Neue";color:var(--cream);margin:0;text-transform:uppercase}.end h2 em{font-style:normal;color:var(--amber)}
+.end p{font:600 40px/1.4 "Space Grotesk";color:var(--mute);margin-top:30px}.end img{height:110px;margin-top:50px;align-self:flex-start}
+</style></head><body><div class="paper"></div>
+<div class="hd" id="hd"><small>Treasure map · crawl 02</small>Seven days.</div>
+<svg viewBox="0 0 1080 1060">
+<path d="M80 980 C 200 900, 120 760, 260 700 S 520 760, 560 620 S 380 420, 520 330 S 860 360, 900 210" fill="none" stroke="#b8a37b" stroke-width="10" stroke-dasharray="2 22" stroke-linecap="round"/>
+<path id="route" d="M180 900 C 260 820 330 860 390 780 S 300 640 420 580 S 640 640 700 540 S 560 380 660 320 S 860 300 900 180" fill="none" stroke="#9a3b2f" stroke-width="12" stroke-linecap="round" stroke-dasharray="26 18"/>
+<g id="pins"></g>
+<g id="x" opacity="0"><path d="M860 140l80 80M940 140l-80 80" stroke="#9a3b2f" stroke-width="20" stroke-linecap="round"/><text x="650" y="120" font-family="Bebas Neue" font-size="64" fill="#110C08">Oude Markt</text></g>
+<text x="120" y="980" font-family="Bebas Neue" font-size="60" fill="#110C08">The Totem · 21:00</text>
+</svg>
+<div class="end" id="end"><h2>Friday<br>27 November.<br><em>21:00 · the Totem.</em></h2><p>Send this to the one you're bringing.</p><img src="../../../logo-mark.png"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),ez=x=>1-Math.pow(1-cl(x),3);
+const r=document.getElementById('route');const L=r.getTotalLength();
+const mask=document.createElementNS('http://www.w3.org/2000/svg','path');
+const P=[[180,900,'START'],[390,780,'BAR 1'],[420,580,'BAR 2'],[700,540,'BAR 3'],[660,320,'BAR 4']];
+const pins=document.getElementById('pins');const pe=P.map((p,i)=>{const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.innerHTML=`<circle cx="${p[0]}" cy="${p[1]}" r="30" fill="#110C08"/><circle cx="${p[0]}" cy="${p[1]}" r="12" fill="#F4A434"/><text x="${p[0]+42}" y="${p[1]+14}" font-family="Bebas Neue" font-size="46" fill="#110C08">${p[2]}</text>`;pins.appendChild(g);return g});
+const fr=[0,0.22,0.42,0.62,0.8];
+r.style.strokeDasharray='none';
+window.setT=t=>{
+ const k=ez(cl((t-0.6)/6.4));r.style.strokeDasharray=`${L}`;r.style.strokeDashoffset=L*(1-k);
+ pe.forEach((g,i)=>{const s=cl((k-fr[i])/0.05);g.setAttribute('opacity',s);g.setAttribute('transform',`translate(${P[i][0]*(1-s)} ${P[i][1]*(1-s)}) scale(${s||0.001})`)});
+ document.getElementById('x').setAttribute('opacity',cl((k-0.97)/0.03));
+ document.getElementById('end').style.opacity=cl((t-8.2)/0.5);
+};
+</script></body></html>

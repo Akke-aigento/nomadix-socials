@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="nx-reel" content="1080x1920" data-duration="13" data-fps="30">
+<title>Reel aftellen: pack list</title><link rel="stylesheet" href="../../../brand.css">
+<!-- reel-format: aftellen. Paklijst uit de weekpost: ID (18+), kap (crawl 01 had storm), ticket €9.95 (live SellQo), 21:00 aan de Totem op het Ladeuzeplein. -->
+<style>
+body{background:var(--ink)}
+.n{position:absolute;right:40px;top:300px;font:400 900px/.8 "Bebas Neue";color:transparent;-webkit-text-stroke:6px var(--amber);opacity:0}
+.it{position:absolute;left:var(--pad);right:var(--pad);top:980px;opacity:0}
+.it img{width:300px;height:300px;margin-bottom:20px}
+.it h2{font:400 130px/.86 "Bebas Neue";color:var(--cream);margin:0;text-transform:uppercase}
+.it p{font:600 38px/1.35 "Space Grotesk";color:var(--mute);margin:16px 0 0}
+.hd{position:absolute;left:var(--pad);top:260px;font:700 30px "Space Grotesk";letter-spacing:.2em;color:var(--amber);text-transform:uppercase}
+.end{position:absolute;inset:0;background:linear-gradient(135deg,var(--gold-a),var(--gold-b));display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0}
+.end h2{font:400 150px/.86 "Bebas Neue";color:var(--ink);margin:0;text-transform:uppercase}.end p{font:700 40px/1.4 "Space Grotesk";color:var(--ink);margin-top:30px}
+.end img{height:110px;margin-top:50px;align-self:flex-start}
+</style></head><body>
+<div class="hd">Pack list · crawl 02</div>
+<div id="box"></div>
+<div class="end" id="end"><h2>That's it.</h2><p>Save this for Friday 27 November.</p><p style="font:400 60px 'Bebas Neue';letter-spacing:.08em;margin-top:60px">The Fonske Crawl</p></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),ez=x=>1-Math.pow(1-cl(x),3);
+const I=[['4','id-card','Your ID','It\'s 18+.'],['3','umbrella','A hood','Crawl 01 had a storm. Just saying.'],['2','wristband','A ticket','€9.95. Link in our profile.'],['1','totem','21:00','At the Totem on Ladeuzeplein.']];
+const box=document.getElementById('box');const E=I.map(x=>{const n=document.createElement('div');n.className='n';n.textContent=x[0];const it=document.createElement('div');it.className='it';it.innerHTML=`<img src="../../../illustrations/${x[1]}.svg"><h2>${x[2]}</h2><p>${x[3]}</p>`;box.append(n,it);return[n,it]});
+window.setT=t=>{
+ E.forEach(([n,it],i)=>{const a=0.4+i*2.4,b=a+2.3;const k=ez((t-a)/0.3);const o=t>=a&&t<b?1:0;n.style.opacity=o?0.9:0;n.style.transform=`scale(${1.4-0.4*k})`;it.style.opacity=o*k;it.style.transform=`translateX(${(1-k)*-80}px)`});
+ document.getElementById('end').style.opacity=cl((t-10)/0.4);
+};
+</script></body></html>
