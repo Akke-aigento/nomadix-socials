@@ -5,12 +5,14 @@ Doorstreepte regels (`~~…~~`) of regels met `(Akke: nee)` worden nooit meer ge
 
 ## Actief
 
-- 2026-11-09 · format `aanbod` (tickets, groepen) scoort boven het merkgemiddelde (score 21,9 vs 17,0; 3 posts: 18-10 8,9, 22-10 10,0, 29-10 46,7) · voorlopig: gedragen door de groepenpost van 29-10
-- 2026-11-09 · cta `profiel` doet het iets beter dan `link` (score 19,8 vs 15,1; 4 vs 4 posts) · voorlopig: verschil kleiner dan vorige week, verschillende formats
-- 2026-11-09 · beste dagdeel is de middag 12:15–13:15 (score 25,6 over 3 posts) tegenover de avond (13,5 over 7 posts) · voorlopig, in de zin van POSTTIJDEN
-- 2026-11-09 · reels halen het meeste bereik (gem. 172) maar de laagste score (6,5; 3 posts) · voorlopig: reels voor bereik, beelden voor interactie (beelden 20,7 over 7 posts)
-- 2026-11-09 · caption `middel` scoort hoger dan `lang` (21,2 vs 12,8; 5 vs 5 posts) · voorlopig
+- 2026-11-16 · format `aanbod` (tickets, groepen) scoort boven het merkgemiddelde (score 20,9 vs 14,8; 4 posts, o.a. 29-10 46,7, 12-11 18,2) · voorlopig: gedragen door de groepenpost van 29-10
+- 2026-11-16 · hook `cijfer` scoort het hoogst (24,6; 3 posts: groepen 29-10 46,7, aanbod 12-11 18,2, reel 04-11 9,1) · voorlopig
+- 2026-11-16 · cta `profiel` doet het iets beter dan `link` (score 17,8 vs 15,1; 7 vs 4 posts) · voorlopig: klein verschil, verschillende formats
+- 2026-11-16 · beste dagdeel is de middag 12:15–13:15 (score 19,0 over 5 posts) tegenover avond (13,6 over 9) en late namiddag (11,6 over 3) · voorlopig, in de zin van POSTTIJDEN
+- 2026-11-16 · reels halen het meeste bereik (gem. 138) maar de laagste score (3,9; 6 posts) · voorlopig: reels voor bereik, beelden voor interactie (beelden 20,9 over 9 posts)
 
-_Stand 09-11: 12 gemeten posts, gemiddelde 17,0. Beste post deze week: beeld-eerst 06-11 17:35 (28,6). Volgers 16 (stabiel). Site: 1 Instagram-bezoeker deze week (campagne fonske-20261105), 90 d: 16, 0 aanvragen, 0 bestellingen: te weinig voor een site-les._
+_Stand 16-11: 17 gemeten posts in 90 d, gemiddelde 14,8. Beste post deze week: aankondiging 09-11 20:40 (25,0). Volgers 18 (+2). Site: 0 Instagram-bezoekers deze week, 90 d: 16, 0 aanvragen, 0 bestellingen: te weinig voor een site-les._
 
 ## Vervallen
+
+- 2026-11-09 · caption `middel` scoort hoger dan `lang` (21,2 vs 12,8; 5 vs 5 posts) · vervallen 16-11: nu 15,3 vs 12,8 (10 vs 5 posts), verschil te klein

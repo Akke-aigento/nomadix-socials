@@ -5,11 +5,13 @@ Doorstreepte regels (`~~…~~`) of regels met `(Akke: nee)` worden nooit meer ge
 
 ## Actief
 
-- 2026-11-09 · beste dagdeel is de middag 12:15–12:45 (score 20,2 over 4 posts) tegenover avond (9,2 over 4) en namiddag 17:10–17:25 (6,4 over 3) · voorlopig, in de zin van POSTTIJDEN
-- 2026-11-09 · pijler `werk` (cases) scoort het laagst (score 0,9 vs merkgemiddelde 10,5; 3 posts: case 23-10, reel 27-10, case 01-11) · voorlopig: bereik 2–37
-- 2026-11-09 · pijler `aanbod` scoort het hoogst (score 21,6; 4 posts, o.a. carrousel 19-10 33,0 en carrousel-uitleg 02-11 20,0) · voorlopig
-- 2026-11-09 · carrousels doen het beter dan losse beelden (score 22,4 vs 3,3; 3 vs 5 posts, bereik 39 vs 5) · voorlopig
+- 2026-11-16 · beste dagdeel is de middag 12:15–12:45 (score 13,4 over 6 posts) tegenover avond (7,3 over 5), namiddag (6,4 over 3) en ochtend (0,0 over 3) · voorlopig, in de zin van POSTTIJDEN
+- 2026-11-16 · pijler `werk` (cases) scoort het laagst (score 0,9 vs merkgemiddelde 8,0; 3 gemeten posts) · voorlopig: bereik 0–37
+- 2026-11-16 · pijler `aanbod` scoort het hoogst (score 14,4; 6 posts, o.a. carrousel 19-10 33,0) · voorlopig: deze week 0 (carrousel 09-11, reel 13-11)
+- 2026-11-16 · carrousels doen het beter dan losse beelden en reels (score 16,8 vs 3,3 vs 3,8; 4/5/5 posts) · voorlopig: de carrousel van 09-11 haalde 0
+- 2026-11-16 · reels halen het meeste bereik (gem. 34, reel 11-11: 85) maar een lage score (3,8; 5 posts) · voorlopig: reels voor bereik
+- 2026-11-16 · caption `lang` scoort hoger dan `middel` (13,9 vs 4,8; 5 vs 7 posts) · voorlopig
 
-_Stand 09-11: 13 gemeten posts, gemiddelde 10,5. Beste post deze week: carrousel-uitleg 02-11 (20,0). Oudere posts komen sinds 7-11 terug als `basic` (zonder bereik); de nieuwste post (08-11) nog met volledige cijfers. Volgers 11 (stabiel). Site: 0 Instagram-bezoekers deze week (90 d: 8), 0 aanvragen._
+_Stand 16-11: 19 posts in 90 d, 17 met score, gemiddelde 8,0. Deze week scoorde geen enkele gemeten post boven 0 (5 posts; beeld-eerst 15-11 nog niet gemeten). Posts tot 02-11 geven nog `basic` cijfers (zonder bereik), nieuwe posts volledige cijfers. Volgers 11 (stabiel). Site: 0 Instagram-bezoekers deze week (90 d: 8), 0 aanvragen._
 
 ## Vervallen

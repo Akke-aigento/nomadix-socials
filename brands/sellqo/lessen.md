@@ -5,9 +5,12 @@ Doorstreepte regels (`~~…~~`) of regels met `(Akke: nee)` worden nooit meer ge
 
 ## Actief
 
-- 2026-11-09 · tip-carrousels met cta `opslaan` (pijler `tips`) scoren het hoogst (score 90,0 vs merkgemiddelde 42,0; 3 posts, o.a. checklist 04-11 50,0) · voorlopig: bereik ±4 per post, één like = 25 punten
-- 2026-11-09 · beste dagdeel is de avond 19:00–21:30 (score 60,7 over 5 gemeten posts) tegenover de ochtend (29,2 over 4) · voorlopig, in de zin van POSTTIJDEN, zelfde kanttekening
+- 2026-11-16 · pijler `tips` met cta `opslaan` scoort het hoogst (score 54,3 vs merkgemiddelde 31,7; 5 posts), carrousels 67,5 (4 posts) · voorlopig: bereik 2–6 per post, één like = 15–50 punten; de tip-carrousel van 11-11 haalde wel 0
+- 2026-11-16 · beste dagdeel is de avond 20:30–21:30 (score 46,2 over 7 posts) tegenover de ochtend (19,7 over 6) · voorlopig, in de zin van POSTTIJDEN, zelfde kanttekening
+- 2026-11-16 · hook `contrast` scoort het hoogst (66,7; 3 posts: mythe-feit 21-10, typografisch 06-11, voor-na 13-11) · voorlopig
+- 2026-11-16 · pijler `feature` scoort het laagst (19,5; 7 posts) · voorlopig: anders brengen (contrast, voor-na) of minder vaak
+- 2026-11-16 · reels halen het meeste bereik (gem. 24, reel-lijst 14-11: 78) maar een lage score (9,5; 4 posts) · voorlopig: reels voor bereik, carrousels voor interactie
 
-_Stand 09-11: 13 posts, 10 met score, gemiddelde 42,0, bereik 0–6 accounts per post: elke uitspraak is ruis tot het bereik groeit. Stories halen geen score (bereik 0). Volgers 5 (stabiel). 0 Instagram-bezoekers op de site deze week en in 90 dagen._
+_Stand 16-11: 20 posts in 90 d, 16 met score, gemiddelde 31,7, bereik 0–6 per beeld: elke uitspraak is ruis tot het bereik groeit. Stories halen nog steeds 0 bereik. Beste post deze week: voor-na 13-11 17:35 (50,0, bereik 2). Volgers 5 (stabiel). 0 Instagram-bezoekers op de site deze week en in 90 dagen._
 
 ## Vervallen
