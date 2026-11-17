@@ -1,0 +1,18 @@
+{
+  "name": "nomadix-reels",
+  "private": true,
+  "description": "Reels en carrouselslides voor de Nomadix-merken, gemaakt met Remotion (gratis licentie: bedrijf tot 3 personen). Zie README.md.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.544",
+    "@remotion/cli": "4.0.544",
+    "@remotion/fonts": "4.0.544",
+    "@remotion/renderer": "4.0.544",
+    "@remotion/transitions": "4.0.544",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.544"
+  }
+}
