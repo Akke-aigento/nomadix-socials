@@ -21,13 +21,13 @@ geautomatiseerde dienst voor SellQo-klanten (SOCIAL-ENGINE-1), dan is een Compan
 |---|---|
 | `brand` | vanxcel, fonske, sellqo, studio-akke, loveke (huisstijl in `src/themes.ts`) |
 | `hook` | korte tekst die de eerste 1,8 s groot in beeld springt (verplicht) |
-| `scenes[]` | `clip` (echte video, `from` = startseconde, `caption`), `image` (Ken Burns: `move` in/out/left/right/up), `title` (kicker/title/sub, `\n` = nieuwe regel, laatste regel in accentkleur), `end` (title/sub/cta + logo) |
+| `scenes[]` | `clip` (echte video, `from` = startseconde, `speed` = afspeelsnelheid, `caption`), `image` (Ken Burns: `move` in/out/left/right/up), `title` (kicker/title/sub, `\n` = nieuwe regel, laatste regel in accentkleur), `end` (title/sub/cta + logo) |
 | `transition` | slide (standaard), fade, wipe of cut |
 | `music`, `sting` | bibliotheeknummer en merksting (`brands/<slug>/music/…`) |
 | `captionStyle` | pop (standaard, woord per woord) of bar |
 
 Ondertitels staan altijd in de veilige zone (boven 250 px en onder 340 px vrij).
-**Kies `from` pas nadat je frames van de clip bekeken hebt**: het begin van een clip is vaak niet het beste stuk.
+**Verplicht vóór elke clip:** `shared/remotion/clipcheck.sh <clip> <from> <dur> [speed]` en de strip bekijken. Elk frame van het fragment moet passen bij de ondertitel. Les 17-11: "A river in full flow" stond 3 s op een clip waarvan enkel de eerste 1,5 s rivier is, de rest is een brugdek. Te kort fragment? Gebruik `speed` (0,5 = vertraagd) in plaats van verder te laten lopen.
 
 ## Slide-props (`src/Slide.tsx`)
 

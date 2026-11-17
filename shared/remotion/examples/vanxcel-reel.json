@@ -1,6 +1,36 @@
-{"brand":"vanxcel","hook":"Day 20","transition":"slide","music":"brands/vanxcel/music/synthwave-nachtrit.mp3","sting":"brands/vanxcel/music/sting.mp3",
-"scenes":[
- {"type":"clip","src":"brands/vanxcel/clips/vx-2022-04-21-turkey-0196.mp4","dur":3,"caption":"Sheep on the asphalt in Turkey"},
- {"type":"clip","src":"brands/vanxcel/clips/vx-2022-05-12-georgia-0368.mp4","dur":3,"caption":"Walls of snow in Georgia"},
- {"type":"clip","src":"brands/vanxcel/clips/vx-2022-06-23-kyrgyzstan-0934.mp4","dur":3,"caption":"A river in full flow, Kyrgyzstan"},
- {"type":"end","dur":3,"title":"Six months.\nOne Land Cruiser.","sub":"The whole story → link in bio","cta":"vanxcel.com"}]}
+{
+ "brand": "vanxcel",
+ "hook": "Day 20",
+ "transition": "slide",
+ "music": "brands/vanxcel/music/synthwave-nachtrit.mp3",
+ "sting": "brands/vanxcel/music/sting.mp3",
+ "scenes": [
+  {
+   "type": "clip",
+   "src": "brands/vanxcel/clips/vx-2022-04-21-turkey-0196.mp4",
+   "dur": 3,
+   "caption": "Sheep on the asphalt in Turkey"
+  },
+  {
+   "type": "clip",
+   "src": "brands/vanxcel/clips/vx-2022-05-12-georgia-0368.mp4",
+   "dur": 3,
+   "caption": "Walls of snow in Georgia"
+  },
+  {
+   "type": "clip",
+   "src": "brands/vanxcel/clips/vx-2022-06-23-kyrgyzstan-0934.mp4",
+   "dur": 2.8,
+   "caption": "A river in full flow, Kyrgyzstan",
+   "from": 0,
+   "speed": 0.5
+  },
+  {
+   "type": "end",
+   "dur": 3,
+   "title": "Six months.\nOne Land Cruiser.",
+   "sub": "The whole story → link in bio",
+   "cta": "vanxcel.com"
+  }
+ ]
+}

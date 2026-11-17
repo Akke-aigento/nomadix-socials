@@ -5,7 +5,7 @@
 # Paden in props zijn relatief aan de public-map: brands/... (nomadix-socials/brands) en loveke/... (loveke/marketing, als LOVEKE_DIR gezet is).
 set -e
 HERE="$(cd "$(dirname "$0")" && pwd)"; ROOT="$(cd "$HERE/../.." && pwd)"
-KIND=$1; PROPS=$2; OUT=$3
+KIND=$1; PROPS=$(realpath "$2"); OUT=$(realpath -m "$3")
 [ -d "$HERE/node_modules" ] || (cd "$HERE" && npm ci --silent)
 PUB=$(mktemp -d); ln -s "$ROOT/brands" "$PUB/brands"
 [ -n "$LOVEKE_DIR" ] && ln -s "$LOVEKE_DIR/marketing" "$PUB/loveke"

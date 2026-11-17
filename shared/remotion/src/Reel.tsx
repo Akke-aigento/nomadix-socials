@@ -9,7 +9,7 @@ import {useBrandFonts} from './fonts';
 
 // Eén scène = één beeld of clip met (optioneel) ondertitel. Alles in seconden.
 export type Scene =
-  | {type: 'clip'; src: string; dur: number; from?: number; caption?: string; zoom?: boolean; muted?: boolean}
+  | {type: 'clip'; src: string; dur: number; from?: number; speed?: number; caption?: string; zoom?: boolean; muted?: boolean}
   | {type: 'image'; src: string; dur: number; caption?: string; move?: 'in' | 'out' | 'left' | 'right' | 'up'; fit?: 'cover' | 'contain'; bg?: string}
   | {type: 'title'; dur: number; kicker?: string; title: string; sub?: string; bg?: 'brand' | 'accent' | 'light'}
   | {type: 'end'; dur: number; title: string; sub?: string; cta?: string};
@@ -66,7 +66,7 @@ const SceneView: React.FC<{s: Scene; t: Theme; fps: number; cs: 'pop' | 'bar'}> 
   const d = sec(s.dur, fps);
   if (s.type === 'clip') return (
     <AbsoluteFill style={{background: '#000'}}>
-      <Move move={s.zoom ? 'in' : 'none'} dur={d}><OffthreadVideo src={staticFile(s.src)} startFrom={Math.round((s.from ?? 0) * fps)} muted={s.muted ?? true} style={{width: '100%', height: '100%', objectFit: 'cover'}} /></Move>
+      <Move move={s.zoom ? 'in' : 'none'} dur={d}><OffthreadVideo src={staticFile(s.src)} startFrom={Math.round((s.from ?? 0) * fps)} playbackRate={s.speed ?? 1} muted={s.muted ?? true} style={{width: '100%', height: '100%', objectFit: 'cover'}} /></Move>
       <AbsoluteFill style={{background: 'linear-gradient(180deg,rgba(0,0,0,.35),transparent 25%,transparent 55%,rgba(0,0,0,.6))'}} />
       {s.caption ? <Caption text={s.caption} t={t} style={cs} /> : null}
     </AbsoluteFill>);

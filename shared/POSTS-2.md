@@ -43,7 +43,8 @@ Slide 1 is de hook (groot, kort, swipe-reden). Laatste slide = één CTA. Tekst 
 
 ## 4. Echt beeld eerst
 
-- VanXcel: `brands/vanxcel/clips/` (41 clips) en `media/` (342 foto's). Bekijk frames vóór je een stuk kiest (`ffmpeg -ss <s> -frames:v 1`).
+- VanXcel: `brands/vanxcel/clips/` (41 clips) en `media/` (342 foto's).
+- **Elke clip door `shared/remotion/clipcheck.sh <clip> <from> <dur> [speed]`** en de strip bekijken: elk frame van het fragment moet kloppen met de ondertitel. Eén frame dat niet klopt = ander fragment, kortere `dur` of `speed` 0,5. (17-11: "A river in full flow" liep 1,5 s door op een brugdek. Akke zag het meteen.)
 - Fonske: Crawl Log-foto's en -video (enkel gepubliceerde avonden), getekende scènes enkel als aanvulling.
 - Loveke: strip 1 en 2, productfoto's, en elke clip/foto die Akke in de mediabibliotheek zet (map `brand`, hartje = voorkeur).
 - SellQo en Studio Akke: schermopnames/screenshots van de echte app of sites (demowinkels, portfolio), nooit klanttenants.
