@@ -76,4 +76,4 @@ Wo–zo opnieuw gemaakt in een eigen genre per item (shared/GENRES.md). Bron: we
 - 8a6ae1e0 · genre `ticket` · template `g-ticket` (opnieuw gemaakt)
 - c6bfa3cf · genre `kaart-tekent` · template `g-reel-route` · muziek surf-nachtjacht.mp3 + sting (opnieuw gemaakt)
 - d3455aca · genre `wanted` · template `g-wanted` (opnieuw gemaakt)
-- 984e810e · genre `aftellen` · template `g-reel-aftellen` · muziek disco-disco-round.mp3 + sting (opnieuw gemaakt)
+- 984e810e · genre `aftellen` · template `g-reel-aftellen` · muziek disco-disco-round.mp3 + sting (opnieuw gemaakt 21-11 na prijscheck: ticket = early bird €6.95 tot wo 25-11, daarna €9.95; bestanden reel-aftellen-g-v2-*)
