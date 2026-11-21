@@ -3,7 +3,7 @@
 Elke maandag om 08:12.
 
 Merken met hun site in Akke Insights (`sites.name`):
-- **Loveke:** lessen in `/home/user/loveke/marketing/instagram/` (log.md, lessen.md); Insights 'Loveke'.
+- **Loveke:** lessen in `<repo-map van loveke>/marketing/instagram/` (log.md, lessen.md); Insights 'Loveke'.
 - **VanXcel:** `brands/vanxcel/`; Insights 'VanXcel'.
 - **SellQo:** `brands/sellqo/`; Insights 'SellQo'.
 - **Studio Akke:** `brands/studio-akke/`; Insights 'Studio Akke'.

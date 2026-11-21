@@ -5,8 +5,8 @@ Elke dag om 07:43 (Akke, 19-10: "houdt de generator rekening met prijs- en planw
 Bron per merk:
 - **Loveke en VanXcel:** `products` (name, price, compare_at_price, stock) van de tenant.
 - **The Fonske Crawl:** events van de tenant (`event_details` e.d., enkel status 'scheduled'; datum, uur, plek, ticketprijzen, einde early bird).
-- **SellQo:** `pricing_plans` (name, monthly_price, yearly_price, active, limieten) én de landingcopy in `/home/user/sellqo/src/i18n/locales/landing.nl.json`: proefperiode, gratis plan, wat er in een plan zit. NOOIT `landing.pricing.plans` als bron.
-- **Studio Akke:** de repo `/home/user/studioakke` (`Pricing.tsx`, `Prijzen.tsx`, `Mail.tsx`, `Insights.tsx`, `diensten/*`, `LanguageContext.tsx` blok nl).
+- **SellQo:** `pricing_plans` (name, monthly_price, yearly_price, active, limieten) én de landingcopy in `<repo-map van sellqo>/src/i18n/locales/landing.nl.json`: proefperiode, gratis plan, wat er in een plan zit. NOOIT `landing.pricing.plans` als bron.
+- **Studio Akke:** de repo `<repo-map van studioakke>` (`Pricing.tsx`, `Prijzen.tsx`, `Mail.tsx`, `Insights.tsx`, `diensten/*`, `LanguageContext.tsx` blok nl).
 
 1. Haal de posts op die nog moeten komen:
    ```

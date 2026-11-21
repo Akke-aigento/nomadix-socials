@@ -49,7 +49,7 @@ Lukt een stap niet, meld dat en stop, en zet niets half in SellQo. Dat geldt voo
 - **Taal:** content in het Nederlands (Vlaams, warm, kort); Engels enkel als Akke erom vroeg.
 - **Campagne:** `loveke`.
 - **Map:** repo `loveke`, `marketing/instagram/` (README = huisstijl, wat we wel en niet zeggen, recepten).
-- **Muziek:** `marketing/music/` (`tracks.json`; nooit twee keer hetzelfde nummer na elkaar). Zet bij elke render `LOVEKE_DIR=/home/user/loveke`, zodat `loveke/...` in de props werkt.
+- **Muziek:** `marketing/music/` (`tracks.json`; nooit twee keer hetzelfde nummer na elkaar). Zet bij elke render `LOVEKE_DIR=<repo-map van loveke>`, zodat `loveke/...` in de props werkt.
 - **Push** naar loveke: `marketing/instagram/weeks/<maandag>/`, `marketing/instagram/published/<maandag>/`, `marketing/instagram/log.md` en `marketing/music/tracks.json`. Gedeelde bestanden (POSTS-2, remotion) lees je uit nomadix-socials.
 - **Bron:** producten (naam, prijs, omschrijving, beelden; nieuwe producten gaan voor).
 - **Echt beeld:** strip 1 en 2 (`src/assets/comic/`, `marketing/comic-2/`), productfoto's (`marketing/product-photos/`) en elk nieuw beeld of elke clip van Akke uit de mediabibliotheek.
@@ -79,7 +79,7 @@ Lukt een stap niet, meld dat en stop, en zet niets half in SellQo. Dat geldt voo
 - **Taal:** content in het Nederlands, neutraal voor Vlaanderen en Nederland, met "je".
 - **Campagne:** `sellqo`.
 - **Map:** nomadix-socials `brands/sellqo/`. De sectie "Claims: de enige regel die telt" geldt strikt.
-- **Bron voor elke claim:** de repo `/home/user/sellqo`:
+- **Bron voor elke claim:** de repo `<repo-map van sellqo>`:
   - de gerenderde landingcopy `src/i18n/locales/landing.nl.json` (hero/core/sectors/facts/running/faq/examples/scene; NOOIT `landing.pricing.plans`);
   - de publieke changelog;
   - live `pricing_plans`;
@@ -101,7 +101,7 @@ Lukt een stap niet, meld dat en stop, en zet niets half in SellQo. Dat geldt voo
 - **Taal:** content in het Nederlands, je-vorm, ik-vorm voor Akke.
 - **Campagne:** `studioakke`.
 - **Map:** nomadix-socials `brands/studio-akke/`. De secties "Bron van alle feiten" en "Wat we wel en niet zeggen" gelden strikt.
-- **Bron:** de repo `/home/user/studioakke` is de enige bron voor aanbod, prijzen en teksten (`Pricing.tsx`, `Prijzen.tsx`, `Mail.tsx`, `Insights.tsx`, `diensten/*`, `LanguageContext.tsx` blok nl).
+- **Bron:** de repo `<repo-map van studioakke>` is de enige bron voor aanbod, prijzen en teksten (`Pricing.tsx`, `Prijzen.tsx`, `Mail.tsx`, `Insights.tsx`, `diensten/*`, `LanguageContext.tsx` blok nl).
 - **Regels:**
   - prijzen altijd met "excl. btw";
   - snelheid in werkdagen, met de voorwaarde dat de termijn start zodra de materialen binnen zijn;

@@ -1,15 +1,15 @@
 # Geplande social-taken: algemene werkwijze
 
-Sinds 21-11-2026 draaien alle social-taken als **Code-taken** (claude.ai/code/scheduled) met de repo's vast ingesteld. De vroegere "Chat"-taken voegden de repo's tijdens de run toe met `add_repo`. Sinds 20-11 weigert een geplande run dat (403), waardoor "Opnieuw maken" 24 keer na elkaar faalde. De oude taken staan uit.
+Sinds 21-11-2026 krijgen alle social-taken hun repo's vast mee. Ze zijn aangemaakt vanuit een chat waaraan de vier repo's gekoppeld waren, en krijgen die repo's bij elke run al gecloond. "Social · opnieuw maken" is een Code-taak uit claude.ai/code met de repo's ingesteld. Waarom: de vroegere taken voegden de repo's tijdens de run toe met `add_repo`. Sinds 20-11 weigert een geplande run dat (403), waardoor "Opnieuw maken" 24 keer na elkaar faalde. De oude taken heten "(oud) …" en staan uit.
 
 Elke taak heeft een korte opdracht: "Lees en volg `shared/taken/ALGEMEEN.md` en daarna `shared/taken/<taak>.md`". De echte instructies staan dus hier en worden via git aangepast, niet in de taakinstellingen.
 
 ## Omgeving
 
-- **Repo's** staan al gecloond in `/home/user/` (`nomadix-socials`, `loveke`, `sellqo`, `studioakke`), elk op een eigen `claude/…`-branch. Voeg nooit zelf een repo toe (`add_repo` bestaat hier niet of werkt niet) en clone deze vier niet opnieuw.
+- **Repo's** staan al gecloond: in `/home/claude/` (taken die Claude aanmaakte) of `/home/user/` (taken uit de browser). Zoek ze met `ls /home/claude /home/user 2>/dev/null`. In dit bestand staat `<repo-map>` voor die map, bv. `/home/claude/loveke`. Het gaat om `nomadix-socials`, `loveke`, `sellqo` en `studioakke`. Voeg nooit zelf een repo toe (`add_repo` werkt niet in een geplande run) en clone deze vier niet opnieuw. Ontbreekt er één, meld dat en ga verder met wat wel kan.
 - **Schrijven naar een repo** gebeurt altijd op main:
   ```
-  cd /home/user/<repo> && git fetch origin main && git checkout -B main origin/main
+  cd <repo-map> && git fetch origin main && git checkout -B main origin/main
   … werk, git add (gericht, nooit node_modules/ of out/), git commit …
   git push origin main   # geweigerd: git fetch origin main && git rebase origin/main && opnieuw pushen
   ```
@@ -17,7 +17,7 @@ Elke taak heeft een korte opdracht: "Lees en volg `shared/taken/ALGEMEEN.md` en 
 - **SellQo-database:** Lovable-connector `query_database`, project `9932a7fe-43a1-42de-9c64-168968599600`. Akke Insights: project `f639dfa8-ad8f-4c7f-9b35-9672dd0fefbc` (enkel lezen).
 - **Externe skills:** `shared/taken/vendor/marketingskills-social/` (MIT, coreyhaines31/marketingskills, skill `social` met `references/`). Remotion-skills: probeer `git clone --depth 1 https://github.com/remotion-dev/skills /tmp/remotion-skills`. Lukt dat niet, ga dan verder met `shared/remotion/README.md`; dat is niet fataal.
 - **Projects-tool** (brand bible `claude/brand-<slug>.md`) is er meestal niet. Dan volstaan de README's in de repo.
-- **Renderen:** `PLAYWRIGHT_MODULE=/opt/npm-tools/node_modules/playwright/index.mjs` en `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers` voor HTML-templates, `shared/remotion/render.sh` voor reels en slides (Loveke: `LOVEKE_DIR=/home/user/loveke`). Ontbreekt een pad, zoek het (`ls /opt`, `npx playwright`) in plaats van te stoppen.
+- **Renderen:** `PLAYWRIGHT_MODULE=/opt/npm-tools/node_modules/playwright/index.mjs` en `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers` voor HTML-templates, `shared/remotion/render.sh` voor reels en slides (Loveke: `LOVEKE_DIR=<repo-map van loveke>`). Ontbreekt een pad, zoek het (`ls /opt`, `npx playwright`) in plaats van te stoppen.
 
 ## Bericht aan Akke
 

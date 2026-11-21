@@ -7,7 +7,7 @@ Elke zondag om 11:13, na de vijf weektaken. Akke, 17-11-2026: "het moet gewoon i
    select p.id, p.tenant_id, p.status, p.media_type, (p.scheduled_for at time zone 'Europe/Brussels') lokaal, p.post_text, p.image_urls, p.video_url, p.content_tags::text from social_posts p where p.source='content_task' and p.status in ('pending_approval','manual') and p.scheduled_for >= '<maandag> 00:00 Europe/Brussels' and p.scheduled_for < '<maandag> 00:00 Europe/Brussels'::timestamptz + interval '7 days' order by p.tenant_id, p.scheduled_for;
    ```
    Heeft een merk 0 items, dan is de weektaak van dat merk mislukt. Meld dat bovenaan.
-2. Lees `shared/POSTS-2.md` (vooral §2, §4 en §6) en per merk de sectie "wat we wel en niet zeggen" van de README (Loveke: `/home/user/loveke/marketing/instagram/README.md`), plus de sectie van het merk in `shared/taken/weektaak.md`.
+2. Lees `shared/POSTS-2.md` (vooral §2, §4 en §6) en per merk de sectie "wat we wel en niet zeggen" van de README (Loveke: `<repo-map van loveke>/marketing/instagram/README.md`), plus de sectie van het merk in `shared/taken/weektaak.md`.
 3. Controleer ELK item zelf, met de echte bestanden (curl de raw-URL's naar /tmp):
    - **Beelden:** bekijk elk beeld (Read). Controleer:
      - niets afgesneden of overlappend;
