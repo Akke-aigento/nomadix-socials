@@ -1,0 +1,21 @@
+{
+  "title": "Vindt Google je zaak? (gratis scan)",
+  "brand": "studio-akke",
+  "idea": "Een ondernemer twijfelt of Google zijn site vindt; de gratis scan op studioakke.com/insights geeft in een halve minuut een score en drie verbeterpunten.",
+  "send": "Naar de collega-zelfstandige die zegt 'ik heb toch een website'.",
+  "facts": "Bron: studioakke LanguageContext nl insights.scan.* (halve minuut, score, drie dingen, gewone taal, enkel publieke pagina's). Scan opgenomen op 22-11 op studioakke.com zelf: 96, 7 pagina's.",
+  "style": "Clean flat 2D vector illustration with soft gradients, dark navy and violet background (#0F1729 to #211438) with teal (#2BD4BD) accents, friendly characters with simple faces, subtle grain. Absolutely no text, letters, logos or readable screens.",
+  "voice": {
+    "text": "Je zaak heeft een website. Maar vindt Google je ook? Test het gratis. Vul je webadres in, en binnen een halve minuut zie je je score. Plus de drie dingen die je vindbaarheid het meest tegenhouden. In gewone taal. Gratis scan: link in bio.",
+    "model_id": "eleven_multilingual_v2"
+  },
+  "shots": [
+    {"id": "s1-bakker", "duration_secs": 6, "use": 4.2,
+     "frame": "Vertical 9:16: a Flemish baker in a white apron stands behind the counter of his small bakery at night after closing, holding his phone, looking at it with a doubtful frown; warm bakery lights, bread shelves behind him.",
+     "motion": "Flat 2D animation. He scrolls on his phone, frowns, scratches his head, then shrugs at the camera. Sound: quiet shop ambience, a fridge humming, a soft clock ticking. No speech, no music."},
+    {"id": "s2-zoek", "duration_secs": 6, "use": 3.3,
+     "frame": "Vertical 9:16: a customer on a rainy street holds her phone, searching, the screen glow on her face, blurred shop fronts behind her.",
+     "motion": "Flat 2D animation. She types on her phone, looks puzzled, then walks on past the bakery without noticing it. Sound: rain on the street, footsteps. No speech, no music."}
+  ],
+  "screen": {"src": "brands/studio-akke/films/gratis-scan/scan-gsm.mp4", "type_at": 4.8, "result_at": 9.9}
+}

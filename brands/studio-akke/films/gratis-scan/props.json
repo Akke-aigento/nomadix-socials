@@ -1,0 +1,53 @@
+{
+ "brand": "studio-akke",
+ "hook": {
+  "text": "Vindt Google\njouw zaak?",
+  "dur": 2.6
+ },
+ "shots": [
+  {
+   "src": "brands/studio-akke/films/gratis-scan/scan-gsm.mp4",
+   "dur": 13.0,
+   "from": 0.1,
+   "volume": 0,
+   "inset": 0.6,
+   "focus": "50% 0%"
+  }
+ ],
+ "lines": [
+  {
+   "text": "Test het gratis.",
+   "start": 2.7,
+   "end": 4.8
+  },
+  {
+   "text": "Scan mijn site.",
+   "start": 4.9,
+   "end": 6.7
+  },
+  {
+   "text": "Je score, binnen een halve minuut.",
+   "start": 6.8,
+   "end": 9.9
+  },
+  {
+   "text": "Plus wat je vindbaarheid tegenhoudt.",
+   "start": 10.0,
+   "end": 11.7
+  },
+  {
+   "text": "In gewone taal.",
+   "start": 11.8,
+   "end": 13.0
+  }
+ ],
+ "music": "brands/studio-akke/music/beat-typemachine.mp3",
+ "musicVolume": 0.7,
+ "duck": 1,
+ "end": {
+  "title": "Gratis scan",
+  "sub": "studioakke.com/insights · link in bio",
+  "dur": 2.8
+ },
+ "subBottom": 150
+}

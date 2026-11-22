@@ -16,6 +16,7 @@ export type Shot = {
   fadeIn?: number;          // crossfade vanaf de vorige shot, seconden (0 = harde knip)
   fit?: 'cover' | 'contain';
   focus?: string;           // object-position, bv. '50% 30%'
+  inset?: number;           // schermopname als 'gsm' verkleind in beeld (bv. 0.55), tekst blijft erbuiten
 };
 export type Word = {text: string; start: number; end: number};
 export type Line = {text: string; start: number; end: number; who?: string; kind?: 'sub' | 'msg'; side?: 'in' | 'out'}; // ondertitel, of gsm-bericht (kind 'msg': ballon, in = ontvangen links, out = verstuurd rechts)
@@ -30,6 +31,7 @@ export type FilmProps = {
   hook?: {text: string; dur?: number};      // grote tekst bovenaan in de eerste seconden
   end?: {title: string; sub?: string; dur: number; logo?: boolean};
   grade?: 'none' | 'warm' | 'film';
+  subBottom?: number;       // afstand ondertitel tot onderrand (standaard 400)
 };
 
 const fr = (s: number, fps: number) => Math.round(s * fps);
@@ -51,10 +53,10 @@ export const chunkWords = (words: Word[], at = 0): Line[] => {
   return out.map((l, i) => ({...l, end: Math.min(out[i + 1]?.start ?? l.end + 0.6, l.end + 0.6)}));
 };
 
-const Sub: React.FC<{line: Line; t: Theme}> = ({line, t}) => {
+const Sub: React.FC<{line: Line; t: Theme; bottom?: number}> = ({line, t, bottom}) => {
   const f = useCurrentFrame(); const {fps} = useVideoConfig();
   const s = spring({frame: f, fps, config: {damping: 18, mass: 0.5}});
-  return <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 400, paddingLeft: 80, paddingRight: 80}}>
+  return <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: bottom ?? 400, paddingLeft: 80, paddingRight: 80}}>
     {line.who ? <div style={{fontFamily: t.text, fontWeight: 700, fontSize: 30, letterSpacing: '.12em', textTransform: 'uppercase', color: t.accent2, marginBottom: 10, opacity: s}}>{line.who}</div> : null}
     <div style={{fontFamily: t.title, fontWeight: t.titleWeight, textTransform: t.titleUpper ? 'uppercase' : 'none', fontSize: t.titleUpper ? 78 : 62, lineHeight: 1.1,
       color: '#fff', textAlign: 'center', maxWidth: 920, opacity: s, transform: `translateY(${(1 - s) * 16}px)`,
@@ -80,6 +82,10 @@ const ShotView: React.FC<{s: Shot; fps: number; first: boolean}> = ({s, fps, fir
   const op = first || !fi ? 1 : interpolate(f, [0, fi], [0, 1], {extrapolateRight: 'clamp'});
   const isVid = /\.(mp4|mov|webm)$/i.test(s.src);
   const style: React.CSSProperties = {width: '100%', height: '100%', objectFit: s.fit ?? 'cover', objectPosition: s.focus ?? '50% 50%'};
+  if (isVid && s.inset) { const w = 1080 * s.inset, h = 1920 * s.inset; return <AbsoluteFill style={{opacity: op, justifyContent: 'center', alignItems: 'center'}}>
+    <div style={{width: w, height: h, borderRadius: 54, overflow: 'hidden', border: '10px solid #0b0b0f', boxShadow: '0 40px 90px rgba(0,0,0,.55), 0 0 0 2px rgba(255,255,255,.08)', marginTop: 40}}>
+      <OffthreadVideo src={staticFile(s.src)} startFrom={fr(s.from ?? 0, fps)} playbackRate={s.speed ?? 1} volume={s.volume ?? 0} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: s.focus ?? '50% 0%'}} />
+    </div></AbsoluteFill>; }
   if (isVid) return <AbsoluteFill style={{opacity: op, background: '#000'}}>
     <OffthreadVideo src={staticFile(s.src)} startFrom={fr(s.from ?? 0, fps)} playbackRate={s.speed ?? 1}
       volume={(x) => (s.volume ?? 1) * interpolate(x, [0, Math.max(1, fi), d - 6, d], [fi ? 0 : 1, 1, 1, 0.6], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} style={style} />
@@ -128,12 +134,12 @@ export const Film: React.FC<FilmProps> = (p) => {
     return mv * env * (talk ? duck : 1);
   };
   const grade = p.grade === 'warm' ? 'saturate(1.08) sepia(.08) contrast(1.04)' : p.grade === 'film' ? 'contrast(1.06) saturate(.92)' : 'none';
-  return <AbsoluteFill style={{background: '#000'}}>
+  return <AbsoluteFill style={{background: p.shots.some((x) => x.inset) ? `linear-gradient(160deg, ${t.bg}, ${t.bg2})` : '#000'}}>
     <AbsoluteFill style={{filter: grade}}>
       {seqs.map(({s, start, i}) => <Sequence key={i} from={start} durationInFrames={fr(s.dur, fps)}><ShotView s={s} fps={fps} first={i === 0} /></Sequence>)}
     </AbsoluteFill>
     <AbsoluteFill style={{background: 'linear-gradient(180deg,rgba(0,0,0,.28),transparent 22%,transparent 60%,rgba(0,0,0,.55))', pointerEvents: 'none'}} />
-    {lines.map((l, i) => <Sequence key={'l' + i} from={fr(l.start, fps)} durationInFrames={Math.max(1, fr(l.end - l.start, fps))}>{l.kind === 'msg' ? <Msg line={l} t={t} row={lines.filter((x, j) => j < i && x.kind === 'msg' && x.end > l.start).length} /> : <Sub line={l} t={t} />}</Sequence>)}
+    {lines.map((l, i) => <Sequence key={'l' + i} from={fr(l.start, fps)} durationInFrames={Math.max(1, fr(l.end - l.start, fps))}>{l.kind === 'msg' ? <Msg line={l} t={t} row={lines.filter((x, j) => j < i && x.kind === 'msg' && x.end > l.start).length} /> : <Sub line={l} t={t} bottom={p.subBottom} />}</Sequence>)}
     {p.hook ? <Sequence from={0} durationInFrames={fr(p.hook.dur ?? 2.2, fps)}><Hook text={p.hook.text} t={t} dur={p.hook.dur ?? 2.2} /></Sequence> : null}
     {p.end ? <Sequence from={shotsEnd} durationInFrames={fr(p.end.dur, fps)}><End e={p.end} t={t} /></Sequence> : null}
     {p.voice ? <Sequence from={fr(vAt, fps)}><Audio src={staticFile(p.voice.src)} volume={p.voice.volume ?? 1} /></Sequence> : null}
