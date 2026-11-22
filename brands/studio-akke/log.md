@@ -123,3 +123,4 @@ Geen nieuwe klikbare links (CTA "link in bio") → geen UTM nodig. Geen testslot
 
 Geschrapt: post do 26-11 19:10 "Je praat met mij" (Over Akke: "Direct contact met mij als developer. Geen tussenpersonen, geen vertraging.") — eigen score 8, onafhankelijke review 6/12: niet sendbaar, geen echt beeld. Mail-onderwerp mag nu niet meer tot 21-12.
 Onafhankelijke review (subagent): carrousel 9, reel 7, post 6, story 8 → verwerkt: carrousel van 8 naar 7 slides, hook op slide 1 dominant, prijskaart netjes afgesneden, vage "voordeliger"-zin uit de caption; reel: belofte-hook, grotere gsm, eerlijke ondertitels ("mijn eigen webshop/platform"), ondertitels naast i.p.v. over de opname; story: gsm kleiner tegen overlap met de sticker; post geschrapt.
+In SellQo gezet op 22 nov: 3 rijen (carrousel 9eb431d4 en reel b3bf1138 pending_approval, story 69627ce5 manual sticker met recept), melding social_posts_ready verstuurd.
