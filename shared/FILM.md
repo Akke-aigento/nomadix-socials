@@ -63,3 +63,20 @@ Bodies:
 - Geen echte personen nabootsen met AI (stem of gezicht), behalve Akke en Nastya als getekende stripfiguren. Geen stemkloon van Akke zonder zijn uitdrukkelijke go.
 - Geen merken van derden, geen tekst in AI-beelden (die wordt gekriebel), geen sigaretten of alcohol aan de mond.
 - Kosten: één film = 6 beginbeelden + 6 shots. Niet blind opnieuw genereren: eerst de prompt verbeteren.
+
+## 5. Strenge controle (Akke 22-11: "zo'n AI-fouten mogen er niet in")
+
+Geen enkele film gaat naar SellQo zonder deze controle, per shot én op de eindmontage:
+
+1. `python3 shared/remotion/filmcheck.py <shot.mp4> <map> --from <s> --to <s>` (enkel het stuk dat je gebruikt). Dat geeft grids van een frame per 0,25 s en een lijst met **sprongen** (frames die plots verspringen). Een sprong midden in een shot is bijna altijd een AI-fout. Knips en crossfades in de eindmontage zijn normaal.
+2. **Bekijk elke grid** (Read) en zoek actief naar:
+   - dubbele of verdwijnende objecten (armsteun, gsm, tas, koffer);
+   - extra of samensmeltende ledematen en vingers, vervagende benen;
+   - een gezicht of baard dat verandert ten opzichte van het modelblad;
+   - een lichaam dat verspringt van houding of plaats;
+   - tekst, cijfers of gekriebel op borden en schermen;
+   - onlogische actie (de verkeerde kant uitlopen, iets doen dat niet in het verhaal staat).
+3. **Geluid**: spraakherkenning op elke shot. Een stem die er niet hoort, gebrabbel of een echo gaat eruit (volume 0) of wordt vervangen door een vaste ElevenLabs-stem.
+4. **Eén fout = dat stuk eruit knippen of de shot opnieuw maken.** Nooit "valt niet op".
+5. Noteer per shot in het log welk bereik gebruikt is en wat eruit geknipt werd (pilot: vliegtuig enkel 0–3,4 s door een dubbele armsteun vanaf 3,5 s; gate enkel 0,3–4,9 s).
+6. Pas daarna de onafhankelijke review (POSTS-2) en dan `pending_approval`.
