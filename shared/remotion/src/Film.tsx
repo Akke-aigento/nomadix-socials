@@ -24,6 +24,7 @@ export type FilmProps = {
   brand: string;
   shots: Shot[];
   voice?: {src: string; words: Word[]; at?: number; volume?: number}; // words = alignment-JSON van media-compose
+  voices?: {src: string; words: Word[]; at: number; volume?: number; who?: string; caption?: boolean}[]; // meerdere vaste stemmen (dialoog)
   lines?: Line[];
   music?: string;
   musicVolume?: number;     // standaard 0.55
@@ -125,7 +126,7 @@ export const Film: React.FC<FilmProps> = (p) => {
   });
   const shotsEnd = at;
   const vAt = p.voice?.at ?? 0;
-  const lines = [...(p.lines ?? []), ...(p.voice ? chunkWords(p.voice.words, vAt) : [])];
+  const lines = [...(p.lines ?? []), ...(p.voice ? chunkWords(p.voice.words, vAt) : []), ...(p.voices ?? []).filter((v) => v.caption !== false).flatMap((v) => chunkWords(v.words, v.at).map((l) => ({...l, who: v.who})))];
   const speaking = lines.filter((l) => l.kind !== 'msg').map((l) => [fr(l.start, fps), fr(l.end, fps)] as const);
   const mv = p.musicVolume ?? 0.55; const duck = p.duck ?? 0.3;
   const musicVol = (x: number) => {
@@ -143,6 +144,7 @@ export const Film: React.FC<FilmProps> = (p) => {
     {p.hook ? <Sequence from={0} durationInFrames={fr(p.hook.dur ?? 2.2, fps)}><Hook text={p.hook.text} t={t} dur={p.hook.dur ?? 2.2} /></Sequence> : null}
     {p.end ? <Sequence from={shotsEnd} durationInFrames={fr(p.end.dur, fps)}><End e={p.end} t={t} /></Sequence> : null}
     {p.voice ? <Sequence from={fr(vAt, fps)}><Audio src={staticFile(p.voice.src)} volume={p.voice.volume ?? 1} /></Sequence> : null}
+    {(p.voices ?? []).map((v, i) => <Sequence key={'v' + i} from={fr(v.at, fps)}><Audio src={staticFile(v.src)} volume={v.volume ?? 1} /></Sequence>)}
     {p.music ? <Audio src={staticFile(p.music)} volume={musicVol} /> : null}
   </AbsoluteFill>;
 };

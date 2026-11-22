@@ -46,7 +46,7 @@ Elke map heeft `tracks.json` (formaat hieronder). Een nummer zonder regel in `tr
 ## Bron: ElevenLabs Music
 
 - ElevenLabs Music (betaald plan). Commercieel gebruik op social media mag; geen naamsvermelding nodig.
-- **Zo maak je nieuwe nummers** (bijvullen kan elke chat of taak met de Lovable-connector): Watchtower heeft de route `/api/public/music-compose` met de eigen sleutel `ELEVENLABS_MUSIC_API_KEY` (enkel Music Generation). Roep ze aan vanuit SQL op het Watchtower-project (`b9945398-c9e9-49cc-bc0b-97a3b0757531`), zodat het secret nooit in een chat komt:
+- **Zo maak je nieuwe nummers** (bijvullen kan elke chat of taak met de Lovable-connector): Watchtower heeft de route `/api/public/music-compose` met de eigen sleutel `ELEVENLABS_MUSIC_API_KEY` (enkel Music Generation). Roep ze aan vanuit SQL op het Watchtower-project, sinds 18-11 **Watchtower EU** (`b587da4f-11c6-414a-9136-da44d0e3df93`; het oude `b9945398-…` is niet meer live), zodat het secret nooit in een chat komt:
   ```sql
   select net.http_post(url := 'https://watchtower.studioakke.com/api/public/music-compose',
     headers := jsonb_build_object('Content-Type','application/json','x-cron-secret', public.get_cron_secret()),
