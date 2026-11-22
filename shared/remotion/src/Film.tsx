@@ -18,7 +18,7 @@ export type Shot = {
   focus?: string;           // object-position, bv. '50% 30%'
 };
 export type Word = {text: string; start: number; end: number};
-export type Line = {text: string; start: number; end: number; who?: string}; // vaste ondertitel (dialoog in de shot)
+export type Line = {text: string; start: number; end: number; who?: string; kind?: 'sub' | 'msg'; side?: 'in' | 'out'}; // ondertitel, of gsm-bericht (kind 'msg': ballon, in = ontvangen links, out = verstuurd rechts)
 export type FilmProps = {
   brand: string;
   shots: Shot[];
@@ -59,6 +59,18 @@ const Sub: React.FC<{line: Line; t: Theme}> = ({line, t}) => {
     <div style={{fontFamily: t.title, fontWeight: t.titleWeight, textTransform: t.titleUpper ? 'uppercase' : 'none', fontSize: t.titleUpper ? 78 : 62, lineHeight: 1.1,
       color: '#fff', textAlign: 'center', maxWidth: 920, opacity: s, transform: `translateY(${(1 - s) * 16}px)`,
       textShadow: '0 3px 0 rgba(0,0,0,.6), 0 0 24px rgba(0,0,0,.65)'}}>{line.text}</div>
+  </AbsoluteFill>;
+};
+
+
+const Msg: React.FC<{line: Line; t: Theme; row: number}> = ({line, t, row}) => {
+  const f = useCurrentFrame(); const {fps} = useVideoConfig();
+  const s = spring({frame: f, fps, config: {damping: 14, mass: 0.6}});
+  const out = line.side === 'out';
+  return <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: out ? 'flex-end' : 'flex-start', paddingTop: 300 + row * 150, paddingLeft: 90, paddingRight: 90}}>
+    <div style={{maxWidth: 760, background: out ? t.accent : '#FFFFFF', color: out ? '#fff' : '#1A1A1A', fontFamily: t.text, fontWeight: 700, fontSize: 52, lineHeight: 1.2,
+      padding: '26px 38px', borderRadius: 44, borderBottomRightRadius: out ? 12 : 44, borderBottomLeftRadius: out ? 44 : 12,
+      boxShadow: '0 10px 30px rgba(0,0,0,.25)', transform: `scale(${0.6 + 0.4 * s}) translateY(${(1 - s) * 30}px)`, transformOrigin: out ? 'right bottom' : 'left bottom', opacity: s}}>{line.text}</div>
   </AbsoluteFill>;
 };
 
@@ -108,7 +120,7 @@ export const Film: React.FC<FilmProps> = (p) => {
   const shotsEnd = at;
   const vAt = p.voice?.at ?? 0;
   const lines = [...(p.lines ?? []), ...(p.voice ? chunkWords(p.voice.words, vAt) : [])];
-  const speaking = lines.map((l) => [fr(l.start, fps), fr(l.end, fps)] as const);
+  const speaking = lines.filter((l) => l.kind !== 'msg').map((l) => [fr(l.start, fps), fr(l.end, fps)] as const);
   const mv = p.musicVolume ?? 0.55; const duck = p.duck ?? 0.3;
   const musicVol = (x: number) => {
     const talk = speaking.some(([a, b]) => x >= a - 6 && x <= b + 6);
@@ -121,7 +133,7 @@ export const Film: React.FC<FilmProps> = (p) => {
       {seqs.map(({s, start, i}) => <Sequence key={i} from={start} durationInFrames={fr(s.dur, fps)}><ShotView s={s} fps={fps} first={i === 0} /></Sequence>)}
     </AbsoluteFill>
     <AbsoluteFill style={{background: 'linear-gradient(180deg,rgba(0,0,0,.28),transparent 22%,transparent 60%,rgba(0,0,0,.55))', pointerEvents: 'none'}} />
-    {lines.map((l, i) => <Sequence key={'l' + i} from={fr(l.start, fps)} durationInFrames={Math.max(1, fr(l.end - l.start, fps))}><Sub line={l} t={t} /></Sequence>)}
+    {lines.map((l, i) => <Sequence key={'l' + i} from={fr(l.start, fps)} durationInFrames={Math.max(1, fr(l.end - l.start, fps))}>{l.kind === 'msg' ? <Msg line={l} t={t} row={lines.filter((x, j) => j < i && x.kind === 'msg' && x.end > l.start).length} /> : <Sub line={l} t={t} />}</Sequence>)}
     {p.hook ? <Sequence from={0} durationInFrames={fr(p.hook.dur ?? 2.2, fps)}><Hook text={p.hook.text} t={t} dur={p.hook.dur ?? 2.2} /></Sequence> : null}
     {p.end ? <Sequence from={shotsEnd} durationInFrames={fr(p.end.dur, fps)}><End e={p.end} t={t} /></Sequence> : null}
     {p.voice ? <Sequence from={fr(vAt, fps)}><Audio src={staticFile(p.voice.src)} volume={p.voice.volume ?? 1} /></Sequence> : null}
