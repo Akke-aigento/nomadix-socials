@@ -1,5 +1,6 @@
 #!/bin/bash
 # Gebruik:  shared/remotion/render.sh reel  <props.json> <uit.mp4>
+#           shared/remotion/render.sh film  <props.json> <uit.mp4>   (FILM-1: echte shots + stem + muziek, zie shared/FILM.md)
 #           shared/remotion/render.sh slide <props.json> <uit.jpg>   (1080x1350)
 #           shared/remotion/render.sh story <props.json> <uit.jpg>   (1080x1920)
 # Paden in props zijn relatief aan de public-map: brands/... (nomadix-socials/brands) en loveke/... (loveke/marketing, als LOVEKE_DIR gezet is).
@@ -14,6 +15,7 @@ BARG=""; [ -n "$BROWSER" ] && BARG="--browser-executable=$BROWSER"
 cd "$HERE"
 case $KIND in
   reel)  npx remotion render src/index.ts Reel "$OUT" --props="$PROPS" --public-dir="$PUB" $BARG --codec=h264 --crf=20 --log=error ;;
+  film)  npx remotion render src/index.ts Film "$OUT" --props="$PROPS" --public-dir="$PUB" $BARG --codec=h264 --crf=19 --audio-bitrate=192k --log=error ;;
   slide) npx remotion still src/index.ts Slide "$OUT" --props="$PROPS" --public-dir="$PUB" $BARG --image-format=jpeg --jpeg-quality=90 --log=error ;;
   story) npx remotion still src/index.ts Story "$OUT" --props="$PROPS" --public-dir="$PUB" $BARG --image-format=jpeg --jpeg-quality=90 --log=error ;;
   *) echo "onbekend: $KIND"; exit 1 ;;
