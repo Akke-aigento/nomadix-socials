@@ -140,3 +140,4 @@ De drie vragen (POSTS-2 §2):
 
 Kwaliteitspoort (zelf / onafhankelijke subagent vóór fixes): carrousel 11 / 9, reel 11 / 11, productpost 7 (geschrapt), odometerpost 11 / –, story 10 / 8. Verwerkt na review: caption carrousel ("flatbed" weg, concrete doorstuurzin), nummerplaat in de reelclip vervaagd, story: donkerder verloop achter de vraag en uitsnede zonder vervaagd vlak. Niet overgenomen: "six months klopt niet met de data" (beslissing Akke 16-10: duur in posts = 6 months). Open: kickers in `shared/remotion` Slide zijn 28 px (< 34 px uit POSTS-2), voorstel om ze in de gedeelde component te vergroten.
 Muziek: Mountain Dawn (laatst 09-11; vorige reel was Steppe Strings, ander genre).
+In SellQo gezet op 22-11 (4 rijen: 3 `pending_approval`, story `manual`/sticker; recept story nagetrokken met md5, geen dubbele uren) + melding "Week van 23 nov klaar".
