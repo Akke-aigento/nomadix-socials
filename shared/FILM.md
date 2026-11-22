@@ -2,6 +2,16 @@
 
 Akke (22-11): "Denk aan echte filmpjes maken, niet gewoon slideshows. Maak de karakters echt, vertel iets nuttigs, laat de strip tot leven komen." De reel van elk merk is voortaan een **film**: bewegende beelden met eigen geluid, personages die bewegen en praten, voice-over waar het helpt, muziek eronder. Geen foto's die schuiven, geen sting.
 
+## 0. Stand 22-11 (avond): imgeditor in plaats van ElevenLabs-video
+
+- **ElevenLabs Image & Video vraagt een Pro-plan; dat nemen we niet** (Akke, 22-11). Video en beelden lopen via **imgeditor.co** op Akkes bestaande credits (±5.700): Nano Banana 2 Pro (beelden, 12 credits in 2K) en **Veo 3.1 Fast** (8 s, 9:16, 1080p, met geluid, 35 credits). Een film van 6 shots kost dus ±300 credits.
+- **Nu met de hand via Claude in Chrome**, in meerdere tabs tegelijk. Resultaten staan publiek op `file2.ilovevideo.ai/...` en zijn vanuit de sandbox te downloaden.
+- **Automatisch** zodra Akke in imgeditor een API-sleutel maakt, die als secret `IMGEDITOR_API_KEY` in Watchtower zet en Watchtower publiceert: `media-compose` heeft dan `ie_image`, `ie_video`, `ie_status` en `ie_credits` (code staat al op main).
+- **Stemmen van Veo zijn onbruikbaar** (Akke: "echo, precies een alien"). Altijd `no speech` in de prompt en `speech, talking, words` in de negatieve prompt. Dialoog komt van een vaste ElevenLabs-stem per personage (`media-compose` `voice`, werkt op het huidige plan na publicatie van Watchtower), of als tekst op het scherm.
+- **Personages:** vaste cast met modelblad, expressiebladen en vaste beschrijving. Loveke: `loveke/marketing/films/characters/CAST.md`. Elk begin- en eindbeeld krijgt die bladen als referentie.
+- **Tegen drift:** elke shot krijgt een begin- én eindbeeld (imgeditor → Advanced Settings → End Frame), geen inzooms en een negatieve prompt. Zie CAST.md.
+- **Controle:** contactsheet per shot (8 frames) naast het modelblad, en spraakherkenning (faster-whisper `small`) op elke shot om te weten wat er echt te horen is. Whisper verzint zinnen op een egale ruis: herhaalt hij dezelfde zin, dan is het ruis.
+
 ## 1. De motor
 
 | Stap | Waar | Wat |
