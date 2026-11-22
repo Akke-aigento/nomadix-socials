@@ -1,0 +1,45 @@
+{
+ "brand": "sellqo",
+ "hook": "Tafel 4 eet glutenvrij.",
+ "transition": "slide",
+ "captionStyle": "bar",
+ "scenes": [
+  {
+   "type": "clip",
+   "src": "brands/sellqo/weeks/2026-11-23/clips/qr-allergie-mirabelle.mp4",
+   "from": 0.5,
+   "dur": 4.24,
+   "caption": "Bij elk gerecht staat wat erin zit."
+  },
+  {
+   "type": "clip",
+   "src": "brands/sellqo/weeks/2026-11-23/clips/qr-allergie-mirabelle.mp4",
+   "from": 5.0,
+   "dur": 4.24,
+   "caption": "Je gast tikt zelf op Gluten."
+  },
+  {
+   "type": "clip",
+   "src": "brands/sellqo/weeks/2026-11-23/clips/qr-allergie-mirabelle.mp4",
+   "from": 9.3,
+   "dur": 4.5,
+   "caption": "Vijf gerechten met gluten verdwijnen."
+  },
+  {
+   "type": "clip",
+   "src": "brands/sellqo/weeks/2026-11-23/clips/qr-allergie-mirabelle.mp4",
+   "from": 12.4,
+   "dur": 3.4,
+   "caption": "De rest van de kaart blijft staan."
+  },
+  {
+   "type": "end",
+   "dur": 4.24,
+   "title": "Je kaart\nfiltert mee.",
+   "sub": "Probeer het zelf bij Bistro Mirabelle, een demo op sellqo.app/voorbeelden.",
+   "cta": "Link in bio"
+  }
+ ],
+ "music": "brands/sellqo/music/lo-fi-focus.mp3",
+ "sting": "brands/sellqo/music/sting.mp3"
+}

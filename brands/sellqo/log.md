@@ -2,6 +2,35 @@
 
 Wat er gepost is, per week (maandag). Lees dit vóór je een nieuwe week maakt: geen onderwerp, scène of changelog-item herhalen.
 
+## Week van 2026-11-23 (POSTS-2: 4 items)
+
+Gemaakt op 22-11 door de weektaak volgens POSTS-2. Instagram **gekoppeld**: post, carrousel en reel (met bibliotheeknummer) `pending_approval`; poll-story `manual` + `sticker`.
+Bron voor claims: sellqo-repo (main 4e121da): `landing.nl.json` (examples, sectors) en de changelog. Live `pricing_plans` gelezen; geen prijzen gebruikt.
+**Echt beeld:** schermafbeeldingen en een schermopname (frame per frame, 360 px gsm, DPR 3) van de demowinkels op sellqo.app/voorbeelden. Niets besteld of aangeklikt dat iets wegschrijft (enkel bekijken en het allergenenfilter). Geen nieuw materiaal van Akke in de mediabibliotheek (de 12 recente `social`-beelden zijn kopieën van vorige posts).
+Meetdata 14 d: bereik 0–15 per item, za-reel 14-11 nog altijd de uitschieter (78). Geen signalen van Akke. Toegepast uit `lessen.md`: tips-carrousel met cta `opslaan` op wo-avond (`exploit`), reel en carrousel 's avonds.
+Onafhankelijke review (subagent, zonder maakgeschiedenis): A 9, B 11, C **8 (afgekeurd)**, D 11. Verwerkt: A grotere tegels (5 + "En jouw zaak?") en hook "Bestel iets. Er wordt niets aangerekend.", doorstuurzin weg; B kicker concreet + brug naar de reel; C ★-teken weg, "in één tik" → "Pincode in, shift start.", slide 5 concreter. Niet verwerkt: dekkende ondertitelbalk (gedeelde Reel.tsx, geldt voor alle merken; voorstel aan Akke).
+Score na verwerking (eigen herbeoordeling): A 11, B 11, C 9 (echt beeld 0: geen kassabeelden beschikbaar), D 11.
+
+| Dag + uur | Wat | Pijler | Idee | Structuur / format | Hook | Score | Bron |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ma 23/11 19:40 **(test)** — maandagavond vóór het avondvenster, nog nooit geprobeerd | post | Bewijs | Elf echte demowinkels, bestel gerust, niets aangerekend (5 tegels + "En jouw zaak?") | beeld-eerst / post-demowinkels (nieuw) | "Bestel iets. Er wordt niets aangerekend." | 11/12 | landing.examples.subtitle, own_title |
+| di 24/11 12:25 — lunch, drukste moment voor een sticker | story + poll | Samen | "Een gast vraagt: zit hier gluten in?" (Ik weet het uit het hoofd / Ik loop naar de keuken), teaser voor do | poll / story-poll-foto (nieuw) | vraag | 11/12 | geen claim; beeld demo Bistro Mirabelle |
+| wo 25/11 20:45 — na sluiting, administratietijd (bewaren) | carrousel (7) | Ondernemerstips | Jobstudenten in de kerstvakantie: 5 dingen op je kassa vóór hun eerste shift | **Hack List** / Remotion statement + cta | "Jobstudenten achter je toog? Stel dit nu in." | 9/12 | changelog `favorieten_1`, `shift_start_1`, `kassa_rechten_2`, `kassa_beheer_slot_1`, `kassa_wie_1` |
+| do 26/11 21:05 — sterkste slot (avond) | reel (19,3 s, Focus) | Feature | Je gast filtert de QR-kaart zelf op gluten; 5 gerechten verdwijnen; sporen nog altijd melden | reel-schermopname (nieuw) | "Tafel 4 eet glutenvrij." | 11/12 | changelog `qr_menu_allergen_filter`, landing.sectors.horeca_p2; demo-restaurant.sellqo.shop |
+
+De drie vragen:
+- **ma post** — doorsturen naar een maat die twijfelt over een webshop of kassa: hij kan zelf rondklikken zonder iets te betalen. Hook: "Bestel iets. Er wordt niets aangerekend." Eén idee: probeer een echte SellQo-winkel.
+- **di story** — geen doorstuur-item maar een reactie: elke uitbater herkent de vraag. Hook: de vraag zelf op een echte menukaart. Eén idee: hoe beantwoord jij die vraag?
+- **wo carrousel** — naar je vennoot of zaalverantwoordelijke die de jobstudenten inwerkt. Hook: kerstvakantie + jobstudenten. Eén idee: je kassa klaarzetten voor nieuw personeel.
+- **do reel** — een uitbater naar zijn chef ("dit vragen ze elke avond"), iemand met een allergie naar zijn vaste restaurant. Hook: "Tafel 4 eet glutenvrij." + filter in beeld. Eén idee: de gast filtert de kaart zelf.
+
+Labels (`content_tags`): ma `bewijs/beeld-eerst/post-demowinkels/statement/middel/link/test(tijd)` · di `samen/poll/story-poll-foto/vraag/kort/reageren/explore` ·
+wo `tips/lijst/remotion-slide/belofte/lang/opslaan/exploit, genre hack-list` · do `feature/reel-schermopname/remotion-reel/verhaal/lang/delen/explore, genre schermopname`.
+Gebruikte changelog-items: `qr_menu_allergen_filter`, `favorieten_1`, `shift_start_1`, `kassa_rechten_2`, `kassa_beheer_slot_1`, `kassa_wie_1`. Gebruikte demo's: Café De Wissel, Pizzeria Fiamma, Maison Lune, Zaal De Linde, Vinotheek Lemmens, Bistro Mirabelle.
+Muziek: do Focus (85 BPM, start 0) + sting. Reel 7,1 MB.
+Nog niet gebruikt (nieuw sinds vorige week): `menu_lang_1` (QR-menu in nl/en/fr/de; niet aan te tonen: geen enkele demo heeft menutalen aan), `samenstelling_1`, `voorraad_kaart_1/2`, `voorraad_maat_1`, `inkoop_prijs_1`, `zaal_opstelling_1/3`, `kassa_opstelling_1`, `zaal_vorm_1`, `rapport_huis_1`, `kassa_vastetab_1`, `vrij_artikel_1`, `maten_1`, `qr_toog_1`.
+Gevonden bij de recon: (1) de "Kies je stoel"-link op /voorbeelden (Zaal De Linde, Brussels String Quartet) toont "Er zijn op dit moment geen datums in verkoop"; (2) op 340 px breed schuift de winkelnaam van Bistro Mirabelle onder de mandknop (360 px is goed).
+
 ## Week van 2026-11-16
 
 Gemaakt op 15-11 door de weektaak. Instagram **gekoppeld**: alle 7 items `pending_approval` (geen stickers; de drie reels met bibliotheeknummer gaan na "Week goedkeuren" vanzelf online).
