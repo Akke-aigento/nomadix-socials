@@ -1,0 +1,35 @@
+{
+ "brand": "studio-akke",
+ "hook": "Zo ziet je klant je site.",
+ "transition": "slide",
+ "captionStyle": "pop",
+ "scenes": [
+  {
+   "type": "clip",
+   "src": "brands/studio-akke/weeks/2026-11-23/clips/gsm-margriet.mp4",
+   "dur": 3.69,
+   "caption": "Een café in Leuven"
+  },
+  {
+   "type": "clip",
+   "src": "brands/studio-akke/weeks/2026-11-23/clips/gsm-vanxcel.mp4",
+   "dur": 3.69,
+   "caption": "Mijn eigen webshop"
+  },
+  {
+   "type": "clip",
+   "src": "brands/studio-akke/weeks/2026-11-23/clips/gsm-sellqo.mp4",
+   "dur": 3.69,
+   "caption": "Mijn eigen platform"
+  },
+  {
+   "type": "end",
+   "dur": 4.09,
+   "title": "Gemaakt voor\nelk scherm.",
+   "sub": "Responsive design dat werkt op alle apparaten.",
+   "cta": "studioakke.com"
+  }
+ ],
+ "music": "brands/studio-akke/music/garage-luchtig.mp3",
+ "sting": "brands/studio-akke/music/sting.mp3"
+}

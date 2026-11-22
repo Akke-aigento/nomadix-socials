@@ -104,3 +104,22 @@ Wo–zo opnieuw gemaakt in een eigen genre per item (shared/GENRES.md). Bron: we
 - c9cdae92 · genre `scroll` · template `g-reel-scroll` · muziek lo-fi-regen-op-het-raam.mp3 + sting (opnieuw gemaakt)
 - fded88dc · genre `kinetisch` · template `g-reel-kinetisch` · muziek glitch-glitch.mp3 + sting (opnieuw gemaakt)
 - 10449184 · genre `fluister` · template `g-fluister` (opnieuw gemaakt)
+
+## Week van 23 nov 2026 (weektaak POSTS-2, gemaakt op 22 nov)
+
+Eerste week volgens POSTS-2: 3 items in plaats van 4 (de post is geschrapt na de kwaliteitspoort, zie onder). Instagram gekoppeld: carrousel en reel op "wacht op goedkeuring", poll-story op "zelf posten" (sticker).
+Leren: alle 12 gemeten items van de voorbije 14 dagen scoren 0 (bereik 0–85, geen likes/bewaard), geen signalen van Akke (`social_post_events` leeg) → geen bruikbare les, alles `explore` behalve de aanbod-carrousel op maandagmiddag (`exploit`, les 16-11).
+Nieuw materiaal van Akke: geen (de 4 beelden in de mediabibliotheek van 18–21 nov zijn kopieën van eigen posts uit SellQo).
+Echt beeld: schermopnames en screenshots die deze taak zelf maakte op een gsm-formaat (390 px) van de live sites studioakke.com/mail, de-fiere-margriet.lovable.app, vanxcel.be en sellqo.app.
+Prijzen en teksten: repo `studioakke` laatste commit 2 nov, ongewijzigd. Mail: Start €10/maand excl. btw (tot 5 adressen, 20 mails/dag, 5 GB), Zaak €20/maand excl. btw (100 mails/dag, 30 GB).
+Opgevallen bij de opnames: borletti.nl toont "Website tijdelijk offline" (bedrijfsactiviteiten overgedragen) terwijl de portfolio "Acht sites live" zegt; De Fiere Margriet zegt op de eigen site "meer dan +100 Belgische bieren", de portfolio "200+". Gemeld aan Akke.
+Geen nieuwe klikbare links (CTA "link in bio") → geen UTM nodig. Geen testslot deze week: het geplande testitem (post do 19:10) is geschrapt.
+
+| Dag | Wat | Pijler | Idee | Structuur / format | Hook | Drie antwoorden (doorsturen · hook 1 s · één idee) | Score | Uur + reden | Labels |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ma 23 | carrousel (7) | Aanbod | Mail bij je domein in 3 stappen, met echte screenshots van studioakke.com/mail; vanaf €10/maand excl. btw | Demo Walkthrough / layouts photo, list, split, cta | "Nog altijd @hotmail op je bestelwagen?" (site: "Geen hotmailadres op de bestelwagen") | naar de loodgieter/schilder met @hotmail op zijn camionette, want dat is hij · "@hotmail op je bestelwagen?" groot op slide 1 · van hotmail naar info@jouwzaak.be in 3 stappen | 10/12 (hook 2, send 2, idee 2, beeld 1, gsm 2, feiten 1→2 na fixes) | 12:40 — lunch; les: middag beste dagdeel, aanbod-carrousel op maandagmiddag | aanbod, demo-walkthrough, remotion-slide, statement, lang, opslaan, mail, exploit |
+| di 24 | story, poll-sticker | Ondernemers | Bekeek jij je eigen site deze maand op je gsm? (Ja / Euh, nee) | poll / story-poll-gsm (nieuw, echte gsm-screenshot studioakke.com) | vraag | geen (poll, doel: reacties) · de vraag groot bovenaan · zelf je site op je gsm checken | 9/12 | 12:25 — lunch, middag (beste dagdeel; sticker op druk moment) | ondernemers, poll, story-poll-gsm, vraag, kort, reageren, explore |
+| wo 25 | reel 14 s | Werk | 3 sites op een gsm, echte scroll-opnames: café in Leuven, mijn eigen webshop (VanXcel), mijn eigen platform (SellQo); eindkaart "Gemaakt voor elk scherm" | reel-schermopname (nieuw; vorige: kinetisch) | "Zo ziet je klant je site." | naar je compagnon die de site enkel op de laptop bekijkt · hook + echte gsm-scroll vanaf frame 0 · je site leeft op een gsm-scherm | 9/12 (send 1) | 20:40 — sterkste slot (avond) | werk, reel-schermopname, gsm, belofte, middel, link, explore · muziek Luchtig (130 BPM, scènes per 8 tellen) + sting |
+
+Geschrapt: post do 26-11 19:10 "Je praat met mij" (Over Akke: "Direct contact met mij als developer. Geen tussenpersonen, geen vertraging.") — eigen score 8, onafhankelijke review 6/12: niet sendbaar, geen echt beeld. Mail-onderwerp mag nu niet meer tot 21-12.
+Onafhankelijke review (subagent): carrousel 9, reel 7, post 6, story 8 → verwerkt: carrousel van 8 naar 7 slides, hook op slide 1 dominant, prijskaart netjes afgesneden, vage "voordeliger"-zin uit de caption; reel: belofte-hook, grotere gsm, eerlijke ondertitels ("mijn eigen webshop/platform"), ondertitels naast i.p.v. over de opname; story: gsm kleiner tegen overlap met de sticker; post geschrapt.
