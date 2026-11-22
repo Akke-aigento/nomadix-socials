@@ -1,0 +1,60 @@
+{
+ "brand": "vanxcel",
+ "hook": "Day 80. Kyrgyzstan.",
+ "transition": "slide",
+ "music": "brands/vanxcel/music/rustig-mountain-dawn.mp3",
+ "sting": "brands/vanxcel/music/sting.mp3",
+ "scenes": [
+  {
+   "type": "image",
+   "src": "brands/vanxcel/media/vx-2022-06-20-kyrgyzstan-0864.jpg",
+   "dur": 3,
+   "move": "in",
+   "caption": "Camp by a mountain river"
+  },
+  {
+   "type": "clip",
+   "src": "brands/vanxcel/weeks/2026-11-23/kyrgyzstan-0884-plate-blurred.mp4",
+   "dur": 3.33,
+   "from": 3.2,
+   "caption": "Day 81. Dust roads"
+  },
+  {
+   "type": "image",
+   "src": "brands/vanxcel/media/vx-2022-06-25-kyrgyzstan-0969.jpg",
+   "dur": 3,
+   "move": "up",
+   "caption": "Day 85. Snow in June"
+  },
+  {
+   "type": "clip",
+   "src": "brands/vanxcel/clips/vx-2022-06-26-kyrgyzstan-0996.mp4",
+   "dur": 3.33,
+   "from": 7.3,
+   "speed": 0.5,
+   "zoom": true,
+   "caption": "Horses near Naryn"
+  },
+  {
+   "type": "image",
+   "src": "brands/vanxcel/media/vx-2022-06-26-kyrgyzstan-1010.jpg",
+   "dur": 3,
+   "move": "in",
+   "caption": "Gravel, all the way"
+  },
+  {
+   "type": "clip",
+   "src": "brands/vanxcel/clips/vx-2022-06-27-kyrgyzstan-1036.mp4",
+   "dur": 3.33,
+   "from": 4.6,
+   "caption": "Day 87. Jalal-Abad"
+  },
+  {
+   "type": "end",
+   "dur": 3.4,
+   "title": "As far as\nwe got.",
+   "sub": "Kyrgyzstan, days 80 to 87. Six months, 17 countries, one Land Cruiser.",
+   "cta": "vanxcel.com"
+  }
+ ]
+}

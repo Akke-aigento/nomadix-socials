@@ -115,3 +115,28 @@ Wo–zo opnieuw gemaakt in een eigen genre per item (shared/GENRES.md). Bron: we
 - 666d695e · genre `handleiding` · template `g-handleiding` (opnieuw gemaakt)
 - b4183aff · genre `tijdreis` · template `g-reel-tijdreis` · muziek folk-steppe-strings.mp3 + sting (opnieuw gemaakt)
 - a44774f0 · genre `zoek-de-fout` · template `g-zoekdefout` (opnieuw gemaakt)
+
+## Week van 2026-11-23 (POSTS-2: 4 items)
+
+Instagram **gekoppeld**: carrousel, post en reel (bibliotheekmuziek + sting in de MP4) op `pending_approval`; poll-story `manual` (sticker).
+Leren: 18 gemeten posts in 21 d. Journey-carrousel ma-avond nu 4× bovenaan (46,7 · 25,0 · 23,5 · 57,1) → `exploit`. Reels: montage en tijdreis met echte beelden halen het meeste bereik (85, 59, 116) → journey-montage wo-avond (`exploit`). Productposts zakten (handleiding 20-11: 0,0; stop-motion 19-11: 0,0).
+Productpost (USB Wall Plug met display, leveranciersfoto op wit) is gemaakt maar **geschrapt** na de kwaliteitspoort (7/12: niet sendbaar, geen echt beeld van een installatie). Vervangen door een echte reisfoto: de kilometerteller op 400.000 km (dag 41). Productfoto blijft in `products/usb-wall-plug-display.jpg` voor later.
+Nieuw materiaal Akke: geen (`media_assets` laatste 14 d = enkel automatisch geregistreerde eigen posts).
+Vervaagd: nummerplaat + grille-logo (bosnia-0045), nummerplaat (albania-0063, bosnia-0050), nummerplaat van de bestelwagen voor ons in clip kyrgyzstan-0884 (meebewegend vak, `weeks/2026-11-23/kyrgyzstan-0884-plate-blurred.mp4`).
+Clips gecontroleerd met clipcheck: 0884 3,2+3,33 s; 0996 7,3+3,33 s aan 0,5× (paarden in elk frame); 1036 4,6+3,33 s. Clips 0808/0810 niet gebruikt: media.json zegt Kirgizië maar plaats "Almaty"; land niet zeker.
+
+| Dag | Wat | Pijler | Onderwerp | Media | Uur + reden | Labels |
+| --- | --- | --- | --- | --- | --- | --- |
+| ma 23/11 | carrousel (7), Problem-Proof, beeld eerst | Journey | "Week one was not a postcard": dag 2 sneeuw (Flachau), dag 3 zee (Ražanac), dag 4 motorkap open (Ribnik), dag 6 regen + wiel eraf (Vukatane), remtrommel eruit (Vau i Dejës) → "She still drove us home" → CTA bedrading/calculator | vx-2022-04-07-albania-0065, vx-2022-04-03-austria-0013, vx-2022-04-04-croatia-0028, vx-2022-04-05-bosnia-0045, vx-2022-04-07-albania-0063 | 20:35, avondvenster; journey-carrousel ma-avond 4× de beste score | pillar journey · format carrousel-verhaal · genre problem-proof · template remotion-slide-photo · hook verhaal · caption lang · cta link · people ja · bucket exploit · quality 11 |
+| wo 25/11 | reel (20,4 s, muziek "Mountain Dawn" 80 BPM, scène 3 s + sting), montage foto + clip | Journey | "Day 80. Kyrgyzstan.": kamp aan een bergrivier d80, stofwegen d81, sneeuw in juni d85, paarden bij Naryn d86, grind d86, Jalal-Abad d87 → "As far as we got" | vx-2022-06-20-kyrgyzstan-0864, clip -0884 (vervaagd), -0969, clip -0996, -1010, clip -1036 | 20:15, sterkste slot (reels 20:05–20:21 = grootste bereik) | pillar journey · format reel-montage · genre montage · template remotion-reel · hook cijfer · caption middel · cta delen · people ja · bucket exploit · quality 11 |
+| vr 27/11 | post (1 beeld), echte foto + één zin | Journey | "400,000 km. Still going.": kilometerteller op 400.000,0 op dag 41 (Tbilisi) → configurator | vx-2022-05-12-georgia-0376 | 19:10, vrijdagvenster (weekendtrip plannen) | pillar journey · format groot-cijfer-foto · template remotion-slide-photo · hook cijfer · caption lang · cta link · people nee · bucket explore · quality 11 |
+| za 28/11 | story + poll-sticker, echte foto | Builders | "Saturday. Build day? Will yours be on the road by summer?" (Yes, on track / Ask me in June) | vx-2022-04-05-bosnia-0050 (plaat vervaagd) | 11:20 **(test)**: zaterdag late ochtend, nog nooit geprobeerd (weekendochtend 09:45–10:20 wel) | pillar builders · format poll · template photo-poll-story · hook vraag · caption kort · cta reageren · people nee · bucket test · experiment tijd · quality 10 |
+
+De drie vragen (POSTS-2 §2):
+- **Carrousel** · doorsturen naar de maat die zijn eerste grote reis plant en denkt dat week één vlot loopt · hook: wiel eraf op een takelwagen + "Week one was not a postcard" · één idee: de eerste week ging niet volgens plan, en ze reed toch tot thuis.
+- **Reel** · naar de vriend die altijd "ooit Centraal-Azië" zegt · hook: "Day 80. Kyrgyzstan." over Sandy aan een bergrivier · één idee: zo zag het verste punt van de reis eruit.
+- **Post** · naar de vriend die denkt dat zijn 4x4 te oud is voor een grote reis · hook: de teller op 400000 · één idee: oud is geen reden om niet te vertrekken.
+- **Story** · geen doorstuur-item; band met volgers · hook: "Saturday. Build day?" · één idee: hoe ver staat jouw build.
+
+Kwaliteitspoort (zelf / onafhankelijke subagent vóór fixes): carrousel 11 / 9, reel 11 / 11, productpost 7 (geschrapt), odometerpost 11 / –, story 10 / 8. Verwerkt na review: caption carrousel ("flatbed" weg, concrete doorstuurzin), nummerplaat in de reelclip vervaagd, story: donkerder verloop achter de vraag en uitsnede zonder vervaagd vlak. Niet overgenomen: "six months klopt niet met de data" (beslissing Akke 16-10: duur in posts = 6 months). Open: kickers in `shared/remotion` Slide zijn 28 px (< 34 px uit POSTS-2), voorstel om ze in de gedeelde component te vergroten.
+Muziek: Mountain Dawn (laatst 09-11; vorige reel was Steppe Strings, ander genre).
