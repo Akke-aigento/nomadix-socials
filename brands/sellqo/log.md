@@ -29,6 +29,7 @@ wo `tips/lijst/remotion-slide/belofte/lang/opslaan/exploit, genre hack-list` · 
 Gebruikte changelog-items: `qr_menu_allergen_filter`, `favorieten_1`, `shift_start_1`, `kassa_rechten_2`, `kassa_beheer_slot_1`, `kassa_wie_1`. Gebruikte demo's: Café De Wissel, Pizzeria Fiamma, Maison Lune, Zaal De Linde, Vinotheek Lemmens, Bistro Mirabelle.
 Muziek: do Focus (85 BPM, start 0) + sting. Reel 7,1 MB.
 Nog niet gebruikt (nieuw sinds vorige week): `menu_lang_1` (QR-menu in nl/en/fr/de; niet aan te tonen: geen enkele demo heeft menutalen aan), `samenstelling_1`, `voorraad_kaart_1/2`, `voorraad_maat_1`, `inkoop_prijs_1`, `zaal_opstelling_1/3`, `kassa_opstelling_1`, `zaal_vorm_1`, `rapport_huis_1`, `kassa_vastetab_1`, `vrij_artikel_1`, `maten_1`, `qr_toog_1`.
+In SellQo gezet op 22-11: 4 rijen (ma, wo, do `pending_approval`; di `manual` + `sticker`), recepten via net.http_get (md5 gecontroleerd), uurcontrole zonder dubbels, melding `social_posts_ready` verstuurd.
 Gevonden bij de recon: (1) de "Kies je stoel"-link op /voorbeelden (Zaal De Linde, Brussels String Quartet) toont "Er zijn op dit moment geen datums in verkoop"; (2) op 340 px breed schuift de winkelnaam van Bistro Mirabelle onder de mandknop (360 px is goed).
 
 ## Week van 2026-11-16
