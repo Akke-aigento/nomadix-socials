@@ -1,0 +1,50 @@
+{
+ "brand": "fonske",
+ "hook": "Tomorrow night.",
+ "transition": "cut",
+ "captionStyle": "pop",
+ "scenes": [
+  {
+   "type": "clip",
+   "src": "brands/fonske/weeks/2026-11-23/reel/src/cdd717dc.mp4",
+   "from": 5.0,
+   "dur": 2.812,
+   "caption": "21:00. We head out."
+  },
+  {
+   "type": "clip",
+   "src": "brands/fonske/weeks/2026-11-23/reel/src/c607e920.mp4",
+   "from": 0.6,
+   "dur": 1.875,
+   "caption": "Bar to bar"
+  },
+  {
+   "type": "clip",
+   "src": "brands/fonske/weeks/2026-11-23/reel/src/3e7b98d1.mp4",
+   "from": 2.6,
+   "dur": 1.875,
+   "caption": "New faces"
+  },
+  {
+   "type": "clip",
+   "src": "brands/fonske/weeks/2026-11-23/reel/src/3e8a2ecd.mp4",
+   "from": 8.5,
+   "dur": 1.875,
+   "caption": "Four bars, one night"
+  },
+  {
+   "type": "clip",
+   "src": "brands/fonske/weeks/2026-11-23/reel/src/c607e920.mp4",
+   "from": 11.4,
+   "dur": 1.875,
+   "caption": "Next stop"
+  },
+  {
+   "type": "end",
+   "dur": 3.75,
+   "title": "Tomorrow.\n21:00 \u00b7 The Totem",
+   "sub": "Crawl 02 \u00b7 Fri 27 Nov \u00b7 \u20ac9.95 \u00b7 18+",
+   "cta": "Link in bio"
+  }
+ ]
+}

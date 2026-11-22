@@ -58,7 +58,8 @@
       "faces": "ja",
       "note": "hele groep staand binnen, gids wijst omhoog",
       "used": [
-        "2026-10-26 recap"
+        "2026-10-26 recap",
+        "2026-11-25 story-last-day"
       ]
     },
     {
@@ -69,7 +70,8 @@
       "faces": "ja",
       "note": "groep binnen, duimen omhoog, beste versie",
       "used": [
-        "2026-10-26 recap"
+        "2026-10-26 recap",
+        "2026-11-24 post-early-bird"
       ]
     },
     {
@@ -148,7 +150,8 @@
       "note": "groep aan tafel met pintjes en shotjes, beste versie (webp)",
       "used": [
         "2026-10-26 recap",
-        "2026-10-27 story"
+        "2026-10-27 story",
+        "2026-11-23 carrousel-friday"
       ]
     },
     {
@@ -171,6 +174,50 @@
       "note": "still uit crawlvideo f3f4f5c4 (crawl_media) op 10,4 s: groep met paraplu's op een zebrapad in de regen, halftotaal (geen close-up), verlichte gevels en boom",
       "used": [
         "2026-11-16 post-ma-rain"
+      ]
+    },
+    {
+      "id": "still-3e7b98d1-t3-6",
+      "night": "2026-10-24",
+      "path": "photos/2026-10-24/still-3e7b98d1-t3-6.jpg",
+      "type": "group",
+      "faces": "ja",
+      "note": "still uit crawlvideo 3e7b98d1 op 3,6 s: twee jongens lachend arm in arm aan een tafel, groene muur (PALM-bord); vrolijk, niet dronken",
+      "used": [
+        "2026-11-23 carrousel-friday cover"
+      ]
+    },
+    {
+      "id": "still-3e8a2ecd-t9-5",
+      "night": "2026-10-24",
+      "path": "photos/2026-10-24/still-3e8a2ecd-t9-5.jpg",
+      "type": "bar",
+      "faces": "ja",
+      "note": "still uit crawlvideo 3e8a2ecd op 9,5 s: drie mensen lachend met een glas, spin aan het plafond; licht wazig",
+      "used": [
+        "2026-11-23 carrousel-friday slide 5"
+      ]
+    },
+    {
+      "id": "still-cdd717dc-t12-1",
+      "night": "2026-10-24",
+      "path": "photos/2026-10-24/still-cdd717dc-t12-1.jpg",
+      "type": "street",
+      "faces": "nee",
+      "note": "still uit crawlvideo cdd717dc op 12,1 s: groep van achteren op natte kasseien, regen, plein met overkapping; geen gezichten",
+      "used": [
+        "2026-11-23 carrousel-friday slide 4"
+      ]
+    },
+    {
+      "id": "still-f3f4f5c4-t6-0",
+      "night": "2026-10-24",
+      "path": "photos/2026-10-24/still-f3f4f5c4-t6-0.jpg",
+      "type": "street",
+      "faces": "nee",
+      "note": "still uit crawlvideo f3f4f5c4 op 6,0 s: groep in de verte op een zebrapad in de regen, straatlantaarn, verlichte gevels; geen herkenbare gezichten",
+      "used": [
+        "2026-11-27 story-tonight"
       ]
     }
   ]
