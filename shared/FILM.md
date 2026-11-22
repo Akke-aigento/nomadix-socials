@@ -18,8 +18,8 @@ Akke (22-11): "Denk aan echte filmpjes maken, niet gewoon slideshows. Maak de ka
 - **Resultaten**: `https://c--28cdb60f-f164-4d66-883b-5998725b2d37-prod.lovable.cloud/storage/v1/object/public/social-media/<name>.<ext>` (bereikbaar vanuit de sandbox).
 - **Beeld** (`ie_image`, `params`): `{model:'nano-banana-pro', mode:'image', aspect_ratio:'9:16', resolution:'2K', output_format:'jpeg', image_url:<vak>, image_urls:[<vak>, <castblad>, <expressieblad>], prompt}`. Kost 6 credits.
 - **Shot** (`ie_video`, `params`): `{model_id:'veo-3.1-fast', aspect_ratio:'9:16', resolution:'1080p', duration:8, generate_audio:true, image_url/start_image_url/first_frame_url:<begin>, end_image_url/last_frame_url/end_frame_url/tail_image_url:<eind>, image_urls:[begin, eind], negative_prompt, prompt}`. Kost 35 credits. Het eindbeeld wordt gerespecteerd (getest: het laatste frame valt samen met het eindbeeld). Laat alle sleutels staan, want de API documenteert niet welke gebruikt wordt.
-- **Ophalen**: `ie_status` met `kind` en `name`. Beeld ±60 s, video ±3–4 min.
-- **Stem** (`voice`): `voice_id` van de cast (CAST.md), ook stemmen uit de bibliotheek zonder ze toe te voegen. Max. 3 tegelijk (ElevenLabs 429). `voice_search` zoekt in de bibliotheek. `voice_add` werkt niet: de sleutel heeft geen voices_write.
+- **Ophalen**: `ie_status` met `kind`, `name` en `id` (= `task_id` uit het antwoord van `ie_image`/`ie_video`). Beeld ±60 s, video ±3–4 min.
+- **Stem** (`voice`): `voice_id` van de cast (CAST.md), ook stemmen uit de bibliotheek zonder ze toe te voegen. Max. 3 tegelijk (ElevenLabs 429). `voice_search` zoekt in de bibliotheek. `voice_add` werkt niet: de sleutel heeft geen voices_write. Een bibliotheekstem wordt bij het eerste gebruik vanzelf toegevoegd; stuur de eerste aanroep met een nieuwe stem alleen (anders 409 already_running).
 - **Veo verzint dialoog.** Zet het volume van elke shot met spraak op 0 en gebruik spraakherkenning op de shot om te zien wanneer de mond beweegt. Leg de vaste stem (`voices` in de Film-props) op dat moment.
 - **Pilot 2 "Pub crawl"** (strip 2 p. 6–7): 9 begin- en eindbeelden, 5 shots, 4 stemmen, ±250 credits. Twee beelden afgekeurd: dubbele rugzak, jeans in plaats van rok.
 
@@ -33,7 +33,7 @@ Akke (22-11): "Denk aan echte filmpjes maken, niet gewoon slideshows. Maak de ka
 | Stem | `action: voice` | ElevenLabs-stem met tijd per woord → mp3 + JSON (`words`) voor ondertitels die exact meelopen |
 | Montage | `shared/remotion/render.sh film <props.json> <uit.mp4>` | compositie `Film`: shots met hun eigen geluid, crossfades, ondertitels (vaste `lines` of uit de stem), muziek die wegduikt onder stem, eindkaart |
 
-De ElevenLabs-sleutel blijft op de server. Elke aanroep gaat vanuit SQL op het Watchtower-project (`b9945398-c9e9-49cc-bc0b-97a3b0757531`) met de Lovable-connector:
+De ElevenLabs-sleutel blijft op de server. Elke aanroep gaat vanuit SQL op het Watchtower-project, Watchtower EU (`b587da4f-11c6-414a-9136-da44d0e3df93`), met de Lovable-connector:
 
 ```sql
 select net.http_post(url := 'https://watchtower.studioakke.com/api/public/media-compose',
