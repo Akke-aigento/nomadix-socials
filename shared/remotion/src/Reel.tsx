@@ -20,7 +20,7 @@ export type ReelProps = {
   transition?: 'cut' | 'slide' | 'fade' | 'wipe';
   music?: string;             // pad in public-map
   musicVolume?: number;
-  sting?: string;             // merksting, speelt op het einde
+  sting?: string;             // UITGESCHAKELD 22-11 (klonk als een tweede liedje over de muziek); wordt genegeerd
   captionStyle?: 'pop' | 'bar';
 };
 
@@ -121,6 +121,5 @@ export const Reel: React.FC<ReelProps> = (p) => {
         return el; })}</TransitionSeries>}
     {p.hook ? <Sequence from={0} durationInFrames={Math.round(fps * 2)}><Hook text={p.hook} t={t} /></Sequence> : null}
     {p.music ? <Audio src={staticFile(p.music)} volume={(f) => (p.musicVolume ?? 0.9) * interpolate(f, [0, 8, durationInFrames - fps * 1.2, durationInFrames], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} /> : null}
-    {p.sting ? <Sequence from={Math.max(0, durationInFrames - Math.round(fps * 2.4))}><Audio src={staticFile(p.sting)} volume={0.9} /></Sequence> : null}
   </AbsoluteFill>;
 };

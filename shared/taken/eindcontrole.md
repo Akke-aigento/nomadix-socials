@@ -18,9 +18,11 @@ Elke zondag om 11:13, na de vijf weektaken. Akke, 17-11-2026: "het moet gewoon i
      - elke ondertitel klopt met wat er op dat moment in beeld is (17-11: "a river in full flow" stond op een brugdek);
      - geen zwarte of bevroren stukken, eindkaart leesbaar;
      - geluid aanwezig (ffprobe: audiostream);
+     - **slot klopt:** de laatste 1,5 s faden uit en er speelt geen tweede nummer (geen sting sinds 22-11). Meet met `ffmpeg -sseof -2 -i x.mp4 -af volumedetect -f null -`: max_volume van de laatste 0,5 s moet duidelijk lager liggen dan het gemiddelde. Je kunt niet horen; zeg dus nooit "geluid gecontroleerd", wel "audiostream en slot gemeten";
      - grootte max. 9,5 MB.
    - **Feiten:** vergelijk elke prijs, datum, uur, plek, spec en claim in caption én beeld met de live bron. De bronnen staan per merk in `shared/taken/prijscheck.md` (Fonske: early bird enkel als de deadline in de toekomst ligt). Geen verzonnen anekdotes, klantaantallen, reviews, doorstreepte prijzen of greenwashing.
    - **Kwaliteit:** score 0–2 op de zes punten van POSTS-2 §6. Vraag je eerlijk af: zou een mens dit doorsturen?
+3b. **Aantal:** tel per merk de items van de week (zonder `cancelled`). Minder dan 4 (Fonske crawlweek: 5) is een fout: meld het per merk als "dringend: x items, er ontbreken er y" (Akke, 22-11: nooit minder dan 4).
 4. Beslis per item:
    - **In orde** (score minstens 9 en geen fout): niets doen.
    - **Een fout of score onder 9.** Fouten zijn: een feit, een ondertitel die niet klopt met het beeld, afgesneden tekst, een tikfout, emoji in beeld.

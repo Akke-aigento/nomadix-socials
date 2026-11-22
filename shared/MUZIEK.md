@@ -14,7 +14,7 @@ Beslissing Akke: "muziek is wat saai nu, maak er echt iets van." De eerste reeks
    (meermaals mogelijk), of zonder muziek voor een reel die enkel op geluid draait (ping van een bestelling, bon die print,
    camera-flits, trein, de motor van Sandy). SFX-bestanden in `brands/<slug>/sfx/` of `shared/sfx/` met een `sfx.json` (bron, licentie).
    Bron: zie "SFX-bron" hieronder.
-4. **Klankhandtekening (sting).** Per merk één kort herkenbaar slot van ±2 s (bv. Loveke: ukelele + handklap, VanXcel: diepe
+4. **~~Klankhandtekening (sting).~~ UIT sinds 22-11 (Akke: "een paar seconden een random liedje dat er niet hoort"). De sting speelde over de muziek in een andere toonaard en werd afgekapt. Niet meer gebruiken; terug enkel als Akke er één hoort en goedkeurt, en dan ná de muziek.** Oud: Per merk één kort herkenbaar slot van ±2 s (bv. Loveke: ukelele + handklap, VanXcel: diepe
    drone + metalen tik, SellQo: kassabel, Studio Akke: toetsenbordtik + synthblip, Fonske: koperstoot). Altijd hetzelfde,
    op het einde van elke reel via `--sfx sting.mp3@<duur−2>`. Zo herken je het merk met je ogen dicht.
 5. **Echte stem of echt geluid van Akke** (optioneel): een spraakmemo of een opname uit de zaak maakt een reel meteen echter

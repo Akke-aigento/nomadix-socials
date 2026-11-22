@@ -53,7 +53,7 @@ Slide 1 is de hook (groot, kort, swipe-reden). Laatste slide = één CTA. Tekst 
 
 ## 5. Gereedschap
 
-- Reels en slides: `shared/remotion/` (README). Ondertitels altijd aan (woord per woord), hook-tekst in de eerste 1,8 s, merksting op het einde, bibliotheekmuziek.
+- Reels en slides: `shared/remotion/` (README). Ondertitels altijd aan (woord per woord), hook-tekst in de eerste 1,8 s, bibliotheekmuziek die op het einde uitfadet. **Geen merksting** (uit sinds 22-11).
 - Skills (lees ze bij elke weektaak):
   - `git clone --depth 1 https://github.com/coreyhaines31/marketingskills /tmp/mskills` → `skills/social/SKILL.md`, `references/carousel-frameworks.md`, `references/short-form-video.md`, `references/reverse-engineering.md` (MIT).
   - `git clone --depth 1 https://github.com/remotion-dev/skills /tmp/remotion-skills` → `skills/remotion-best-practices/`, `remotion-markup/`, `remotion-captions/`.
@@ -63,7 +63,7 @@ Slide 1 is de hook (groot, kort, swipe-reden). Laatste slide = één CTA. Tekst 
 ## 6. Kwaliteitspoort (verplicht vóór iets in SellQo komt)
 
 Score elk item 0–2 op: **hook in 1 s · sendbaar (vraag 1) · één idee · echt beeld · leesbaar op gsm (tekst ≥ 34 px, contrast) · merkregels en feiten**. Max. 12.
-- **< 9 = opnieuw maken of schrappen.** Liever 3 sterke items dan 4 met één zwakke.
+- **< 9 = opnieuw maken, nooit schrappen.** Akke (22-11): 4 per merk is een ondergrens. Een afgekeurd item wordt vervangen door een ander idee of opnieuw gemaakt tot het 9 haalt. Lukt dat echt niet (geen materiaal), dan maak je een film volgens `shared/FILM.md`; die heeft geen materiaal van Akke nodig.
 - Daarna een **tweede, onafhankelijke review**: als de Agent-tool beschikbaar is, laat een subagent (zonder de maakgeschiedenis) de contactsheet + captions beoordelen op dezelfde 6 punten en op "zou een mens dit doorsturen?". Zonder Agent-tool: zelf de contactsheet opnieuw bekijken alsof je hem voor het eerst ziet, en de zwakste eruit halen.
 - Noteer de scores in `log.md`.
 

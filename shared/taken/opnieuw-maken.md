@@ -27,7 +27,7 @@ Elk uur van 8 tot 22 u. Schrijf in het Nederlands (Vlaams, casual).
      - heeft Akke de tekst in het beeld al aangepast (`image_recipes` in SellQo verschilt van de `.recipe.json` in de repo), vertrek dan van de teksten uit SellQo;
      - geen dubbels met het log of met andere rijen van die tenant;
      - prijzen, voorraad, data en specs live, nooit verzonnen;
-     - een reel krijgt een bibliotheeknummer + merksting (MUZIEK.md) en een versie zonder muziek;
+     - een reel krijgt een bibliotheeknummer zonder merksting (MUZIEK.md) en een versie zonder muziek;
      - links met UTM volgens LEREN.md §5.
    - **Staat er al een kant-en-klare `-v2` in de published-map, en past ze bij de opmerking?** Controleer ze dan (frames, feiten), gebruik ze en maak niets nieuws. Zie het log van het merk ("opnieuw gemaakt …").
    - **Publiceren:** render, bekijk het resultaat en zet de bestanden met een nieuwe naam (`…-v2`, `-v3`, …) in de map `published/<maandag>/` van het merk. Commit en push naar main, en controleer de raw-URL met `curl -sI` (200).

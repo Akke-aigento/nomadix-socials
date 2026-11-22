@@ -10,12 +10,12 @@ De opdracht van de taak noemt het merk. Hieronder staan eerst de stappen voor el
 3. Live data via de Lovable-connector (tenant van het merk): de bron per merk (hieronder). Daarnaast: of Instagram gekoppeld is (`social_connections`), alle bestaande `social_posts` van de tenant (geen dubbels, geen onderwerp herhalen binnen 4 weken), nieuw materiaal van Akke (`media_assets` van de tenant uit de laatste 14 dagen, `is_favorite` eerst) en de queries uit LEREN.md §2 (wat werkte, signalen van Akke).
 4. Plan precies 4 items volgens POSTS-2 §1: 1 reel, 1 carrousel van 5–8 slides, 1 post en 1 story (Fonske: +1 in een crawlweek). Schrijf per item eerst de drie antwoorden uit POSTS-2 §2: naar wie doorsturen en waarom, de hook in 1 s, het ene idee. Voor de carrousel noteer je ook welke structuur uit §3. Geen goed antwoord = ander idee. Echt beeld eerst (§4).
 5. Maak de items:
-   - **Reel en carrouselslides:** met `shared/remotion/render.sh`. De reel krijgt hook-tekst, ondertitels en een bibliotheeknummer uit de muziekmap van het merk, met de merksting op het einde. Slides gebruiken de layouts photo/split/list/statement/cta.
+   - **Reel en carrouselslides:** met `shared/remotion/render.sh`. De reel krijgt hook-tekst, ondertitels en een bibliotheeknummer uit de muziekmap van het merk, die op het einde uitfadet. Geen merksting (uit sinds 22-11). Slides gebruiken de layouts photo/split/list/statement/cta.
    - **Clips:** kies een fragment pas nadat je er frames van bekeken hebt, en haal elke clip door `shared/remotion/clipcheck.sh`.
    - **Post en story:** mogen ook een eigen HTML-template met een echte foto zijn.
    - **Altijd:** geen emoji in beelden, veilige zones respecteren.
 6. Kwaliteitspoort (POSTS-2 §6, verplicht):
-   - Bekijk elk beeld en enkele frames van de reel, maak één contactsheet en score elk item 0–2 op de zes punten. Onder 9 van 12: opnieuw maken of schrappen.
+   - Bekijk elk beeld en enkele frames van de reel, maak één contactsheet en score elk item 0–2 op de zes punten. Onder 9 van 12: opnieuw maken of een ander idee, **nooit schrappen**. Er gaan altijd minstens 4 items per merk naar SellQo (Akke, 22-11).
    - Is de Agent-tool er, laat dan een subagent zonder de maakgeschiedenis de contactsheet en captions onafhankelijk beoordelen: dezelfde zes punten plus "zou een mens dit doorsturen?". Verwerk wat hij afkeurt.
    - Noteer de scores in het log. Liever 3 sterke items dan 4 met een zwakke.
 7. Push naar main van de repo van het merk:
