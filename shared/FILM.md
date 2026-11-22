@@ -68,6 +68,19 @@ Bodies:
 | Studio Akke | een ondernemer die zijn eigen site op zijn gsm bekijkt → wat er misloopt → hoe het moet; voice-over in ik-vorm is **niet** Akke's stem (enkel met zijn toestemming) | studioakke.com, echte schermopnames |
 | Fonske | de crawl-avond als film: Fonske-tekeningen die bewegen, echte crawlclips | `illustrations/`, Crawl Log |
 
+### 3b. Vaste reeksen (Akke 22-11, 23u57: "goede ideeën, nu zijn we creatief bezig")
+
+Elke film hoort bij een herkenbare reeks (vaste vorm, vaste personages, elke week nieuwe inhoud). Personages krijgen een castblad zoals `loveke/marketing/films/characters/` en blijven altijd dezelfde.
+
+| Merk | Reeks | Vorm | Grens |
+|---|---|---|---|
+| VanXcel | **Sandy's avonturen** | Sandy (Land Cruiser 1984) als getekend personage in een eigen stijl. Een stroomprobleem (lege accu, koelbox valt uit, te dunne kabel) → het juiste VanXcel-product of de calculator lost het op. Product gemaakt met de echte productfoto als referentie. Nevenreeks: "wat zit er in je van" (onderdelen vliegen samen tot een installatie). | Echte gebeurtenissen alleen als ze in `media.json` of de bible staan. Een probleem dat niet echt gebeurd is, presenteer je als scenario ("What if…"), nooit als reisverhaal. Enkel bestaande producten met voorraad > 0. 230V: altijd keuring door een erkend elektricien. |
+| Studio Akke | **Akke legt uit** | Getekende Akke (bestaand castblad) legt in ±20 s één webprobleem uit → echte scan of echte site op een gsm (inset). | Enkel echte scores van eigen of toegestane sites. |
+| SellQo | **Maandag 7u** | Vaste getekende winkeliers (bv. bakker, fietsenmaker; fictief) lopen tegen een echt probleem aan → echte SellQo-schermen lossen het op. Nevenreeks: speedrun "van nul tot webwinkel", echt opgenomen met timer. | Enkel functies die live staan; nooit een echte klant nabootsen. |
+| Fonske | **Fonske neemt je mee** | Het Fonske-beeldje komt tot leven en leidt je langs de route, in stripstijl. | Cafés, route en uren enkel uit de echte crawlgegevens. |
+
+Volgorde: eerst een pilot per reeks, goedkeuring van Akke, dan pas in de weektaak. Eerste pilot: VanXcel / Sandy.
+
 ## 4. Regels
 
 - **Niets verzinnen** blijft gelden: een film vertelt enkel wat in de bible, de strip, `media.json` of de live bron staat. Geanimeerde personages zijn getekend, nooit fotorealistische namaak van echte mensen.
