@@ -3,3 +3,17 @@ datum,film,versie,werkwijze,verhaal,beeld,geluid,gemiddeld,akke
 2026-11-23,loveke-pubcrawl,v3,veo-3.1-fast + TTS-dialoog lipsync,3,4,4,3.7,niet denderend
 2026-11-23,vanxcel-sandy,ep1-v2,veo-3.1-fast + stills + VO,4,3,3.5,3.5,niet denderend
 2026-11-23,studio-akke-scan,v1,schermopname + muziek,3,5,4,4.0,niet denderend
+2026-11-23,lab1-perron,3d-veo31,veo31 1 shot 6s,-,-,-,8.4,-
+2026-11-23,lab1-perron,3d-sd15,sd15 1 shot 6s,-,-,-,4.4,-
+2026-11-23,lab1-perron,comic-veo31,veo31 1 shot 6s,-,-,-,7.0,-
+2026-11-23,lab1-perron,comic-sd15,sd15 1 shot 6s,-,-,-,5.2,-
+2026-11-23,lab1-perron,comic-sd25,sd25 1 shot 6s,-,-,-,7.2,-
+2026-11-23,lab1-perron,comic-mmx,mmx 1 shot 6s,-,-,-,6.2,-
+2026-11-23,lab1-perron,comic-kling,kling 1 shot 6s,-,-,-,3.8,-
+2026-11-23,lab1-perron,paint-veo31,veo31 1 shot 6s,-,-,-,7.2,-
+2026-11-23,lab1-perron,paint-sd15,sd15 1 shot 6s,-,-,-,4.6,-
+2026-11-23,lab1-perron,real-veo31,veo31 1 shot 6s,-,-,-,7.4,-
+2026-11-23,lab1-perron,real-sd15,sd15 1 shot 6s,-,-,-,6.0,-
+2026-11-23,lab1-perron,real-sd25,sd25 1 shot 6s,-,-,-,7.4,-
+2026-11-23,lab1-perron,real-mmx,mmx 1 shot 6s,-,-,-,7.2,-
+2026-11-23,lab1-perron,real-kling,kling 1 shot 6s,-,-,-,4.6,-

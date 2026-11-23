@@ -22,3 +22,15 @@ Realistische weergave van Akke en Nastya: enkel intern tot beiden akkoord geven.
 
 ## Experiment 1 — perron "You came!" (23-11)
 Beelden: `social-media/loveke/lab/perron-<stijl>.jpg`, clips `perron-<stijl>-<model>.mp4`. Juryscores: zie FILM-SCORES.csv.
+
+### Uitslag experiment 1 (jury, 23-11)
+Winnaar: **3D + Veo 3.1 = 8,4** (enige boven de poort). Real: Veo 3.1 en Seedance 2.5 7,4 · comic: Seedance 2.5 7,2 / Veo 3.1 7,0 · paint: Veo 3.1 7,2. Kling 3,8–4,6, Seedance 1.5 4,4–6,0.
+
+Recept-regels:
+1. Seedance 1.5 verzint altijd extra tekst → alleen zonder eigen audio gebruiken, stem en geluid apart.
+2. Kling O3 Pro: geen audio, verdubbelt voorwerpen → niet voor overdrachten.
+3. MiniMax H3: 1–2 s bevroren bij de start → eerste seconde wegknippen of een startactie geven.
+4. Seedance 2.5: herkadreert, 480p → voor emotie en knuffels, daarna upscalen.
+5. Veo 3.1: betrouwbaarste audio (exact de zin + ruimte); man laat voorwerpen niet los → prompt "he lets go, she holds it alone".
+6. Knuffel met voorwerp: voorwerp achter de rug van de ander houden (anders geklemd of opgeslokt).
+7. Startbeeld = rustpositie: personages volledig in de scène (niet met een voet in de trein).
