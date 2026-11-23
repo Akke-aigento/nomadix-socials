@@ -34,3 +34,9 @@ Recept-regels:
 5. Veo 3.1: betrouwbaarste audio (exact de zin + ruimte); man laat voorwerpen niet los → prompt "he lets go, she holds it alone".
 6. Knuffel met voorwerp: voorwerp achter de rug van de ander houden (anders geklemd of opgeslokt).
 7. Startbeeld = rustpositie: personages volledig in de scène (niet met een voet in de trein).
+
+### Experiment 2 — zelfde scène, Veo 3.1, prompt met de recept-regels (23-11)
+Verandering: één variabele, de prompt ("he lets go, she holds it alone", rozen achter zijn rug, start volledig op het perron).
+- comic en 3d: overdracht klopt, rozen blijven heel achter zijn rug, enkel "You came!". Probleem uit exp. 1 opgelost.
+- real: overdracht klopt, maar extra "Yes?" en mensen die achteraan opduiken → bij realistisch: "empty platform, nobody else" in de prompt.
+Les: recept-regels werken; de prompt is even belangrijk als het model.
