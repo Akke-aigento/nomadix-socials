@@ -23,6 +23,8 @@ Akke (22-11): "Denk aan echte filmpjes maken, niet gewoon slideshows. Maak de ka
 - **Veo verzint dialoog.** Zet het volume van elke shot met spraak op 0 en gebruik spraakherkenning op de shot om te zien wanneer de mond beweegt. Leg de vaste stem (`voices` in de Film-props) op dat moment.
 - **Pilot 2 "Pub crawl"** (strip 2 p. 6–7): 9 begin- en eindbeelden, 5 shots, 4 stemmen, ±250 credits. Twee beelden afgekeurd: dubbele rugzak, jeans in plaats van rok.
 
+**Lees eerst `shared/FILM-LESSEN.md`: elke regel daar is verplicht.**
+
 ## 1. De motor
 
 | Stap | Waar | Wat |
