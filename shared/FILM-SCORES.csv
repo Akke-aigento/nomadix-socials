@@ -1,0 +1,5 @@
+datum,film,versie,werkwijze,verhaal,beeld,geluid,gemiddeld,akke
+2026-11-23,loveke-final-call,v5,veo-3.1-fast + stills + TTS-dialoog,5,4,4,4.3,niet denderend
+2026-11-23,loveke-pubcrawl,v3,veo-3.1-fast + TTS-dialoog lipsync,3,4,4,3.7,niet denderend
+2026-11-23,vanxcel-sandy,ep1-v2,veo-3.1-fast + stills + VO,4,3,3.5,3.5,niet denderend
+2026-11-23,studio-akke-scan,v1,schermopname + muziek,3,5,4,4.0,niet denderend
