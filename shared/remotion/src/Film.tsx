@@ -32,7 +32,7 @@ export type FilmProps = {
   hook?: {text: string; dur?: number};      // grote tekst bovenaan in de eerste seconden
   end?: {title: string; sub?: string; dur: number; logo?: boolean};
   grade?: 'none' | 'warm' | 'film';
-  subBottom?: number;       // afstand ondertitel tot onderrand (standaard 400)
+  subBottom?: number; msgTop?: number;       // afstand ondertitel tot onderrand (standaard 400)
 };
 
 const fr = (s: number, fps: number) => Math.round(s * fps);
@@ -66,11 +66,11 @@ const Sub: React.FC<{line: Line; t: Theme; bottom?: number}> = ({line, t, bottom
 };
 
 
-const Msg: React.FC<{line: Line; t: Theme; row: number}> = ({line, t, row}) => {
+const Msg: React.FC<{line: Line; t: Theme; row: number; top?: number}> = ({line, t, row, top}) => {
   const f = useCurrentFrame(); const {fps} = useVideoConfig();
   const s = spring({frame: f, fps, config: {damping: 14, mass: 0.6}});
   const out = line.side === 'out';
-  return <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: out ? 'flex-end' : 'flex-start', paddingTop: 300 + row * 150, paddingLeft: 90, paddingRight: 90}}>
+  return <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: out ? 'flex-end' : 'flex-start', paddingTop: (top ?? 300) + row * 150, paddingLeft: 90, paddingRight: 90}}>
     <div style={{maxWidth: 760, background: out ? t.accent : '#FFFFFF', color: out ? '#fff' : '#1A1A1A', fontFamily: t.text, fontWeight: 700, fontSize: 52, lineHeight: 1.2,
       padding: '26px 38px', borderRadius: 44, borderBottomRightRadius: out ? 12 : 44, borderBottomLeftRadius: out ? 44 : 12,
       boxShadow: '0 10px 30px rgba(0,0,0,.25)', transform: `scale(${0.6 + 0.4 * s}) translateY(${(1 - s) * 30}px)`, transformOrigin: out ? 'right bottom' : 'left bottom', opacity: s}}>{line.text}</div>
@@ -108,7 +108,7 @@ const Hook: React.FC<{text: string; t: Theme; dur: number}> = ({text, t, dur}) =
 const End: React.FC<{e: NonNullable<FilmProps['end']>; t: Theme}> = ({e, t}) => {
   const f = useCurrentFrame(); const {fps} = useVideoConfig();
   const s = spring({frame: f, fps, config: {damping: 16}});
-  return <AbsoluteFill style={{background: t.bg, justifyContent: 'center', alignItems: 'center', padding: '0 90px', opacity: interpolate(f, [0, 8], [0, 1], {extrapolateRight: 'clamp'})}}>
+  return <AbsoluteFill style={{background: t.bg, justifyContent: 'center', alignItems: 'center', padding: '0 90px'}}>
     <div style={{fontFamily: t.title, fontWeight: t.titleWeight, textTransform: t.titleUpper ? 'uppercase' : 'none', fontSize: t.titleUpper ? 130 : 100, lineHeight: 1, color: t.fg, textAlign: 'center', transform: `scale(${0.9 + 0.1 * s})`, whiteSpace: 'pre-line'}}>{e.title}</div>
     {e.sub ? <div style={{fontFamily: t.text, fontWeight: 600, fontSize: 42, color: t.accent, marginTop: 36, textAlign: 'center', opacity: spring({frame: f - 8, fps})}}>{e.sub}</div> : null}
     {e.logo !== false && t.logo ? <Img src={staticFile(t.logo)} style={{position: 'absolute', bottom: 400, width: 360, height: 100, objectFit: 'contain', opacity: spring({frame: f - 14, fps})}} /> : null}
@@ -140,7 +140,7 @@ export const Film: React.FC<FilmProps> = (p) => {
       {seqs.map(({s, start, i}) => <Sequence key={i} from={start} durationInFrames={fr(s.dur, fps)}><ShotView s={s} fps={fps} first={i === 0} /></Sequence>)}
     </AbsoluteFill>
     <AbsoluteFill style={{background: 'linear-gradient(180deg,rgba(0,0,0,.28),transparent 22%,transparent 60%,rgba(0,0,0,.55))', pointerEvents: 'none'}} />
-    {lines.map((l, i) => <Sequence key={'l' + i} from={fr(l.start, fps)} durationInFrames={Math.max(1, fr(l.end - l.start, fps))}>{l.kind === 'msg' ? <Msg line={l} t={t} row={lines.filter((x, j) => j < i && x.kind === 'msg' && x.end > l.start).length} /> : <Sub line={l} t={t} bottom={p.subBottom} />}</Sequence>)}
+    {lines.map((l, i) => <Sequence key={'l' + i} from={fr(l.start, fps)} durationInFrames={Math.max(1, fr(l.end - l.start, fps))}>{l.kind === 'msg' ? <Msg top={p.msgTop} line={l} t={t} row={lines.filter((x, j) => j < i && x.kind === 'msg' && x.end > l.start).length} /> : <Sub line={l} t={t} bottom={p.subBottom} />}</Sequence>)}
     {p.hook ? <Sequence from={0} durationInFrames={fr(p.hook.dur ?? 2.2, fps)}><Hook text={p.hook.text} t={t} dur={p.hook.dur ?? 2.2} /></Sequence> : null}
     {p.end ? <Sequence from={shotsEnd} durationInFrames={fr(p.end.dur, fps)}><End e={p.end} t={t} /></Sequence> : null}
     {p.voice ? <Sequence from={fr(vAt, fps)}><Audio src={staticFile(p.voice.src)} volume={p.voice.volume ?? 1} /></Sequence> : null}

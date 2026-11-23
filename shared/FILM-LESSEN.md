@@ -24,3 +24,12 @@ Vorm: datum · wat misging · regel die het voorkomt. Een regel die hier staat, 
 | 22-11 | Loveke Final call | 9 | 4 | ±300 |
 | 22-11 | Loveke Pub crawl | 5 | 2 | ±250 |
 | 23-11 | VanXcel Sandy 1 | 2 | 0 | 94 |
+
+## 23-11 — Final call 3D (lab, Veo 3.1)
+- Merklogo op kleding vervormt zodra handen bewegen ("Loreke") · logo nooit door AI laten tekenen in beweging: kledingstuk zonder logo genereren en het echte logo als overlay (tracking) of enkel in stilstaande shots.
+- Kostuum verschilt per beginbeeld (lange broek vs. cargoshort) · één vast kostuumblad per film; elk beginbeeld krijgt het kostuumblad als referentie en wordt naast elkaar gecontroleerd vóór de video's.
+- Telefoon verdwijnt uit handen (2× in vliegtuigshot) · bij telefoon-shots ≤ 2 s gebruiken of het scherm als close-up inzetten.
+- Veo laat eigen dialoog in sfeershots horen (ook op volume 0,2 hoorbaar) · shot met vervangen stem: volume 0.
+- Reacties vóór de oorzaak (zij straalt vóór zijn antwoord) · montage volgt oorzaak → reactie.
+- ElevenLabs leest regie-aanwijzingen tussen haakjes voor · geen regie in de tekst; via voice_settings (stability laag, speed 0,85).
+- Eindkaart dipte via grijs · gefixt in Film.tsx (achtergrond vol, enkel tekst fadet).

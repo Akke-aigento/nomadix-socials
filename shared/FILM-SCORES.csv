@@ -17,3 +17,5 @@ datum,film,versie,werkwijze,verhaal,beeld,geluid,gemiddeld,akke
 2026-11-23,lab1-perron,real-sd25,sd25 1 shot 6s,-,-,-,7.4,-
 2026-11-23,lab1-perron,real-mmx,mmx 1 shot 6s,-,-,-,7.2,-
 2026-11-23,lab1-perron,real-kling,kling 1 shot 6s,-,-,-,4.6,-
+2026-11-23,loveke-final-call-3d,v1,3D veo-3.1 4x4s + VO + msg,7,6,6,6.3,-
+2026-11-23,loveke-final-call-3d,v2,3D veo-3.1 + whisper-VO + ping + loudnorm -14,7,5,7,6.3,-
