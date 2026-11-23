@@ -104,3 +104,11 @@ Geen enkele film gaat naar SellQo zonder deze controle, per shot én op de eindm
 4. **Eén fout = dat stuk eruit knippen of de shot opnieuw maken.** Nooit "valt niet op".
 5. Noteer per shot in het log welk bereik gebruikt is en wat eruit geknipt werd (pilot: vliegtuig enkel 0–3,4 s door een dubbele armsteun vanaf 3,5 s; gate enkel 0,3–4,9 s).
 6. Pas daarna de onafhankelijke review (POSTS-2) en dan `pending_approval`.
+
+### 5b. Strengere controle (Akke 23-11: "dit dient echt zeer streng op voorhand gecontroleerd te worden")
+
+Akke wil zelf niet controleren. Wat bij hem komt, is al door deze poort:
+1. **6 beelden per seconde**, elk beeld bekeken (niet 1 per 1,5 s). Per beeld: blijft elk voorwerp waar het was (bloemen, rugzak, deuren, borden), komen er geen mensen of dingen uit het niets, smelt de achtergrond niet.
+2. **Tweede blik**: een aparte controle (subagent) die de film niet gemaakt heeft, kijkt dezelfde beelden na. Pas als beide niets vinden, gaat de film naar Akke.
+3. **Risicoshots vermijden**: Veo faalt bij bewegende treinen en deuren, mensenmassa's, voorwerpen die van hand wisselen, en lange wandelingen met een bewegende achtergrond. Gebruik daar een stilstaand, gecontroleerd beginbeeld met lichte camerabeweging, of een kort stuk (≤ 2 s) dat foutloos is.
+4. Twijfel = eruit.
