@@ -18,7 +18,7 @@ Doel (Akke 23-11): ontdekken hoever AI-video kan gaan en een systeem bouwen dat 
 
 ## Stijlen (beginbeelden met nano-banana-pro + castblad)
 comic (huidige strip) · real (filmisch fotorealistisch) · 3d (animatiefilm) · paint (geschilderd).
-Realistische weergave van Akke en Nastya: enkel intern tot beiden akkoord geven.
+**Realistisch = enkel voor fictieve personages** (Akke 23-11: "wij zijn dat niet"). Akke en Nastya altijd getekend, 3D of geschilderd, nooit realistisch. Realistische stijl wel voor verzonnen personages bij elk merk (bv. SellQo-winkeliers, VanXcel-reizigers), omdat het daar niet uitmaakt op wie ze lijken.
 
 ## Experiment 1 — perron "You came!" (23-11)
 Beelden: `social-media/loveke/lab/perron-<stijl>.jpg`, clips `perron-<stijl>-<model>.mp4`. Juryscores: zie FILM-SCORES.csv.
