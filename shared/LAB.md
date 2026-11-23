@@ -40,3 +40,13 @@ Verandering: één variabele, de prompt ("he lets go, she holds it alone", rozen
 - comic en 3d: overdracht klopt, rozen blijven heel achter zijn rug, enkel "You came!". Probleem uit exp. 1 opgelost.
 - real: overdracht klopt, maar extra "Yes?" en mensen die achteraan opduiken → bij realistisch: "empty platform, nobody else" in de prompt.
 Les: recept-regels werken; de prompt is even belangrijk als het model.
+
+## Kosten: imgeditor vs rechtstreeks (onderzoek 23-11)
+imgeditor-credit ≈ $0.022–0.06 (abonnementen; packs niet gepubliceerd). Per shot van 6 s:
+| Model | imgeditor | Rechtstreeks |
+|---|---|---|
+| Veo 3.1 720p met audio | 180 cr ≈ $4,0–4,4 | Gemini API $0,40/s → $2,40 |
+| Veo 3.1 Fast 720p | ±26 cr ≈ $0,60 | Gemini API $0,10/s → $0,60 |
+| Veo 3.1 Lite 720p | n.v.t. | Gemini API $0,05/s → $0,30 |
+| Seedance 2.5 480p | 175 cr ≈ $4,0 | Replicate/OpenRouter $0,1028/s → $0,62 |
+Conclusie: voor de topmodellen is imgeditor 2–6× duurder. Plan: (1) Watchtower-route naar Gemini API (Veo) en Replicate of OpenRouter (Seedance), sleutel door Akke; (2) trapsgewijs: varianten eerst goedkoop (Lite/Fast/480p-draft), jury kiest, enkel de winnaar in topkwaliteit; (3) kost per goedgekeurde seconde bijhouden in FILM-SCORES.
