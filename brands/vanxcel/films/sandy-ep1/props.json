@@ -8,8 +8,13 @@
   {
    "src": "brands/vanxcel/films/sandy-ep1/shots/s1-night.mp4",
    "from": 0,
-   "dur": 6.6,
+   "dur": 2.6,
    "volume": 0.8
+  },
+  {
+   "src": "brands/vanxcel/films/sandy-ep1/shots/k1b-still.mp4",
+   "dur": 4.0,
+   "volume": 0
   },
   {
    "src": "brands/vanxcel/films/sandy-ep1/shots/s2-dawn.mp4",
